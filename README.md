@@ -7,7 +7,10 @@ Here are available lecture notes (*soon*) and codes on CSI477 - Sistemas Web I c
 
 License: [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Best regards,
+Best regards, 
+
 Fernando.
 
 [Contact and info.](https://sites.google.com/site/fboliveiraufop/)
+
+--------------
