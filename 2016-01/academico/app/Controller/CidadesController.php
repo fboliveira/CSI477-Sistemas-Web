@@ -11,7 +11,8 @@ class CidadesController extends AppController {
 
   public function view($codigo) {
 
-    // Criar
+    $cidade = $this->Cidade->findById($codigo);
+    $this->set('cidade', $cidade);
 
   }
 
@@ -37,6 +38,40 @@ class CidadesController extends AppController {
 
     }
 
+  }
+
+  public function edit($codigo) {
+
+    if (empty($this->request->data)) {
+      // Data Vazia => campos para edição
+
+      // Carregar os estados para exibição
+      $estados = $this->Cidade->Estado->find('list',
+              array('fields' => array('id', 'nome')));
+
+      // Setar na view a variável com os dados dos estados
+      $this->set('estados', $estados);
+
+      // Recuperar os dados atuais
+      $this->request->data = $this->Cidade->findById($codigo);
+
+    } else {
+      // Persistir os dados
+      if ($this->Cidade->save($this->request->data)) {
+        //$codigo = $this->request->data['Cidade']['id'];
+        $this->Flash->set('Cidade atualizada com Sucesso !');
+        $this->redirect(array('action' => 'index'));
+      }
+
+
+    }
+
+  }
+
+  public function del($codigo) {
+    $this->Cidade->delete($codigo);
+    $this->Flash->set('Cidade excluída com Sucesso !');
+    $this->redirect(array('action' => 'index'));
   }
 
 }

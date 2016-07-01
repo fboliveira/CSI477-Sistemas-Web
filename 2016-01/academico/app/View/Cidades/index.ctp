@@ -1,9 +1,20 @@
 <h1>Relação de Cidades</h1>
+
+<?php
+
+  echo $this->Html->link("Inserir",
+          array('controller' => 'cidades',
+                'action' => 'add'));
+
+ ?>
+
+
 <table>
   <tr>
     <th>Código</th>
     <th>Nome</th>
     <th>Estado</th>
+    <th>Ação</th>
   </tr>
 
   <?php foreach ($cidades as $c): ?>
@@ -21,6 +32,11 @@
         array('controller' => 'estados',
               'action' => 'view', $c['Estado']['id'])); ?>
       </td>
+
+      <td>
+        Editar Excluir
+      </td>
+
     </tr>
   <?php endforeach; ?>
 </table>
