@@ -31,4 +31,27 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+  public function afterFilter() {
+    if($this->action != 'index_login') {
+        $this->autenticar();
+    }
+  }
+
+  public function autenticar() {
+
+    if (! $this->Session->check('Usuario')) {
+
+      $this->redirect(array('controller' => 'usuarios',
+    'action' => 'index_login'));
+      exit();
+
+    } else {
+      $usuario = $this->Session->read('Usuario');
+      //Debugger::dump($usuario);
+
+      $this->Flash->set('Usuario: ' . $usuario['0']['Usuario']['nome']);
+    }
+
+  }
 }

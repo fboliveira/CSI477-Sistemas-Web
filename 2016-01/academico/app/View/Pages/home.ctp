@@ -29,3 +29,11 @@ array('controller' => 'estados',
          'action' => 'index'));
     ?>
     </span>
+
+    <span class="notice success">
+
+    <?php echo $this->Html->link("Sair do Sistema ",
+    array('controller' => 'usuarios',
+          'action' => 'logout'));
+     ?>
+     </span>
