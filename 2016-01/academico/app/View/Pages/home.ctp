@@ -24,6 +24,14 @@ array('controller' => 'estados',
 
    <span class="notice success">
 
+   <?php echo $this->Html->link("Notas",
+   array('controller' => 'notas',
+         'action' => 'index'));
+    ?>
+    </span>
+
+   <span class="notice success">
+
    <?php echo $this->Html->link("Usuários ",
    array('controller' => 'usuarios',
          'action' => 'index'));

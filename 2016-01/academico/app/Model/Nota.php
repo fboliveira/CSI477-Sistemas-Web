@@ -1,6 +1,6 @@
 <?php
 
-class Notas extends AppModel {
+class Nota extends AppModel {
 
   public $belongsTo = 'Aluno';
 
