@@ -10,6 +10,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -51,6 +53,14 @@ public class AlunoDAO {
         
     }
 
+    public boolean add(Aluno aluno) {
+        String sql = "INSERT INTO alunos (nome, cidade_id) VALUES ("
+                + "'" + aluno.getNome() + "', " +
+                aluno.getCidade_id() + ")";
+        System.out.println(sql);
+        
+        return true;
+    }
        
     
     

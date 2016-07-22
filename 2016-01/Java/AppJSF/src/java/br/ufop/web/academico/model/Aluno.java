@@ -4,16 +4,27 @@
 
 package br.ufop.web.academico.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Fernando B Oliveira <fboliveira25@gmail.com>
  * 
  */
 
-public class Aluno {
+public class Aluno implements Serializable {
     
     private int id = 0;
-    private String nome = "";    
+    private String nome = "";
+    private int cidade_id = -1;
+
+    public int getCidade_id() {
+        return cidade_id;
+    }
+
+    public void setCidade_id(int cidade_id) {
+        this.cidade_id = cidade_id;
+    }
 
     public int getId() {
         return id;

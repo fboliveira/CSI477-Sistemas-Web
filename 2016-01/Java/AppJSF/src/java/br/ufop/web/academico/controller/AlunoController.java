@@ -31,4 +31,9 @@ public class AlunoController {
         return null;
     }
 
+    public boolean add(Aluno aluno) {
+        AlunoDAO alunoDAO = new AlunoDAO();
+        return alunoDAO.add(aluno);
+    }
+    
 }
