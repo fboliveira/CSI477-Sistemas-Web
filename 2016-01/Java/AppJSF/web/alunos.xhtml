@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Alunos</title>
     </h:head>
@@ -17,16 +18,24 @@
                          requiredMessage="Informe o nome do aluno"
                          value="#{alunoCrud.aluno.nome}"/>
 
-            <p:outputLabel for="cidade" value="Cidade: " />            
-            <p:inputText id="cidade" required="true"
-                         requiredMessage="Informe a cidade"
-                         value="#{alunoCrud.aluno.cidade_id}"/>        
+            <p:outputLabel for="cidade" value="Cidade: " />  
             
+            <p:selectOneMenu id="cidade" required="true" value="#{alunoCrud.cidade_id}"  requiredMessage="Selecione a Cidade!">
+                <f:selectItem itemLabel="Selecione a Cidade" itemValue="" noSelectionOption="true" />
+                <f:selectItems value="#{alunoCrud.cidades}" />                
+            </p:selectOneMenu>
+
+            <p:selectOneMenu id="cidade2" required="true" value="#{alunoCrud.cid.id}"  requiredMessage="Selecione a Cidade!">
+                <f:selectItem itemLabel="Selecione a Cidade 2" itemValue="" noSelectionOption="true" />
+                <f:selectItems var="a" value="#{alunoCrud.cidadeController.list}" itemLabel="#{a.nome}" itemValue="#{a.id}" />                
+            </p:selectOneMenu>
+
             <p:commandButton update="msg" value="Inserir" 
                              action="#{alunoCrud.add()}" />
                          
         </h:form>
         
+        <h:link outcome="index" value="Voltar" />
         
     </h:body>
 </html>

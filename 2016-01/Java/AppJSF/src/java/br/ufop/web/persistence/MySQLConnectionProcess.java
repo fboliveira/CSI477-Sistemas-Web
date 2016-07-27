@@ -1,8 +1,8 @@
 /**
  *
- * @author Fernando Bernardes de Oliveira - fernando@decea.ufop.br
- * 
- * 
+ * @author Fernando Bernardes de Oliveira <https://github.com/fboliveira>
+ *
+ *
  */
 package br.ufop.web.persistence;
 
@@ -11,11 +11,12 @@ import com.mysql.jdbc.Driver;
 import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class MySQLConnectionProcess {
+public class MySQLConnectionProcess implements InterfaceConnection {
 
     static MySQLConnectionProcess instance;
     // Objeto de conexao
@@ -41,6 +42,7 @@ public class MySQLConnectionProcess {
     /**
      * @param connection the connection to set
      */
+    @Override
     public void setConnection(Connection connection) {
         this.connection = connection;
     }
@@ -48,6 +50,7 @@ public class MySQLConnectionProcess {
     /**
      * @return the host
      */
+    @Override
     public String getHost() {
         return host;
     }
@@ -55,6 +58,7 @@ public class MySQLConnectionProcess {
     /**
      * @param host the host to set
      */
+    @Override
     public void setHost(String host) {
         this.host = host;
     }
@@ -62,6 +66,7 @@ public class MySQLConnectionProcess {
     /**
      * @return the database
      */
+    @Override
     public String getDatabase() {
         return database;
     }
@@ -69,6 +74,7 @@ public class MySQLConnectionProcess {
     /**
      * @param database the database to set
      */
+    @Override
     public void setDatabase(String database) {
         this.database = database;
     }
@@ -76,6 +82,7 @@ public class MySQLConnectionProcess {
     /**
      * @return the dbUsername
      */
+    @Override
     public String getDbUsername() {
         return dbUsername;
     }
@@ -83,6 +90,7 @@ public class MySQLConnectionProcess {
     /**
      * @param dbUsername the dbUsername to set
      */
+    @Override
     public void setDbUsername(String dbUsername) {
         this.dbUsername = dbUsername;
     }
@@ -90,6 +98,7 @@ public class MySQLConnectionProcess {
     /**
      * @return the dbPassword
      */
+    @Override
     public String getDbPassword() {
         return dbPassword;
     }
@@ -97,10 +106,12 @@ public class MySQLConnectionProcess {
     /**
      * @param dbPassword the dbPassword to set
      */
+    @Override
     public void setDbPassword(String dbPassword) {
         this.dbPassword = dbPassword;
     }
 
+    @Override
     public boolean isParameterSet() throws Exception {
         if (this.getHost().length() == 0
                 || this.getDatabase().length() == 0
@@ -114,6 +125,7 @@ public class MySQLConnectionProcess {
     }
 
     // Recupera conexao com o banco de dados
+    @Override
     public Connection getConnection() {
         if (connection == null) {
             try {
@@ -129,6 +141,7 @@ public class MySQLConnectionProcess {
         return connection;
     }
 
+    @Override
     public Statement getStatement() {
         try {
             return this.getConnection().createStatement();
@@ -137,5 +150,37 @@ public class MySQLConnectionProcess {
         }
 
         return null;
+    }
+
+    @Override
+    public ResultSet executeQuery(String instruction) {
+
+        ResultSet resultSet = null;
+        try {
+            resultSet = MySQLConnectionProcess
+                    .getInstance()
+                    .getStatement()
+                    .executeQuery(instruction);
+        } catch (SQLException ex) {
+            Logger.getLogger(Class.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return resultSet;
+
+    }
+
+    @Override
+    public boolean executeUpdate(String instruction) {
+        boolean result;
+
+        try {
+            MySQLConnectionProcess.getInstance().getStatement().executeUpdate(instruction);
+            result = true;
+        } catch (SQLException ex) {
+            Logger.getLogger(Class.class.getName()).log(Level.SEVERE, null, ex);
+            result = false;
+        }
+
+        return result;
     }
 }

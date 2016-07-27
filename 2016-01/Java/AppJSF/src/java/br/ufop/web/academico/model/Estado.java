@@ -10,21 +10,13 @@ import java.io.Serializable;
  *
  * @author Fernando B Oliveira <https://github.com/fboliveira>
  * 
+ * Created on 23/07/2016 - 19:16:22
  */
 
-public class Aluno implements Serializable, InterfaceModel {
-    
-    private int id = 0;
-    private String nome = "";
-    private Cidade cidade = new Cidade();
+public class Estado implements Serializable, InterfaceModel {
 
-    public Cidade getCidade() {
-        return cidade;
-    }
-
-    public void setCidade(Cidade cidade) {
-        this.cidade = cidade;
-    }
+    private int id;
+    private String nome;
 
     @Override
     public int getId() {
@@ -44,9 +36,18 @@ public class Aluno implements Serializable, InterfaceModel {
         this.nome = nome;
     }
 
+    public String getSigla() {
+        return sigla;
+    }
+
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
+    }
+    private String sigla;
+    
     @Override
     public String getTable() {
-        return "alunos";
+        return "estados";
     }
 
 }
