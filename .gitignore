@@ -21,5 +21,9 @@
 
 /app/tmp/*
 /vendors/*
-/2016-01/Java/AppJSF/nbproject/private/
-/2016-01/Java/AppJSF-Inicial/nbproject/private/
+
+/nbproject/private/
+/nbproject/private/
+
+# Ignore Mac DS_Store files
+.DS_Store
