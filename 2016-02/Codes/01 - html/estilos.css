@@ -1,0 +1,13 @@
+h1 {
+    font-family: tahoma, arial;
+    background-color: #4592de;
+  }
+
+p.maior {
+  color: #C6C6C6;
+  text-align: center;
+}
+
+.generica {
+  background-color: red;
+}
