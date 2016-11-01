@@ -1,5 +1,12 @@
 <?php
 
-  require("model_aluno.php");
+  session_start();
+  if (isset($_SESSION['username'])) {
+    require("model_aluno.php");
+    require("lista_alunos.php");
+} else {
 
-  require("lista_alunos.php");
+  header('Location: login.php');
+  die();
+
+}

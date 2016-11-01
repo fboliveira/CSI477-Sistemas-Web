@@ -9,6 +9,11 @@
   $resultado = $conexao->query($sql);
 
   if ($resultado->num_rows > 0) {
+
+      session_start();
+      $_SESSION['username'] = $usuario;
+      $_SESSION['system'] = 'academico';
+
       header('Location: alunos.php');
       die();
   } else {
