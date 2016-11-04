@@ -1,0 +1,2 @@
+<h1>Dados atualizados com sucesso!</h1>
+<h2>Consulta por meio de AJAX</h2>

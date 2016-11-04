@@ -35,6 +35,14 @@ $(document).ready(function() {
 
     $("#resultado").val( parseInt($("#valor1").val()) + parseInt($("#valor2").val()) );
 
+    if ($("#estado").val() == "0") {
+      alert("Selecione o estado");
+      $("#estado").focus();
+    } else {
+      alert($("#estado option:selected").text());
+    }
+
+
   });
 
 
