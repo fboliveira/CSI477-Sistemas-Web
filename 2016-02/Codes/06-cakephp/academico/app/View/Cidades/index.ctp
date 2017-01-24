@@ -21,7 +21,7 @@
          ?>
       </td>
       <td>
-        <?php echo $this->Html->link($c['Cidade']['estado_id'],
+        <?php echo $this->Html->link($c['Estado']['nome'],
           array('controller' => 'estados',
                 'action' => 'view', $c['Cidade']['estado_id']));
 

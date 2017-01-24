@@ -18,7 +18,7 @@
           <td>
 <?= $this->Html->link($e['Estado']['nome'],
      array('controller' => 'estados',
-           'action' => 'view', $e['Estado']['id'])); 
+           'action' => 'view', $e['Estado']['id']));
 
 ?>
           </td>
