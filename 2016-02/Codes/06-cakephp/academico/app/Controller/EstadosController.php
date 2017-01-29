@@ -17,6 +17,11 @@ class EstadosController extends AppController {
     }
 
     $estado = $this->Estado->findById($id);
+    
+    if (!$estado) {
+      throw new NotFoundException("Estado Inválido!");
+    }
+
     $this->set('estado', $estado);
 
   }

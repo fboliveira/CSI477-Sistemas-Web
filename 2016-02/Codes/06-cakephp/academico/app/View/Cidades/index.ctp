@@ -5,6 +5,8 @@
     <th>Código</th>
     <th>Nome</th>
     <th>Estado</th>
+    <th>Editar</th>
+    <th>Excluir</th>
   </tr>
 
   <?php foreach ($cidades as $c): ?>
@@ -28,6 +30,24 @@
          ?>
       </td>
 
+      <td>
+        <?php echo $this->Html->link("Editar",
+          array('controller' => 'cidades',
+                'action' => 'edit', $c['Cidade']['id']));
+
+         ?>
+      </td>
+
+      <td>
+
+        <?php
+echo $this->Html->link("Excluir",
+array('controller' => 'cidades', 'action' => 'delete', $c['Cidade']['id']),
+array('confirm' => 'Confirma exclusão?'));
+
+         ?>
+
+      </td>
 
 
     </tr>

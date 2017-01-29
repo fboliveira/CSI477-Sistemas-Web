@@ -1,3 +1,8 @@
+<?php
+  if (empty($estado)) {
+    echo "<h1>Estado não encontrado!</h1>";
+  } else {
+?>
 
 <h1><?= $estado['Estado']['nome']; ?></h1>
 
@@ -9,3 +14,5 @@
     array('controller' => 'estados',
           'action' => 'index'));
 ?>
+<?php
+  }
