@@ -49,7 +49,10 @@ class UsuariosController extends AppController {
     }
 
     public function logout() {
-        
+      $this->Flash->set('Atividades encerradas com sucesso!');
+
+      $this->redirect(array('action' => 'index_login'));
+      exit();        
     }
 
 }
