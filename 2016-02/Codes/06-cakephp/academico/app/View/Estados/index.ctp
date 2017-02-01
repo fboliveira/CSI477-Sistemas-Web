@@ -1,5 +1,10 @@
 <h1>Estados</h1>
 
+<?= $this->Html->link("Voltar", 
+array('controller' => 'pages',
+  'action' => 'home' 
+  )); ?>
+
 <table>
 
   <tr>
