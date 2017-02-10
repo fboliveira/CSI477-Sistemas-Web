@@ -11,6 +11,28 @@
 |
 */
 
+use App\Aluno;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('estados', function () {
+	$estados = DB::table('estados')->get();
+	return view('estados')->with('estados', $estados);
+});
+
+Route::get('cidades', function () {
+	$alunos = DB::table('cidades')->get();
+	return view('cidades')->with('cidades', $alunos);
+});
+
+Route::get('alunos', function () {
+	$alunos = Aluno::all();
+	return view('alunos.index')->with('alunos', $alunos);
+});
+
+Route::get('/alunos/{aluno}', function ($id) {
+	$aluno = DB::table('alunos')->find($id);
+	return view('alunos.show')->with('aluno', $aluno);
 });
