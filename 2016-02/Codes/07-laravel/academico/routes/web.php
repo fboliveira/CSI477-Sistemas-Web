@@ -27,7 +27,7 @@ Route::get('cidades', function () {
 	return view('cidades')->with('cidades', $alunos);
 });
 
-Route::get('alunos', function () {
+Route::get('alunosold', function () {
 	$alunos = Aluno::all();
 	return view('alunos.index')->with('alunos', $alunos);
 });
@@ -36,3 +36,6 @@ Route::get('/alunos/{aluno}', function ($id) {
 	$aluno = DB::table('alunos')->find($id);
 	return view('alunos.show')->with('aluno', $aluno);
 });
+
+Route::resource('disciplinas', 'DisciplinaController');
+Route::resource('alunos', 'AlunoController');
