@@ -32,7 +32,7 @@ Route::get('alunosold', function () {
 	return view('alunos.index')->with('alunos', $alunos);
 });
 
-Route::get('/alunos/{aluno}', function ($id) {
+Route::get('/alunosold/{aluno}', function ($id) {
 	$aluno = DB::table('alunos')->find($id);
 	return view('alunos.show')->with('aluno', $aluno);
 });
