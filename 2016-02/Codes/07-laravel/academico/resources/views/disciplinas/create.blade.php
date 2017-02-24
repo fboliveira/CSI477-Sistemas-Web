@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Sistema Acadêmico</title>
-    </head>
-    <body>
+@extends('layout.principal')
+
+@section('conteudo')
 
         <h1>Inserir disciplina</h1>
 
@@ -17,7 +14,4 @@
 
           <input type="submit" value="Salvar"/>
 
-        </form>
-
-    </body>
-</html>
+@endsection

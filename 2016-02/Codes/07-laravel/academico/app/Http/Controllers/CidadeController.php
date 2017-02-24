@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Disciplina;
 
-class DisciplinaController extends Controller
+class CidadeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,7 @@ class DisciplinaController extends Controller
      */
     public function index()
     {
-        $disciplinas = Disciplina::all();
-        return view('disciplinas.index')
-              ->with('disciplinas', $disciplinas);
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class DisciplinaController extends Controller
      */
     public function create()
     {
-        return view('disciplinas.create');
+        //
     }
 
     /**
@@ -37,8 +34,7 @@ class DisciplinaController extends Controller
      */
     public function store(Request $request)
     {
-        Disciplina::create($request->all());
-        return redirect('/disciplinas');
+        //
     }
 
     /**
@@ -60,9 +56,7 @@ class DisciplinaController extends Controller
      */
     public function edit($id)
     {
-        $disciplina = Disciplina::find($id);
-        return view('disciplinas.edit')
-            ->with('disciplina', $disciplina);
+        //
     }
 
     /**
@@ -74,17 +68,7 @@ class DisciplinaController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-      $disciplina = Disciplina::find($id);
-
-      $disciplina->nome = $request->nome;
-      $disciplina->codigo = $request->codigo;
-      $disciplina->carga = $request->carga;
-
-      $disciplina->save();
-
-      return redirect('/disciplinas');
-
+        //
     }
 
     /**

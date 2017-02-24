@@ -13,5 +13,4 @@ class Disciplina extends Model
 
 
 
-
 }
