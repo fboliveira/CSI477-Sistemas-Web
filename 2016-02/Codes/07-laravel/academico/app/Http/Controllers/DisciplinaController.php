@@ -49,7 +49,10 @@ class DisciplinaController extends Controller
      */
     public function show($id)
     {
-        //
+      $disciplina = Disciplina::find($id);
+      return view('disciplinas.show')
+          ->with('disciplina', $disciplina);
+
     }
 
     /**
@@ -95,6 +98,7 @@ class DisciplinaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Disciplina::destroy($id);
+        return redirect('/disciplinas');
     }
 }

@@ -7,11 +7,24 @@
         <form method="post" action="/disciplinas">
 
           {{ csrf_field() }}
+ 
+          <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" name="nome" />
+          </div>
 
-          Nome: <input type="text" name="nome" /><br>
-          Código: <input type="text" name="codigo" /><br>
-          CH: <input type="text" name="carga"  /> <br>
+          <div class="form-group">
+              <label for="codigo">Código</label>
+              <input type="text" class="form-control" name="codigo" />
+          </div>
 
-          <input type="submit" value="Salvar"/>
+          <div class="form-group">
+              <label for="carga">Carga Horária</label>
+              <input type="text" class="form-control" name="carga" />
+          </div>
+
+          <input type="submit" class="btn btn-primary" value="Salvar"/>
+
+          <a href="/disciplinas" class="btn btn-primary">Voltar</a>
 
 @endsection
