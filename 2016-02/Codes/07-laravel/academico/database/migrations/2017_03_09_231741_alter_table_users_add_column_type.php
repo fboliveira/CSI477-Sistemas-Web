@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCidadesTable extends Migration
+class AlterTableUsersAddColumnType extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,8 @@ class CreateCidadesTable extends Migration
      */
     public function up()
     {
-        Schema::table('cidades', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            $table->integer('type')->default(2);
         });
     }
 
@@ -26,6 +25,8 @@ class CreateCidadesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cidades');
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
     }
 }

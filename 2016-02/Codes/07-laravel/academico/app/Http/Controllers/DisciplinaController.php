@@ -5,8 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Disciplina;
 
+use Illuminate\Support\Facades\Auth;
+
 class DisciplinaController extends Controller
 {
+
+    public function __construct() {
+      $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,9 +21,14 @@ class DisciplinaController extends Controller
      */
     public function index()
     {
-        $disciplinas = Disciplina::all();
-        return view('disciplinas.index')
+
+        if (Auth::user()->type == 1) {
+            $disciplinas = Disciplina::all();
+            return view('disciplinas.index')
               ->with('disciplinas', $disciplinas);
+        } else {
+          return redirect('/');
+        }
     }
 
     /**
