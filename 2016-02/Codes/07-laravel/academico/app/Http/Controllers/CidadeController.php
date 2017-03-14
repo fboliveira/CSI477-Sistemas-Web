@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Estado;
 
 class CidadeController extends Controller
 {
@@ -23,7 +24,8 @@ class CidadeController extends Controller
      */
     public function create()
     {
-        //
+        $estados = Estado::all();
+        return view('cidades.create')->with('estados', $estados);
     }
 
     /**

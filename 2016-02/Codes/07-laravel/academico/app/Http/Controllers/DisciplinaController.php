@@ -24,9 +24,21 @@ class DisciplinaController extends Controller
 
         if (Auth::user()->type == 1) {
             $disciplinas = Disciplina::all();
+
+            // dd(session()->all());
+            // return true;
+
+            // session(['nome' => 'fernando' ]);
+            // //session()->forget('nome');
+            // $nome = session()->get('nome', 'não_definido');
+
+            // session()->flush();
+            // session()->regenerate();
+
             return view('disciplinas.index')
               ->with('disciplinas', $disciplinas);
         } else {
+          session()->flash('error', 'Disciplina: acesso não autorizado!');
           return redirect('/');
         }
     }
@@ -49,7 +61,10 @@ class DisciplinaController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->session()->all());
+
         Disciplina::create($request->all());
+        session()->flash('info', 'Disciplina inserida com sucesso!');
         return redirect('/disciplinas');
     }
 

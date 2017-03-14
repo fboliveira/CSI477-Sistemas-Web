@@ -40,6 +40,8 @@ Route::get('/alunosold/{aluno}', function ($id) {
 Route::resource('disciplinas', 'DisciplinaController');
 Route::resource('alunos', 'AlunoController');
 
+Route::resource('cidades', 'CidadeController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

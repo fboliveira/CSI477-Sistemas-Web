@@ -103,8 +103,21 @@
     </div>
     <div class="col-sm-10 text-left">
 
-      @yield('conteudo')
+      <div class="content">
+        @if(Session::has('error'))
+          <div class="alert alert-danger">{{ Session::get('error') }}</div>
+        @endif
 
+        @if(Session::has('info'))
+          <div class="alert alert-info">{{ Session::get('info') }}</div>
+        @endif
+
+        @if(Session::has('warning'))
+          <div class="alert alert-warning">{{ Session::get('warning') }}</div>
+        @endif
+
+        @yield('conteudo')
+      </div>
     </div>
   </div>
 </div>

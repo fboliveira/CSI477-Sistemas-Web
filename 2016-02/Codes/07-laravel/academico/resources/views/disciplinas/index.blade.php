@@ -4,6 +4,10 @@
 
         <h1>Disciplinas</h1>
 
+        @if(Session::has('nome'))
+          <h2>{{ Session::get('nome') }}</h2>
+        @endif
+
   <a href="/disciplinas/create" class="btn btn-primary">Inserir</a>
 
   <table class="table table-striped">
