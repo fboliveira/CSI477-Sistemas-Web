@@ -27,3 +27,9 @@
 
 # Ignore Mac DS_Store files
 .DS_Store
+/2016-02/Codes/08-java/AppInicial/nbproject/private/
+/2016-02/Codes/08-java/AppInicial/build/
+/2016-02/Codes/08-java/AppInicial/dist/
+/2016-02/Codes/08-java/AppJSF/nbproject/private/
+/2016-02/Codes/08-java/AppJSF/build/
+/2016-02/Codes/08-java/AppJSF/dist/

@@ -16,16 +16,16 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class MySQLConnectionProcess implements InterfaceConnection {
+public class MySQLConnectionProcess {
 
     static MySQLConnectionProcess instance;
     // Objeto de conexao
     private Connection connection;
     // Parametros de conexao
-    private String host = "";
-    private String database = "";
-    private String dbUsername = "";
-    private String dbPassword = "";
+    private String host = "localhost";
+    private String database = "academico";
+    private String dbUsername = "sistemaweb";
+    private String dbPassword = "123456";
 
     // Utilizando padrão Singleton
     private MySQLConnectionProcess() {
@@ -42,7 +42,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @param connection the connection to set
      */
-    @Override
     public void setConnection(Connection connection) {
         this.connection = connection;
     }
@@ -50,7 +49,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @return the host
      */
-    @Override
     public String getHost() {
         return host;
     }
@@ -58,7 +56,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @param host the host to set
      */
-    @Override
     public void setHost(String host) {
         this.host = host;
     }
@@ -66,7 +63,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @return the database
      */
-    @Override
     public String getDatabase() {
         return database;
     }
@@ -74,7 +70,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @param database the database to set
      */
-    @Override
     public void setDatabase(String database) {
         this.database = database;
     }
@@ -82,7 +77,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @return the dbUsername
      */
-    @Override
     public String getDbUsername() {
         return dbUsername;
     }
@@ -90,7 +84,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @param dbUsername the dbUsername to set
      */
-    @Override
     public void setDbUsername(String dbUsername) {
         this.dbUsername = dbUsername;
     }
@@ -98,7 +91,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @return the dbPassword
      */
-    @Override
     public String getDbPassword() {
         return dbPassword;
     }
@@ -106,12 +98,10 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     /**
      * @param dbPassword the dbPassword to set
      */
-    @Override
     public void setDbPassword(String dbPassword) {
         this.dbPassword = dbPassword;
     }
 
-    @Override
     public boolean isParameterSet() throws Exception {
         if (this.getHost().length() == 0
                 || this.getDatabase().length() == 0
@@ -125,12 +115,11 @@ public class MySQLConnectionProcess implements InterfaceConnection {
     }
 
     // Recupera conexao com o banco de dados
-    @Override
     public Connection getConnection() {
         if (connection == null) {
             try {
                 new Driver();
-                String url = "jdbc:mysql://" + getHost() + "/" + getDatabase();2
+                String url = "jdbc:mysql://" + getHost() + "/" + getDatabase();
                 connection = DriverManager.getConnection(url,
                         this.getDbUsername(), this.getDbPassword());
             } catch (SQLException ex) {
@@ -141,7 +130,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
         return connection;
     }
 
-    @Override
     public Statement getStatement() {
         try {
             return this.getConnection().createStatement();
@@ -152,7 +140,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
         return null;
     }
 
-    @Override
     public ResultSet executeQuery(String instruction) {
 
         ResultSet resultSet = null;
@@ -169,7 +156,6 @@ public class MySQLConnectionProcess implements InterfaceConnection {
 
     }
 
-    @Override
     public boolean executeUpdate(String instruction) {
         boolean result;
 
