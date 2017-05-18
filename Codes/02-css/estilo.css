@@ -1,0 +1,25 @@
+/* Comentários */
+h1 { font-family: tahoma, arial;
+     font-size: 22pt;
+     color: #ff6666;
+   }
+
+p {
+  font-family: arial;
+  color: green;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+/* Generica */
+.fundo {background-color: red;}
+
+/* Seletor -> classe */
+h3.destaque { color: #c6c6c6;
+             text-align: center; }
+
+/* Id */
+#codigo { background-color: #c6c6c6;
+         color: blue;
+         border-style: solid;
+         border-radius: 15px;}
