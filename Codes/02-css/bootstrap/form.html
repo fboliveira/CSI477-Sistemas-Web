@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Bootstrap/Form</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Menu</button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Alunos</a></li>
+          <li><a href="#">Cidades</a></li>
+          <li><a href="#">Estados</a></li>
+        </ul>
+      </div>
+
+      <div class="alert alert-success">
+        Cadastro realizado com sucesso!
+      </div>
+
+      <div class="alert alert-warning">
+        Alguns itens não foram atualizados!
+      </div>
+
+      <div class="alert alert-danger">
+        <strong>Erro!</strong> Os dados não foram gravados!
+      </div>
+
+      <img src="../../img/dv.jpg" alt="Lorde" class="img-rounded">
+
+      <img src="../../img/dv.jpg" alt="Lorde" class="img-thumbnail">
+
+      <img src="../../img/dv.jpg" alt="Lorde" class="img-circle">
+
+      <h1>Cadastro de alunos(as)</h1>
+
+      <form action="#" class="form-horizontal">
+
+        <div class="form-group">
+          <label for="nome" class="control-label col-sm-2">Nome</label>
+
+          <div class="col-sm-10">
+            <input type="text" name="nome" class="form-control" placeholder="Seu nome">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rua">Rua</label>
+          <input type="text" name="rua" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="mail">E-mail</label>
+          <input type="email" name="mail" class="form-control" placeholder="usuario@dominio.com">
+        </div>
+
+        <div class="checkbox">
+          <label>
+              <input type="checkbox" name="area" value="1">Web
+          </label>
+        </div>
+
+        <div class="checkbox disabled">
+          <label>
+              <input type="checkbox" name="area" value="2" disabled>Banco de Dados
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="genero" value="F">Feminino
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="genero" value="M">Masculino
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="genero" value="N">Não binário
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="cidade">Cidade:</label>
+          <select class="form-control" id="cidade">
+            <option value="1">João Monlevade</option>
+            <option value="2">Itabira</option>
+            <option value="3">Itabira</option>
+          </select>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+      </form>
+
+  </div>
+
+
+
+
+
+
+  </body>
+</html>
