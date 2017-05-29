@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cálculo em JS com Form</title>
+
+  <link rel="stylesheet" href="../02-css/bootstrap/css/bootstrap.css">
+
+  <script>
+
+  function calcular() {
+
+    if (document.dados.n1.value.length == 0) {
+      window.alert("Informe o primeiro numero!");
+      document.dados.n1.focus();
+      return;
+    } else if (document.dados.n2.value.length == 0) {
+      window.alert("Informe o segundo numero!");
+      document.dados.n2.focus();
+      return;
+    }
+
+    var n1 = parseInt(document.dados.n1.value);
+    var n2 = parseInt(document.dados.n2.value);
+
+    if (isNaN(n1)) {
+      window.alert("Informe o primeiro numero corretamente!");
+      document.dados.n1.value = "";
+      document.dados.n1.focus();
+      return;
+    } else if (isNaN(n2)) {
+      window.alert("Informe o segundo numero corretamente!");
+      document.dados.n2.value = "";
+      document.dados.n2.focus();
+      return;
+    }
+
+
+    var res = n1 + n2;
+    document.dados.resultado.value = res;
+
+  }
+  </script>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Validação e cálculo com JS</h1>
+    </div>
+
+    <form name="dados">
+
+      <div class="form-group" action="#">
+        <label for="n1">Primeiro número</label>
+        <input type="text" name="n1" class="form-control" placeholder="123456">
+      </div>
+
+      <div class="form-group">
+        <label for="n2">Segundo número</label>
+        <input type="text" name="n2" class="form-control" placeholder="123456">
+      </div>
+
+      <div class="form-group">
+        <label for="resultado">Resultado</label>
+        <input type="text" name="resultado" class="form-control" placeholder="123456" disabled="disabled">
+      </div>
+
+      <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+
+      <input type="reset" class="btn btn-primary" value="Limpar">
+
+    </form>
+  </div>
+</body>
+</html>
