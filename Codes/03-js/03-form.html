@@ -10,31 +10,32 @@
 
   function calcular() {
 
-    if (document.dados.n1.value.length == 0) {
-      window.alert("Informe o primeiro numero!");
-      document.dados.n1.focus();
-      return;
-    } else if (document.dados.n2.value.length == 0) {
-      window.alert("Informe o segundo numero!");
-      document.dados.n2.focus();
-      return;
-    }
-
     var n1 = parseInt(document.dados.n1.value);
     var n2 = parseInt(document.dados.n2.value);
 
-    if (isNaN(n1)) {
-      window.alert("Informe o primeiro numero corretamente!");
+    if (document.dados.n1.value.length == 0 || isNaN(n1)) {
+      //window.alert("Informe o primeiro numero corretamente!");
+      document.getElementById("grupoN1").classList.add("has-error");
+      document.getElementById("alertN1").style.display = "block";
       document.dados.n1.value = "";
       document.dados.n1.focus();
       return;
-    } else if (isNaN(n2)) {
-      window.alert("Informe o segundo numero corretamente!");
+    }
+
+    document.getElementById("grupoN1").classList.remove("has-error");
+    document.getElementById("alertN1").style.display = "none";
+
+    if (document.dados.n2.value.length == 0 || isNaN(n2)) {
+      //window.alert("Informe o segundo numero corretamente!");
+      document.getElementById("grupoN2").classList.add("has-error");
+      document.getElementById("alertN2").style.display = "block";
       document.dados.n2.value = "";
       document.dados.n2.focus();
       return;
     }
 
+    document.getElementById("grupoN2").classList.remove("has-error");
+    document.getElementById("alertN2").style.display = "none";
 
     var res = n1 + n2;
     document.dados.resultado.value = res;
@@ -53,14 +54,20 @@
 
     <form name="dados">
 
-      <div class="form-group" action="#">
+      <div id="grupoN1" class="form-group">
         <label for="n1">Primeiro número</label>
         <input type="text" name="n1" class="form-control" placeholder="123456">
+        <div class="alert alert-danger" style="display: none" id="alertN1">
+            Informe o primeiro número corretamente.
+        </div>
       </div>
 
-      <div class="form-group">
+      <div id="grupoN2" class="form-group">
         <label for="n2">Segundo número</label>
         <input type="text" name="n2" class="form-control" placeholder="123456">
+        <div class="alert alert-danger" style="display: none" id="alertN2">
+            Informe o segundo número corretamente.
+        </div>
       </div>
 
       <div class="form-group">
