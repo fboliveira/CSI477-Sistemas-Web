@@ -34,7 +34,16 @@ $(document).ready(function(){
 
   });
 
+  $("button[name='validar']").click(function(){
 
+    if ($("#estado").val() == "0") {
+      alert("Selecione o estado!");
+      $("#estado").focus();
+    } else {
+      alert($("#estado option:selected").text());
+    }
+
+  });
 
 
 
