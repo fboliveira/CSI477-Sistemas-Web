@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/alunos', function() {
+    $alunos = DB::table('alunos')->get();
+    return $alunos;
+});
