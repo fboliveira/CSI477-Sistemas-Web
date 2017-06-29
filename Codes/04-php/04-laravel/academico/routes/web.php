@@ -11,11 +11,16 @@
 |
 */
 
+use App\Aluno;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/alunos', function() {
-    $alunos = DB::table('alunos')->get();
-    return $alunos;
-});
+// Route::get('/alunos', function() {
+//     //$alunos = DB::table('alunos')->get();
+//     $alunos = Aluno::all();
+//     return $alunos;
+// });
+
+Route::get('/alunos', 'AlunosController@index'); 
