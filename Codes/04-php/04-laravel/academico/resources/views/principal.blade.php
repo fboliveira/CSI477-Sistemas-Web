@@ -6,6 +6,9 @@
   </head>
   <body>
 
+    <a href="/cidades">Cidades</a>
+    <a href="/alunos">Alunos</a>
+
     @yield('conteudo')
 
   </body>
