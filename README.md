@@ -7,7 +7,7 @@ Here are available lecture notes and codes on CSI477 - Sistemas Web I course at 
 
 License: [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Best regards,
+Best regards,  
 Fernando.
 
 [Contact and info.](https://sites.google.com/site/fboliveiraufop/)

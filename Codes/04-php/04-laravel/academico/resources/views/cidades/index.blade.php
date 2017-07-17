@@ -7,7 +7,8 @@
   <a href="/cidades/create">Inserir</a> <br>
 
   @foreach($cidades as $c)
-    {{ $c->nome }}-{{ $c->estado->sigla }} <br>
+    <a href="/cidades/{{ $c->id }}">
+      {{ $c->nome }}-{{ $c->estado->sigla }}</a><br>
   @endforeach
 
 @endsection

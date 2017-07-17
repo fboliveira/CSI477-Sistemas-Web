@@ -11,3 +11,4 @@
 09 - Incluir a lista de alunos no menu; personalizar a apresentação da lista (Bootstrap) (19/06/2017)
 
 10 - Laravel: Estados e Alunos -> model, controller (resource) -> index, create/store (10/07/2017)
+11 - Laravel: Estados e Alunos -> model, controller (resource) -> show, edit/update (13/07/2017)

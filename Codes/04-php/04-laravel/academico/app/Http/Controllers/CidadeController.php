@@ -53,7 +53,7 @@ class CidadeController extends Controller
      */
     public function show(Cidade $cidade)
     {
-        //
+        return view('cidades.show')->with('cidade', $cidade);
     }
 
     /**
@@ -64,7 +64,10 @@ class CidadeController extends Controller
      */
     public function edit(Cidade $cidade)
     {
-        //
+        $estados = Estado::orderBy('nome')->get();
+        return view('cidades.edit')
+                  ->with('cidade', $cidade)
+                  ->with('estados', $estados);
     }
 
     /**
@@ -76,7 +79,11 @@ class CidadeController extends Controller
      */
     public function update(Request $request, Cidade $cidade)
     {
-        //
+        //dd($request);
+        $cidade->nome = $request->nome;
+        $cidade->estado_id = $request->estado_id;
+        $cidade->save();
+        return redirect('/cidades');
     }
 
     /**
