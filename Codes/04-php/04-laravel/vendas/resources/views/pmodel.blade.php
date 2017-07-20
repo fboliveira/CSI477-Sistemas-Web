@@ -23,7 +23,6 @@
 </head>
 <body>
 
-<!-- TOPO -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -32,15 +31,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">{{ env('APP_NAME') }}</a>
+      <a class="navbar-brand" href="#">{{ env('APP_NAME') }}</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home</a></li>
-        <li><a href="/produtos">Produtos</a></li>
-        <li><a href="/entradas">Entradas</a></li>
-        <li><a href="/compras">Compras</a></li>
-        <li><a href="/users">Usuários</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Entradas</a></li>
+        <li><a href="#">Compras</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -49,20 +47,16 @@
   </div>
 </nav>
 
-<!-- Apresentacao -->
-<!--
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>My Portfolio</h1>
-    <p>Some text that represents "Me"...</p>
+
+    @yield('apresentacao')
+
   </div>
 </div>
--->
 
-<!-- Conteudo -->
 @yield('conteudo')
 
-<!--
 <div class="container-fluid bg-3 text-center">
   <h3>Some of my Work</h3><br>
   <div class="row">
@@ -105,9 +99,7 @@
     </div>
   </div>
 </div><br><br>
--->
 
-<!-- Rodape -->
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
