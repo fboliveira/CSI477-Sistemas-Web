@@ -20,3 +20,4 @@ Route::get('/', function() {
 });
 
 Route::resource('/produtos', 'ProdutosController');
+Route::resource('/fornecedores', 'FornecedorController');

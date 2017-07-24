@@ -38,6 +38,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home</a></li>
         <li><a href="/produtos">Produtos</a></li>
+        <li><a href="/fornecedores">Fornecedores</a></li>
         <li><a href="/entradas">Entradas</a></li>
         <li><a href="/compras">Compras</a></li>
         <li><a href="/users">Usuários</a></li>

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Fornecedor;
 use Illuminate\Http\Request;
-use App\Produto;
 
-class ProdutosController extends Controller
+class FornecedorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,9 @@ class ProdutosController extends Controller
      */
     public function index()
     {
-        $produtos = Produto::all();
-        return view('produtos.index')->with('produtos', $produtos);
+        $fornecedores = Fornecedor::all();
+        return view ('fornecedores.index')->with('fornecedores', $fornecedores);
+
     }
 
     /**
@@ -42,10 +43,10 @@ class ProdutosController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Fornecedor  $fornecedor
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Fornecedor $fornecedor)
     {
         //
     }
@@ -53,10 +54,10 @@ class ProdutosController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Fornecedor  $fornecedor
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Fornecedor $fornecedor)
     {
         //
     }
@@ -65,10 +66,10 @@ class ProdutosController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Fornecedor  $fornecedor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Fornecedor $fornecedor)
     {
         //
     }
@@ -76,10 +77,10 @@ class ProdutosController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Fornecedor  $fornecedor
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Fornecedor $fornecedor)
     {
         //
     }
