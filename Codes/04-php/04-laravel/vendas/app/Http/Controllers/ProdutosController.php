@@ -25,7 +25,7 @@ class ProdutosController extends Controller
      */
     public function create()
     {
-        //
+        return view('produtos.create');
     }
 
     /**
@@ -36,7 +36,8 @@ class ProdutosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Produto::create( $request->all() );
+        return redirect('/produtos');
     }
 
     /**
@@ -56,9 +57,12 @@ class ProdutosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Produto $produto)
     {
-        //
+        //dd($id);
+        //$produto = Produto::find($id);
+        return view('produtos.edit')
+                  ->with('produto', $produto);
     }
 
     /**
@@ -68,9 +72,12 @@ class ProdutosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Produto $produto)
     {
-        //
+        $produto->nome = $request->nome;
+        $produto->preco = $request->preco;
+        $produto->save();
+        return redirect('/produtos');
     }
 
     /**

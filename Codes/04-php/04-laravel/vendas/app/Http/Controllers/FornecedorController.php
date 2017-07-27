@@ -26,7 +26,7 @@ class FornecedorController extends Controller
      */
     public function create()
     {
-        //
+        return view('fornecedores.create');
     }
 
     /**
@@ -37,7 +37,8 @@ class FornecedorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Fornecedor::create($request->all());
+        return redirect('/fornecedores');
     }
 
     /**
