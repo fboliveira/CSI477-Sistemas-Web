@@ -20,4 +20,9 @@ Route::get('/', function() {
 });
 
 Route::resource('/produtos', 'ProdutosController');
-Route::resource('/fornecedores', 'FornecedorController');
+Route::resource('/fornecedores', 'FornecedorController',
+  ['parameters' => [ 'fornecedores' => 'fornecedor' ]]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h1>Inserir produto</h1>
+<h1>Inserir fornecedor</h1>
 <a href="/fornecedores">Voltar</a>
 
 <form method="post" action="/fornecedores">

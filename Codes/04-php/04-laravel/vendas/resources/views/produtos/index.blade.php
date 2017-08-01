@@ -21,8 +21,8 @@
   <td>{{ $p->id }}</td>
   <td>{{ $p->nome }}</td>
   <td>{{ $p->preco }}</td>
-  <td><a href="/produtos/{{ $p->id }}/edit">Editar</a></td>
-  <td><a href="#">Excluir</a></td>
+  <td><a href="/produtos/{{ $p->id }}/edit"><i class="fa fa-pencil fa-fw"></i>Editar</a></td>
+  <td><a href="/produtos/{{ $p->id }}"><i class="fa fa-trash-o fa-fw"></i> Excluir</a></td>
 </tr>
 @endforeach
 </tbody>
