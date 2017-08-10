@@ -23,6 +23,7 @@ Route::resource('/produtos', 'ProdutosController');
 Route::resource('/fornecedores', 'FornecedorController',
   ['parameters' => [ 'fornecedores' => 'fornecedor' ]]);
 
-Auth::routes();
+Route::resource('/entradas', 'EntradaController');
 
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

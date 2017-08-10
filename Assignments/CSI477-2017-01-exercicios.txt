@@ -7,8 +7,3 @@
 06 - Cálculo de IMC. (08/06/2017 - sala)
 07 - Validação do formulário de cadastro com JavaScript ou jQuery. (08/06/2017)
 08 - Exibir todos os dados do Formulário de Cadastrado (Bootstrap) (12/06/2017)
-
-09 - Incluir a lista de alunos no menu; personalizar a apresentação da lista (Bootstrap) (19/06/2017)
-
-10 - Laravel: Estados e Alunos -> model, controller (resource) -> index, create/store (10/07/2017)
-11 - Laravel: Estados e Alunos -> model, controller (resource) -> show, edit/update (13/07/2017)

@@ -25,9 +25,12 @@
   <td>{{ $f->telefone }}</td>
   <td><a href="/fornecedores/{{ $f->id }}/edit"><i class="fa fa-pencil fa-fw"></i>Editar</a></td>
   <td><a href="/fornecedores/{{ $f->id }}"><i class="fa fa-trash-o fa-fw"></i> Excluir</a></td>
+
 </tr>
 @endforeach
 </tbody>
 </table>
+
+<h2></h2>
 
 @endsection
