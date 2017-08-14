@@ -5,6 +5,10 @@
 <h1>Fornecedores</h1>
 <a class="btn btn-primary" href="/fornecedores/create">Inserir</a>
 
+@if(Session::has('message'))
+<p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+@endif
+
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
@@ -19,6 +23,7 @@
   <tbody>
 @foreach($fornecedores as $f)
 <tr>
+
   <td>{{ $f->id }}</td>
   <td>{{ $f->nome }}</td>
   <td>{{ $f->nomeFantasia }}</td>

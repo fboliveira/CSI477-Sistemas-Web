@@ -19,6 +19,9 @@ class FornecedorController extends Controller
      */
     public function index()
     {
+        //session()->flash('message', 'This is a message!');
+        //session()->flash('alert-class', 'alert-warning');
+
         $fornecedores = Fornecedor::all();
         return view ('fornecedores.index')->with('fornecedores', $fornecedores);
 

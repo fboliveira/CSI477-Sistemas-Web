@@ -15,9 +15,11 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', function() {
-    return view('principal');
-});
+// Loja
+Route::get('/', 'LojaController@index');
+Route::get('/loja/view/{produto}', 'LojaController@view');
+Route::post('/carrinho/adicionar/{produto}', 'CarrinhoController@add');
+
 
 Route::resource('/produtos', 'ProdutosController');
 Route::resource('/fornecedores', 'FornecedorController',
