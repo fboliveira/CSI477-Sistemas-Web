@@ -19,7 +19,8 @@ Route::get('/welcome', function () {
 Route::get('/', 'LojaController@index');
 Route::get('/loja/view/{produto}', 'LojaController@view');
 Route::post('/carrinho/adicionar/{produto}', 'CarrinhoController@add');
-
+Route::get('/carrinho', 'CarrinhoController@view' );
+Route::get('carrinho/comprar', 'CarrinhoController@store');
 
 Route::resource('/produtos', 'ProdutosController');
 Route::resource('/fornecedores', 'FornecedorController',

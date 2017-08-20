@@ -44,6 +44,8 @@ class ProdutosController extends Controller
     public function store(Request $request)
     {
         Produto::create( $request->all() );
+        $request->session()->flash('mensagem', 'Produto inserido com sucesso!');
+        $request->session()->flash('tipo', 'alert-danger');
         return redirect('/produtos');
     }
 

@@ -87,6 +87,10 @@
 </div>
 -->
 
+@if (Session::has('mensagem'))
+  <p class="alert {{ Session::get('tipo') }}">{{ Session::get('mensagem') }}</p>
+@endif
+
 <!-- Conteudo -->
 @yield('conteudo')
 
