@@ -1,9 +1,0 @@
-00 - Menu principal (atualizado com as opções)
-01 - Formulário de cadastro (11/05/2017)
-02 - Tabela - lista (15/05/2017)
-03 - Formulário de cadastro + CSS
-04 - Formulário de cadastro + Bootstrap
-05 - Tela de apresentação/inicial de um sistema (com Bootstrap/grids)
-06 - Cálculo de IMC. (08/06/2017 - sala)
-07 - Validação do formulário de cadastro com JavaScript ou jQuery. (08/06/2017)
-08 - Exibir todos os dados do Formulário de Cadastrado (Bootstrap) (12/06/2017)
