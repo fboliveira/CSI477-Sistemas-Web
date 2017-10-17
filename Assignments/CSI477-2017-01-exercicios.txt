@@ -1,2 +1,4 @@
-01 - Menu principal (10/10/2017)
-02 - Formulário de Cadastro (10/10/2017) 
+01 - Menu principal (10/10/2017) [Cadastrar, Listar, Lançar]
+02 - Formulário de Cadastro (10/10/2017)
+03 - Relatório de cadastro (17/10/2017)
+04 - Validar: https://validator.w3.org
