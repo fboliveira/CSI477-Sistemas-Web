@@ -1,0 +1,30 @@
+/* Seletor */
+h1 {
+    font-family: arial;
+    color: #FF0000;
+    font-size: 26pt;
+}
+
+p {
+  font-size: 12pt;
+  font-family: tahoma, arial, times;
+  background-color: #c6c6c6;
+}
+
+/* Seletor -> classe */
+p.maior {
+  font-size: 36pt;
+}
+
+/* Genérica */
+.maiorgen {
+  font-size: 48pt;
+  color: green;
+}
+
+/* Id */
+#codigo {
+  background-color: blue;
+  color: yellow;
+  border: 2px solid red;
+}

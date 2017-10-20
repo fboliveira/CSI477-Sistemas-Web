@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução ao CSS</title>
+
+    <style type="text/css">
+      /* Seletor */
+      h1 {
+          font-family: arial;
+          color: #FF0000;
+          font-size: 26pt;
+      }
+
+      p {
+        font-size: 12pt;
+        font-family: tahoma, arial, times;
+        background-color: #c6c6c6;
+      }
+
+      /* Seletor -> classe */
+      p.maior {
+        font-size: 36pt;
+      }
+
+      /* Genérica */
+      .maiorgen {
+        font-size: 48pt;
+        color: green;
+      }
+
+      /* Id */
+      #codigo {
+        background-color: blue;
+        color: yellow;
+        border: 2px solid red;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Conteúdo CSS</h1>
+    <h2 class="maiorgen">Introdução</h2>
+    <h3 class="maiorgen">Seletores</h3>
+
+    <p class="maior">Modos de utilização</p>
+    <p style="font-size:20pt; color:#6666ff">CSS inline</p>
+
+    <div id="codigo">
+      <p>Código do(a) aluno(a)</p>
+    </div>
+
+    <input type="text" id="codigo">
+
+  </body>
+</html>
