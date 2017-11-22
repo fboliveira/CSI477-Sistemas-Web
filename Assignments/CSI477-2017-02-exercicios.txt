@@ -3,3 +3,4 @@
 03 - Relatório de cadastro (17/10/2017)
 04 - Validar: https://validator.w3.org
 05 - CSS: menu e formulário de cadastro (19/10/2017)
+06 - Bootstrap: menu e formulário de cadastro (21/11/2017)
