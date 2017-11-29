@@ -5,3 +5,4 @@
 05 - CSS: menu e formulário de cadastro (19/10/2017)
 06 - Bootstrap: menu e formulário de cadastro (21/11/2017)
 07 - Itens da atividade de reposição de 23/11/2017 (em 24/11/2017, e-mail Moodle)
+08 - Bootstrap: relatório de cadastro (28/11/2017)
