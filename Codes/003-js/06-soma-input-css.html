@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Soma - Input - CSS/Bootstrap</title>
+
+        <link rel="stylesheet" href="../002-css/bootstrap/css/bootstrap.css">
+
+        <script>
+
+        function somar() {
+
+            var x = parseInt(document.dados.valor1.value);
+            var y = parseInt(document.dados.valor2.value);
+
+            if (document.dados.valor1.value.length == 0 ||
+                    isNaN(x)) {
+                //window.alert("Informe o primeiro valor corretamente!");
+                document.getElementById("grupoV1").classList.add("has-error");
+                document.getElementById("alertaV1").style.display = "block";
+                document.dados.valor1.value = "" ;
+                document.dados.valor1.focus();
+                return;
+            }
+
+            document.getElementById("grupoV1").classList.remove("has-error");
+            document.getElementById("alertaV1").style.display = "none";
+
+            if (document.dados.valor2.value.length == 0 ||
+                isNaN(y)) {
+                    //window.alert("Informe o segundo valor corretamente!");
+                    document.getElementById("grupoV2").classList.add("has-error");
+                    document.getElementById("alertaV2").style.display = "block";
+                    document.dados.valor2.value = "" ;
+                    document.dados.valor2.focus();
+                    return;
+            }
+
+            document.getElementById("grupoV2").classList.remove("has-error");
+            document.getElementById("alertaV2").style.display = "none";
+
+
+
+            var w = x + y;
+
+                //window.alert(document.dados.valor1.value.length);
+
+                document.dados.resultado.value = w;
+
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron text-center">
+                <h2>Calcular a soma - JS/CSS-Bootstrap</h2>
+            </div>
+
+        <form name="dados">
+
+            <div id="grupoV1" class="form-group">
+                <label for="valor1">Primeiro Valor</label>
+                <input name="valor1" type="text" class="form-control">
+
+                <div class="alert alert-danger" style="display: none" id="alertaV1">
+                    Informe o primeiro número corretamente.
+                </div>
+
+            </div>
+
+            <div id="grupoV2" class="form-group">
+                <label for="valor2">Segundo Valor</label>
+                <input name="valor2" type="text" class="form-control">
+
+                <div class="alert alert-danger" style="display: none" id="alertaV2">
+                    Informe o segundo número corretamente.
+                </div>
+
+            </div>
+
+            <div id="grupoRes" class="form-group">
+                <label for="resultado">Resultado:</label>
+                <input name="resultado" type="text" disabled="disabled" class="form-control">
+            </div>
+
+            <button type="button" class="btn btn-primary"
+                    onclick="somar()">Somar</button>
+            <button type="reset" class="btn btn-primary">Limpar</button>
+        </form>
+
+    </div>
+
+
+
+
+
+
+    </body>
+</html>
