@@ -29,6 +29,18 @@ $(document).ready(function(){
         $("a").toggleClass("btn btn-warning");
     });
 
+    $("button[name='validar']").click(function(){
+        if ($("#estado").val() == "0") {
+            alert("Selecione o estado!");
+            $("#estado").focus();
+        } else {
+            alert($("#estado option:selected").val());
+        }
+    });
+
+
+
+
 
 
 

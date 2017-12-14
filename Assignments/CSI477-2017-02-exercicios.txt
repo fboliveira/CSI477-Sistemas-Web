@@ -6,3 +6,5 @@
 06 - Bootstrap: menu e formulário de cadastro (21/11/2017)
 07 - Itens da atividade de reposição de 23/11/2017 (em 24/11/2017, e-mail Moodle)
 08 - Bootstrap: relatório de cadastro (28/11/2017)
+09 - Cálculo IMC - Javascript - Extra
+10 - Cálculo IMC - jQuery (14/12/2017)
