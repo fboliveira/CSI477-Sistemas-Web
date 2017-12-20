@@ -8,3 +8,4 @@
 08 - Bootstrap: relatório de cadastro (28/11/2017)
 09 - Cálculo IMC - Javascript - Extra
 10 - Cálculo IMC - jQuery (14/12/2017)
+11 - PHP: validar.php -> exibir as informações do Formulário de Cadastro (19/12/2017)
