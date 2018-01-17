@@ -10,3 +10,4 @@
 10 - Cálculo IMC - jQuery (14/12/2017)
 11 - PHP: validar.php -> exibir as informações do Formulário de Cadastro (19/12/2017)
 12 - Cálculo IMC - HTML/Boostrap/PHP (21/12/2017)
+13 - PHP+MYSQL - lista de alunos, estados e cidades - apresentação em tabela/Bootstrap (16/01/2017)
