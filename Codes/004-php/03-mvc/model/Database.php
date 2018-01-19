@@ -27,7 +27,7 @@ class Database {
 
   public function getDB() {
 
-    if ($db === null) {
+    if ($this->db === null) {
       $db = new PDO('mysql:host=localhost;dbname=academico', 'sistemaweb', '123456');
     }
 

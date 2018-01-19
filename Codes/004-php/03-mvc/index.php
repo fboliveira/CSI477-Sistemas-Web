@@ -7,6 +7,7 @@
   <body>
 
     <!-- Links //-->
+    <a href="router.php?op=1">Listart alunos(as)</a>
 
   </body>
 </html>

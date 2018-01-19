@@ -13,6 +13,14 @@
       </tr>
 
       <!-- Dados dos alunos //-->
+      <?php foreach($lista as $aluno): ?>
+          <tr>
+              <td><?= $aluno['id'] ?></td>
+              <td><?= $aluno['nome'] ?></td>
+          </tr>
+      <?php endforeach ?>
+
+
 
     </table>
 
