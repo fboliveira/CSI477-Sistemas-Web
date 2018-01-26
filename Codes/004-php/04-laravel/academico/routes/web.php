@@ -16,7 +16,9 @@ Route::get('/info', function () {
 });
 
 Route::get('/', function(){
-    echo "Página principal";
+    return view('layout.principal');
 });
 
 Route::get('/listar', 'AlunosController@listar');
+
+Route::resource('/estados', 'EstadosController');

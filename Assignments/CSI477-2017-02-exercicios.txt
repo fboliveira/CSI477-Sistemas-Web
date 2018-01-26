@@ -12,3 +12,5 @@
 12 - Cálculo IMC - HTML/Boostrap/PHP (21/12/2017)
 13 - PHP+MYSQL - lista de alunos, estados e cidades - apresentação em tabela/Bootstrap (16/01/2017)
 14 - PHP: MVC - lista de alunos, estados e cidades - apresentação em tabela/Bootstrap (18/01/2017)
+15 - Laravel: definir o layout/template principal (CSS/Bootstrap, AdminLTE) (25/01/2018)
+16 - Laravel: Estrutura - Model e Controller (resource) - cidades (25/01/2018)

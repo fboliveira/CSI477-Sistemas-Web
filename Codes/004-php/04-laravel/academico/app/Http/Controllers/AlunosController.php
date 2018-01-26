@@ -12,7 +12,13 @@ class AlunosController extends Controller {
         $alunos = Aluno::all();
 
         // Invocar a view passando os dados
-        dd($alunos);
+        // WITH
+        return view('alunos.listar')
+            ->with('alunos', $alunos);
+
+        // OU -> compact
+        //return view('alunos.listar',
+        //    compact('alunos'));
 
     }
 
