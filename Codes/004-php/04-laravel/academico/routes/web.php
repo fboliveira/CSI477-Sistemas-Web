@@ -22,3 +22,4 @@ Route::get('/', function(){
 Route::get('/listar', 'AlunosController@listar');
 
 Route::resource('/estados', 'EstadosController');
+Route::resource('/cidades', 'CidadesController');
