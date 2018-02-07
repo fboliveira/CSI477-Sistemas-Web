@@ -22,6 +22,7 @@
       <!-- LINKS //-->
       <p><a href="{{ url('/') }}">Principal</a></p>
       <p><a href="{{ url('/listar') }}">Alunos</a></p>
+      <p><a href="{{ url('/cidades') }}">Cidades</a></p>
       <p><a href="{{ url('/info') }}">Informações</a></p>
 
       <!-- CONTEUDO //-->
