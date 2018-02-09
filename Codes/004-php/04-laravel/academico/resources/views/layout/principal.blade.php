@@ -19,6 +19,16 @@
   </head>
   <body>
 
+      @if ( Session::has('mensagem') )
+        <p class="alert
+            @if ( Session::has('tipo') )
+                {{ Session::get('tipo') }}
+            @else
+                alert-info
+            @endif
+        ">{{ Session::get('mensagem') }}</p>
+     @endif
+
       <!-- LINKS //-->
       <p><a href="{{ url('/') }}">Principal</a></p>
       <p><a href="{{ url('/listar') }}">Alunos</a></p>

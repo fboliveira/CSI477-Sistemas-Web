@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class CidadesController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -44,6 +49,7 @@ class CidadesController extends Controller
         // $cidade->estado_id = $request->estado_id;
         // $cidade->save();
         Cidade::create($request->all());
+        $request->session()->flash('mensagem', 'Cidade inserida com sucesso!');
         return redirect('/cidades');
     }
 
@@ -67,7 +73,11 @@ class CidadesController extends Controller
      */
     public function edit(Cidade $cidade)
     {
-        //
+        $estados = Estado::orderBy('nome')->get();
+        return view('cidades.edit')
+            ->with('cidade', $cidade)
+            ->with('estados', $estados);
+
     }
 
     /**
@@ -79,7 +89,12 @@ class CidadesController extends Controller
      */
     public function update(Request $request, Cidade $cidade)
     {
-        //
+        //dd($request->all());
+        $cidade->nome = $request->nome;
+        $cidade->estado_id = $request->estado_id;
+        $cidade->save();
+        $request->session()->flash('mensagem', 'Cidade atualizada com sucesso!');
+        return redirect('/cidades');
     }
 
     /**
@@ -90,6 +105,10 @@ class CidadesController extends Controller
      */
     public function destroy(Cidade $cidade)
     {
-        //
+        //dd($cidade);
+        $cidade->delete();
+        session()->flash('mensagem', 'Cidade excluída com sucesso!');
+        session()->flash('tipo', 'alert-danger');
+        return redirect('/cidades');
     }
 }

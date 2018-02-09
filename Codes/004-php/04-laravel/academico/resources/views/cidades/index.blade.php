@@ -20,8 +20,8 @@
         <tr>
             <td>{{ $c->nome }}</td>
             <td>{{ $c->estado->sigla }}</td>
-            <td><a href="/cidades/{{ $c->id }}">Exibir</a> 
-            <td>Editar</td>
+            <td><a href="/cidades/{{ $c->id }}">Exibir</a>
+            <td><a href="/cidades/{{ $c->id }}/edit">Editar</a></td>
             <td>Excluir</td>
         </tr>
     @endforeach

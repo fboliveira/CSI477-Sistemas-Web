@@ -23,3 +23,7 @@ Route::get('/listar', 'AlunosController@listar');
 
 Route::resource('/estados', 'EstadosController');
 Route::resource('/cidades', 'CidadesController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
