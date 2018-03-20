@@ -10,6 +10,6 @@ License: [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by
 Best regards,  
 Fernando B Oliveira.
 
-[Contact and info.](fbo.fernando@gmail.com)
+[Contact and info.](mailto:fbo.fernando@gmail.com)
 
 --------------

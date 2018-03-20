@@ -1,3 +1,5 @@
 # Exercícios:
 
-01 - criar uma página principal com um menu e as seguintes opções: cadastrar, listar e sair.
+01 - criar uma página principal com um menu e as seguintes opções: cadastrar, listar e sair. (15/03/2018)
+
+02 - formulário de cadastro; link menu (20/03/2018)
