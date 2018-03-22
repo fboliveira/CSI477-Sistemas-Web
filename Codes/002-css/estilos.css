@@ -1,0 +1,32 @@
+h1 {
+  color: red;
+  font-family: arial;
+  font-size: 20pt;
+}
+
+p {
+  font-family: arial;
+  text-align: justify;
+  font-size: 12pt;
+}
+
+h2.info {
+  color: #c6c6c6;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.destaque {
+  font-size: 14pt;
+  color: #a3c599;
+  background-color: blue;
+  font-family: tahoma;
+  font-weight: bold;
+}
+
+#codigo {
+  border-color: #c6c6c6;
+  color: blue;
+  border-style: solid;
+  border-radius: 15px;
+}
