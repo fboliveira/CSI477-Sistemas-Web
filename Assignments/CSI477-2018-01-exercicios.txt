@@ -9,3 +9,5 @@
 04 - CSS - menu, cadastro, lista (22/03/2018)
 
 05 - Boostrap - menu, cadastro, lista (05/04/2018)
+
+06 - Validar formulário de cadastro - JS/jQuery (19/04/2018)
