@@ -1,8 +1,14 @@
 <?php
 
     //var_dump($_POST);
-    $nome = $_POST["usuario"];
-    $senha = $_POST["senha"];
+
+    if (isset($_POST["usuario"])) {
+        $nome = $_POST["usuario"] . " (post)";
+        $senha = $_POST["senha"];
+    } else {
+      $nome = $_GET["usuario"]  . " (get)";
+      $senha = $_GET["senha"];
+    }
 
     echo "Seja bem-vindo(a) " . $nome. "<br>";
-    echo 'A sua senha é $senha';
+    echo "A sua senha é $senha:";
