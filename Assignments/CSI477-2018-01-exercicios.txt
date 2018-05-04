@@ -11,3 +11,5 @@
 05 - Boostrap - menu, cadastro, lista (05/04/2018)
 
 06 - Validar formulário de cadastro - JS/jQuery (19/04/2018)
+
+07 - PHP: MVC: listar alunos, estados, cidades (CSS/Boostrap) (03/05/2018).
