@@ -8,6 +8,7 @@
 
     <!-- Links //-->
     <a href="router.php?op=1">Listar alunos</a>
+    <a href="router.php?op=2">Inserir cidade</a>
 
   </body>
 </html>
