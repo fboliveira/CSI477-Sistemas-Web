@@ -26,9 +26,12 @@ class CidadesController {
     $nome = $request['nome'];
     $estado_id = $request['estado_id'];
 
-    $cidade = new Cidade($nome, $estado_id);
-    //$cidade->save();
-    //redirect();
+    $cidade = new Cidade();
+    $cidade->setNome($nome);
+    $cidade->setEstadoId($estado_id);
+    $cidade->save();
+
+    $cidade->listar();
 
 
   }

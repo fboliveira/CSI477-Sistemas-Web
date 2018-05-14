@@ -22,5 +22,15 @@ if ( $op == 1 ) {
   $cidadeController = new CidadesController;
   $cidadeController->create();
 } else if ( $op == 3 ) {
-  var_dump($_POST);
+  //var_dump($_POST);
+  $cidadeController = new CidadesController;
+  $cidadeController->store($_POST);
+
+
+
+
+
+
+
+
 }
