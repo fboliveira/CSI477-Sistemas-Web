@@ -39,10 +39,10 @@ class Cidade {
   }
 
   public function all() {
-    $sql = "SELECT * FROM cidades ORDER BY nome";
+    $sql = "SELECT cidades.*, estados.sigla FROM cidades INNER JOIN estados on cidades.estado_id = estados.id ORDER BY id DESC";
     return $this->db->query($sql);
   }
-
+  
   public function save() {
 
     if ( $this->id == 0 ) {

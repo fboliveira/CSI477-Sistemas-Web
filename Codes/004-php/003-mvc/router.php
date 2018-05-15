@@ -25,12 +25,7 @@ if ( $op == 1 ) {
   //var_dump($_POST);
   $cidadeController = new CidadesController;
   $cidadeController->store($_POST);
-
-
-
-
-
-
-
-
+} else if ( $op == 4 ) {
+  $cidadeController = new CidadesController;
+  $cidadeController->listar();
 }

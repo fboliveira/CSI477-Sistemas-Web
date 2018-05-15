@@ -8,7 +8,14 @@ use Model\Estado;
 class CidadesController {
 
   public function listar() {
+    // Acesso ao Modelo
+    $cidade = new Cidade;
 
+    // Manipular dados
+    $lista = $cidade->all();
+
+    // Invocar a View
+    include './view/cidades/lista.php';
   }
 
   // Exibir o formulario para insercao da cidade
@@ -31,11 +38,19 @@ class CidadesController {
     $cidade->setEstadoId($estado_id);
     $cidade->save();
 
-    $cidade->listar();
+    session_start();
+    $_SESSION['mensagem'] = "Cidade inserida com sucesso!";
+
+    //$this->listar();
+    $this->redir();
 
 
   }
 
+  private function redir() {
+    header("Location: http://localhost:8080");
+    exit();
+  }
 
 
 
