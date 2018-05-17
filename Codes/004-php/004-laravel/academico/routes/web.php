@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/sobre', function(){
+  return 'Olá, mundo!';
+});
