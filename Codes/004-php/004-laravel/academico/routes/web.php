@@ -11,10 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function(){
+    return view('layout.principal');
+});
+
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
 Route::get('/sobre', function(){
   return 'Olá, mundo!';
 });
+
+Route::resource('/estados', 'EstadosController');
