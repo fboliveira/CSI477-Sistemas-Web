@@ -26,7 +26,7 @@ class EstadosController extends Controller
      */
     public function create()
     {
-        //
+        return view ('estados.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class EstadosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**

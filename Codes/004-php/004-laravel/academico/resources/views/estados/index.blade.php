@@ -1,27 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Lista de Estados</title>
-  </head>
-  <body>
+@extends('layout.principal')
+
+@section('conteudo')
+
+    <br>
+    <!-- URL a partir do nome da rota //-->
+    <a href="{{ route('estados.create') }}">Inserir estado</a>
+    <table class="table table-striped">
+
+      <tr>
+        <th>Código</th>
+        <th>Estado</th>
+        <th>Sigla</th>
+      </tr>
 
     @foreach( $estados as $e )
 
-      <p>{{ $e->id }} - {{ $e->nome }} - {{ $e->sigla }}</p> 
+      <tr>
+        <td>{{ $e->id }}</td>
+        <td>{{ $e->nome }}</td>
+        <td>{{ $e->sigla }}</td>
+    </tr>
 
     @endforeach
 
+  </table>
 
 
-
-
-
-
-
-
-
-
-
-  </body>
-</html>
+@endsection('conteudo')
