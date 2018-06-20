@@ -11,6 +11,7 @@
         <th>Código</th>
         <th>Estado</th>
         <th>Sigla</th>
+        <th>Ação</th>
       </tr>
 
     @foreach( $estados as $e )
@@ -19,6 +20,7 @@
         <td>{{ $e->id }}</td>
         <td>{{ $e->nome }}</td>
         <td>{{ $e->sigla }}</td>
+        <td><a href="/estados/{{ $e->id }}">Exibir</a></td>
     </tr>
 
     @endforeach

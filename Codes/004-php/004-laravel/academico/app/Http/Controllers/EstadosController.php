@@ -37,7 +37,19 @@ class EstadosController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        //dd($request->all());
+        // Validacao
+        Estado::create($request->all());
+
+        // $estado = new Estado;
+        // $estado->nome = $request->nome;
+        // $estado->sigla = $request->sigla;
+        // $estado->save();
+
+        session()->flash('mensagem', 'Estado inserido com sucesso!');
+
+        return redirect('/estados');
+
     }
 
     /**
@@ -48,7 +60,9 @@ class EstadosController extends Controller
      */
     public function show(Estado $estado)
     {
-        //
+        //$estado = Estado::find($id);
+        return view('estados.show')
+                ->with('estado', $estado);
     }
 
     /**
