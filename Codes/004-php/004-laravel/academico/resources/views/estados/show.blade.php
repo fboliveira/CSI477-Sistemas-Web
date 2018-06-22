@@ -10,7 +10,23 @@
 
 
 <a href="/estados">Voltar</a>
-<a href="#">Editar</a>
-<a href="#">Excluir</a>
+<a href="{{ route('estados.edit', $estado->id) }}">Editar</a>
+
+<form method="post" action="{{ route('estados.destroy', $estado->id) }}"
+
+  @csrf
+  @method('DELETE')
+  <input type="submit" value="Excluir">
+
+
+</form>
+
+
+
+
+
+
+
+
 
 @endsection('conteudo')

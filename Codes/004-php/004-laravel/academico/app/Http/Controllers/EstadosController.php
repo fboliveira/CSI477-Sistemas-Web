@@ -48,7 +48,7 @@ class EstadosController extends Controller
 
         session()->flash('mensagem', 'Estado inserido com sucesso!');
 
-        return redirect('/estados');
+        return redirect()->route('estados.index');
 
     }
 
@@ -73,7 +73,8 @@ class EstadosController extends Controller
      */
     public function edit(Estado $estado)
     {
-        //
+        return view('estados.edit')
+                ->with('estado', $estado);
     }
 
     /**
@@ -85,7 +86,15 @@ class EstadosController extends Controller
      */
     public function update(Request $request, Estado $estado)
     {
-        //
+        //dd($request->all());
+        //$estado->nome = $request->nome;
+        $estado->fill($request->all());
+        //dd($estado);
+        $estado->save();
+        session()->flash('mensagem', 'Estado atualizado com sucesso!');
+
+        return redirect()->route('estados.show', $estado->id);
+
     }
 
     /**
