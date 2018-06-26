@@ -14,7 +14,7 @@
 
     <!-- LINKS //-->
     <a href="/estados">Estados</a>
-    <a href="#">Cidades</a>
+    <a href="{{ route('cidades.index') }}">Cidades</a>
     <a href="#">Alunos</a>
     <a href="#">Turmas</a>
     <a href="#">Notas</a>

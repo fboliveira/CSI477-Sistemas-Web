@@ -14,7 +14,7 @@ class EstadosController extends Controller
      */
     public function index()
     {
-        $estados = Estado::all();
+        $estados = Estado::orderBy('nome')->get();
         return view('estados.index')
                 ->with('estados', $estados);
     }
@@ -105,6 +105,9 @@ class EstadosController extends Controller
      */
     public function destroy(Estado $estado)
     {
-        //
+        $estado->delete();
+        session()->flash('mensagem', 'Estado excluído com sucesso!');
+        return redirect()->route('estados.index');
     }
+
 }
