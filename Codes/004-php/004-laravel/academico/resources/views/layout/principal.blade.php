@@ -12,10 +12,25 @@
       <p class="alert alert-info">{{ Session::get('mensagem') }}</p>
     @endif
 
+    <!-- Usuario autenticado //-->
+    @if ( Auth::check() )
+      <nav class="navbar navbar-light bg-secondary">
+        <span class="text-white">Usuário: {{ Auth::user()->name }} -
+
+        @if ( Auth::user()->type == 1 )
+          Administrador do Sistema
+        @else
+          Usuário
+        @endif
+
+        </span>
+      </nav>
+    @endif
+
     <!-- LINKS //-->
     <a href="/estados">Estados</a>
     <a href="{{ route('cidades.index') }}">Cidades</a>
-    <a href="#">Alunos</a>
+    <a href="{{ route('alunos.index') }}">Alunos</a>
     <a href="#">Turmas</a>
     <a href="#">Notas</a>
 

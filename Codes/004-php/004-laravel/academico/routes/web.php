@@ -26,3 +26,7 @@ Route::get('/sobre', function(){
 Route::resource('/estados', 'EstadosController');
 Route::resource('/cidades', 'CidadeController');
 Route::resource('/alunos', 'AlunoController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

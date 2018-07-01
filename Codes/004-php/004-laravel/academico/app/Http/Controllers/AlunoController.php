@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Aluno;
+use App\Cidade;
 use Illuminate\Http\Request;
 
 class AlunoController extends Controller
@@ -14,7 +15,8 @@ class AlunoController extends Controller
      */
     public function index()
     {
-        //
+      $alunos = Aluno::orderBy('nome')->get();
+      return view('alunos.index')->with('alunos', $alunos);
     }
 
     /**
@@ -24,7 +26,10 @@ class AlunoController extends Controller
      */
     public function create()
     {
-        //
+      // Cidades
+      $cidades = Cidade::orderBy('nome')->get();
+      return view('alunos.create')
+                ->with('cidades', $cidades);
     }
 
     /**
@@ -35,7 +40,9 @@ class AlunoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      Aluno::create($request->all());
+      $request->session()->flash('mensagem', 'Aluno inserido com sucesso!');
+      return redirect()->route('alunos.index');
     }
 
     /**
@@ -46,7 +53,8 @@ class AlunoController extends Controller
      */
     public function show(Aluno $aluno)
     {
-        //
+      return view('alunos.show')
+          ->with('aluno', $aluno);
     }
 
     /**
@@ -57,7 +65,11 @@ class AlunoController extends Controller
      */
     public function edit(Aluno $aluno)
     {
-        //
+      // Estados
+      $cidades = Cidade::orderBy('nome')->get();
+      return view('alunos.edit')
+                ->with('aluno', $aluno)
+                ->with('cidades', $cidades);
     }
 
     /**
@@ -69,7 +81,10 @@ class AlunoController extends Controller
      */
     public function update(Request $request, Aluno $aluno)
     {
-        //
+      $aluno->fill($request->all());
+      $aluno->save();
+      $request->session()->flash('mensagem', 'Aluno atualizado com sucesso!');
+      return redirect()->route('alunos.index');
     }
 
     /**
@@ -80,6 +95,8 @@ class AlunoController extends Controller
      */
     public function destroy(Aluno $aluno)
     {
-        //
+      $aluno->delete();
+      session()->flash('mensagem', 'Aluno excluído com sucesso!');
+      return redirect()->route('alunos.index');
     }
 }

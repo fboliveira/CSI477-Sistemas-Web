@@ -15,7 +15,17 @@ class CreateAlunosTable extends Migration
     {
         Schema::create('alunos', function (Blueprint $table) {
             $table->increments('id');
+
+            $table->string('nome', 100);
+            $table->integer('cidade_id')->unsigned();
+
             $table->timestamps();
+
+            // Relacao -> aluno:cidade
+            $table->foreign('cidade_id')
+                      ->references('id')
+                      ->on('cidades');
+
         });
     }
 

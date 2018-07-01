@@ -4,9 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Estado;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EstadosController extends Controller
 {
+
+    public function __construct() {
+      $this->middleware('auth');
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +34,13 @@ class EstadosController extends Controller
      */
     public function create()
     {
-        return view ('estados.create');
+        // Administrador
+        if ( Auth::user()->type == 1 ) {
+            return view ('estados.create');
+        } else {
+          session()->flash('mensagem', 'Acesso negado!');
+          return redirect('/estados');
+        }
     }
 
     /**

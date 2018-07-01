@@ -12,4 +12,16 @@ class Cidade extends Model
       return $this->belongsTo('App\Estado');
     }
 
+    public function alunos() {
+      return $this->hasMany('App\Aluno');
+    }
+
+
+
+
+
+
+
+
+
 }

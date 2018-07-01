@@ -12,7 +12,7 @@
 <a href="{{ route('cidades.index') }}">Voltar</a>
 <a href="{{ route('cidades.edit', $cidade->id) }}">Editar</a>
 
-<form method="post" action="{{ route('cidades.destroy', $cidade->id) }}">
+<form method="post" onsubmit="return confirm('Confirma exclusão da cidade?');" action="{{ route('cidades.destroy', $cidade->id) }}">
 
   @csrf
   @method('DELETE')

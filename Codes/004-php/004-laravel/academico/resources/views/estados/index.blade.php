@@ -1,6 +1,6 @@
-@extends('layout.principal')
+@extends('layouts.app')
 
-@section('conteudo')
+@section('content')
 
     <br>
     <!-- URL a partir do nome da rota //-->
@@ -28,4 +28,4 @@
   </table>
 
 
-@endsection('conteudo')
+@endsection('content')
