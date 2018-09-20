@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tabelas</title>
+
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+  </head>
+  <body>
+
+    <div class="alert alert-success">
+      Dados atualizados com sucesso!
+    </div>
+
+    <div class="alert alert-warning">
+      Dados atualizados com sucesso!
+    </div>
+
+    <div class="alert alert-danger">
+      Atenção! Dados <strong>inválidos!</strong>
+    </div>
+
+
+    <div class="table-responsive">
+
+      <table class="table table-bordered table-striped table-hover">
+
+        <caption>Turma de Web</caption>
+
+        <!-- Cabeçalho //-->
+        <thead class="thead-dark">
+          <tr>
+              <th>Matrícula</th>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Curso</th>
+              <th>Turma</th>
+          </tr>
+        </thead>
+
+        <!-- Dados //-->
+        <tbody>
+          <tr class="table-success">
+              <td>1</td>
+              <td>Ana</td>
+              <td>ana@web.com.br</td>
+              <td>SJM</td>
+              <td rowspan="4">11</td>
+          </tr>
+          <tr class="table-primary">
+              <td>2</td>
+              <td>Pedro</td>
+              <td>pedro@web.com.br</td>
+              <td>CJM</td>
+          </tr>
+
+          <tr class="table-warning">
+              <td>3</td>
+              <td>Brígida</td>
+              <td>brigida@web.com.br</td>
+              <td>EJM</td>
+          </tr>
+
+          <tr>
+              <td>4</td>
+              <td>Hugo</td>
+              <td>hugo@web.com.br</td>
+              <td>EE</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+              <td colspan="2">Total de pessoas:</td>
+              <td colspan="3">2</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+
+  </body>
+</html>
