@@ -26,23 +26,58 @@
           </li>
       </ul>
 
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a href="#" class="navbar-brand">App</a>
 
-        <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Página inicial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Cadastro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Relatório</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sair</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Página inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Relatório</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sair</a>
+              </li>
+
+              <!-- Lista de opcoes - dropdown //-->
+              <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Usuário
+                </a>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Perfil</a>
+                  <a class="dropdown-item" href="#">Preferências</a>
+                  <a class="dropdown-item" href="#">Mensagens</a>
+                  <a class="dropdown-item" href="#">Sair</a>             
+                </div>
+
+              </li>
+
+
+
+          </ul>
+
+          <!-- Formulario de pesquisa //-->
+          <form class="form-inline" action="#" method="post">
+
+            <input type="text" class="form-control">
+            <button class="btn btn-info" type="submit">Pesquisar</button>
+
+          </form>
+
+
+        </div>
 
       </nav>
 
@@ -118,7 +153,9 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   </body>
 
