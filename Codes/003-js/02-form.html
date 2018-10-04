@@ -12,27 +12,35 @@
 
   <body>
 
+    <div class="container">
+
     <form name="dados">
 
-      <div class="form-group">
-        <label for="valor1">Valor 1</label>
-        <input type="text" name="valor1" value="">
+      <div class="form-group" id="grupoV1">
+        <label for="valor1" id="labelV1">Valor 1</label>
+        <input type="text" name="valor1" value="" class="form-control">
+
+        <div class="alert alert-danger" style="display: none" id="alertaV1">
+          <span>Informe o primeiro número corretamente!</span>
+        </div>
+
       </div>
 
       <div class="form-group">
         <label for="valor2">Valor 2</label>
-        <input type="text" name="valor2" value="">
+        <input type="text" name="valor2" value="" class="form-control">
       </div>
 
       <div class="form-group">
         <label for="resultado">Resultado</label>
-        <input type="text" name="resultado" value="">
+        <input type="text" name="resultado" value="" class="form-control">
       </div>
 
       <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
 
     </form>
 
+  </div>
 
 
 
