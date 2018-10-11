@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form - validação jQuery</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="form.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+    <form name="dados">
+
+      <div class="form-group" id="grupoV1">
+        <label for="valor1" id="labelV1">Valor 1</label>
+        <input type="text" name="valor1" value="" class="form-control">
+
+        <div class="alert alert-danger" style="display: none" id="alertaV1">
+          <span>Informe o primeiro número corretamente!</span>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="valor2" id="labelV2">Valor 2</label>
+        <input type="text" name="valor2" value="" class="form-control">
+
+        <div class="alert alert-danger" style="display: none" id="alertaV2">
+          <span>Informe o segundo número corretamente!</span>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="resultado">Resultado</label>
+        <input type="text" name="resultado" value="" class="form-control">
+      </div>
+
+      <button type="button" class="btn btn-primary" name="calculo" id="btnCalcular">Calcular</button>
+
+    </form>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
