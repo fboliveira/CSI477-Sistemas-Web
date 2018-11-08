@@ -20,6 +20,9 @@
 
   //var_dump($alunos);
 
-  while ( $linha = $alunos->fetch() ) {
-    echo $linha["id"] . " - " . $linha["nome"];
-  }
+  // while ( $linha = $alunos->fetch() ) {
+  //   echo $linha["id"] . " - " . $linha["nome"] . "<br>";
+  // }
+
+  // Controller -> invocar view: parâmetros
+  require 'viewListaAlunos.php'; //$alunos
