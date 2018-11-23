@@ -16,3 +16,5 @@ Route::get('/info', 'PaginasController@about');
 
 Route::get('/lista', 'PaginasController@listar');
 Route::get('/contato', 'PaginasController@contato');
+
+Route::resource('/estados', 'EstadoController');

@@ -3,3 +3,8 @@
 01 - Criar uma página principal com um menu e as seguintes opções: cadastrar (formulário), listar (tabela) e sair (página). Apresentar - CSS (31/08/2018)
 
 02 - Criar uma página principal com um menu e as seguintes opções: cadastrar (formulário), listar (tabela) e sair (página). Apresentar - BOOTSTRAP (26/09/2018)
+
+# Laravel - academico
+03 - Cidades -> model, resource controller, view -> cidades.index
+
+04 - Alunos -> migration (nome, matricula, email, cidade_id), resource controller, view -> alunos.index
