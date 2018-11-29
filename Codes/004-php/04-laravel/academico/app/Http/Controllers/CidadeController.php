@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Cidade;
 use Illuminate\Http\Request;
-use App\Estado;
 
-class EstadoController extends Controller
+class CidadeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class EstadoController extends Controller
      */
     public function index()
     {
-        $estados = Estado::all();
-        return view('estados.index')
-                  ->with('estados', $estados);
+        //
     }
 
     /**
@@ -26,7 +24,7 @@ class EstadoController extends Controller
      */
     public function create()
     {
-        return view('estados.create');
+        //
     }
 
     /**
@@ -37,22 +35,16 @@ class EstadoController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
-        // Validação
-
-        // Gravar
-        Estado::create($request->all());
-        return redirect('/estados');
-
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Cidade  $cidade
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Cidade $cidade)
     {
         //
     }
@@ -60,10 +52,10 @@ class EstadoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Cidade  $cidade
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Cidade $cidade)
     {
         //
     }
@@ -72,10 +64,10 @@ class EstadoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Cidade  $cidade
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Cidade $cidade)
     {
         //
     }
@@ -83,10 +75,10 @@ class EstadoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Cidade  $cidade
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Cidade $cidade)
     {
         //
     }

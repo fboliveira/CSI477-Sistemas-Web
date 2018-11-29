@@ -8,3 +8,5 @@
 03 - Cidades -> model, resource controller, view -> cidades.index
 
 04 - Alunos -> migration (nome, matricula, email, cidade_id), resource controller, view -> alunos.index
+
+05 - Cidades e Alunos -> create/store;
