@@ -52,9 +52,12 @@ class EstadoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Estado $estado)
     {
-        //
+        //$id
+        //$estado = Estado::find($id);
+        return view('estados.show')
+                ->with('estado', $estado);
     }
 
     /**
@@ -63,9 +66,10 @@ class EstadoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Estado $estado)
     {
-        //
+        return view('estados.edit')
+                  ->with('estado', $estado);
     }
 
     /**
@@ -75,9 +79,18 @@ class EstadoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Estado $estado)
     {
-        //
+        //dd( $estado );
+        //dd( $request->all() );
+        // $estado->nome = $request->nome;
+        $estado->fill($request->all());
+        $estado->save();
+
+        session()->flash('mensagem', 'Estado atualizado com sucesso!');
+
+        return redirect()->route('estados.show', $estado->id);
+
     }
 
     /**

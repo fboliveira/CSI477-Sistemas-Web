@@ -10,3 +10,5 @@
 04 - Alunos -> migration (nome, matricula, email, cidade_id), resource controller, view -> alunos.index
 
 05 - Cidades e Alunos -> create/store;
+
+06 - Cidades e Alunos -> show/edit/update;

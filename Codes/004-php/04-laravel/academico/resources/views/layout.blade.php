@@ -7,6 +7,11 @@
   </head>
   <body>
 
+    <!-- Flash: mensagem //-->
+    @if ( Session::has('mensagem') )
+      <p><strong>{{ Session::get('mensagem') }}</strong></p>
+    @endif
+
     <ul>
         <li><a href="/">Principal</a></li>
         <li><a href="/lista">Lista</a></li>
