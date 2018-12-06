@@ -12,6 +12,20 @@
   <a href="{{ route('estados.edit', $estado->id) }}">Editar</a>
 
 
+  <form method="post" action="{{ route('estados.destroy', $estado->id) }}" onsubmit="return confirm('Confirma exclusão do Estado: {{ $estado->nome }} ?');" >
+
+    @csrf
+    @method('DELETE')
+    <input type="submit" value="Excluir">
+
+
+
+
+
+  </form>
+
+
+
 
 
 

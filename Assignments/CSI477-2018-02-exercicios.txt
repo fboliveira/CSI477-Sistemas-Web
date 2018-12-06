@@ -12,3 +12,7 @@
 05 - Cidades e Alunos -> create/store;
 
 06 - Cidades e Alunos -> show/edit/update;
+
+07 - Cidades e alunos -> select -> chaves estrangeiras
+
+08 - Cidades e alunos -> delete/destroy;
