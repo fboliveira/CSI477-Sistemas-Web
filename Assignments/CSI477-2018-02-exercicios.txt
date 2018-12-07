@@ -16,3 +16,7 @@
 07 - Cidades e alunos -> select -> chaves estrangeiras
 
 08 - Cidades e alunos -> delete/destroy;
+
+09 - Autenticação -> estados, cidades, alunos;
+
+10 - Personalizar -> raiz (/) e /home;

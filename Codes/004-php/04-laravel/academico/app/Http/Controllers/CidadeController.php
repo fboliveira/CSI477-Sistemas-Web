@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Cidade;
 use App\Estado;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CidadeController extends Controller
 {
@@ -15,8 +16,14 @@ class CidadeController extends Controller
      */
     public function index()
     {
+
+      if ( Auth::check() ) {
         $cidades = Cidade::all();
         return view ('cidades.index', [ 'cidades' => $cidades]);
+      } else {
+        return redirect()->route('login');
+      }
+
     }
 
     /**

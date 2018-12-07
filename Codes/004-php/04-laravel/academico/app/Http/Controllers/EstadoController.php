@@ -7,6 +7,12 @@ use App\Estado;
 
 class EstadoController extends Controller
 {
+
+  public function __construct() {
+      $this->middleware('auth')->except('index');
+  }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -102,7 +108,7 @@ class EstadoController extends Controller
     public function destroy(Estado $estado)
     {
         // Validacao - chave estrangeira
-        
+
         // Excluir
         $estado->delete();
         session()->flash('mensagem', 'Estado excluído com sucesso!');

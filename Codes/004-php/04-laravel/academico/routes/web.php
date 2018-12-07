@@ -19,3 +19,7 @@ Route::get('/contato', 'PaginasController@contato');
 
 Route::resource('/estados', 'EstadoController');
 Route::resource('/cidades', 'CidadeController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
