@@ -1,0 +1,3 @@
+# Lista de exercícios: a resolução deve ser postada no repositório de atividades no GitHub, sendo cada um deles separado por pastas conforme o número da questão.
+
+01 -

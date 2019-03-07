@@ -1,4 +1,4 @@
-# **CSI477-2018-02 - Proposta de Trabalho Final**
+# **CSI477-2019-01 - Proposta de Trabalho Final**
 ## *Grupo: Princesa Leia & Luke Skywalker*
 
 --------------
@@ -28,4 +28,4 @@ O objetivo deste documento é apresentar uma proposta para o trabalho a ser dese
   Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
 
 ### 5. Referências
-Referências podem ser incluídas, caso necessário. Utilizar o padrão ABNT.
+Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.
