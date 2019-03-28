@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Relatório da turma de Web</title>
+
+    <style>
+
+      h1 {
+        font-family: arial;
+        color: blue;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      p.maior {
+        color: #0e9ef8;
+        text-align: center;
+        font-size: 16pt;
+      }
+
+      .destaque {
+        font-family: tahoma;
+        font-size: 18pt;
+        color: blue;
+        background-color: #c6d8e5;
+        text-align: center;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <h1>Lista de alunos(as) matriculados(as) na turma</h1>
+
+    <p class="maior">Tema da aula: Tabelas HTML</p>
+    <p>Horário de aula: 13:30 às 15:10 horas</p>
+
+    <table>
+
+      <caption style="font-size:20pt; color:#d4a248;">Sistema Web I</caption>
+
+      <thead>
+          <tr>
+              <th>Matrícula</th>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Turma</th>
+              <th>Sala</th>
+          </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Ana</td>
+              <td>ana@web.ufop.br</td>
+              <td>11</td>
+              <td rowspan="3">H102</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Brígida</td>
+            <td>brigida@web.ufop.br</td>
+            <td>11</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Pedro</td>
+            <td>pedro@web.ufop.br</td>
+            <td>11</td>
+          </tr>
+
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3" class="destaque">Total:</td>
+          <td colspan="2" class="destaque">3</td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+
+
+    <footer>
+    </footer>
+
+
+
+
+
+  </body>
+</html>
