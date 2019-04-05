@@ -1,0 +1,33 @@
+
+a {
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  padding: 15px 25px;
+  font-size: 16pt;
+}
+
+/* link ainda nao foi acessado */
+a:link {
+  text-decoration: underline;
+  color: yellow;
+}
+
+/* link foi acessado */
+a:visited {
+  text-decoration: none;
+  background-color: gray;
+}
+
+/* cursor do mouse está sobre o link */
+a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+}
+
+/* momento do click */
+a:active {
+  background-color: green;
+  color: navy;
+}
