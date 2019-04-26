@@ -5,3 +5,5 @@
 02 - Refazer o atividade 01 utilizando CSS.
 
 03 - Refazer o atividade 01 utilizando Bootstrap.
+
+04 - Validar os campos do formulário com JS.
