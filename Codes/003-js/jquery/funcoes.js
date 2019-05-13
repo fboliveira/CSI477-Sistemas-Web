@@ -44,6 +44,19 @@ $(document).ready( function() {
 
   });
 
+  $("#validar").click(function(){
+
+    // var est = document.dados.estado;    window.alert(est.value);
+    // window.alert( est.options[ est.selectedIndex ].text );
+
+    window.alert( $("#estado").val() );
+    window.alert( $("#estado option:selected").text() );
+
+
+
+  });
+
+
 
 
 
