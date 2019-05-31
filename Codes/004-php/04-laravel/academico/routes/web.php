@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+Route::get('/', 'PaginasController@index');
+
+Route::get('/welcome', 'PaginasController@about');
+
+
+Route::get('/alunos/listar', 'PaginasController@listar');
