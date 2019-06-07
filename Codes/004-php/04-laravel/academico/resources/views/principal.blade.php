@@ -10,6 +10,7 @@
         <li><a href="/">Home</a></li>
         <li><a href="/welcome">About</a></li>
         <li><a href="/alunos/listar">Listar</a></li>
+        <li><a href="/estados">Estados</a></li>
     </ul>
 
     <!-- Conteúdo - parte central //-->
