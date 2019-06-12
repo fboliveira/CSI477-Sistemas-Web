@@ -40,7 +40,33 @@ class EstadoController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        //dd($request->all());
+
+        // Validação - check up
+        // Ok?
+
+        // Gravar
+        //return ($request->nome);
+        //return ($request->input('nome'));
+
+        // Opção 01:
+        // $estado = new Estado;
+        // $estado->nome = $request->nome;
+        // $estado->sigla = $request->sigla;
+        //
+        // $estado->save();
+
+        // Opção 02:
+        Estado::create($request->all());
+
+        // Mensagem de sucesso:
+        // -- Flash
+        // mensagem -> campo
+        session()->flash('mensagem', 'Estado inserido com sucesso!');
+
+        //return redirect('/estados');
+        return redirect()->route('estados.index');
+
     }
 
     /**

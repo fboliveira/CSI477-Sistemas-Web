@@ -5,6 +5,12 @@
     <title>@yield('titulo', 'Sistema Acadêmico')</title>
   </head>
   <body>
+    <!-- Exibir mensagens -> campo: mensagem //-->
+    @if( Session::has('mensagem') )
+      <p><strong>{{ Session::get('mensagem') }}</strong></p>
+    @endif
+
+
     <!-- Links - menu lateral //-->
     <ul>
         <li><a href="/">Home</a></li>
