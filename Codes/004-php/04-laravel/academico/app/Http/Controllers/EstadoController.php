@@ -77,7 +77,10 @@ class EstadoController extends Controller
      */
     public function show(Estado $estado)
     {
-        //
+        // $id <-
+        // $estado = Estado::find($id)
+        return view('estados.show')
+            ->with('estado', $estado);
     }
 
     /**
@@ -88,7 +91,8 @@ class EstadoController extends Controller
      */
     public function edit(Estado $estado)
     {
-        //
+        return view('estados.edit')
+            ->with('estado', $estado);
     }
 
     /**
@@ -100,7 +104,21 @@ class EstadoController extends Controller
      */
     public function update(Request $request, Estado $estado)
     {
-        //
+        // Validações ->
+
+        // Opção 01:
+        // $estado->nome = $request->nome
+
+        // Opção 02:
+        $estado->fill($request->all());
+
+        // Para ambas as opções:
+        $estado->save();
+
+        session()->flash('mensagem', 'Estado atualizado com sucesso!');
+
+        return redirect()->route('estados.show', $estado->id);
+
     }
 
     /**
@@ -111,6 +129,14 @@ class EstadoController extends Controller
      */
     public function destroy(Estado $estado)
     {
-        //
+        // Validações ->
+        // -- chave estrangeira
+
+        // Excluir o estado
+        $estado->delete();
+        session()->flash('mensagem', 'Estado excluído com sucesso!');
+
+        return redirect()->route('estados.index');
+
     }
 }
