@@ -13,7 +13,10 @@ class Estado extends Model
   // Lista de campos protegidos - não podem ser atualizados diretamente
   // protected $guarded = [ 'senha' ];
 
-
+  // 1-N -> cidades
+  public function cidades() {
+    return $this->hasMany('App\Cidade');
+  }
 
 
 

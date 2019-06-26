@@ -7,3 +7,6 @@
 03 - Refazer o atividade 01 utilizando Bootstrap.
 
 04 - Validar os campos do formulário com JS.
+
+05 - Laravel: academico
+    = CRUD: regioes, cidades, alunos (nome, email, cidade);
