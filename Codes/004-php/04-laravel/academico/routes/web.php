@@ -17,7 +17,8 @@ Route::get('/alunos/listar', 'PaginasController@listar');
 
 Route::resource('/estados', 'EstadoController');
 
+Route::resource('/cidades', 'CidadeController');
 
+Auth::routes();
 
-
- 
+Route::get('/home', 'HomeController@index')->name('home');

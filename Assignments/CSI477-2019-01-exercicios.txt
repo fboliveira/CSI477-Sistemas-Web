@@ -10,3 +10,6 @@
 
 05 - Laravel: academico
     = CRUD: regioes, cidades, alunos (nome, email, cidade);
+
+*06 - Laravel: academico
+    = CRUD: disciplinas, professores, turma (professor, disciplina, semestre) matriculas( aluno, disciplina, semestre ), notas, faltas;
