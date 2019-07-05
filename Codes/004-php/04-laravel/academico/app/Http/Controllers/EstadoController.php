@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Estado;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EstadoController extends Controller
 {
 
     public function __construct()
     {
-      $this->middleware('auth');
+      // $this->middleware('auth',
+      //   [ 'except' => [ 'index' ] ]);
     }
 
     /**
@@ -21,7 +23,7 @@ class EstadoController extends Controller
     public function index()
     {
         // Model -> recuperação dos dados
-        $estados = Estado::all();
+        $estados = Estado::orderBy('nome')->get();
         // View -> apresentar
         return view('estados.index')
                 ->with('estados', $estados);
@@ -35,7 +37,14 @@ class EstadoController extends Controller
      */
     public function create()
     {
-        return view('estados.create');
+        if ( Auth::check() ) {
+          // if ( Auth::user()->id == 1 )
+          //Auth::logout();
+          return view('estados.create');
+          }
+          else {
+            return redirect()->route('login');
+          }
     }
 
     /**

@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'PaginasController@index');
-Route::get('/welcome', 'PaginasController@about');
+
+Route::get('/welcome', 'PaginasController@about')->middleware('auth');
+
 Route::get('/alunos/listar', 'PaginasController@listar');
 
 Route::resource('/estados', 'EstadoController');
