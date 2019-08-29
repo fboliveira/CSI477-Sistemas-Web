@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de pessoas</title>
+  </head>
+  <body>
+    <h1>Dados do cadastro</h1>
+
+    <form method="post" action="validar.html">
+
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
+
+      <br>
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" name="endereco" id="endereco" placeholder="Rua, número, complemento">
+
+      <br>
+      <label>Gênero</label>
+      <br>
+
+      <input type="radio" id="feminino" name="genero" value="F">
+      <label for="feminino">Feminino</label>
+      <br>
+
+      <input type="radio" id="masculino" name="genero" value="M">
+      <label for="masculino">Masculino</label>
+      <br>
+
+      <input type="radio" id="naobinario" name="genero" value="NB">
+      <label for="naobinario">Não binário</label>
+      <br>
+
+      <label for="usuario">Usuário</label>
+      <input type="text" name="usuario" id="usuario">
+      <br>
+
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha">
+
+      <br>
+
+      <input type="submit" name="cadastro" value="Cadastrar">
+
+      <input type="reset" value="Limpar">
+
+    </form>
+
+
+  </body>
+</html>
