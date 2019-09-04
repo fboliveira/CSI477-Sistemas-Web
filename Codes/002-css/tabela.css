@@ -1,0 +1,35 @@
+/* Estilos para tabelas */
+
+table {
+  width: 100%;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  font-size: 14pt;
+  font-family: tahoma;
+}
+
+.destaque {
+
+  font-size: 18pt;
+  color: blue;
+  background-color: #c6c6c6;
+  text-align: center;
+
+
+
+
+
+
+
+}
