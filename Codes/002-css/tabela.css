@@ -26,10 +26,33 @@ th {
   background-color: #c6c6c6;
   text-align: center;
 
-
-
-
-
-
-
 }
+
+tbody tr:hover {
+  background-color: #d6f2a7;
+}
+ thead tr:hover{
+   background-color: red;
+
+
+
+ }
+
+ tfoot tr:hover {
+   background-color: #ffd6b5;
+   font-weight: bold;
+   text-align: center;
+ }
+
+ tr:nth-child(even){
+    background-color: #c6c6c6;
+
+
+
+
+
+
+
+
+
+ }
