@@ -5,3 +5,5 @@
 02 - Incorporar ao Exercício 01 - CSS (puro)
 
 03 - Incorporar ao Exercício 01 - CSS/Bootstrap
+
+04 - Validar os campos dos formulários do Exercício 01 com JS(/BS);
