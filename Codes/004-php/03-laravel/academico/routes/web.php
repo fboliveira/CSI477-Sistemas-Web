@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
+    //return "Olá, mundo!";
+});
+
+Route::get('/listar', function(){
+
+  $lista = ['Ana', 'Brígida', 'Hugo', 'João', 'Pedro', 'Ricardo'];
+
+  return $lista;
+
+
 });
