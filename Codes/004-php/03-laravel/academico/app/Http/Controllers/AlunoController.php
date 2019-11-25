@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Cidade;
+use App\Aluno;
 use Illuminate\Http\Request;
 
-class CidadeController extends Controller
+class AlunoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class CidadeController extends Controller
      */
     public function index()
     {
-        $cidades = Cidade::orderBy('nome')->get();
-        return view ('cidades.index', [ 'cidades' => $cidades]);  
+        $alunos = Aluno::orderBy('nome')->get();
+        return view ('alunos.index', [ 'alunos' => $alunos]);    
     }
 
     /**
@@ -42,10 +42,10 @@ class CidadeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Cidade  $cidade
+     * @param  \App\Aluno  $aluno
      * @return \Illuminate\Http\Response
      */
-    public function show(Cidade $cidade)
+    public function show(Aluno $aluno)
     {
         //
     }
@@ -53,10 +53,10 @@ class CidadeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Cidade  $cidade
+     * @param  \App\Aluno  $aluno
      * @return \Illuminate\Http\Response
      */
-    public function edit(Cidade $cidade)
+    public function edit(Aluno $aluno)
     {
         //
     }
@@ -65,10 +65,10 @@ class CidadeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Cidade  $cidade
+     * @param  \App\Aluno  $aluno
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Cidade $cidade)
+    public function update(Request $request, Aluno $aluno)
     {
         //
     }
@@ -76,10 +76,10 @@ class CidadeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Cidade  $cidade
+     * @param  \App\Aluno  $aluno
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cidade $cidade)
+    public function destroy(Aluno $aluno)
     {
         //
     }

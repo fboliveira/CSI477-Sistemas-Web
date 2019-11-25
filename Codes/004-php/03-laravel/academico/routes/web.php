@@ -18,3 +18,7 @@ Route::get('/', 'PaginasController@index');
 Route::get('/listar', 'PaginasController@listar');
 
 Route::get('/estados', 'EstadoController@index');
+
+Route::get('/disciplinas', 'DisciplinaController@index');
+Route::get('/cidades', 'CidadeController@index');
+Route::get('/alunos', 'AlunoController@index');

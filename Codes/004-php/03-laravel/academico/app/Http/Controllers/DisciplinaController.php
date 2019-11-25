@@ -14,7 +14,9 @@ class DisciplinaController extends Controller
      */
     public function index()
     {
-        //
+        $disciplinas = Disciplina::orderBy('nome')->get();
+        return view ('disciplinas.index', [ 'disciplinas' => $disciplinas]);  
+        
     }
 
     /**
