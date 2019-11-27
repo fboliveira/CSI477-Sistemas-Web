@@ -15,7 +15,7 @@
       <tr>
         <td>{{ $c->id }}</td>
         <td>{{ $c->nome }}</td>
-        <td>{{ $c->estado_id }}</td>
+        <td>{{ $c->estado->nome }} ({{ $c->estado->sigla }})</td>
       </tr>
   @endforeach
     </tbody>

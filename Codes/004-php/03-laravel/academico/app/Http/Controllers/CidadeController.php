@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cidade;
+use App\Estado;
 use Illuminate\Http\Request;
 
 class CidadeController extends Controller
@@ -15,7 +16,7 @@ class CidadeController extends Controller
     public function index()
     {
         $cidades = Cidade::orderBy('nome')->get();
-        return view ('cidades.index', [ 'cidades' => $cidades]);  
+        return view ('cidades.index', [ 'cidades' => $cidades]);
     }
 
     /**
@@ -25,7 +26,9 @@ class CidadeController extends Controller
      */
     public function create()
     {
-        //
+        $estados = Estado::orderBy('nome')->get();
+        return view('cidades.create',
+          [ 'estados' => $estados ]);
     }
 
     /**
