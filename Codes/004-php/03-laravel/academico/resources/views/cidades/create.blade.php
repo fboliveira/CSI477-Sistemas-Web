@@ -4,6 +4,8 @@
 
   <form method="post" action="{{ route('cidades.store') }}">
 
+    @csrf
+
     <p>Nome: <input type="text" name="nome"></p>
 
     <p>Estado: </p>

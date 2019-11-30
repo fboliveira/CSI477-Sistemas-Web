@@ -39,7 +39,23 @@ class CidadeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request);
+
+        // Validação
+
+        // Gravar
+        // Opção 01:
+        // $c = new Cidade;
+        // $c->nome = $request->nome;
+        // $c->estado_id = $request->estado_id;
+        // $c->save();
+
+        // Opção 02:
+        Cidade::create($request->all());
+
+        // return redirect('/cidades');
+        return redirect()->route('cidades.index');
+
     }
 
     /**
@@ -50,7 +66,11 @@ class CidadeController extends Controller
      */
     public function show(Cidade $cidade)
     {
-        //
+        // $id
+        // $cidade = Cidade::find($id);
+        // dd($cidade);
+        return view('cidades.show',
+            [ 'cidade' => $cidade ]);
     }
 
     /**
@@ -61,7 +81,11 @@ class CidadeController extends Controller
      */
     public function edit(Cidade $cidade)
     {
-        //
+      $estados = Estado::orderBy('nome')->get();
+      return view('cidades.edit',
+        [ 'estados' => $estados,
+          'cidade' => $cidade ]);
+
     }
 
     /**
@@ -73,7 +97,7 @@ class CidadeController extends Controller
      */
     public function update(Request $request, Cidade $cidade)
     {
-        //
+        dd($request);
     }
 
     /**

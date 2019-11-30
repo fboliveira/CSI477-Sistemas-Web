@@ -15,6 +15,7 @@
           <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="/welcome" class="nav-link">Sobre</a></li>
           <li class="nav-item"><a href="/listar" class="nav-link">Listar pessoas</a></li>
+          <li class="nav-item"><a href="{{ route('cidades.index') }}" class="nav-link">Cidades</a></li>
       </ul>
     </nav>
 
