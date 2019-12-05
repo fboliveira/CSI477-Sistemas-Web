@@ -18,10 +18,16 @@
   <!-- Editar a cidade corrente //-->
   <a class="btn btn-success" href="{{ route('cidades.edit', $cidade->id) }}">Editar</a>
 
-
-
   <!-- Excluir a cidade corrente //-->
+  <form method="post" action="{{ route('cidades.destroy', $cidade->id) }}"
+    onsubmit="return confirm('Confirma exclusão da cidade?');">
 
+    @csrf
+    @method('DELETE')
+
+    <input class="btn btn-danger" type="submit" value="Excluir">
+
+  </form>
 
 
 

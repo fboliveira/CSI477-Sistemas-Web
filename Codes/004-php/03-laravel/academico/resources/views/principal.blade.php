@@ -19,6 +19,13 @@
       </ul>
     </nav>
 
+    <!-- Exibir mensagens -> sessao: campo: mensagem //-->
+    @if ( Session::has('mensagem') )
+      <div class="alert alert-success">
+        <strong>{{ Session::get('mensagem') }}</strong>
+      </div>
+    @endif
+
     <!-- Conteúdo -- parte central //-->
     @yield('conteudo')
 

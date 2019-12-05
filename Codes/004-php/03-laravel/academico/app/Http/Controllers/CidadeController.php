@@ -97,7 +97,26 @@ class CidadeController extends Controller
      */
     public function update(Request $request, Cidade $cidade)
     {
-        dd($request);
+        //dd($request);
+
+        // Validação
+
+        // Gravar 01
+        //$cidade->nome = $request->nome;
+        // ... todos os campos
+        // $cidade->save();
+
+        // Gravar 02
+        // Atualiza o objeto
+        $cidade->fill($request->all());
+        // Persiste no BD
+        $cidade->save();
+
+        session()->flash('mensagem', 'Cidade atualizada com sucesso!');
+
+        return redirect()->route('cidades.index');
+
+
     }
 
     /**
@@ -108,6 +127,11 @@ class CidadeController extends Controller
      */
     public function destroy(Cidade $cidade)
     {
-        //
+        // Validação - verificar se o registro pode ser excluído
+        $cidade->delete();
+
+        return redirect()->route('cidades.index');
+
+
     }
 }

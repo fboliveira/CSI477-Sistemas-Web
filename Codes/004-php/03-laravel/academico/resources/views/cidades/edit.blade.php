@@ -27,7 +27,7 @@
     </select>
 
 
-    <input type="submit" name="btnSalvar" value="Incluir">
+    <input type="submit" name="btnSalvar" value="Alterar">
 
 
 
