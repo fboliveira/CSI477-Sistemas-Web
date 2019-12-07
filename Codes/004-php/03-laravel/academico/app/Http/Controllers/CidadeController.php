@@ -8,6 +8,13 @@ use Illuminate\Http\Request;
 
 class CidadeController extends Controller
 {
+
+
+    public function __construct() {
+      $this->middleware('auth');
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -26,9 +33,9 @@ class CidadeController extends Controller
      */
     public function create()
     {
-        $estados = Estado::orderBy('nome')->get();
-        return view('cidades.create',
-          [ 'estados' => $estados ]);
+      $estados = Estado::orderBy('nome')->get();
+      return view('cidades.create',
+      [ 'estados' => $estados ]);
     }
 
     /**

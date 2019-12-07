@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 use App\Estado;
 
 class EstadoController extends Controller
@@ -14,12 +16,22 @@ class EstadoController extends Controller
      */
     public function index()
     {
-        // Model -> recuperação dos dados
-        $estados = Estado::orderBy('nome')->get();
 
-        // View -> apresentar
-        return view('estados.index')
-                ->with('estados', $estados);
+        if ( Auth::check() ) {
+          if (Auth::user()->type == 1) {
+            // Model -> recuperação dos dados
+            $estados = Estado::orderBy('nome')->get();
+
+            // View -> apresentar
+            return view('estados.index')
+                    ->with('estados', $estados);
+          } else {
+            session()->flash('mensagem', 'Operação não permitida!');
+            return redirect('/');
+          }
+        } else {
+          return redirect()->route('login');
+        }
     }
 
     /**
