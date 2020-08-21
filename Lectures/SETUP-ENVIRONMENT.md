@@ -39,26 +39,26 @@ Eu vou sugerir alguns complementos para serem instalados no editor. No decorrer 
 
 Verifique sobre o processo de instalação das extensões, bem como sobre o *marketplace* em [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
-- **Auto Complete Tag** (Jun Han): esta extensão é um pacote que instala os seguintes complementos: 
-    - **Auto Close Tag**: insere automaticamente a *tag* de fechamento em HTML/XML. Se você digitar `<div>`, é inserido automaticamente `</div>`.
+- [**Auto Complete Tag** (Jun Han)](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag): esta extensão é um pacote que instala os seguintes complementos: 
+    - [**Auto Close Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag): insere automaticamente a *tag* de fechamento em HTML/XML. Se você digitar `<div>`, é inserido automaticamente `</div>`.
 
-    - **Auto Rename Tag**: permite renomear os pares de *tags* HTML ao mesmo tempo. Por exemplo, se você quiser mudar um par `<p></p>` para `<div></div>`, quando você alterar o início de `<p>` para `<div>`, o fechamento também é alterado para `</div>`.
+    - [**Auto Rename Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): permite renomear os pares de *tags* HTML ao mesmo tempo. Por exemplo, se você quiser mudar um par `<p></p>` para `<div></div>`, quando você alterar o início de `<p>` para `<div>`, o fechamento também é alterado para `</div>`.
 
-- **Bracket Pair Colorizer 2** (CoenraadS): esta extensão ajuda a identificar por meio de cores diferentes os pares de colchetes, parênteses e chaves. 
+- [**Bracket Pair Colorizer 2** (CoenraadS)](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2): esta extensão ajuda a identificar por meio de cores diferentes os pares de colchetes, parênteses e chaves. 
 
-- **Live Server** (Ritwick Dey): um servidor web local é iniciado e permite a visualização de páginas HTML. Isso é útil para desenvolvimento *frontend* em  projetos menores.
+- [**Live Server** (Ritwick Dey)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): um servidor web local é iniciado e permite a visualização de páginas HTML. Isso é útil para desenvolvimento *frontend* em  projetos menores.
 
-- **Live Share** (Microsoft): permite o desenvolvimento entre pessoas de modo remoto e colaborativo. Isso pode ser útil para ajudar a resolver as dúvidas de código nos atendimentos. 
+- [**Live Share** (Microsoft)](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare): permite o desenvolvimento entre pessoas de modo remoto e colaborativo. Isso pode ser útil para ajudar a resolver as dúvidas de código nos atendimentos. 
 
 Algumas extensões apresentam funcionalidades adicionais e visuais, como cores, ícones e demais itens. Seguem algumas delas:
 
-- **Color Highlight** (Sergii Naumov): esta extensão destaca as cores utilizadas em documentos CSS/HTML.
+- [**Color Highlight** (Sergii Naumov)](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight): esta extensão destaca as cores utilizadas em documentos CSS/HTML.
 
-- **Dracula Official** (Dracula Theme): tema de cores mais agradáveis e menos cansativa para o editor.
+- [**Dracula Official** (Dracula Theme)](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula): tema de cores mais agradáveis e menos cansativa para o editor.
 
-- **GitLens** (Eric Amodio): funcionalidades adicionais para o Git.
+- [**GitLens** (Eric Amodio)](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): funcionalidades adicionais para o Git.
 
-- **Material Icon Theme** (Philipp Kief): muda os ícones dos arquivos conforme o seu tipo (css, php, html, dentre outros).
+- [**Material Icon Theme** (Philipp Kief)](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): muda os ícones dos arquivos conforme o seu tipo (css, php, html, dentre outros).
 
 Existem diversas extensões para HTML, CSS, PHP e demais *frameworks*. Durante o andamento do curso, podemos instalar esses complementos, bem como, vocês podem indicar as suas preferidas.
 
