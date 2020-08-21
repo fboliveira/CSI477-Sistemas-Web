@@ -5,6 +5,14 @@
 
 Here are available lecture notes and codes on CSI477 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2020/03 (PLE Emergencial/COVID-19).
 
+---
+
+**Lectures and resources:**
+
+[Setting up development environment (in portuguese)](./Lectures/SETUP-ENVIRONMENT.md)
+
+---
+
 License: [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Best regards,  
