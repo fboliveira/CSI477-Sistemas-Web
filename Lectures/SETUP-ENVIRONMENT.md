@@ -19,7 +19,7 @@ Para o **trabalho final**, outras linguagens e outros *frameworks* podem ser uti
 
 Se você observar alguma pesquisa de [*market share* dos servidores web](https://news.netcraft.com/archives/category/web-server-survey/), identificará que a maioria é baseada em sistemas UNIX (alguma distribuição Linux, principalmente). Isso pode ser justificado pelo tipo de licença (custo) das aplicações tanto para quem precisa hospedar alguma aplicação quanto para quem provê o serviço.
 
-Como o sistema baseado em UNIX **difere entre maiúsculas e minúsculas** para o nome de arquivos, o que não acontece no Windows, ao implantar a aplicação nesses servidores, diversos problemas podem ocorrer. Por exemplo, no Laravel (e em diversos outros *frameworks*) é empregado o processo de [**Autoloader**](https://www.php-fig.org/psr/psr-4/), em que o arquivo que contém uma classe é carregado automaticamente sem precisar utilizar explicitamente `include` ou similares. Se o nome de uma classe for definido como `StudentController` e o nome do arquivo como `studentcontroller.php`, no Windows você não terá nenhum problema, e sua aplicação irá funcionar normalmente. Entretanto, no ambiente UNIX, a aplicação não funciona, pois é esperado um arquivo com o nome `StudentController.php`. 
+Como o sistema baseado em UNIX **difere entre maiúsculas e minúsculas** para o nome de arquivos, o que não acontece no Windows, ao implantar a aplicação nesses servidores, diversos problemas podem ocorrer. Por exemplo, no Laravel (e em diversos outros *frameworks*) é empregado o processo de [**Autoloader**](https://www.php-fig.org/psr/psr-4/), em que o arquivo que contém uma classe é carregado automaticamente sem precisar utilizar explicitamente `include` ou similares. Se o nome de uma classe for definido como `StudentController` e o nome do arquivo como `studentcontroller.php`, no Windows você não terá nenhum problema, e sua aplicação funcionará normalmente. Entretanto, no ambiente UNIX, você terá problemas, pois é esperado um arquivo com o nome `StudentController.php`. 
 
 Além disso, ambientes Linux possuem gerenciadores de pacotes nativos, o que facilita a instalação e a configuração. Eu descobri recentemente que existe uma aplicação externa para o ambiente Windows, o [Chocolatey](https://chocolatey.org/). Entretanto, eu nunca utilizei esse gerenciador e também não sei se ele consegue resolver conflitos e a falta de dependências nas instalações. Quem já utilizou esse gerenciador, por favor, compartilhe a experiência.
 
@@ -29,23 +29,22 @@ Segue uma sugestão de vídeo para ajudar na configuração do Ubuntu: [Fabio Ak
 
 ## Editor
 
-O editor que eu irei utilizar na disciplina neste período é o [VS Code](https://code.visualstudio.com). Ele tem instalação para Windows, Linux e Mac, além de diversas extensões que auxiliam no desenvolvimento.
+O editor que eu utilizarei na disciplina neste período é o [VS Code](https://code.visualstudio.com). Ele tem instalação para Windows, Linux e MacOS, além de diversas extensões que auxiliam no desenvolvimento.
 
 Faça o download conforme a sua plataforma e instale o editor. O processo é simples e você não terá problemas com isso (~~nunca se sabe~~).
 
 ### Extensões
 
-Eu vou sugerir alguns complementos para serem instalados no editor. No decorrer da disciplina outros podem ser adicionados. Além disso, você também pode contribuir indicando outras instalações.
+Eu vou sugerir alguns complementos para serem instalados no editor. No decorrer da disciplina, outras extensões podem ser adicionados. Além disso, você também pode contribuir indicando outras instalações.
 
 Verifique sobre o processo de instalação das extensões, bem como sobre o *marketplace* em [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
 - **Auto Complete Tag** (Jun Han): esta extensão é um pacote que instala os seguintes complementos: 
-    - **Auto Close Tag**: insere automaticamente a tag de fechamento em HTML/XML. Se você digitar `<div>`, é inserido automaticamente `</div>`.
+    - **Auto Close Tag**: insere automaticamente a *tag* de fechamento em HTML/XML. Se você digitar `<div>`, é inserido automaticamente `</div>`.
 
-    - **Auto Rename Tag**: permite renomear os pares de tags HTML ao mesmo tempo. Por exemplo, se você quiser mudar um par `<p></p>` para `<div></div>`, quando você alterar o início de `<p>` para `<div>`, o fechamento também é alterado para `</div>`.
+    - **Auto Rename Tag**: permite renomear os pares de *tags* HTML ao mesmo tempo. Por exemplo, se você quiser mudar um par `<p></p>` para `<div></div>`, quando você alterar o início de `<p>` para `<div>`, o fechamento também é alterado para `</div>`.
 
-- **Bracket Pair Colorizer 2** (CoenraadS
-): esta extensão ajuda a identificar por meio de cores diferentes os pares de colchetes, parênteses e chaves. 
+- **Bracket Pair Colorizer 2** (CoenraadS): esta extensão ajuda a identificar por meio de cores diferentes os pares de colchetes, parênteses e chaves. 
 
 - **Live Server** (Ritwick Dey): um servidor web local é iniciado e permite a visualização de páginas HTML. Isso é útil para desenvolvimento *frontend* em  projetos menores.
 
@@ -79,7 +78,7 @@ Um servidor HTTP independente, como o Apache, não é obrigatório. Você pode u
 
 O PHP pode ser instalado no Windows a partir das distribuições disponíveis [aqui](https://windows.php.net/). Veja sobre a instalação [aqui](https://phptherightway.com/#windows_setup).
 
-No Linux, você pode instalá-lo a partir do gerenciador de pacotes da sua distruição (apt, pacman ou similares.).
+No Linux, você pode instalá-lo a partir do gerenciador de pacotes da sua distribuição (apt, pacman ou similares.).
 
 **Você pode utilizar a versão 7.4 para instalação.**
 
@@ -108,7 +107,7 @@ Caso a versão seja inferior a 7.2.5, você precisará atualizar o PHP. Isso vai
 
 O Laravel possui alguns requisitos para utilização. Uma delas é que a versão do PHP seja superior ou igual a **7.2.5**. Além disso, algumas extensões do PHP precisam ser instaladas/habilitadas. Para o nosso contexto inicial, isso pode não influenciar. Entretanto, teremos que verificar cada caso particular no andamento do curso. Confira, por favor, os [requisitos do Laravel](https://laravel.com/docs/7.x#server-requirements). Na [documentação](https://laravel.com/docs/) você pode encontrar diferentes maneiras para utilizar o *framework*. Particularmente, eu prefiro utilizar configuração o meu ambiente de desenvolvimento a usar uma máquina virtual. Como sempre, esteja livre para escolher a maneira que lhe for mais confortável.
 
-O PHP possui um gerenciador de dependências para a instalação de bibliotecas chamado [Composer](https://getcomposer.org/) que é utilizado pelo Laravel também. Veja como instalar o Composer [aqui](https://getcomposer.org/doc/00-intro.md). 
+O PHP possui um gerenciador de dependências para a instalação de bibliotecas chamado [Composer](https://getcomposer.org/) que é utilizado pelo Laravel também. Veja como instalá-lo [aqui](https://getcomposer.org/doc/00-intro.md). 
 
 Após a instalação do Composer, verifique pelo terminal se tudo está correto:
 
@@ -136,7 +135,7 @@ Ao término da execução, você terá uma mensagem similar a essa:
 
 ![Composer laravel installer](./img/composer-global-require-laravel.png)
 
-Pelo terminal, em uma pasta qualquer no seu computador, digite o seguinte comando para criar um novo projeto chamado, por exemplo, `academico`.
+Pelo terminal, em uma pasta qualquer no seu computador, digite o seguinte comando para criar um projeto chamado, por exemplo, `academico`.
 
 ```
 laravel new academico
@@ -151,7 +150,7 @@ E ao final, depois de um certo tempo (~~três dias~~), a mensagem será parecida
 ![Laravel new - the end](./img/laravel-new-end.png)
 
 
-Se tudo der certo na instalação (~~não se esqueça de cruzar os dedos ao pressionar enter~~), uma sub-pasta chamada `academico` será criada no seu computador. Entre na pasta (`cd academico`) e digite:
+Se tudo der certo na instalação (~~não se esqueça de cruzar os dedos ao pressionar enter~~), uma subpasta chamada `academico` será criada no seu computador. Entre na pasta (`cd academico`) e digite:
 
 ```
 php artisan serve
@@ -186,7 +185,7 @@ Nós precisaremos de um servidor de banco durante o curso. Você pode utilizar q
 
 **Se você utilizou o XAMPP, o MySQL já é instalado.**
 
-Para a conexão com o banco de dados por meio do PHP é necessário modificar apenas a *string* de conexão. No Laravel, isso é transparente e definido no arquivo de configurações (`.env`)
+Para a conexão com o banco de dados por meio do PHP é necessário modificar a *string* de conexão. No Laravel, isso é transparente e definido no arquivo de configurações (`.env`)
 
 ## Plataforma de controle de versão
 
@@ -211,6 +210,8 @@ Eu sugiro que você ouça aos seguintes episódios do *podcast* **Hipsters ponto
 - [109 - Git e Github](https://hipsters.tech/git-e-github-hipsters-109/)
 - [184 - Guia do Iniciante em Github](https://hipsters.tech/guia-do-iniciante-em-github-hipsters-184/)
 - [213 - Integração Contínua, Deploy Contínuo e Github Actions](https://hipsters.tech/integracao-continua-deploy-continuo-e-github-actions-hipsters-213/)
+
+O processo de atualização do repositório pelo VSCode pode ser entendido [aqui](https://medium.com/@Zeroesandones/how-to-commit-and-push-your-changes-to-your-github-repository-in-vscode-77a7a3d7dd02).
 
 ## Considerações finais
 
