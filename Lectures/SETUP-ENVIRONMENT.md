@@ -75,7 +75,7 @@ Um servidor HTTP independente, como o Apache, não é obrigatório. Você pode u
 
 **Se você utilizou o XAMPP e a sua versão está correta, você não precisa fazer a instalação do PHP separadamente (Etapa 1). Verifique apenas o funcionamento a partir a linha de comando pelo terminal (Etapa 2).**
 
-#### Instalação
+#### Etapa 1: Instalação
 
 O PHP pode ser instalado no Windows a partir das distribuições disponíveis [aqui](https://windows.php.net/). Veja sobre a instalação [aqui](https://phptherightway.com/#windows_setup).
 
@@ -83,7 +83,7 @@ No Linux, você pode instalá-lo a partir do gerenciador de pacotes da sua distr
 
 **Você pode utilizar a versão 7.4 para instalação.**
 
-#### Verificação da linha de comando e versão
+#### Etapa 2: Verificação da linha de comando e versão
 
 Para verificar a instalação e a versão disponível, digite o seguinte comando no seu terminal:
 
