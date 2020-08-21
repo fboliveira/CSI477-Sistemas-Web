@@ -220,12 +220,15 @@ Você pode contribuir com esse roteiro, seja com correções no texto, indicaç�
 
 Se você chegou até aqui e deu tudo certo:
 
-![Win](https://media.giphy.com/media/YPKIJdwYWJ3Ik/giphy.gif)![Victory!](https://media.giphy.com/media/hflpSaYuR8xK8/giphy.gif)
+![Win](https://media.giphy.com/media/YPKIJdwYWJ3Ik/giphy.gif)
 
+![Victory!](https://media.giphy.com/media/hflpSaYuR8xK8/giphy.gif)
 
 Caso contrário, entre em contato, e:
 
-![Try again](https://media.giphy.com/media/Jt4sQOFEh29Ob8KAxg/source.gif)![Keep going](https://media.giphy.com/media/4WEUNLjAKOICdjjxVt/source.gif)
+![Try again](https://media.giphy.com/media/Jt4sQOFEh29Ob8KAxg/source.gif)
+
+![Keep going](https://media.giphy.com/media/4WEUNLjAKOICdjjxVt/source.gif)
 
 Muito obrigado! 
 
