@@ -63,7 +63,7 @@ Algumas extensões apresentam funcionalidades adicionais e visuais, como cores, 
 
 Existem diversas extensões para HTML, CSS, PHP e demais *frameworks*. Durante o andamento do curso, podemos instalar esses complementos, bem como, vocês podem indicar as suas preferidas.
 
-## Servidores, Linguagens e *frameworks*
+## Servidores, linguagens e *frameworks*
 
 As instalações descrita nesta seção se referem ao desenvolvimento *backend*. Nós precisaremos de um servidor HTTP e a linguagem utilizada, um servidor de banco de dados e o *framework* para desenvolvimento.
 
@@ -220,11 +220,12 @@ Você pode contribuir com esse roteiro, seja com correções no texto, indicaç�
 
 Se você chegou até aqui e deu tudo certo:
 
-![Win](http://gph.is/1Lmv8Qj)![Victory!](http://gph.is/1cp2qL5)
+![Win](https://media.giphy.com/media/YPKIJdwYWJ3Ik/giphy.gif)![Victory!](https://media.giphy.com/media/hflpSaYuR8xK8/giphy.gif)
 
-Caso contrário:
 
-![Try again](https://gph.is/g/E3o36YE)![Keep going](https://gph.is/g/ZYpDzra)
+Caso contrário, entre em contato, e:
+
+![Try again](https://media.giphy.com/media/Jt4sQOFEh29Ob8KAxg/source.gif)![Keep going](https://media.giphy.com/media/4WEUNLjAKOICdjjxVt/source.gif)
 
 Muito obrigado! 
 
