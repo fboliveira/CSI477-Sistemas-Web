@@ -205,11 +205,8 @@ git version 2.25.1
 
 Caso contrário, você precisará instalar o aplicativo.
 
-Eu sugiro que você ouça aos seguintes episódios do *podcast* **Hipsters ponto Tech**:
+Eu sugiro que você verifique o conteúdo complementar sobre Git e GitHub [aqui](git-and-github.md)
 
-- [109 - Git e Github](https://hipsters.tech/git-e-github-hipsters-109/)
-- [184 - Guia do Iniciante em Github](https://hipsters.tech/guia-do-iniciante-em-github-hipsters-184/)
-- [213 - Integração Contínua, Deploy Contínuo e Github Actions](https://hipsters.tech/integracao-continua-deploy-continuo-e-github-actions-hipsters-213/)
 
 O processo de atualização do repositório pelo VSCode pode ser entendido [aqui](https://medium.com/@Zeroesandones/how-to-commit-and-push-your-changes-to-your-github-repository-in-vscode-77a7a3d7dd02).
 

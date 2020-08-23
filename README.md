@@ -9,7 +9,7 @@ Here are available lecture notes and codes on CSI477 - Sistemas Web I course at 
 
 **Lectures and resources:**
 
-[Setting up development environment (in portuguese)](./Lectures/SETUP-ENVIRONMENT.md)
+[Setting up development environment (in portuguese)](./Lectures/setting-environment.md)
 
 ---
 
