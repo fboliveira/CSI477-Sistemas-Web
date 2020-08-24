@@ -4,7 +4,7 @@
 
 ### HTML
 
-- **[HTML Living Standard (documentação oficial)]**(https://html.spec.whatwg.org/)
+- [**HTML Living Standard (documentação oficial)**](https://html.spec.whatwg.org/)
 
 - [Caelum - Apostila: Desenvolvimento Web com HTML, CSS e JavaScript (e PHP)](https://www.caelum.com.br/download/caelum-html-css-javascript-php.pdf)
 
