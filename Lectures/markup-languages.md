@@ -14,15 +14,25 @@
 
 - [Learn HTML5 and CSS3 From Scratch - Full Course](https://youtu.be/mU6anWqZJcc)
 
-- [MDN Web Docs -- HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+- [MDN - HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
+
+- [MDN - HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+- [MDN - <input>: The Input (Form Input) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)
+
+- [MDN - <table>: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
 
 - [O que faz uma desenvolvedora front-end?](https://youtu.be/ZY3-MFxVdEw)
 
-- [Rocketseat -- UI Clone (playlist)](https://www.youtube.com/playlist?list=PL85ITvJ7FLohTZv9cC5-PrZ39Q3cugWqp)
+- [Rocketseat - UI Clone (playlist)](https://www.youtube.com/playlist?list=PL85ITvJ7FLohTZv9cC5-PrZ39Q3cugWqp)
 
 - [W3Schools: HTML5 Tutorial](https://www.w3schools.com/html/)
 
 - [W3Schools: HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
+
+- [W3Schools - HTML Tables](https://www.w3schools.com/html/html_tables.asp)
 
 
 ### JavaScript Object Notation: JSON
