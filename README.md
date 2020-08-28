@@ -12,8 +12,9 @@ Here are available lecture notes and codes on CSI477 - Sistemas Web I course at 
 **Lectures and resources:**
 
 1. [Setting up development environment (in portuguese)](./Lectures/setting-environment.md)
-
 1. [Markup languages](./Lectures/markup-languages.md)
+1. [Git and GitHub](./Lectures/git-and-github.md)
+1. [Create the GitHub/Classroom repository](./Lectures/create-classroom-repository.md)
 
 ---
 

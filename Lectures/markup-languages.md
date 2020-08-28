@@ -20,9 +20,9 @@
 
 - [MDN - HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-- [MDN - <input>: The Input (Form Input) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)
+- [MDN - input: The Input (Form Input) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)
 
-- [MDN - <table>: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
+- [MDN - table: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
 
 - [O que faz uma desenvolvedora front-end?](https://youtu.be/ZY3-MFxVdEw)
 
@@ -41,9 +41,13 @@
 
 - [JavaScript Object Notation: JSON - site oficial](https://www.json.org/json-pt.html)
 
+- [JSON Example (and XML)](https://www.json.org/example.html)
+
 - [W3Schools: JSON](https://www.w3schools.com/js/js_json_intro.asp)
 
 ### Extensible Markup Language - XML
+
+- [HTML vs XML syntax](https://html.spec.whatwg.org/#html-vs-xhtml)
 
 - [W3C - XML](https://www.w3.org/XML/)
 
