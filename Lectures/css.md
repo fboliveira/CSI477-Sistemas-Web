@@ -8,7 +8,7 @@
 
 - [Front-end Brasil](https://github.com/frontendbr)
 
-- [Flexbox Zombies (indicação de [Raphael Pavani](https://github.com/raphaelpavani))](https://flexboxzombies.com/p/flexbox-zombies)
+- [Flexbox Zombies](https://flexboxzombies.com/p/flexbox-zombies) (indicação de [Raphael Pavani](https://github.com/raphaelpavani)) 
 
 - [Google Material Design](https://material.io/design/)
 
