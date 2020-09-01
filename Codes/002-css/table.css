@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+
+th {
+    font-size: 14pt;
+    font-family: Tahoma;
+    font-style: italic;
+}
+
+caption {
+    font-size: 14pt;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+thead tr:hover {
+    background-color: blue;
+}
+
+tbody tr:hover{
+    background-color: #a9a9a9;
+}
+
+tfoot tr:hover{
+    background-color: green;
+}
+
+tbody tr:nth-child(odd) { /* an + b */
+    background-color: yellow;
+}
+
+.centralizado {
+    text-align: center;
+}
