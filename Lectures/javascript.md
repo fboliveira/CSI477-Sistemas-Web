@@ -16,6 +16,6 @@
 
 - [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
 
-- [Rocketseat: curso starter](https://app.rocketseat.com.br/starter)
+- [Rocketseat: curso starter](https://app.rocketseat.com.br/starter) (indicação de [Lorena Lopera](https://github.com/alorenalopes)) 
 
 - [TypeScript](https://www.typescriptlang.org/)
