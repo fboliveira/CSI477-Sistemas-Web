@@ -12,10 +12,22 @@
 
 - [MDN: A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
+- [MDN: Automatic semicolon insertion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Automatic_semicolon_insertion)
+
+- [MDN: Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+- [MDN: Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+
+- [MDN: Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
 - [O Hype do TypeScript – Hipsters #207](https://hipsters.tech/o-hype-do-typescript-hipsters-207/)
 
 - [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
 
-- [Rocketseat: curso starter](https://app.rocketseat.com.br/starter)
+- [Rocketseat: curso starter](https://app.rocketseat.com.br/starter) (indicação de [Lorena Lopera](https://github.com/alorenalopes)) 
+
+- [Node.js: JavaScript runtime built on Chrome's V8 JavaScript engine](https://nodejs.org/)
 
 - [TypeScript](https://www.typescriptlang.org/)
+
+- [Deno: A secure runtime for JavaScript and TypeScript](https://deno.land/)
