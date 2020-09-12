@@ -33,3 +33,11 @@
 - [TypeScript](https://www.typescriptlang.org/)
 
 - [Deno: A secure runtime for JavaScript and TypeScript](https://deno.land/)
+
+### APIs:
+
+- [IBGE: API de localidades](https://servicodados.ibge.gov.br/api/docs/localidades)
+
+- [IBGE: API de serviço de dados](https://servicodados.ibge.gov.br/api/docs)
+
+- [Public APIs](https://github.com/public-apis/public-apis)
