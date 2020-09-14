@@ -19,3 +19,5 @@
 - [Hipsters On The Road #01 - PHP Experience: Performance Web, Criptomoedas e mais](https://hipsters.tech/php-experience-performance-web-criptomoedas-e-mais-hipsters-on-the-road-01/)
 
 - [Caelum - Introdução ao PHP](https://www.caelum.com.br/apostila-html-css-javascript/introducao-a-php/)
+
+- [PHP é interpretado?](https://youtu.be/QvmuWH4bOjE)

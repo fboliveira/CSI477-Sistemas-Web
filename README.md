@@ -17,6 +17,7 @@ Here are available lecture notes and codes on CSI477 - Sistemas Web I course at 
 1. [Create the GitHub/Classroom repository](./Lectures/create-classroom-repository.md)
 1. [Cascading Style Sheets - CSS](./Lectures/css.md)
 1. [JavaScript](./Lectures/javascript.md)
+1. [PHP](./Lectures/php.md)
 
 ---
 
