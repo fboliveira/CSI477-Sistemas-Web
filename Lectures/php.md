@@ -21,3 +21,27 @@
 - [Caelum - Introdução ao PHP](https://www.caelum.com.br/apostila-html-css-javascript/introducao-a-php/)
 
 - [PHP é interpretado?](https://youtu.be/QvmuWH4bOjE)
+
+- [PSR-4: Autoloader](https://www.php-fig.org/psr/psr-4/)
+
+- [The mysqli class](https://www.php.net/manual/en/class.mysqli)
+
+### PHP Data Objects (PDO)
+
+- [The PDO class](https://www.php.net/manual/en/class.pdo)
+
+- [PDO Drivers](https://www.php.net/manual/en/pdo.drivers.php)
+
+- [Connections and Connection management](https://www.php.net/manual/en/pdo.connections.php)
+
+- [Prepared statements and stored procedures](https://www.php.net/manual/en/pdo.prepared-statements.php)
+
+- [Transactions and auto-commit](https://www.php.net/manual/en/pdo.transactions.php)
+
+### SQLite
+
+- [SQLite](https://sqlite.org/index.html)
+
+- [DB Browser for SQLite](https://sqlitebrowser.org/)
+
+- [VSCode extension: SQLite (alexcvzz)](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
