@@ -7,10 +7,12 @@
 </head>
 <body>
     
+    <a href="/dados/estadosViewInsert.php">Inserir</a>
+
     <ol>
         <?php 
             while($e = $estados->fetch()) {
-                echo "<li>" .$e["nome"] ."</li>\n";
+                echo "<li>" .$e["nome"] . "-" . $e['sigla'] . "</li>\n";
             }
         ?>
     </ol>
