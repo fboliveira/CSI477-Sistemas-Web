@@ -24,6 +24,8 @@
 
 - [PSR-4: Autoloader](https://www.php-fig.org/psr/psr-4/)
 
+- [Composer: Autoloading](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
+
 - [The mysqli class](https://www.php.net/manual/en/class.mysqli)
 
 ### PHP Data Objects (PDO)
@@ -37,6 +39,22 @@
 - [Prepared statements and stored procedures](https://www.php.net/manual/en/pdo.prepared-statements.php)
 
 - [Transactions and auto-commit](https://www.php.net/manual/en/pdo.transactions.php)
+
+### PHP Object-Oriented Programming
+
+- [Classes and Objects](https://www.php.net/manual/en/language.oop5.php)
+
+- [Namespaces](https://www.php.net/manual/en/language.namespaces.php)
+
+- [Autoloading Classes](https://www.php.net/manual/en/language.oop5.autoload.php)
+
+- [Constructors and Destructors](https://www.php.net/manual/en/language.oop5.decon.php)
+
+- [Magic Methods](https://www.php.net/language.oop5.magic)
+
+- [Dependency Injection](https://phptherightway.com/#dependency_injection)
+
+- [W3Schools: PHP OOP - Traits](https://www.w3schools.com/PHP/php_oop_traits.asp)
 
 ### SQLite
 
