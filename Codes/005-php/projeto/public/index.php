@@ -13,5 +13,21 @@ $connection = new Connection(new AdapterSQLite());
 var_dump($connection);
 
 $connection->getAdapter()->open();
-$connection->getAdapter()->get();
+
+// ------------------------------------------------------------
+// Implementar na view de Estados ->
+// Imprimir os estados com o adapter implementado:
+$sql = "SELECT * FROM estados";
+$result = $connection->getAdapter()->get()->query($sql);
+
+echo "<hr><ol>";
+
+while($e = $result->fetch()) {
+    echo "<li>" .$e["nome"] . "-" . $e['sigla'] . "</li>\n";
+}
+
+echo "</ol><hr>";
+
+// ------------------------------------------------------------
+
 $connection->getAdapter()->close();
