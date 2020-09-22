@@ -12,10 +12,6 @@
 
 - [php.net - $_POST](https://www.php.net/manual/en/reserved.variables.post.php)
 
-- [Filipe Deschamps - PHP vale a pena? (minha opinião sincera)](https://youtu.be/H43fXodv6WY)
-
-- [Filipe Deschamps - SOLID fica FÁCIL com Essas Ilustrações](https://youtu.be/6SfrO3D4dHM)
-
 - [PHP não é coisa de sobrinho! – Hipsters #36](https://hipsters.tech/php-nao-e-coisa-de-sobrinho-hipsters-36/)
 
 - [Hipsters On The Road #01 - PHP Experience: Performance Web, Criptomoedas e mais](https://hipsters.tech/php-experience-performance-web-criptomoedas-e-mais-hipsters-on-the-road-01/)
@@ -24,7 +20,13 @@
 
 - [PHP é interpretado?](https://youtu.be/QvmuWH4bOjE)
 
+- [Filipe Deschamps - PHP vale a pena? (minha opinião sincera)](https://youtu.be/H43fXodv6WY)
+
 - [The mysqli class](https://www.php.net/manual/en/class.mysqli)
+
+- [Filipe Deschamps - SOLID fica FÁCIL com Essas Ilustrações](https://youtu.be/6SfrO3D4dHM)
+
+- [SOLID: Código bom e bonito - Hipsters Ponto Tech #219](https://hipsters.tech/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219/)
 
 ### PHP Data Objects (PDO)
 
