@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Estado extends Model
 {
     use HasFactory; // traits
+
+    protected $fillable = ['nome', 'sigla'];
+    //protected $guarded = [ 'admin' ];
 }

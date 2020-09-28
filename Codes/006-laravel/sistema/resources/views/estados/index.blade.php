@@ -10,6 +10,7 @@
                 <th>Id</th>
                 <th>Nome</th>
                 <th>Sigla</th>
+                <th>Exibir</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,7 @@
                     <td>{{ $e->id }}</td>
                     <td>{{ $e->nome }} </td>
                     <td>{{ $e->sigla }}</td>
+                    <td><a href="{{route('estados.show', $e->id)}}">Exibir</a></td>
                 </tr>
             @endforeach
         </tbody>
