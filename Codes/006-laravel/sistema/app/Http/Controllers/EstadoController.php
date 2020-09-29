@@ -99,8 +99,12 @@ class EstadoController extends Controller
         // dd($estado);
 
         // Validação:
-        $estado->delete();
-        session()->flash('mensagem', 'Estado excluído com sucesso!');
+        if ( $estado->cidades->count() > 0 ) {
+            session()->flash('mensagem', 'Exclusão não permitida! Existem cidades associadas.');
+        } else {
+            $estado->delete();
+            session()->flash('mensagem', 'Estado excluído com sucesso!');
+        }
         return redirect()->route('estados.index');
     }
 }
