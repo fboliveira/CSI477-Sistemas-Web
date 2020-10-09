@@ -1,8 +1,8 @@
 # Lista de exercícios
 
-As descrições dos exercícios estão disponíveis em cada uma das notas de aula no Moodle. Somente as aulas com entregas de códigos foram inseridas aqui.
+As descrições dos exercícios estão disponíveis em cada um dos roteiros de aula no Moodle. Somente as aulas com entregas de códigos foram inseridas aqui.
 
-Item | Aula | Atividade, entrega ou pasta
+Item | Roteiro | Atividade, entrega ou pasta
 ---- | ---- | ---------------------------
 1 | Aula 04 | /exercicios/exercicio-01
 2 | Aula 05 | /exercicios/exercicio-02
@@ -26,6 +26,5 @@ Item | Aula | Atividade, entrega ou pasta
 20 | Aula 24 | /exercicios/laravel -> Produtos: final CRUD (create, update e delete)
 21 | Aula 25 | /exercicios/laravel -> Pessoas e compras: CRUD
 22 | Aula 26 | /exercicios/laravel -> Autenticação / rotas
----- | ---- | ---------------------------
 
 
