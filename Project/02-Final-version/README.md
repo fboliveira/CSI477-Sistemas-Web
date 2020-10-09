@@ -16,18 +16,19 @@ Cada pessoa pode escolher o seu horário indicando a sua preferência no nosso G
 
 Data | Horário | Pessoa
 -----| ------- | ------
-13/10/2020 | 14:00 | 
+13/10/2020 | 14:00 | Icaro Quintão
 13/10/2020 | 14:25 | 
 13/10/2020 | 14:50 | 
 13/10/2020 | 15:15 | 
 13/10/2020 | 15:40 | 
 13/10/2020 | 16:05 | 
 13/10/2020 | 16:30 | 
+13/10/2020 | 20:30 | Fernando Silva (*)
 14/10/2020 | 14:00 | 
 14/10/2020 | 14:25 | 
 14/10/2020 | 14:50 | 
 14/10/2020 | 15:15 | 
-14/10/2020 | 15:40 | 
+14/10/2020 | 15:40 | Edgar Alves
 14/10/2020 | 16:05 | 
 14/10/2020 | 16:30 | Maurício Moura
 15/10/2020 | 14:00 | Lorena Lopes
@@ -37,3 +38,5 @@ Data | Horário | Pessoa
 15/10/2020 | 15:40 | Yasmine Leite
 15/10/2020 | 16:05 | Raphael Pavani 
 15/10/2020 | 16:30 | Renato Moura
+
+(*) Apresentações em horários especiais.
