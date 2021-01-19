@@ -78,7 +78,7 @@ Um servidor HTTP independente, como o Apache, não é obrigatório. Você pode u
 
 O PHP pode ser instalado no Windows a partir das distribuições disponíveis [aqui](https://windows.php.net/). Veja sobre a instalação [aqui](https://phptherightway.com/#windows_setup).
 
-No Linux, você pode instalá-lo a partir do gerenciador de pacotes da sua distribuição (apt, pacman ou similares.).
+No Linux, você pode instalá-lo a partir do gerenciador de pacotes da sua distribuição (*apt*, *pacman* ou similares.).
 
 **Você pode utilizar a versão 7.4 para instalação.**
 
@@ -93,19 +93,19 @@ php --version
 Você terá uma resposta similar a:
 
 ```
-PHP 7.4.3 (cli) (built: May 26 2020 12:24:22) ( NTS )
+PHP 7.4.9 (cli) (built: Oct 26 2020 15:17:14) ( NTS )
 Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
-    with Zend OPcache v7.4.3, Copyright (c), by Zend Technologies
+    with Zend OPcache v7.4.9, Copyright (c), by Zend Technologies
 ```
 
 Se o comando falhar, certifique-se que você tenha o PHP instalado. Caso a instalação esteja correta, você precisará inserir o caminho da instalação no `PATH`. Veja sobre isso [aqui](https://www.windows-commandline.com/set-path-command-line/).
 
-Caso a versão seja inferior a 7.2.5, você precisará atualizar o PHP. Isso vai depender do seu ambiente. Pode ser que seja necessária a realização da Etapa 1. 
+Caso a versão seja inferior a 7.3, você precisará atualizar o PHP. Isso vai depender do seu ambiente. Pode ser que seja necessária a realização da Etapa 1. 
 
 ### Laravel
 
-O Laravel possui alguns requisitos para utilização. Uma delas é que a versão do PHP seja superior ou igual a **7.2.5**. Além disso, algumas extensões do PHP precisam ser instaladas/habilitadas. Para o nosso contexto inicial, isso pode não influenciar. Entretanto, teremos que verificar cada caso particular no andamento do curso. Confira, por favor, os [requisitos do Laravel](https://laravel.com/docs/7.x#server-requirements). Na [documentação](https://laravel.com/docs/) você pode encontrar diferentes maneiras para utilizar o *framework*. Particularmente, eu prefiro utilizar configuração o meu ambiente de desenvolvimento a usar uma máquina virtual. Como sempre, esteja livre para escolher a maneira que lhe for mais confortável.
+O Laravel possui alguns requisitos para utilização. Uma delas é que a versão do PHP seja superior ou igual a **7.3**. Além disso, algumas extensões do PHP precisam ser instaladas/habilitadas. Para o nosso contexto inicial, isso pode não influenciar. Entretanto, teremos que verificar cada caso particular no andamento do curso. Confira, por favor, os [requisitos do Laravel](https://laravel.com/docs/8.x/deployment#server-requirements). Na [documentação](https://laravel.com/docs/) você pode encontrar diferentes maneiras para utilizar o *framework*. Particularmente, eu prefiro utilizar configuração o meu ambiente de desenvolvimento a usar uma máquina virtual. Como sempre, esteja livre para escolher a maneira que lhe for mais confortável.
 
 O PHP possui um gerenciador de dependências para a instalação de bibliotecas chamado [Composer](https://getcomposer.org/) que é utilizado pelo Laravel também. Veja como instalá-lo [aqui](https://getcomposer.org/doc/00-intro.md). 
 
@@ -118,12 +118,12 @@ composer --version
 Você receberá uma mensagem como esta:
 
 ```
-Composer version 1.10.10 2020-08-03 11:35:19
+Composer version 2.0.8 2020-12-03 17:20:38
 ```
 
 Caso o comando falhar, você terá que inserir o caminho que o Composer está instalado no `PATH`. Siga os mesmos procedimentos utilizados para o PHP.
 
-Eu sugiro você verificar todos os procedimentos definidos [aqui](https://laravel.com/docs/7.x#installing-laravel).
+Eu sugiro você verificar todos os procedimentos definidos [aqui](https://laravel.com/docs/8.x/installation).
 
 O download do instalador do Laravel é realizado no terminal com o seguinte comando:
 
@@ -131,7 +131,7 @@ O download do instalador do Laravel é realizado no terminal com o seguinte coma
 composer global require laravel/installer
 ```
 
-Ao término da execução, você terá uma mensagem similar a essa:
+Ao término da execução, você terá uma mensagem similar à apresentada a seguir. As versões dos arquivos podem ser diferentes.
 
 ![Composer laravel installer](./img/composer-global-require-laravel.png)
 
@@ -143,11 +143,11 @@ laravel new academico
 
 No início da execução, você verá uma mensagem similar a:
 
-![Laravel new starting](./img/laravel-new-star.png)
+![Laravel new - starting...](./img/laravel-new-start.png)
 
 E ao final, depois de um certo tempo (~~três dias~~), a mensagem será parecida com:
 
-![Laravel new - the end](./img/laravel-new-end.png)
+![Laravel new - the end!](./img/laravel-new-end.png)
 
 
 Se tudo der certo na instalação (~~não se esqueça de cruzar os dedos ao pressionar enter~~), uma subpasta chamada `academico` será criada no seu computador. Entre na pasta (`cd academico`) e digite:
@@ -159,8 +159,8 @@ php artisan serve
 Um servidor será iniciado. No terminal, você receberá uma mensagem similar a:
 
 ```
-Laravel development server started: http://127.0.0.1:8000
-[Thu Aug 20 18:15:12 2020] PHP 7.4.3 Development Server (http://127.0.0.1:8000) started
+Starting Laravel development server: http://127.0.0.1:8000
+[Tue Jan 19 11:01:15 2021] PHP 7.4.9 Development Server (http://127.0.0.1:8000) started
 ```
 
  Você poderá acessar a sua aplicação a partir do navegador no seguinte endereço:
@@ -200,7 +200,7 @@ git --version
 Se você tiver uma resposta como a seguinte, está tudo correto: 
 
 ```
-git version 2.25.1
+git version 2.27.0
 ```
 
 Caso contrário, você precisará instalar o aplicativo.
