@@ -9,7 +9,7 @@ As ações de *download* do repositório (local) e atualização *online* (remot
 
 ## Criação do repositório no *GitHub Classroom*
 
-No **Tópico 02 - Linguagens de Marcação - Git e GitHub** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2020/03 - PLE - Atividades - atividades: exercícios, práticas e trabalho final**.
+No **Tópico 02 - Linguagens de Marcação - Git e GitHub** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2020/01 - Remoto - Atividades - exercícios, práticas e trabalho final**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **2020/01 - Remoto - Atividades**.
 
 Ao clicar no *link*, se você não tiver feito *login* no GitHub, a seguinte tela será exibida:
 
