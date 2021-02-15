@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+
+    <script>
+
+        let contador = 1;
+        let id;
+        let executando = false;
+
+        function processo() {
+            document.getElementById("contador").innerHTML = `contador = ${contador}`;
+            contador++;
+        }
+
+        function iniciar() {
+            if (!executando) {
+                id = setInterval(processo);
+                executando = true;
+            }
+        }
+
+        function parar(){
+            clearInterval(id);
+            executando = false;
+        }
+
+        function reiniciar() {
+            parar();
+            contador = 1;
+            document.getElementById("contador").innerHTML = "";
+        }
+
+    </script>
+</head>
+<body>
+    
+    <div id="contador"></div>
+
+    <input type="button" value="Iniciar" onclick="iniciar()">
+
+    <input type="button" value="Parar" onclick="parar()">
+
+    <input type="button" value="Reiniciar" onclick="reiniciar()">
+
+</body>
+</html>

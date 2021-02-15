@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo - validação do formulário com Bootstrap</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="calculo.js"></script>
+
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <h1>Cálculo com formulário</h1>
+        <p>Validação e apresentação em Bootstrap</p>
+    </div>
+
+    <div class="container">
+        <form name="dados">
+
+            <div id="grupo1" class="form-group">
+            <label for="valor1" id="label1">Valor 1</label>
+            <input type="text" name="valor1" id="valor1" value="" class="form-control">
+    
+            <!-- O display: none oculta o alerta quando o formulário e carregado -->
+            <div id="alerta1" class="alert alert-danger" style="display: none">
+                <span>Preencha o primeiro valor corretamente!</span>
+            </div>
+            </div>
+    
+            <div id="grupo2" class="form-group">
+            <label for="valor2" id="label2">Valor 2</label>
+            <input type="text" name="valor2" id="valor2" value="" class="form-control">
+    
+            <div id="alerta2" class="alert alert-danger" style="display: none">
+                <span>Preencha o segundo valor corretamente!</span>
+            </div>
+    
+            </div>
+    
+            <div id="resultado" class="form-group">
+            <label for="resultado">Resultado</label>
+            <input type="text" name="resultado" id="resultado" value="" class="form-control" disabled>
+            </div>
+    
+            <input type="button" value="Calcular" onclick="calcular()" class="btn btn-primary">
+    
+    
+            <input type="reset" name="" value="Limpar" class="btn btn-warning">
+    
+        </form>
+    </div>        
+</body>
+</html>
