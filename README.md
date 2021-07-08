@@ -1,11 +1,11 @@
-# CSI477 - Sistemas Web I
+# CSI606 - Sistemas Web I
 ## Lecture Notes and Codes
 ### **Prof. Fernando Bernardes de Oliveira, Ph.D.**
 #### [Department of Computer and Systems (DECSI)](https://decsi.ufop.br/)
 
 ---
 
-Here are available lecture notes and codes on CSI477 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2020/01 Online class (COVID-19).
+Here are available lecture notes and codes on CSI477 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2020/02 Online class (COVID-19).
 
 ---
 
