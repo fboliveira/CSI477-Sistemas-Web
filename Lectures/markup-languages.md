@@ -2,7 +2,7 @@
 
 ## Additional resources:
 
-### HTML {#html-links}
+### HTML
 
 - [**HTML Living Standard (documentação oficial)**](https://html.spec.whatwg.org/)
 
