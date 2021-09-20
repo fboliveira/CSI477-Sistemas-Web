@@ -10,19 +10,13 @@
 
 Na terceira aula do curso, nós veremos dois importantes elementos do HTML, o **formulário** e a **tabela**. Assim, teremos as seguintes atividades para esta aula. Estes itens se referem aos elementos definidos no Moodle.
 
-1.  **Tópico 02 - Linguagens de Marcação - HTML: Formulários**
+1.  **Tópico 02 - Linguagens de Marcação - HTML: Formulários e Tabelas**
 
     1.  Assista ao vídeo **HTML - Formulários** e reproduza o código também. O vídeo está disponível com acesso por meio do seu e-mail institucional.
 
-    2.  Conteúdos complementares estão disponíveis [aqui](../Lectures/html.md#forms). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
+    1.  Assista ao vídeo **HTML - Tabelas** e reproduza o código também. O vídeo está disponível com acesso por meio do seu e-mail institucional.
 
-2.  **Tópico 02 - Linguagens de Marcação - HTML: Tabelas**
-
-    1.  Assista ao vídeo **HTML - Tabelas** e reproduza o código
-        também. O vídeo está disponível com acesso por meio do seu
-        e-mail institucional.
-
-    2.  Conteúdos complementares estão disponíveis [aqui](../Lectures/html.md#tables). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
+    1.  Conteúdos complementares estão disponíveis sobre [formulários](../Lectures/html.md#forms) e [tabelas](../Lectures/html.md#tables). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
 
 ---
 
