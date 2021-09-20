@@ -17,7 +17,7 @@ Esta nova modalidade de ensino nos traz grandes desafios, e também, diversas op
 Você encontrará aqui os **roteiros** para as nossas aulas. Eles estão organizados conforme o assunto.
 
 1. [Apresentação do curso; Introdução e conceitos](./001-roteiro-aula-01.md)
-1. [HTML - Introdução]()
+1. [HTML - Introdução](./002-roteiro-aula-02-html.md)
 
 
 **Eu desejo que você tenha um ótimo curso. E que a Força esteja com você!**
