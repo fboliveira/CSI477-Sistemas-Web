@@ -9,7 +9,7 @@ As ações de *download* do repositório (local) e atualização *online* (remot
 
 ## Criação do repositório no *GitHub Classroom*
 
-No **Tópico 02 - Linguagens de Marcação - Git e GitHub** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2020/02 - Remoto - Atividades - exercícios, práticas e trabalho final**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **2020/02 - Remoto - Atividades**. Além disso, o nome da organização no GitHub segue a nova nomeclatura das disciplinas: **CSI606**.
+No **Tópico 02 - Linguagens de Marcação - Git e GitHub** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2021/01 - Remoto - Atividades - exercícios, práticas e trabalho final**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **2021/01 - Remoto - Atividades**. Além disso, o nome da organização no GitHub segue a nova nomeclatura das disciplinas: **CSI606**.
 
 Ao clicar no *link*, se você não tiver feito *login* no GitHub, a seguinte tela será exibida:
 
@@ -27,7 +27,7 @@ Ao final do processo, a seguinte mensagem será apresentada:
 
 ![GitHub Classroom - success](./img/github-classroom-success.png)
 
-O endereço do repositório criado é iniciado por ``2020-03-ple-atividades`` (``2020-02-remoto-atividades``) e tem ao final o seu usuário no GitHub. Para o meu usuário, foi criado o seguinte repositório:
+O endereço do repositório criado é iniciado por ``2020-03-ple-atividades`` (``2021-01-remoto-atividades``) e tem ao final o seu usuário no GitHub. Para o meu usuário, foi criado o seguinte repositório:
 
 ```
 https://github.com/UFOP-CSI477/2020-03-ple-atividades-fboliveira
