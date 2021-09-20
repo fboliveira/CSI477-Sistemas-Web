@@ -19,3 +19,7 @@
 - [Podcast: Guia do Iniciante em Github – Hipsters #184](https://hipsters.tech/guia-do-iniciante-em-github-hipsters-184)
 
 - [Podcast: Integração Contínua, Deploy Contínuo e Github Actions - Hipsters #213](https://hipsters.tech/integracao-continua-deploy-continuo-e-github-actions-hipsters-213/)
+
+- [Vídeo: Rafaella Ballerini - O QUE É GIT E GITHUB? - definição e conceitos importantes 1/2](https://youtu.be/DqTITcMq68k)
+
+- [Vídeo: Rafaella Ballerini - COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2](https://youtu.be/UBAX-13g8OM)
