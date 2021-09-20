@@ -2,38 +2,25 @@
 
 ## Additional resources:
 
-### HTML
+### HTML {#html-links}
 
 - [**HTML Living Standard (documentação oficial)**](https://html.spec.whatwg.org/)
 
 - [Caelum - Apostila: Desenvolvimento Web com HTML, CSS e JavaScript (e PHP)](https://www.caelum.com.br/download/caelum-html-css-javascript-php.pdf)
-
+- [Código Fonte TV - HTML // Dicionário do Programador](https://youtu.be/4dQtz1PpY9A)
 - [HTML Tutorial - How to Make a Super Simple Website](https://youtu.be/PlxWf493en4)
-
 - [HTML5 & CSS Development: Learn How to Build a Professional Website]()
-
 - [Learn HTML5 and CSS3 From Scratch - Full Course](https://youtu.be/mU6anWqZJcc)
-
-- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-
-- [MDN - HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
-
 - [MDN - HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-
+- [MDN - HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
 - [MDN - input: The Input (Form Input) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)
-
 - [MDN - table: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
-
+- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [O que faz uma desenvolvedora front-end?](https://youtu.be/ZY3-MFxVdEw)
-
 - [Rocketseat - UI Clone (playlist)](https://www.youtube.com/playlist?list=PL85ITvJ7FLohTZv9cC5-PrZ39Q3cugWqp)
-
-- [W3Schools: HTML5 Tutorial](https://www.w3schools.com/html/)
-
-- [W3Schools: HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
-
 - [W3Schools - HTML Tables](https://www.w3schools.com/html/html_tables.asp)
-
+- [W3Schools: HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
+- [W3Schools: HTML5 Tutorial](https://www.w3schools.com/html/)
 
 ### JavaScript Object Notation: JSON
 
