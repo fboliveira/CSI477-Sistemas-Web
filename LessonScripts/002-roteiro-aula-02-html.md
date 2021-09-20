@@ -21,6 +21,7 @@ atividades. Estes itens se referem aos elementos definidos no Moodle.
 
     3.  Conteúdos complementares estão disponíveis [aqui](../Lectures/html.md#fundamentals). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
 
+---
 ### Atividade prática
 
 Desenvolva uma página principal para um sistema de banco de dados Web. Você deve incluir um cabeçalho, imagens e *links* para as seguintes
@@ -41,11 +42,13 @@ Para as imagens e fotos, você pode utilizar o site [*Unsplash*](https://unsplas
 
 Esta atividade e as outras que ainda serão indicadas para HTML deverão ser postadas logo após aula sobre o GitHub. No momento oportuno, eu indicarei como criar e usar o repositório, inserindo e atualizando arquivos. Quem ainda não possui conta no GitHub, queira, por gentileza, criá-la.
 
+---
 ### Controle de frequência
 
 A frequência da aula de hoje será apurada pela submissão da atividade
 prática no momento a ser indicado.
 
+---
 ### Errata
 
 Algumas considerações precisam ser feitas sobre o vídeo:

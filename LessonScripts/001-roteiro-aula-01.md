@@ -26,6 +26,7 @@ Para a primeira aula do curso, nós teremos as seguintes atividades. Estes itens
 
     2. Existe um documento para auxiliar na [**preparação do ambiente de desenvolvimento**](../Lectures/setting-environment.md). Ele apresenta as ferramentas necessárias e sugestões para instalação e configuração dos itens necessários. É importante que você esteja com isso preparado o quanto antes. Se você tiver alguma dúvida, entre em contato o   mais breve possível.
 
+--- 
 ### Controle de frequência
 
 A frequência da aula de hoje será apurada a partir da aula síncrona. Você poderá finalizar a atividade de preparação do ambiente até no início da próxima semana. Entretanto, para a próxima aula precisaremos de, pelo menos, o editor instalado.
