@@ -13,9 +13,22 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 
 1. [Lesson scripts](./LessonScripts/README.md)
 1. [Setting up development environment (in portuguese)](./Lectures/setting-environment.md)
-1. [Markup languages](./Lectures/markup-languages.md)
+
+---
+
+1. [Frontend](./Lectures/frontend.md)
+1. [HTML](./Lectures/html.md)
+1. [XML](./Lectures/xml.md)
+1. [JSON](./Lectures/json.md)
+1. [Markdown](./Lectures/markdown.md)
+
+---
+
 1. [Git and GitHub](./Lectures/git-and-github.md)
 1. [Create the GitHub/Classroom repository](./Lectures/create-classroom-repository.md)
+
+---
+
 1. [Cascading Style Sheets - CSS](./Lectures/css.md)
 1. [JavaScript](./Lectures/javascript.md)
 1. [PHP](./Lectures/php.md)
