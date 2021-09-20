@@ -6,9 +6,7 @@
 
 ## Roteiro da Aula 01
 
----
-
-### Olá! Bom dia, boa tarde, boa noite!**
+### Olá! Bom dia, boa tarde, boa noite!
 
 Este tipo de documento definirá o roteiro para nossas aulas, com todas as atividades e os resultados esperados em cada conteúdo. Além disso, quando necessário, será indicado como a frequência do dia será computada.
 
