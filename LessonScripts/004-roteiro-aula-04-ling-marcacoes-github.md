@@ -12,22 +12,23 @@ Na quarta aula do curso, nós veremos sobre outras linguagens de marcação, com
 
 Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elementos definidos no Moodle.
 
-1.  **Tópico 02 -- Linguagens de Marcação: XML e JSON**
+####  **Tópico 02 - Linguagens de Marcação: XML e JSON; Git e GitHub**
 
-    Basicamente, XML e JSON são linguagens de marcação que podem ser utilizadas para transferência de dados. Notas fiscais eletrônicas, por exemplo, enviam um PDF e um XML dessa nota. *APIs REST* podem utilizar JSON para comunicação. Ambas as linguagens podem ser aplicadas em diversos contextos.
+    1. **XML e JSON**
+    
+        Basicamente, XML e JSON são linguagens de marcação que podem ser utilizadas para transferência de dados. Notas fiscais eletrônicas, por exemplo, enviam um PDF e um XML dessa nota. *APIs REST* podem utilizar JSON para comunicação. Ambas as linguagens podem ser aplicadas em diversos contextos.
 
-    O que difere principalmente essas linguagens? Estrutura e verbosidade. Vocês verão nos links no Moodle, em especial, naquele que apresenta exemplos de JSON, que ambas conseguem estruturar os mesmos dados. Entretanto, o XML é muito mais verboso. Se você precisa economizar na transmissão de dados, como em *mobile* ou numa API muito requisitada, prefira JSON. APIs em NodeJS, por exemplo, podem retornar as requisições com JSON.
+        O que difere principalmente essas linguagens? Estrutura e verbosidade. Vocês verão nos links no Moodle, em especial, naquele que apresenta exemplos de JSON, que ambas conseguem estruturar os mesmos dados. Entretanto, o XML é muito mais verboso. Se você precisa economizar na transmissão de dados, como em *mobile* ou numa API muito requisitada, prefira JSON. APIs em NodeJS, por exemplo, podem retornar as requisições com JSON.
 
-    Um exemplo com JSON será apresentado quando estivermos trabalhando com JavaScript.
+        Um exemplo com JSON será apresentado quando estivermos trabalhando com JavaScript.
 
-    Conteúdos complementares estão disponíveis sobre [XML](../Lectures/xml.md) e [JSON](../Lectures/json.md). Reproduza e teste, sempre que possível, os códigos apresentados nos textos.
+        Conteúdos complementares estão disponíveis sobre [XML](../Lectures/xml.md) e [JSON](../Lectures/json.md). Reproduza e teste, sempre que possível, os códigos apresentados nos textos.
 
-2.  **Tópico 02 -- Linguagens de Marcação: Git e GitHub**
+    2.  **Git e GitHub**
 
-    1.  Existe um documento para auxiliar na criação do seu
-        repositório: [Tutorial: Como criar o repositório no GitHub / Classroom](../Lectures/create-classroom-repository.md)
-
-    2.  Algumas sugestões de atividades complementares, como *podcasts* e vídeos, além da documentação estão disponíveis [aqui](../Lectures/git-and-github.md). Eu sugiro que você verifique esses conteúdos.
+        Existe um documento para auxiliar na criação do seu repositório: [Tutorial: Como criar o repositório no GitHub / Classroom](../Lectures/create-classroom-repository.md) 
+    
+        Algumas sugestões de atividades complementares, como *podcasts* e vídeos, além da documentação estão disponíveis [aqui](../Lectures/git-and-github.md). Eu sugiro que você verifique esses conteúdos.
 
 ---
 
