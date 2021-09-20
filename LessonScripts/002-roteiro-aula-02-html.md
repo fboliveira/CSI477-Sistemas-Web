@@ -19,7 +19,7 @@ atividades. Estes itens se referem aos elementos definidos no Moodle.
     2.  Assista ao vídeo **HTML - Introdução** e reproduza o código
         também.
 
-    3.  Conteúdos complementares estão disponíveis [aqui](../Lectures/markup-languages.md#html). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
+    3.  Conteúdos complementares estão disponíveis [aqui](../Lectures/html.md#fundamentals). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
 
 ### Atividade prática
 
