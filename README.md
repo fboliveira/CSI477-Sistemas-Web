@@ -5,12 +5,13 @@
 
 ---
 
-Here are available lecture notes and codes on CSI477 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2020/02 Online class (COVID-19).
+Here are available lecture notes and codes on CSI606 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2021/01 Online class (COVID-19).
 
 ---
 
-**Lectures and resources:**
+**Lesson scripts, lectures and resources:**
 
+1. [Lesson scripts](./LessonScripts/README.md)
 1. [Setting up development environment (in portuguese)](./Lectures/setting-environment.md)
 1. [Markup languages](./Lectures/markup-languages.md)
 1. [Git and GitHub](./Lectures/git-and-github.md)
