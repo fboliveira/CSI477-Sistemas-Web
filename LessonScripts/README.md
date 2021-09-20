@@ -18,6 +18,7 @@ Você encontrará aqui os **roteiros** para as nossas aulas. Eles estão organiz
 
 1. [Apresentação do curso; Introdução e conceitos](./001-roteiro-aula-01.md)
 1. [HTML - Introdução](./002-roteiro-aula-02-html.md)
+1. [HTML - Formulários e tabelas](./003-roteiro-aula-03-html-forms-tables.md)
 
 
 **Eu desejo que você tenha um ótimo curso. E que a Força esteja com você!**
