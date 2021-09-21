@@ -2,12 +2,15 @@
 
 ## General
 
+- [Adobe Color - Sugestão de Juliana Lemos (2021/1)](https://www.cursoemvideo.com/cursos/)
+
 - [Caelum - Apostila: Desenvolvimento Web com HTML, CSS e JavaScript (e PHP)](https://www.caelum.com.br/download/caelum-html-css-javascript-php.pdf)
+
+- [Cursos em Vídeo - Sugestão de Flaviane Ferrares (2021/1)](https://www.cursoemvideo.com/cursos/)
 
 - [O que faz uma desenvolvedora front-end?](https://youtu.be/ZY3-MFxVdEw)
 
 - [Rocketseat - UI Clone (playlist)](https://www.youtube.com/playlist?list=PL85ITvJ7FLohTZv9cC5-PrZ39Q3cugWqp)
-
 
 ## Microfrontends
 
