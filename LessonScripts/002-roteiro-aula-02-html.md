@@ -22,7 +22,7 @@ atividades. Estes itens se referem aos elementos definidos no Moodle.
     3.  Conteúdos complementares estão disponíveis [aqui](../Lectures/html.md#fundamentals). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
 
 ---
-### Atividade prática
+### Exercícios
 
 Desenvolva uma página principal para um sistema de banco de dados Web. Você deve incluir um cabeçalho, imagens e *links* para as seguintes
 páginas:

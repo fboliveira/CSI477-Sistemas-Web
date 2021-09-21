@@ -32,7 +32,7 @@ Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elem
 
 ---
 
-### Atividade prática
+### Exercícios
 
 Após a realização das atividades práticas sobre HTML indicadas nas aulas anteriores, com a criação do repositório hoje, você poderá realizar a submissão dos seus arquivos. Atualize o seu repositório incluindo essas atividades na pasta `Atividades/exercicios`. Crie uma pasta com o nome `exercicio-01` e insira todos os arquivos criados/utilizados (página principal, perfil, cadastro de pessoas e relatório).
 

@@ -20,7 +20,7 @@ Na terceira aula do curso, nós veremos dois importantes elementos do HTML, o **
 
 ---
 
-### Atividade prática
+### Exercícios
 
 Desenvolva as outras páginas indicadas na atividade da aula anterior, sendo o cadastro de pessoas e o relatório. Utilize o mesmo cabeçalho da página principal, considerando os *links* para as demais páginas no topo, por exemplo.
 
