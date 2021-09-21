@@ -12,9 +12,9 @@ Na terceira aula do curso, nós veremos dois importantes elementos do HTML, o **
 
 1.  **Tópico 02 - Linguagens de Marcação - HTML: Formulários e Tabelas**
 
-    1.  Assista ao vídeo **HTML - Formulários** e reproduza o código também. O vídeo está disponível com acesso por meio do seu e-mail institucional.
+    1.  Assista ao vídeo **HTML - Formulários** e reproduza o código também.
 
-    1.  Assista ao vídeo **HTML - Tabelas** e reproduza o código também. O vídeo está disponível com acesso por meio do seu e-mail institucional.
+    1.  Assista ao vídeo **HTML - Tabelas** e reproduza o código também.
 
     1.  Conteúdos complementares estão disponíveis sobre [formulários](../Lectures/html.md#forms) e [tabelas](../Lectures/html.md#tables). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
 
