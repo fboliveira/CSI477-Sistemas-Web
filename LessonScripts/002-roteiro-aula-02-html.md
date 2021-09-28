@@ -36,6 +36,8 @@ páginas:
 - Perfil
 - Sair
 
+Cada uma dessas páginas podem ter internamente as opções de cadastro, relatório (listagem), alteração e exclusão. Essas opções podem ser referidas como ***CRUD*** - *create*, *read*, *update* e *delete*.
+
 Você precisa criar neste momento somente a página principal e o perfil. Insira no perfil alguns dados, não necessariamente os seus, mas que representem um pessoa (nome, usuário, e-mail, data de criação, último acesso e uma foto). As demais páginas serão criadas posteriormente. Entretanto, você já pode deixar os *links* preparados.
 
 Para as imagens e fotos, você pode utilizar o site [*Unsplash*](https://unsplash.com/). Todas os arquivos disponível são gratuitos, conforme a [licença associada](https://unsplash.com/license).

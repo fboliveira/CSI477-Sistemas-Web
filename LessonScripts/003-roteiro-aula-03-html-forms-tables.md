@@ -22,7 +22,7 @@ Na terceira aula do curso, nós veremos dois importantes elementos do HTML, o **
 
 ### Exercícios
 
-Desenvolva as outras páginas indicadas na atividade da aula anterior, sendo o cadastro de pessoas e o relatório. Utilize o mesmo cabeçalho da página principal, considerando os *links* para as demais páginas no topo, por exemplo.
+Considerando o exercício da aula anterior, desenvolva o cadastro e o relatório das pessoas. Utilize o mesmo cabeçalho da página principal, considerando os *links* para as demais páginas no topo, por exemplo.
 
 Para o cadastro, inclua campos no formulário considerando os itens necessários para registro de uma pessoa (nome, endereço, documentos, contatos e demais informações). Para o relatório, utilize alguns campos desses para a construção da tabela.
 
