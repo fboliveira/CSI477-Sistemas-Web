@@ -30,3 +30,5 @@ Para a primeira aula do curso, nós teremos as seguintes atividades. Estes itens
 ### Controle de frequência
 
 A frequência da aula de hoje será apurada a partir da aula síncrona. Você poderá finalizar a atividade de preparação do ambiente até no início da próxima semana. Entretanto, para a próxima aula precisaremos de, pelo menos, o editor instalado.
+
+[Índice](./README.md)
