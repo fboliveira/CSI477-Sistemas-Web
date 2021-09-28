@@ -14,6 +14,8 @@ Este curso foi planejado cuidadosamente com o foco no seu aprendizado. Espero co
 
 Esta nova modalidade de ensino nos traz grandes desafios, e também, diversas oportunidades de aprendizado. Se você tiver qualquer dúvida, sugestões,críticas, insultos \... :smiley:, e tudo mais, por favor, reporte isso o quanto antes para que possamos resolver todos os entraves o mais breve possível. Vamos aprender e enfrentar os desafios neste semestre **juntos**!  
 
+### Índice
+
 Você encontrará aqui os **roteiros** para as nossas aulas. Eles estão organizados conforme o assunto.
 
 - **Introdução**
