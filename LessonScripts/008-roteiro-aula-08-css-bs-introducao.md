@@ -26,3 +26,5 @@ Os arquivos criados e/ou modificados deverão ser atualizados no seu repositóri
 ### Controle de frequência
 
 A frequência da aula de hoje será apurada pela submissão dos arquivos indicados.   
+
+[Índice](./README.md#índice)

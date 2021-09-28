@@ -60,3 +60,5 @@ Algumas considerações precisam ser feitas sobre o vídeo:
 - Na *tag* **`<a></a>`**, eu me referi ao **`alt`** como *tag* também O correto é **atributo**.
 
 Perdão pelos vacilos! :grin:
+
+[Índice](./README.md#índice)

@@ -34,3 +34,5 @@ GitHub, queira, por gentileza, criá-la.
 ### Controle de frequência
 
 A frequência da aula de hoje será apurada pela submissão da atividade prática no momento a ser indicado.
+
+[Índice](./README.md#índice)

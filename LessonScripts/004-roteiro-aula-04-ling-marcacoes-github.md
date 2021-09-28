@@ -43,3 +43,5 @@ A definição da estrutura e dos nomes das pastas é fundamental para agilizar o
 ### Controle de frequência
 
 As frequências das aula até hoje serão apuradas pela criação do repositório e pela submissão dos arquivos na pasta indicada.
+
+[Índice](./README.md#índice)
