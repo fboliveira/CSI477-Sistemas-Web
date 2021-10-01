@@ -14,6 +14,7 @@
 
 - [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
+- [Rafaella Ballerini: O QUE É CSS? (SELETORES, PROPRIEDADES E VALORES)](https://youtu.be/LWU2OR19ZG4)
 
 - [W3C - CSS Validator Service](http://www.css-validator.org)
 
@@ -36,6 +37,8 @@
 - [Beginner’s Guide To CSS Grid And Flexbox](https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412)
 
 - [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
+
+- [Flexbox CSS: Guia Completo, Elementos e Exemplos](https://www.alura.com.br/artigos/css-guia-do-flexbox)
 
 - [Flexbox Zombies](https://flexboxzombies.com/p/flexbox-zombies) (indicação de [Raphael Pavani](https://github.com/raphaelpavani)) 
 

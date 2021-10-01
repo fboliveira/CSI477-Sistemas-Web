@@ -4,6 +4,7 @@
 
 - [**HTML Living Standard (documentação oficial)**](https://html.spec.whatwg.org/)
 
+
 - [Código Fonte TV - HTML // Dicionário do Programador](https://youtu.be/4dQtz1PpY9A)
 
 - [HTML Tutorial - How to Make a Super Simple Website](https://youtu.be/PlxWf493en4)
@@ -15,6 +16,8 @@
 - [MDN - HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
 
 - [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+- [Rafaella Ballerini: 5 MINUTOS DE HTML PARA INICIAR EM PROGRAMAÇÃO!](https://youtu.be/3oSIqIqzN3M)
 
 - [W3Schools: HTML5 Tutorial](https://www.w3schools.com/html/)
 
