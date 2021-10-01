@@ -8,7 +8,7 @@
 
 ### Olá! Bom dia, boa tarde, boa noite! :smiley: 
 
-Na aula de número $11$ do curso, nós continuaremos com o **JavaScript** (JS). Agora, faremos manipulações dos dados a partir dos formulários. Além disso, veremos como invocar uma função repetidamente a cada fração de tempo.
+Na aula de número 11 do curso, nós continuaremos com o **JavaScript** (JS). Agora, faremos manipulações dos dados a partir dos formulários. Além disso, veremos como invocar uma função repetidamente a cada fração de tempo.
 
 Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elementos definidos no Moodle.
 
@@ -26,6 +26,6 @@ Crie algum processo para atualização constante na página com o `setInterval()
 
 ### Controle de frequência
 
-A frequência da aula de hoje será apurada pela submissão dos arquivos indicados.
+A frequência da aula de hoje será apurada pela submissão dos arquivos indicados.  
 
 [Índice](../README.md#índice)

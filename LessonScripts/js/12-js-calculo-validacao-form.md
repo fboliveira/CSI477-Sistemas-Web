@@ -8,7 +8,7 @@
 
 ### Olá! Bom dia, boa tarde, boa noite! :smiley:
 
-Na aula de número $12$ do curso, nós continuaremos com o **JavaScript** (JS). Agora, faremos validações e operações com os valores inseridos num formulário.
+Na aula de número 12 do curso, nós continuaremos com o **JavaScript** (JS). Agora, faremos validações e operações com os valores inseridos num formulário.
 
 Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elementos definidos no Moodle.
 
