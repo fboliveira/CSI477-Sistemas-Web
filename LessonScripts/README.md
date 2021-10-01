@@ -38,6 +38,14 @@ Você encontrará aqui os **roteiros** para as nossas aulas. Eles estão organiz
     - 8\. [Introdução](./008-roteiro-aula-08-css-bs-introducao.md)
     - 9\. [Formulários, Tabelas e Grid](./009-roteiro-aula-09-css-bs-forms-tables-grid.md)
 
+- ***JavaScript - JS*** 
+
+    - 10\. [Introdução](./js/10-js-introducao.md)
+    - 11\. [Formulários e Set Interval](./js/11-js-introducao-form-setinverval.md)
+    - 12\. [Validações e cálculos com formulários](./js/12-js-calculo-validacao-form.md)
+    - 13\. [Carregamento de dados - Fetch/APIs](./js/13-js-fetch-promise-api.md)
+
+
 **Eu desejo que você tenha um ótimo curso. E que a Força esteja com você!**
   
   
