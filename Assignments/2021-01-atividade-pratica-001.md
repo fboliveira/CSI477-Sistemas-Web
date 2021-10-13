@@ -35,7 +35,7 @@ Desenvolva páginas para cada um dos tópicos a seguir utilizando HTML, CSS e Ja
 
 #### **01 - Calculadora** *(01-calculadora.html: 2,5 pontos)*
 
-O objetivo desta aplicação é o desenvolvimento de uma calculadora com as quatro operações básicas (pelo menos). O usuário deve clicar nos números e símbolos (e não digitar) para realizar as operações. A [figura abaixo](2021-01-atividade-pratica-001.md) apresenta um exemplo de uma calculadora simples. Observe que ela tem outras operações. A implementação de funcionalidades, além das operações básicas, fica ao seu critério.
+O objetivo desta aplicação é o desenvolvimento de uma calculadora com as quatro operações básicas (pelo menos). O usuário deve clicar nos números e símbolos (e não digitar) para realizar as operações. A [figura abaixo](./img/calculadora-gnome-ubuntu.png) apresenta um exemplo de uma calculadora simples. Observe que ela tem outras operações. A implementação de funcionalidades, além das operações básicas, fica ao seu critério.
 
 ![image](./img/calculadora-gnome-ubuntu.png)
 
@@ -74,7 +74,7 @@ Um exemplo de conversor de moedas está disponível [aqui](https://www.bcb.gov.b
 
 Apresente um gráfico com o histórico de cotação da moeda num determinado período. Por exemplo, se a pessoa quiser converter de real (R$) para dólar (US$), além do resultado, apresente um gráfico (linhas, barras, dentre outros) da cotação diária da moeda destino num determinado período (uma semana, 15 dias, um mês, e/ou outros intervalos que você julgar necessário).
 
-Você pode utilizar bibliotecas para a construção do gráfico, como a [D3.js](https://d3js.org/) ou a [Chart.js](https://www.chartjs.org/)
+Você pode utilizar bibliotecas para a construção do gráfico como a [D3.js](https://d3js.org/) ou a [Chart.js](https://www.chartjs.org/).
 
 ![Challenge accepted.](https://media.giphy.com/media/l0MYARc0SccV4pERO/giphy.gif)
 
