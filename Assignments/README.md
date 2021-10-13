@@ -3,7 +3,7 @@
 ### Prof. Fernando Bernardes de Oliveira, Ph.D.
 
 ---
-## Lista de exercícios
+## Exercícios       
 
 As descrições dos exercícios estão disponíveis em cada um dos roteiros de aula. Somente as aulas com entregas de códigos foram inseridas aqui. Atualize o seu repositório incluindo essas atividades na pasta `Atividades/exercicios`
 
@@ -19,3 +19,9 @@ Item | Roteiro | Atividade, entrega ou pasta
 008 | Aula 11 | /exercicio-04/{`02-form.html`, `03-set-interval.html`}
 009 | Aula 12 | /exercicio-04/`04-validacao-form.html`
 010 | Aula 13 | /exercicio-04/`05-carregamento-api.html`
+
+
+---
+## Atividades práticas  
+
+1. [HTML, CSS e JS](./2021-01-atividade-pratica-001.md)
