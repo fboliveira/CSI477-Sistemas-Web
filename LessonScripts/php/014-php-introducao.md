@@ -8,7 +8,7 @@
 
 ### Olá! Bom dia, boa tarde, boa noite! :smiley:  
 
-Na aula de número $14$ do curso, nós iniciaremos o desenvolvimento do lado do servidor. A aula de hoje será uma introdução ao processo de **requisição** e **resposta**, bem como, aos conceitos básicos do PHP. Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elementos definidos no Moodle.
+Na aula de número 14 do curso, nós iniciaremos o desenvolvimento do lado do servidor. A aula de hoje será uma introdução ao processo de **requisição** e **resposta**, bem como, aos conceitos básicos do PHP. Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elementos definidos no Moodle.
 
 1.  **Tópico 05 - PHP: Hypertext Preprocessor**
 

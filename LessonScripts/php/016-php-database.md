@@ -8,7 +8,7 @@
 
 ### Olá! Bom dia, boa tarde, boa noite! :smiley:  
 
-Na aula de número $16$ do curso, nós acessaremos um banco de dados utilizando a interface de conexão *PHP Data Objects (PDO)*. O PDO suporta diferentes *drivers* e permite a integração com banco de dados de maneira prática e funcional.
+Na aula de número 16 do curso, nós acessaremos um banco de dados utilizando a interface de conexão ***PHP Data Objects (PDO)***. O PDO suporta diferentes *drivers* e permite a integração com banco de dados de maneira prática e funcional.
 
 O exemplo do vídeo foi feito com o *SQLite*. Entretanto, você pode reproduzir o código utilizando qualquer banco de dados suportado pelo PDO.
 

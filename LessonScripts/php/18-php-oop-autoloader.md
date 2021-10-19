@@ -8,7 +8,7 @@
 
 ### Olá! Bom dia, boa tarde, boa noite! :smiley:    
 
-Na aula de número $18$ do curso, nós veremos os principais conceitos de orientação a objetos em PHP e o funcionamento do `Autoloader` conforme a [PSR-4](https://www.php-fig.org/psr/psr-4/) por meio do [Composer](https://getcomposer.org/).
+Na aula de número 18 do curso, nós veremos os principais conceitos de **orientação a objetos** em PHP e o funcionamento do ***Autoloader*** conforme a [PSR-4](https://www.php-fig.org/psr/psr-4/) por meio do [Composer](https://getcomposer.org/).
 
 O exemplo do vídeo foi feito com o *SQLite*. Entretanto, você pode reproduzir o código utilizando qualquer banco de dados suportado pelo PDO.
 

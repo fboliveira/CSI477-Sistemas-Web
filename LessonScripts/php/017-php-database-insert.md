@@ -8,7 +8,7 @@
 
 ### Olá! Bom dia, boa tarde, boa noite! :smiley:    
 
-Na aula de número $17$ do curso, nós faremos a inserção de dados enviados a partir de um formulário utilizando a interface de conexão *PHP Data Objects (PDO)*. Veremos também questões sobre validações do lado do cliente e do servidor, além dos processos de transações.
+Na aula de número 17 do curso, nós faremos a **inserção** de dados enviados a partir de um formulário utilizando a interface de conexão ***PHP Data Objects (PDO)***. Veremos também questões sobre validações do lado do cliente e do servidor, além dos processos de transações.
 
 O exemplo do vídeo foi feito com o *SQLite*. Entretanto, você pode reproduzir o código utilizando qualquer banco de dados suportado pelo PDO.
 

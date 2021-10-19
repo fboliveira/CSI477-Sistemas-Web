@@ -8,7 +8,7 @@
 
 ### Olá! Bom dia, boa tarde, boa noite! :smiley:  
 
-Na aula de número $15$ do curso, nós veremos o processo de requisição e resposta a partir de um formulário de *login*. Nós usaremos o método *POST* para submeter os dados e faremos algumas validações.
+Na aula de número 15 do curso, nós veremos o processo de requisição e resposta a partir de um formulário de *login*. Nós usaremos o método ***POST*** para submeter os dados e faremos algumas validações.
 
 Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elementos definidos no Moodle.
 
