@@ -19,7 +19,11 @@ Item | Roteiro | Atividade, entrega ou pasta
 008 | Aula 11 | /exercicio-04/{`02-form.html`, `03-set-interval.html`}
 009 | Aula 12 | /exercicio-04/`04-validacao-form.html`
 010 | Aula 13 | /exercicio-04/`05-carregamento-api.html`
-
+011 | Aula 14 | /exercicio-05/
+012 | Aula 15 | /exercicio-06/
+013 | Aula 16 | /exercicio-07/
+014 | Aula 17 | /exercicio-08/
+015 | Aula 18 | /exercicio-09/
 
 ---
 ## Atividades práticas  
