@@ -45,7 +45,7 @@ Você encontrará aqui os **roteiros** para as nossas aulas. Eles estão organiz
     - 12\. [Validações e cálculos com formulários](./js/12-js-calculo-validacao-form.md)
     - 13\. [Carregamento de dados - Fetch/APIs](./js/13-js-fetch-promise-api.md)
 
-- *** [PHP: Hypertext Preprocessor](https://www.php.net/manual/en/faq.general.php#faq.general.acronym) *** 
+- [***PHP: Hypertext Preprocessor***](https://www.php.net/manual/en/faq.general.php#faq.general.acronym)
 
     - 14\. [Introdução](./php/014-php-introducao.md)
     - 15\. [Formulário/POST - Login](./php/015-php-form-login-post.md)

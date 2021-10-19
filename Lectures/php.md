@@ -34,15 +34,19 @@
 - [Transactions and auto-commit](https://www.php.net/manual/en/pdo.transactions.php)
 ## Autoloading
 
+- [Autoloading Classes](https://www.php.net/manual/en/language.oop5.autoload.php)
+
 - [Composer: Autoloading](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
 
-- [PSR-4: Autoloader](https://www.php-fig.org/psr/psr-4/)
+- [Filipe Deschamps - SOLID fica FÁCIL com Essas Ilustrações](https://youtu.be/6SfrO3D4dHM)
+
+- [PHP-FIG - PSR-4: Autoloader](https://www.php-fig.org/psr/psr-4/)
+
+- [PHP: The Right Way - Dependency Injection](https://phptherightway.com/#dependency_injection)
 
 - [Standard PHP Library - spl_autoload()](https://www.php.net/manual/en/function.spl-autoload.php)
 
 ## PHP Object-Oriented Programming
-
-- [Autoloading Classes](https://www.php.net/manual/en/language.oop5.autoload.php)
 
 - [Classes and Objects](https://www.php.net/manual/en/language.oop5.php)
 
@@ -68,7 +72,6 @@
 
 - [Filipe Deschamps - PHP vale a pena? (minha opinião sincera)](https://youtu.be/H43fXodv6WY)
 
-- [Filipe Deschamps - SOLID fica FÁCIL com Essas Ilustrações](https://youtu.be/6SfrO3D4dHM)
 
 - [Hipsters On The Road #01 - PHP Experience: Performance Web, Criptomoedas e mais](https://hipsters.tech/php-experience-performance-web-criptomoedas-e-mais-hipsters-on-the-road-01/)
 
