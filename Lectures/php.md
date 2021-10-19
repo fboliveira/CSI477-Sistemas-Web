@@ -10,11 +10,14 @@
 
 - [PHP: The Right Way](https://phptherightway.com/)
 
+- [php.net - Documentation](https://www.php.net/docs.php)
+## Response and requests
+
+- [W3Schools - PHP Form Handling](https://www.w3schools.com/PHP/php_forms.asp)
+
 - [php.net - $_GET](https://www.php.net/manual/en/reserved.variables.get.php)
 
 - [php.net - $_POST](https://www.php.net/manual/en/reserved.variables.post.php)
-
-- [php.net - Documentation](https://www.php.net/docs.php)
 
 ## PHP Data Objects (PDO)
 
