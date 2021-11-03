@@ -63,12 +63,19 @@ Quando o usuário clicar, por exemplo, em "Finalizar", a aplicação deverá exi
 
 Construa uma interface para realizar a conversão de valores entre moedas. Os campos referentes às moedas (real, dolar, libra, dentre outras), bem como a cotação atual devem ser carregadas por meio de uma API. 
 
-- API disponível em: <https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/documentacao>
+- Documentação disponível em: <https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/documentacao>
 
 - *Endpoint*: verifique na documentação os diferentes *endpoints* para as moedas e as cotações.
 
-Um exemplo de conversor de moedas está disponível [aqui](https://www.bcb.gov.br/conversao).
+Com as contribuições de [Mateus Ferreira Martins (2021/1)](https://github.com/Marttins23/), seguem as informações de utilização. Os recursos da API e as formas de construção das requições são explicadas no seguinte endereço: <https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/aplicacao#!/recursos>
 
+- Vocês podem realizar uma consulta pela interface e identificar como a URL é construída. Veja um exemplo [aqui](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/aplicacao#!/recursos/Moedas)
+
+- Para os dias sem cotação (feriados, finais de semana e demais dias não úteis), nenhum valor é retornado. Estejam atentos à essa situação e tratem de alguma maneira, caso necessário, esses dias em particular.
+
+- Se estiver disponível, utilizem para o dia o valor de fechamento da cotação. Caso contrário, utilizem o último valor retornado (abertura ou intermediário).
+
+Um exemplo de conversor de moedas está disponível [aqui](https://www.bcb.gov.br/conversao).
 
 ##### **Desafio** *(3,0 pontos extras)*
 
