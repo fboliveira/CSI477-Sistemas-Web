@@ -53,6 +53,17 @@ Você encontrará aqui os **roteiros** para as nossas aulas. Eles estão organiz
     - 17\. [Inserção de dados no banco](./php/017-php-database-insert.md)
     - 18\. [Orientação a objetos e *Autoloader*](./php/018-php-oop-autoloader.md)
 
+- [***Laravel***](https://laravel.com/)
+
+    - 19\. [Introdução](./laravel/019-laravel-introducao.md)
+    - 20\. [*Migrations*](./laravel/020-laravel-migrations.md)
+    - 21\. [*Model* e *Factory*](./laravel/021-laravel-model-factory.md)
+    - 22\. [*Routes* e *Views*](./laravel/022-laravel-routes-views.md)
+
+    - 23\. [*EstadoController: Read*](./laravel/023-laravel-controller-estados-index.md)
+    - 24\. [*EstadoController: Create, Update* e *Delete*](./laravel/024-laravel-controller-estados-crud-final.md)
+    - 25\. [Cidade: *CRUD*](./laravel/025-laravel-crud-cidades.md)
+
 **Eu desejo que você tenha um ótimo curso. E que a Força esteja com você!**
   
   
