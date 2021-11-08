@@ -1,6 +1,6 @@
 # Laravel
 
-O [Laravel](https://laravel.com/) é um *framework* MVC (*Model-View-Controller*) para desenvolvimento Web criado por [Taylor Otwell](https://github.com/taylorotwell). As considerações descritas aqui se referem à versão 8.x. Além disso, este documento está em constante atualização. 
+O [Laravel](https://laravel.com/) é um *framework* MVC (*Model-View-Controller*) para desenvolvimento Web criado por [Taylor Otwell](https://github.com/taylorotwell). As considerações descritas aqui se referem à versão 8.x. Você pode verificar as notas de cada *release* [aqui](https://laravel.com/docs/releases). Além disso, este documento está em constante atualização. 
 
 ## Estrutura de diretórios e arquivos principais
 
@@ -38,7 +38,7 @@ Na raiz da pasta `database` é possível criar um arquivo do `SQLite` para armaz
 
 - [`database/seeders`]: é possível [popular um banco com dados iniciais](https://laravel.com/docs/seeding). É possível utilizar as `factories` para fazer isso ou inserir um conjunto necessário de dados básicos para a aplicação funcionar.
 
----
+--- 
 
 ### Pasta `public`
 
@@ -84,21 +84,38 @@ Armazena as dependência do projeto gerenciadas pelo `Composer`.
 
 Agora é só ~~corrigir os 84095840 bugs~~ alegria! (Não se preocupe, isso é normal!)
 
+E não se esqueça: ***"A documentação é o meu guia e ~~quase~~ nada me faltará."*** (Laravel 8:56) :smiley: 
+
 ![Parabéns!](https://media.giphy.com/media/J5Xr9k7qK5KGRi45vp/giphy.gif)
 
 ## Referências adicionais:
 
+### Migrations 
+
+- [Artisan Console](https://laravel.com/docs/artisan)
+
 - [Database: Migrations](https://laravel.com/docs/migrations)
+### Factories
+
 
 - [Creating Factories](https://laravel.com/docs/database-testing#creating-factories)
 
-    - [PHP Faker](https://github.com/fzaninotto/Faker)
+- [PHP Faker](https://github.com/FakerPHP/Faker/)
+### Model:
 
 - [Model: Eloquent](https://laravel.com/docs/eloquent)
     
-    - [Lumen - PHP Micro-Framework by Laravel](https://lumen.laravel.com/)
+- [Inserting & Updating Models](https://laravel.com/docs/eloquent#inserting-and-updating-models)
 
-    - [PHP Traits](https://www.php.net/manual/en/language.oop5.traits.php)
+- [Eloquent: Relationships](https://laravel.com/docs/eloquent-relationships)
+
+- [Soft deleting](https://laravel.com/docs/eloquent#soft-deleting)
+
+- [Lumen - PHP Micro-Framework by Laravel](https://lumen.laravel.com/)
+
+- [PHP Traits](https://www.php.net/manual/en/language.oop5.traits.php)
+ 
+### Routes e Views
 
 - [Request Lifecycle](https://laravel.com/docs/lifecycle)
 
@@ -106,25 +123,28 @@ Agora é só ~~corrigir os 84095840 bugs~~ alegria! (Não se preocupe, isso é n
 
 - [Views](https://laravel.com/docs/views)
 
-- [Blade Templates](https://laravel.com/docs/blade)
+    - [Blade Templates](https://laravel.com/docs/blade)
 
-- [Blade: Defining A Layout](https://laravel.com/docs/blade#defining-a-layout)
+    - [Blade: Defining A Layout](https://laravel.com/docs/blade#defining-a-layout)
+
+### Controllers:
 
 - [Controllers](https://laravel.com/docs/controllers)
-
-- [Inserting & Updating Models](https://laravel.com/docs/eloquent#inserting-and-updating-models)
-
-- [Soft deleting](https://laravel.com/docs/eloquent#soft-deleting)
 
 - [HTTP Session](https://laravel.com/docs/session)
 
 - [Session: Flash Data](https://laravel.com/docs/session#flash-data)
 
-- [Eloquent: Relationships](https://laravel.com/docs/eloquent-relationships)
+
+### Laracasts
+
+- [Laracasts](https://laracasts.com)
 
 - [Laracasts: Class-Based Model Factories](https://laracasts.com/series/whats-new-in-laravel-8/episodes/4)
 
 - [Laracasts: Model Factory Relationships](https://laracasts.com/series/whats-new-in-laravel-8/episodes/5)
+
+### Autenticação e autorização
 
 - [Authentication](https://laravel.com/docs/authentication)
 
@@ -134,6 +154,15 @@ Agora é só ~~corrigir os 84095840 bugs~~ alegria! (Não se preocupe, isso é n
 
 - [Laracasts: Jetstream](https://laracasts.com/series/whats-new-in-laravel-8/episodes/10)
 
-- [Vue.js](https://vuejs.org/)
-
 - [Authorization](https://laravel.com/docs/authorization)
+
+- [Vue.js](https://vuejs.org/)
+### Outras Referências:
+
+- [Monolitos – Hipsters #173](https://hipsters.tech/monolitos-hipsters-173/)
+
+- [O que são Microsserviços? (Microservices)](https://youtu.be/jSnLOoGjQ80)
+
+- [PodProgramar#63 – Webservices: SOAP e REST](https://mundopodcast.com.br/podprogramar/63-webservices/)
+
+- [Semantic Versioning](https://semver.org/)
