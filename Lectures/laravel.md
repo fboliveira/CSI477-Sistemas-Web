@@ -84,7 +84,7 @@ Armazena as dependência do projeto gerenciadas pelo `Composer`.
 
 Agora é só ~~corrigir os 84095840 bugs~~ alegria! (Não se preocupe, isso é normal!)
 
-E não se esqueça: ***"A documentação é o meu guia e ~~quase~~ nada me faltará."*** (Laravel 8:56) :smiley: 
+E não se esqueça: ***"A [documentação](https://laravel.com/docs/) é o meu guia e ~~quase~~ nada me faltará."*** (Laravel 8:56) :smiley: 
 
 ![Parabéns!](https://media.giphy.com/media/J5Xr9k7qK5KGRi45vp/giphy.gif)
 
