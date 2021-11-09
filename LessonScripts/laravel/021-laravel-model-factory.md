@@ -19,7 +19,7 @@ Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elem
 
     1.  Assista ao vídeo **Laravel - Model e Factory** e reproduza o código também. 
 
-    2.  Conteúdos complementares estão disponíveis [aqui](../../Lectures/laravel.md). Reproduza e teste, sempre que possível, os códigos apresentados nos textos.
+    2.  Conteúdos complementares estão disponíveis sobre [*Factories*](../../Lectures/laravel.md#factories) e [*Models*](../../Lectures/laravel.md#model). Reproduza e teste, sempre que possível, os códigos apresentados nos textos.
 
 ### Exercícios
 
