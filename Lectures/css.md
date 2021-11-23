@@ -36,6 +36,8 @@
 
 - [Beginner’s Guide To CSS Grid And Flexbox](https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412)
 
+- [CSS Grid Garden](https://cssgridgarden.com/) (indicação de [Lucas Gomes](https://github.com/lmgomes91))
+
 - [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
 
 - [Flexbox CSS: Guia Completo, Elementos e Exemplos](https://www.alura.com.br/artigos/css-guia-do-flexbox)
