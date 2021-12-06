@@ -64,7 +64,11 @@ Você encontrará aqui os **roteiros** para as nossas aulas. Eles estão organiz
     - 24\. [*EstadoController: Create, Update* e *Delete*](./laravel/024-laravel-controller-estados-crud-final.md)
     - 25\. [Cidade: *CRUD*](./laravel/025-laravel-crud-cidades.md)
     - 26\. [Autenticação](./laravel/026-laravel-autenticacao.md)
-    
+
+- [***Projeto***]
+
+    - 27\. [Instruções para a apresentação e a avaliação](./project/roteiro-trabalho-final.md)
+
 **Eu desejo que você tenha um ótimo curso. E que a Força esteja com você!**
   
   
