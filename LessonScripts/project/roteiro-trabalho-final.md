@@ -57,8 +57,8 @@ O crograma a seguir é uma **recomendação**. É importante que as atividades s
 
 --- 
 
-> *** "Nothing in life is to be feared, it is only to be understood. ***  
-> *** Now is the time to understand more, so that we may fear less." *** 
+> *"Nothing in life is to be feared, it is only to be understood.*  
+> *Now is the time to understand more, so that we may fear less." * 
 >
 > --- Marie Skłodowska Curie (1867 - 1934). :heart_eyes:  
 > *Polish-French physcist and chemist.*   
