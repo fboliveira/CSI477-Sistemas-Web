@@ -65,7 +65,7 @@ Você encontrará aqui os **roteiros** para as nossas aulas. Eles estão organiz
     - 25\. [Cidade: *CRUD*](./laravel/025-laravel-crud-cidades.md)
     - 26\. [Autenticação](./laravel/026-laravel-autenticacao.md)
 
-- [***Projeto***]
+- ***Projeto***
 
     - 27\. [Instruções para a apresentação e a avaliação](./project/roteiro-trabalho-final.md)
 
