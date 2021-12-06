@@ -58,9 +58,9 @@ O crograma a seguir é uma **recomendação**. É importante que as atividades s
 --- 
 
 > *"Nothing in life is to be feared, it is only to be understood.*  
-> *Now is the time to understand more, so that we may fear less." * 
+> *Now is the time to understand more, so that we may fear less."* 
 >
-> --- Marie Skłodowska Curie (1867 - 1934). :heart_eyes:  
+> --- **Marie Skłodowska Curie** (1867 - 1934). :heart_eyes:  
 > *Polish-French physcist and chemist.*   
 > *The first woman to win a Nobel Prize.*    
 > *The first person and the only woman to win the Nobel Prize twice.*  
