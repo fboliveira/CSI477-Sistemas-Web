@@ -52,9 +52,9 @@ Verifique sobre o processo de instalação das extensões, bem como sobre o *mar
 
 Algumas extensões apresentam funcionalidades adicionais e visuais, como cores, ícones e demais itens. Seguem algumas delas:
 
-- [**Conventional Commits** (vivaxy)](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): esta extensão auxilia e padroniza a crição dos commits (Dica da [Yasmine Melo](https://github.com/MeloYasmine)).
-
 - [**Color Highlight** (Sergii Naumov)](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight): esta extensão destaca as cores utilizadas em documentos CSS/HTML.
+
+- [**Conventional Commits** (vivaxy)](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): esta extensão auxilia e padroniza a crição dos commits (Dica da [Yasmine Melo](https://github.com/MeloYasmine)).
 
 - [**Dracula Official** (Dracula Theme)](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula): tema de cores mais agradáveis e menos cansativa para o editor.
 
