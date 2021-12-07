@@ -72,7 +72,6 @@
 
 - [Filipe Deschamps - PHP vale a pena? (minha opinião sincera)](https://youtu.be/H43fXodv6WY)
 
-
 - [Hipsters On The Road #01 - PHP Experience: Performance Web, Criptomoedas e mais](https://hipsters.tech/php-experience-performance-web-criptomoedas-e-mais-hipsters-on-the-road-01/)
 
 - [PHP não é coisa de sobrinho! – Hipsters #36](https://hipsters.tech/php-nao-e-coisa-de-sobrinho-hipsters-36/)
@@ -81,3 +80,4 @@
 
 - [SOLID: Código bom e bonito - Hipsters Ponto Tech #219](https://hipsters.tech/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219/)
 
+- [W3Techs: Usage statistics of PHP for websites](https://w3techs.com/technologies/details/pl-php)

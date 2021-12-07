@@ -2,6 +2,8 @@
 
 ## Fundamentals
 
+- [Código Fonte TV: Economize (DE VERDADE) Muitas Linhas de Código! 8 Formas de Usar Destructuring no Javascript](https://youtu.be/_17mgcmmHFU)
+
 - [MSDN web docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
 - [Javascripting](https://github.com/workshopper/javascripting)
