@@ -56,6 +56,10 @@
 
 - [Node.js: JavaScript runtime built on Chrome's V8 JavaScript engine](https://nodejs.org/)
 
+## Frameworks
+
+- [Código Fonte TV: Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador](https://youtu.be/Yf0rC7dERjg)
+
 ## Additional resources
 
 - [A RealWorld Comparison of Front-End Frameworks 2020](https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)
