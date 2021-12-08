@@ -84,7 +84,9 @@ As funcionalidades desta área são:
 
 ---
 
-***Let's code!*** ![Let's code!](https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif)
+***Let's code!***   
+
+![Let's code!](https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif)
 
 ![Happy coding](https://media.giphy.com/media/3bu85lsWhBTlWcOMN6/giphy.gif)
 
