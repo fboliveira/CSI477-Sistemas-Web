@@ -37,3 +37,4 @@ Item | Roteiro | Pasta | Entregas
 ## Atividades práticas  
 
 1. [HTML, CSS e JS](./2021-01-atividade-pratica-001.md)
+1. [PHP/Laravel](./2021-01-atividade-pratica-002.md)
