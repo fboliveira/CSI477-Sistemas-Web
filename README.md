@@ -12,12 +12,6 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 
 ---
 
-**Lesson scripts:**
-
-1. [Lesson scripts](./LessonScripts/README.md)
-
----
-
 **Lectures and additional resources:**
 
 1. [Setting up development environment (in portuguese)](./Lectures/setting-environment.md)
