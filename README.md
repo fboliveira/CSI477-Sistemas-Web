@@ -1,11 +1,14 @@
 # CSI606 - Sistemas Web I
+
 ## Lecture Notes and Codes
-### **Prof. Fernando Bernardes de Oliveira, Ph.D.**
+
+### Prof. Fernando Bernardes de Oliveira, Ph.D.
+
 #### [Department of Computer and Systems (DECSI)](https://decsi.ufop.br/)
 
 ---
 
-Here are available lecture notes and codes on CSI606 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2021/01 - Online class (COVID-19).
+Here are available lecture notes and codes on CSI606 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2021/02.
 
 ---
 
@@ -39,4 +42,4 @@ Fernando B Oliveira.
 
 [Contact and info.](mailto:fboliveira@ufop.edu.br)
 
---------------
+---
