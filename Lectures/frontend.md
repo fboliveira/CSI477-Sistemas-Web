@@ -18,7 +18,7 @@
 
 - [Micro Frontends na Conta Azul - Hipsters On The Road #26](https://hipsters.tech/micro-frontends-no-conta-azul-hipsters-on-the-road-26/)
 
-## News 
+## News
 
 - [CGI divulga levantamento de acesso à internet no Brasil (Loop Matinal)](https://tecnoblog.net/304701/brasil-126-milhoes-pessoas-conectadas-tic-domicilios/)
 
