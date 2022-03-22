@@ -29,6 +29,10 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 
 ---
 
+[**Lesson scripts - remote classes:**](./LessonScripts/README.md)
+
+---
+
 License: [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Best regards,  
