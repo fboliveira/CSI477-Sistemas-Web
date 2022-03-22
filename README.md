@@ -29,7 +29,7 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 
 ---
 
-[**Lesson scripts - remote classes:**](./LessonScripts/README.md)
+[**Lesson scripts - remote classes**](./LessonScripts/README.md)
 
 ---
 
