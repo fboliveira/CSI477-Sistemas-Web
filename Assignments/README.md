@@ -12,7 +12,7 @@ Somente as aulas com entregas de códigos foram inseridas aqui. Atualize o seu r
 
 Item | Roteiro | Pasta | Entregas
 ---- | ------ | -------|-------------------
-001 | Aula | /exercicio-01/ |  
+001  | Aula HTML | /exercicio-01/ |  
 
 --
 
