@@ -10,9 +10,9 @@
 
 Somente as aulas com entregas de códigos foram inseridas aqui. Atualize o seu repositório incluindo essas atividades na pasta `Atividades/exercicios`
 
-Item | Roteiro | Pasta | Entregas
+Item | Roteiro / Aula | Pasta | Entregas
 ---- | ------ | -------|-------------------
-001  | Aula HTML | /exercicio-01/ |  
+001  | [02 - HTML - Introdução](../LessonScripts/markup-languages/002-roteiro-aula-02-html.md) | /exercicio-01/ |  
 
 --
 
