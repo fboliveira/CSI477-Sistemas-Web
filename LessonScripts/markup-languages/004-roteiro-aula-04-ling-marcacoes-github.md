@@ -1,6 +1,8 @@
 # CSI606 - Sistemas WEB I - SI-06
+
 ## Período Letivo Remoto
-### Prof. Fernando Bernardes de Oliveira, Ph.D.
+
+### Prof. Fernando Bernardes de Oliveira, Ph.D
 
 ---
 
@@ -12,10 +14,10 @@ Na quarta aula do curso, nós veremos sobre outras linguagens de marcação, com
 
 Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elementos definidos no Moodle.
 
-####  **Tópico 02 - Linguagens de Marcação: XML e JSON; Git e GitHub**
+#### **Tópico 02 - Linguagens de Marcação: XML e JSON; Git e GitHub**
 
 1. **XML e JSON**
-    
+
     Basicamente, XML e JSON são linguagens de marcação que podem ser utilizadas para transferência de dados. Notas fiscais eletrônicas, por exemplo, enviam um PDF e um XML dessa nota. *APIs REST* podem utilizar JSON para comunicação. Ambas as linguagens podem ser aplicadas em diversos contextos.
 
     O que difere principalmente essas linguagens? Estrutura e verbosidade. Vocês verão nos links no Moodle, em especial, naquele que apresenta exemplos de JSON, que ambas conseguem estruturar os mesmos dados. Entretanto, o XML é muito mais verboso. Se você precisa economizar na transmissão de dados, como em *mobile* ou numa API muito requisitada, prefira JSON. APIs em NodeJS, por exemplo, podem retornar as requisições com JSON.
@@ -24,10 +26,10 @@ Para esta aula, teremos as seguintes atividades. Estes itens se referem aos elem
 
     Conteúdos complementares estão disponíveis sobre [XML](../Lectures/xml.md) e [JSON](../Lectures/json.md). Reproduza e teste, sempre que possível, os códigos apresentados nos textos.
 
-2.  **Git e GitHub**
+2. **Git e GitHub**
 
-    Existe um documento para auxiliar na criação do seu repositório: [Tutorial: Como criar o repositório no GitHub / Classroom](../Lectures/create-classroom-repository.md) 
-    
+    Existe um documento para auxiliar na criação do seu repositório: [Tutorial: Como criar o repositório no GitHub / Classroom](../Lectures/create-classroom-repository.md)
+
     Algumas sugestões de atividades complementares, como *podcasts* e vídeos, além da documentação estão disponíveis [aqui](../Lectures/git-and-github.md). Eu sugiro que você verifique esses conteúdos.
 
 ---
@@ -44,4 +46,4 @@ A definição da estrutura e dos nomes das pastas é fundamental para agilizar o
 
 As frequências das aula até hoje serão apuradas pela criação do repositório e pela submissão dos arquivos na pasta indicada.
 
-[Índice](./README.md#índice)
+[Índice](../README.md#índice)

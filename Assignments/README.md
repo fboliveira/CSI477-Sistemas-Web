@@ -12,7 +12,8 @@ Somente as aulas com entregas de códigos foram inseridas aqui. Atualize o seu r
 
 Item | Roteiro / Aula | Pasta | Entregas
 ---- | ------ | -------|-------------------
-001  | [02 - HTML - Introdução](../LessonScripts/markup-languages/002-roteiro-aula-02-html.md) | /exercicio-01/ |  
+001  | [02 - HTML - Introdução](../LessonScripts/markup-languages/002-roteiro-aula-02-html.md) | /exercicio-01/ | Página principal e perfil
+002  | [03 - HTML - Introdução](../LessonScripts/markup-languages/003-roteiro-aula-03-html-forms-tables.md) | /exercicio-01/ | Cadastro (*form*) e relatório (*table*)  
 
 --
 
