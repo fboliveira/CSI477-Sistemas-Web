@@ -90,6 +90,8 @@ p.maior { color: #C6C6C6; text-align: center; }
 
 - Separar em múltiplos arquivos ou utilizar apenas um estilo geral?
 
+---
+
 ```css
 /* Comentário: Arquivo de estilos - estilos.css */
 h1 { color: red;
@@ -98,6 +100,8 @@ h1 { color: red;
 h3 { color: black;
         font-family: tahoma; }
 ```
+
+---
 
 ```html
 <html>
@@ -145,7 +149,11 @@ h3 { color: black;
 
 - [MDN: :nth-child()](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 
+- [MDN: Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+
 - [MDN: Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+
+- [MDN: Selector - Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)
 
 - [W3Schools - CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
 
@@ -155,7 +163,7 @@ h3 { color: black;
 
 - [CSS Grid Garden](https://cssgridgarden.com/) (indicação de [Lucas Gomes](https://github.com/lmgomes91))
 
-- [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
+- [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 - [Flexbox CSS: Guia Completo, Elementos e Exemplos](https://www.alura.com.br/artigos/css-guia-do-flexbox)
 
