@@ -1,6 +1,8 @@
 # CSI606 - Sistemas WEB I - SI-06
+
 ## Período Letivo Remoto
-### Prof. Fernando Bernardes de Oliveira, Ph.D.
+
+### Prof. Fernando Bernardes de Oliveira, Ph.D
 
 ---
 
@@ -10,13 +12,13 @@
 
 Na terceira aula do curso, nós veremos dois importantes elementos do HTML, o **formulário** e a **tabela**. Assim, teremos as seguintes atividades para esta aula. Estes itens se referem aos elementos definidos no Moodle.
 
-1.  **Tópico 02 - Linguagens de Marcação - HTML: Formulários e Tabelas**
+1. **Tópico 02 - Linguagens de Marcação - HTML: Formulários e Tabelas**
 
-    1.  Assista ao vídeo **HTML - Formulários** e reproduza o código também.
+    1. Assista ao vídeo **HTML - Formulários** e reproduza o código também.
 
-    1.  Assista ao vídeo **HTML - Tabelas** e reproduza o código também.
+    1. Assista ao vídeo **HTML - Tabelas** e reproduza o código também.
 
-    1.  Conteúdos complementares estão disponíveis sobre [formulários](../Lectures/html.md#forms) e [tabelas](../Lectures/html.md#tables). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
+    1. Conteúdos complementares estão disponíveis sobre [formulários](../Lectures/html.md#forms) e [tabelas](../Lectures/html.md#tables). Reproduza e teste, sempre que possível, os códigos apresentados nos textos. Existem outras *tags* naqueles documentos que também podem ser exploradas.
 
 ---
 
@@ -35,4 +37,4 @@ GitHub, queira, por gentileza, criá-la.
 
 A frequência da aula de hoje será apurada pela submissão da atividade prática no momento a ser indicado.
 
-[Índice](./README.md#índice)
+[Índice](../README.md#índice)
