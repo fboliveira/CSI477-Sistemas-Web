@@ -30,12 +30,12 @@ div.info {
    color: #9f48e6;     
 }
 
-a {
+a, input[type="submit"], input[type="reset"] {
     color: #ffffff;
     background-color: #6d6de6;
     text-decoration: none;
     padding: 10px;
-    margin: 10px;
+    margin: 2px;
 }
 
 a:hover {
@@ -46,4 +46,20 @@ a:hover {
 p:active {
     background-color: red;
     color: black;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex div[id="links"] {
+    background-color: #9f48e6;
+    width: 200px;
+    margin: 20px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 20px;
 }

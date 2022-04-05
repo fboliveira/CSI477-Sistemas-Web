@@ -1,0 +1,19 @@
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    background-color: #c6c6c6;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: 1px solid #949191;
+    border-radius: 5px;
+}
+
+form > div {
+    padding: 20px;
+    border: 1px solid #0000ff;
+}

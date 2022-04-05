@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+thead tr:hover {
+    background-color: blue;
+}
+
+tbody tr:hover {
+    background-color: rgb(191, 191, 194);
+}
+tfoot tr:hover {
+    background-color: rgb(27, 196, 142);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(198, 193, 192);
+}
+
+.centralizado {
+    text-align: center;
+}
+
