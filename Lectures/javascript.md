@@ -205,7 +205,7 @@
 
 - [#236 - Evolução do JavaScript](https://hipsters.tech/evolucao-do-javascript-hipsters-ponto-tech-236/)
 
-- [React e prevenção de fraudes na Escale --- Hipsters On The Road #50](https://hipsters.tech/react-e-prevencao-de-fraudes-na-escale-hipsters-on-the-road-50/)
+- [React e prevenção de fraudes na Escale - Hipsters On The Road #50](https://hipsters.tech/react-e-prevencao-de-fraudes-na-escale-hipsters-on-the-road-50/)
 
 ### Other resources
 
