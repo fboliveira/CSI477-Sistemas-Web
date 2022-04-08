@@ -1,6 +1,133 @@
 # JavaScript
 
-## Fundamentals
+## Introdução
+
+- Originalmente desenvolvido pela Netscape sob o nome de **Mocha**.
+
+- Nome mudado para **LiveScript** e depois para **JavaScript**.
+
+- Autor: [**Brendan Eich**](https://en.wikipedia.org/wiki/Brendan_Eich).
+
+- **LiveScript**: nome oficial da linguagem quando foi lançada na versão beta do navegador **Netscape 2.0**.
+
+- Nome mudado em um anúncio conjunto com a **Sun Microsystems**: em dezembro de 1995 quando foi implementado no navegador Netscape versão 2.0B3.
+
+- A mudança coincidiu com a época em que a Netscape adicionou suporte à tecnologia **Java** em seu navegador.
+
+- A escolha final do nome causou **confusão** dando a impressão de que a linguagem foi baseada em **Java**.
+
+- A ação foi caracterizada por muitos como uma **estratégia** de marketing da Netscape para aproveitar a **popularidade** do Java;
+
+- **Sugestões de leitura**:
+
+    = [*JavaScript: The World's Most Misunderstood Programming Language*](http://crockford.com/javascript/javascript.html)
+
+    = [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript>)
+
+    = [*The Modern JavaScript Tutorial*](https://javascript.info/)
+
+## Especificação
+
+- **ECMAScript / ECMA-262** - <https://tc39.github.io/ecma262/>
+
+- Especificação da linguagem - *scripts*
+
+- Base para Javascript.
+
+- [*JavaScript Versions*](https://www.w3schools.com/js/js_versions.asp)
+
+## Características
+
+- **Comandos e funções JavaScript**: inseridos dentro de
+    um documento da Web, junto com tags HTML e texto;
+
+- Para acessar uma página que possui *scripts*: o navegador deve ser capaz de interpretar a linguagem.
+
+- Javascript é uma linguagem **baseada em objetos**: orientada a objetos com um **conjunto de objetos** já embutidos.
+
+- **Evento**: sempre que algo acontece em uma página Web.
+
+- **Podem ser qualquer ação**: um botão recebe um clique o mouse é arrastado, uma página é carregada, um formulário é enviado, e assim por diante.
+
+- **JavaScript**: dirigida por eventos - projetada para reagir quando um evento ocorre.
+
+- Ela não é capaz de recuperar informações de outro arquivo ou salvar dados em um servidor da Web, ou no computador do usuário.
+
+- Não é possível escrever um script Javascript que, por exemplo, varra os diretórios de um computador, lendo ou apagando arquivos do usuário.
+
+- É uma linguagem **independente de plataforma**: **depende apenas do navegador** que a interpreta.
+
+- JavaScript é *case sensitive*;
+
+- Sintaxe bastante similar a C, C++, dentre outras;
+
+### JavaScript não é Java
+
+- JavaScript é **baseada em objetos**: tem seus próprios objetos embutidos;
+
+- Java é **orientada a objetos**: os objetos são construídos a partir de classes;
+
+- JavaScript usa **tipagem fraca/dinâmica**: as  variáveis não precisam ser declaradas, e uma variável ora pode guardar *strings*, ora *números*.
+
+- Java usa **tipagem forte**: as variáveis precisam ser declaradas e usadas para um tipo de dados específico;
+
+- Javascript usa **ligação dinâmica**: referências a objetos são verificadas e resolvidas em tempo de execução.
+
+- Java usa **ligação estática**: referências a objetos devem ser resolvidas quando o programa é compilado.
+
+## Inserção no HTML
+
+- *Tag*: `<script>...</script>`
+
+- Atributo `type="text/javascript"`: não requerido.
+
+- JS é a linguagem de *script* padrão em HTML.
+
+- Pode-se inserir a *tag* dentro dos elementos `<head>`, `<body>` ou ambos;
+
+- É possível incorporar múltiplos elementos `<script>` dentro de um documento.
+
+- Scripts dentro da *tag* `<head>` são carregados antes que o resto da página seja carregado;
+
+- Scripts dentro da *tag* `<body>` faz com que seja possível criar dinamicamente partes de seu documento.
+
+```html
+<script>
+    codigo-fonte javascript
+</script>
+
+<script src="funcoes.js"></script>
+```
+
+## Hierarquia dos Objetos: DOM - *Document Object Model*
+
+- O navegador cria um [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) quando a página é carregada.
+
+- Um exemplo pode ser observado a seguir. A imagem foi retirada [daqui](http://www.w3schools.com/js/js_htmldom.asp).
+
+![DOM](https://www.w3schools.com/js/pic_htmltree.gif)
+
+## Frameworks e tecnologias
+
+- [JSON (*JavaScript Object Notation*)](http://www.json.org/)
+
+- [jQuery (?)](http://jquery.com/)
+
+- [AngularJS](https://www.angularjs.org/)
+
+- [React](https://reactjs.org/)
+
+- [Vue.js](https://vuejs.org/)
+
+- [TypeScript](https://www.typescriptlang.org/)
+
+- [Node.js](https://nodejs.org)
+
+- [Deno](https://deno.land/)
+
+## Additional resources
+
+### Fundamentals
 
 - [Código Fonte TV: Economize (DE VERDADE) Muitas Linhas de Código! 8 Formas de Usar Destructuring no Javascript](https://youtu.be/_17mgcmmHFU)
 
@@ -22,11 +149,11 @@
 
 - [MDN: Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
-- [Rocketseat: curso starter](https://app.rocketseat.com.br/starter) (indicação de [Lorena Lopes](https://github.com/alorenalopes))
+- [Rocketseat](https://www.rocketseat.com.br/) (indicação de [Lorena Lopes](https://github.com/alorenalopes))
 
 - [W3Schools: Window setInterval() Method](https://www.w3schools.com/jsref/met_win_setinterval.asp)
 
-## APIs:
+### APIs
 
 - [Axios](https://github.com/axios/axios)
 
@@ -44,26 +171,44 @@
 
 - [Public APIs](https://github.com/public-apis/public-apis)
 
-## TypeScript
+### TypeScript
 
 - [TypeScript](https://www.typescriptlang.org/)
 
 - [O Hype do TypeScript – Hipsters #207](https://hipsters.tech/o-hype-do-typescript-hipsters-207/)
 
-## JS Server side
+### JS Server side
 
 - [Deno: A secure runtime for JavaScript and TypeScript](https://deno.land/)
 
 - [Node.js: JavaScript runtime built on Chrome's V8 JavaScript engine](https://nodejs.org/)
 
-## Frameworks
+### Frameworks
 
 - [Código Fonte TV: Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador](https://youtu.be/Yf0rC7dERjg)
 
-## Additional resources
+### Podcasts - Hipsters Ponto Tech
+
+- [#16 - Single Page Applications](http://hipsters.tech/single-page-applications-hipsters-16/)
+
+- [#38 - O Reino encantado do JavaScript](http://hipsters.tech/o-reino-encantado-do-javascript-hipsters-38/)
+
+- [#58 - Evolução e Especificação do JavaScript Moderno](https://hipsters.tech/evolucao-e-especificacao-do-javascript-moderno/?submit=Ver)
+
+- [#66 - React: o framework onipresente](https://hipsters.tech/react-o-framework-onipresente-hipsters-66/)
+
+- [#78 - Javascript: Ember.js](https://hipsters.tech/javascript-ember-js-hipsters-78)
+
+- [#142 - Angular vs React](https://hipsters.tech/angular-vs-react-hipsters-142/)
+
+- [#169 - JavaScript: manual de sobrevivência 2020](https://hipsters.tech/javascript-manual-de-sobrevivencia-2020-hipsters-169/)
+
+- [#236 - Evolução do JavaScript](https://hipsters.tech/evolucao-do-javascript-hipsters-ponto-tech-236/)
+
+- [React e prevenção de fraudes na Escale --- Hipsters On The Road #50](https://hipsters.tech/react-e-prevencao-de-fraudes-na-escale-hipsters-on-the-road-50/)
+
+### Other resources
 
 - [A RealWorld Comparison of Front-End Frameworks 2020](https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)
 
-- [JavaScript: manual de sobrevivência 2020 – Hipsters #169](https://hipsters.tech/javascript-manual-de-sobrevivencia-2020-hipsters-169/)
-
-- [OWASP Top Ten](https://owasp.org/www-project-top-ten/) 
+- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
