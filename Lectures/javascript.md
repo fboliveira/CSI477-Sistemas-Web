@@ -20,11 +20,11 @@
 
 - **Sugestões de leitura**:
 
-    = [*JavaScript: The World's Most Misunderstood Programming Language*](http://crockford.com/javascript/javascript.html)
+  - [*JavaScript: The World's Most Misunderstood Programming Language*](http://crockford.com/javascript/javascript.html)
 
-    = [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript>)
+  - [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript>)
 
-    = [*The Modern JavaScript Tutorial*](https://javascript.info/)
+  - [*The Modern JavaScript Tutorial*](https://javascript.info/)
 
 ## Especificação
 
@@ -67,7 +67,7 @@
 
 - Java é **orientada a objetos**: os objetos são construídos a partir de classes;
 
-- JavaScript usa **tipagem fraca/dinâmica**: as  variáveis não precisam ser declaradas, e uma variável ora pode guardar *strings*, ora *números*.
+- JavaScript usa **tipagem fraca/dinâmica**: as  variáveis são declaradas com [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) e [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var), e uma variável ora pode guardar *strings*, ora *números* (com exceção daquelas declaradas com `const`).
 
 - Java usa **tipagem forte**: as variáveis precisam ser declaradas e usadas para um tipo de dados específico;
 
