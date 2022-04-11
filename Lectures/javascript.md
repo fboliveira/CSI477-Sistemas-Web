@@ -61,6 +61,8 @@
 
 - Sintaxe bastante similar a C, C++, dentre outras;
 
+- [Automatic Semicolon Insertion](https://tc39.es/ecma262/#sec-automatic-semicolon-insertion)
+
 ### JavaScript não é Java
 
 - JavaScript é **baseada em objetos**: tem seus próprios objetos embutidos;
