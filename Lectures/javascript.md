@@ -32,7 +32,7 @@
 
 - Especificação da linguagem - *scripts*
 
-- Base para Javascript.
+- Base para JavaScript.
 
 - [*JavaScript Versions*](https://www.w3schools.com/js/js_versions.asp)
 
@@ -43,7 +43,7 @@
 
 - Para acessar uma página que possui *scripts*: o navegador deve ser capaz de interpretar a linguagem.
 
-- Javascript é uma linguagem **baseada em objetos**: orientada a objetos com um **conjunto de objetos** já embutidos.
+- JavaScript é uma linguagem **baseada em objetos**: orientada a objetos com um **conjunto de objetos** já embutidos.
 
 - **Evento**: sempre que algo acontece em uma página Web.
 
@@ -53,7 +53,7 @@
 
 - Ela não é capaz de recuperar informações de outro arquivo ou salvar dados em um servidor da Web, ou no computador do usuário.
 
-- Não é possível escrever um script Javascript que, por exemplo, varra os diretórios de um computador, lendo ou apagando arquivos do usuário.
+- Não é possível escrever um script JavaScript que, por exemplo, varra os diretórios de um computador, lendo ou apagando arquivos do usuário.
 
 - É uma linguagem **independente de plataforma**: **depende apenas do navegador** que a interpreta.
 
