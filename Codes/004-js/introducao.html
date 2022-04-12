@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução ao JavaScript</title>
+
+    <script>
+        'use strict'
+
+        function Pessoa(nome, sobrenome) {
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+        }
+
+        function carregarDados() {
+            const nome = document.dados.nome.value;
+            const sobrenome = document.getElementById("sobreNomePessoa").value;
+
+            const pessoa = new Pessoa(nome, sobrenome);
+            console.log(pessoa);    
+
+            document.getElementById("date").innerHTML = Date();
+
+            
+            for(let i = 0; i < 10; i++) {
+                var x = 0;
+                console.log(i);
+            }
+
+            // console.log(i); // ??
+            console.log(x); 
+
+            document.getElementById("resultado").innerHTML = `<h2>Dados carregados com sucesso: ${nome} ${sobrenome}</h2>`;
+
+
+            const obj = {
+                name: nome,
+                lastname: sobrenome,
+                address: {
+                    street: 'Rua A'
+                }
+            };
+
+            console.log(obj);
+
+
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <script>
+        document.write('Olá, mundo!');
+        console.log('Página carregada.');
+        // const nome = window.prompt('Digite o seu nome:');
+        // console.log(nome);
+    </script>
+
+    <div id="date"></div>
+
+    <form action="#" method="post" name="dados">
+        <input type="text" name="nome" id="nomePessoa">
+        <input type="text" name="sobrenome" id="sobreNomePessoa">
+
+        <input type="button" value="Carregar Dados" onclick="carregarDados()">
+    </form>
+
+    <div id="resultado"></div>
+
+</body>
+</html>
