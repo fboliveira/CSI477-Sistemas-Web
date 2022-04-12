@@ -73,7 +73,7 @@
 
 - Java usa **tipagem forte**: as variáveis precisam ser declaradas e usadas para um tipo de dados específico;
 
-- Javascript usa **ligação dinâmica**: referências a objetos são verificadas e resolvidas em tempo de execução.
+- JavaScript usa **ligação dinâmica**: referências a objetos são verificadas e resolvidas em tempo de execução.
 
 - Java usa **ligação estática**: referências a objetos devem ser resolvidas quando o programa é compilado.
 
@@ -212,5 +212,7 @@
 ### Other resources
 
 - [A RealWorld Comparison of Front-End Frameworks 2020](https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)
+
+- [Learning JavaScript Design Patterns](https://www.patterns.dev/posts/classic-design-patterns/)
 
 - [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
