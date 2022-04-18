@@ -149,6 +149,8 @@
 
 - [MDN: JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
+- [MDN: String locale compare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
+
 - [MDN: Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 - [Rocketseat](https://www.rocketseat.com.br/) (indicação de [Lorena Lopes](https://github.com/alorenalopes))
