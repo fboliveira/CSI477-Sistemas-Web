@@ -1,6 +1,6 @@
 # Laravel
 
-O [Laravel](https://laravel.com/) é um *framework* MVC (*Model-View-Controller*) para desenvolvimento Web criado por [Taylor Otwell](https://github.com/taylorotwell). As considerações descritas aqui se referem à versão 8.x. Você pode verificar as notas de cada *release* [aqui](https://laravel.com/docs/releases). Além disso, este documento está em constante atualização. 
+O [Laravel](https://laravel.com/) é um *framework* MVC (*Model-View-Controller*) para desenvolvimento Web criado por [Taylor Otwell](https://github.com/taylorotwell). As considerações descritas aqui se referem à versão 9.x. Você pode verificar as notas de cada *release* [aqui](https://laravel.com/docs/releases). Além disso, este documento está em constante atualização.
 
 ## Estrutura de diretórios e arquivos principais
 
@@ -20,7 +20,7 @@ Na raiz da aplicação, os seguintes arquivos podem ser encontrados:
 
 ### Pasta `app`
 
-A pasta `app` conterá a maior parte do código da aplicação. 
+A pasta `app` conterá a maior parte do código da aplicação.
 
 - [`app/Models`]: definição dos modelos da aplicação, responsáveis pela manipulação das entidades de banco de dado de maneira transparente.
 
@@ -38,11 +38,11 @@ Na raiz da pasta `database` é possível criar um arquivo do `SQLite` para armaz
 
 - [`database/seeders`]: é possível [popular um banco com dados iniciais](https://laravel.com/docs/seeding). É possível utilizar as `factories` para fazer isso ou inserir um conjunto necessário de dados básicos para a aplicação funcionar.
 
---- 
+---
 
 ### Pasta `public`
 
-Esta pasta é a raiz do servidor. É nela em são incluídos os `assets` (css, js, imagens e afins).  Utilize o [helper asset()](https://laravel.com/docs/helpers#method-asset) para a inclusão correta do link para esses arquivos. 
+Esta pasta é a raiz do servidor. É nela em são incluídos os `assets` (css, js, imagens e afins).  Utilize o [helper asset()](https://laravel.com/docs/helpers#method-asset) para a inclusão correta do link para esses arquivos.
 
 ---
 
@@ -73,7 +73,7 @@ Armazena as dependência do projeto gerenciadas pelo `Composer`.
 1. Criar o banco de dados, se necessário.
 1. Criar o `model` e demais elementos: `php artisan make:model -a <NomeDoModel>`
 1. Definir o `migration`: pasta `database/migrations`.
-1. Executar o `migrate`: `php artisan migrate` 
+1. Executar o `migrate`: `php artisan migrate`
 1. Implementar a `factory`: pasta `database/factories`.
 1. Implementar o `seeder`: pasta `database/seeders`.
 1. Configurar as rotas: arquivo `routes/web.php`
@@ -84,27 +84,34 @@ Armazena as dependência do projeto gerenciadas pelo `Composer`.
 
 Agora é só ~~corrigir os 84095840 bugs~~ alegria! (Não se preocupe, isso é normal!)
 
-E não se esqueça: ***"A [documentação](https://laravel.com/docs/) é o meu guia e ~~quase~~ nada me faltará."*** (Laravel 8:56) :smiley: 
+E não se esqueça: ***"A [documentação](https://laravel.com/docs/) é o meu guia e ~~quase~~ nada me faltará."*** (Laravel 9:2) :smiley:
 
 ![Parabéns!](https://media.giphy.com/media/J5Xr9k7qK5KGRi45vp/giphy.gif)
 
-## Referências adicionais:
+### Laravel Sail
 
-### Migrations 
+Uma dica fantástica do [Víctor Ballestrini](https://laravel.com/docs/releases) para agilizar o processo de criação de uma aplicação por meio de *container Docker* é utilizar o [Laravel Sail](https://laravel.com/docs/sail). É possível criar um ambiente de desenvolvimento padrão sem precisar instalar as dependências do Laravel.
+
+O Sail também pode ser utilizado em [aplicações existentes](https://laravel.com/docs/sail#installing-sail-into-existing-applications).
+
+## Referências adicionais
+
+### Migrations
 
 - [Artisan Console](https://laravel.com/docs/artisan)
 
 - [Database: Migrations](https://laravel.com/docs/migrations)
-### Factories
 
+### Factories
 
 - [Creating Factories](https://laravel.com/docs/database-testing#creating-factories)
 
 - [PHP Faker](https://github.com/FakerPHP/Faker/)
-### Model:
+
+### Model
 
 - [Model: Eloquent](https://laravel.com/docs/eloquent)
-    
+
 - [Inserting & Updating Models](https://laravel.com/docs/eloquent#inserting-and-updating-models)
 
 - [Eloquent: Relationships](https://laravel.com/docs/eloquent-relationships)
@@ -114,7 +121,7 @@ E não se esqueça: ***"A [documentação](https://laravel.com/docs/) é o meu g
 - [Lumen - PHP Micro-Framework by Laravel](https://lumen.laravel.com/)
 
 - [PHP Traits](https://www.php.net/manual/en/language.oop5.traits.php)
- 
+
 ### Routes e Views
 
 - [Request Lifecycle](https://laravel.com/docs/lifecycle)
@@ -123,18 +130,17 @@ E não se esqueça: ***"A [documentação](https://laravel.com/docs/) é o meu g
 
 - [Views](https://laravel.com/docs/views)
 
-    - [Blade Templates](https://laravel.com/docs/blade)
+- [Blade Templates](https://laravel.com/docs/blade)
 
-    - [Blade: Defining A Layout](https://laravel.com/docs/blade#defining-a-layout)
+- [Blade: Defining A Layout](https://laravel.com/docs/blade#defining-a-layout)
 
-### Controllers:
+### Controllers
 
 - [Controllers](https://laravel.com/docs/controllers)
 
 - [HTTP Session](https://laravel.com/docs/session)
 
 - [Session: Flash Data](https://laravel.com/docs/session#flash-data)
-
 
 ### Laracasts
 
@@ -157,7 +163,10 @@ E não se esqueça: ***"A [documentação](https://laravel.com/docs/) é o meu g
 - [Authorization](https://laravel.com/docs/authorization)
 
 - [Vue.js](https://vuejs.org/)
-### Outras Referências:
+
+### Outras Referências
+
+- [Especializa TI - Curso de Laravel 9 Gratuito](https://academy.especializati.com/curso/laravel-9-gratuito)
 
 - [Monolitos – Hipsters #173](https://hipsters.tech/monolitos-hipsters-173/)
 
