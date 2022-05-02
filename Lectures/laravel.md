@@ -94,6 +94,24 @@ Uma dica fantástica do [Víctor Ballestrini](https://laravel.com/docs/releases)
 
 O Sail também pode ser utilizado em [aplicações existentes](https://laravel.com/docs/sail#installing-sail-into-existing-applications).
 
+Passos para a criação com o Sail:
+
+- Execute o script para criação de uma aplicação:
+
+```bash
+curl -s https://laravel.build/example-app | bash
+```
+
+- Acesse o diretório criado e execute o Sail.
+
+```bash
+cd example-app
+ 
+./vendor/bin/sail up
+```
+
+Na primeira execução, o *container* precisará ser criado na sua máquina e a execução leva ~~três dias~~ um tempo maior. Depois, é mais rápido.
+
 ## Referências adicionais
 
 ### Migrations
