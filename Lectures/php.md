@@ -1,6 +1,58 @@
 # PHP: Hypertext Preprocessor
 
-## Fundamentals:
+## Introduction
+
+- [**PHP** stands for *PHP: Hypertext Preprocessor*](https://www.php.net/manual/en/faq.general.php#faq.general.acronym)
+
+- **General-purpose** scripting language.
+
+- PHP is especially suited for web development.
+
+- PHP is an HTML-embedded scripting language. ```<?php ... ?>```
+
+### Types
+
+PHP supports [ten primitive types](https://www.php.net/manual/en/language.types.intro.php).
+
+- Scalar: bool, int, float and string.
+- Compound: array, object, callable and iterable.
+- Two special types: resource and NULL.
+
+### Variables
+
+- PHP is *loosely typed*.
+
+- [Types](https://www.php.net/manual/en/language.types.php)
+
+- The variable name is case-sensitive.
+
+```php
+<?php
+    $name = 'Marie Curie';
+?>
+```
+
+> If a file contains only PHP code, it is preferable to omit the PHP closing tag at the end of the file. This prevents accidental whitespace or new lines being added after the PHP closing tag, which may cause unwanted effects because PHP will start output buffering when there is no intention from the programmer to send any output at that point in the script. [Source](https://www.php.net/manual/en/language.basic-syntax.phptags.php)
+
+- [PHP coding standards](https://raw.githubusercontent.com/php/php-src/master/CODING_STANDARDS.md)
+
+### Escaping from HTML
+
+```php
+<?php if ($expression == true): ?>
+  This will show if the expression is true.
+<?php else: ?>
+  Otherwise this will show.
+<?php endif; ?>
+```
+
+### Performance
+
+- [OPcache](https://www.php.net/manual/en/book.opcache.php)
+- [How to use PHP OPCache ?](https://www.geeksforgeeks.org/how-to-use-php-opcache/)
+- [Preloading](https://www.php.net/manual/en/opcache.preloading.php)
+
+## Fundamentals
 
 - [Caelum - Introdução ao PHP](https://www.caelum.com.br/apostila-html-css-javascript/introducao-a-php/)
 
@@ -11,6 +63,7 @@
 - [PHP: The Right Way](https://phptherightway.com/)
 
 - [php.net - Documentation](https://www.php.net/docs.php)
+
 ## Response and requests
 
 - [W3Schools - PHP Form Handling](https://www.w3schools.com/PHP/php_forms.asp)
@@ -32,6 +85,7 @@
 - [The PDO class](https://www.php.net/manual/en/class.pdo)
 
 - [Transactions and auto-commit](https://www.php.net/manual/en/pdo.transactions.php)
+
 ## Autoloading
 
 - [Autoloading Classes](https://www.php.net/manual/en/language.oop5.autoload.php)
