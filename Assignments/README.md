@@ -23,5 +23,5 @@ Item | Roteiro / Aula | Pasta | Entregas
 
 ## Atividades práticas
 
-1. HTML, CSS e JS
+1. [HTML, CSS e JS](./Practices/2021-02-atividade-pratica-001.md)
 1. PHP/Laravel  
