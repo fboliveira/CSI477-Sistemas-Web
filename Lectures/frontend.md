@@ -8,6 +8,8 @@
 
 - [Color Hunt](https://colorhunt.co) (from [Jeff Su](https://youtu.be/QQKHhri48Ps))
 
+- [Coolors](https://coolors.co/) (Dicas da [Helena Dias](https://github.com/helenabd) e da [Yasmine Mello](https://github.com/meloyasmine))
+
 - [O que faz uma desenvolvedora front-end?](https://youtu.be/ZY3-MFxVdEw)
 
 - [Rocketseat - UI Clone (playlist)](https://www.youtube.com/playlist?list=PL85ITvJ7FLohTZv9cC5-PrZ39Q3cugWqp)
