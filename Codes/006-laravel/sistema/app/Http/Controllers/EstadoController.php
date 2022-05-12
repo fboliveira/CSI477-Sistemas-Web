@@ -15,7 +15,8 @@ class EstadoController extends Controller
      */
     public function index()
     {
-        //
+        $estados = Estado::orderBy('nome')->get();
+        return view('estados.index', [ 'estados' => $estados ]);
     }
 
     /**
@@ -25,7 +26,7 @@ class EstadoController extends Controller
      */
     public function create()
     {
-        //
+        return view('estados.create');
     }
 
     /**

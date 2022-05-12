@@ -24,7 +24,7 @@
             <!-- Opcoes -->
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="{{ route('home') }}" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="{{ route('lista') }}" class="nav-link px-2 link-dark">Lista</a></li>
+                <li><a href="{{ route('estados.index') }}" class="nav-link px-2 link-dark">Estados</a></li>
                 <li><a href="{{ route('welcome') }}" class="nav-link px-2 link-dark">Welcome</a></li>
             </ul>
 

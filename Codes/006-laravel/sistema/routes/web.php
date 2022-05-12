@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EstadoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/lista', function() {
 Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
+
+Route::resource('/estados', EstadoController::class);
