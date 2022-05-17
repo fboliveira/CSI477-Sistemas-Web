@@ -15,7 +15,7 @@ class EstadoController extends Controller
      */
     public function index()
     {
-        $estados = Estado::orderBy('nome')->get();
+        $estados = Estado::orderBy('id')->get();
         return view('estados.index', [ 'estados' => $estados ]);
     }
 
@@ -37,7 +37,17 @@ class EstadoController extends Controller
      */
     public function store(StoreEstadoRequest $request)
     {
-        //
+        //dd($request);
+        // $estado = new Estado;
+        // $estado->nome = $request->nome;
+        // $estado->sigla = $request->sigla;
+
+        // $estado->save();
+
+        Estado::create($request->all());
+        session()->flash('mensagem', 'Estado cadastrado com sucesso!');
+        return redirect()->route('estados.index');
+
     }
 
     /**

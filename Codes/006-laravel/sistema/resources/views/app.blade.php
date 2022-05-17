@@ -35,6 +35,28 @@
         </header>
     </div>
 
+    <!-- Mensagem -->
+    @if(session('mensagem'))
+    <div class="container">
+        <div class="alert alert-success">
+            {{ session('mensagem') }}
+        </div>
+    </div>
+    @endif
+
+    <!-- Erros -->
+    <div class="container">
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+    </div>
+
     <!-- CONTEUDO DA PAGINA -->
     <div id="content" class="container">
         @yield('conteudo')

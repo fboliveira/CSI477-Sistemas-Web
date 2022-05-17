@@ -13,7 +13,7 @@ class StoreEstadoRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,17 @@ class StoreEstadoRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'nome' => 'required|max:100',
+            'sigla' => 'required|min:2|max:2'
         ];
+    }
+
+    public function messages() {
+
+        return [
+            'nome.required' => 'Informe o Estado corretamente.',
+            'sigla.required' => 'A sigla deve ser informada com duas letras.'
+        ];
+
     }
 }
