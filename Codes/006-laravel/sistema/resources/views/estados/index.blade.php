@@ -13,6 +13,7 @@
                 <th>Código</th>
                 <th>Nome</th>
                 <th>Sigla</th>
+                <th>Ação</th>
             </tr>
         </thead>
 
@@ -22,8 +23,9 @@
 
             <tr>
                 <td>{{ $e->id }}</td>
-                <td>{{ $e->nome }}</td>
+                <td><a href="{{ route('estados.show', $e->id) }}">{{ $e->nome }}</a></td>
                 <td>{{ $e->sigla}}</td>
+                <td><a href="{{ route('estados.show', $e->id) }}"><i class="bi bi-binoculars"> </i>Exibir</a></td>
 
             </tr>
 
@@ -32,5 +34,9 @@
         </tbody>
 
     </table>
+
+
+    {{ $estados->links() }}
+
 
 @endsection

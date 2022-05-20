@@ -65,7 +65,7 @@
     <!-- Rodape -->
     <!-- Adapted from: https://getbootstrap.com/docs/5.1/examples/footers/ -->
     <div class="container">
-        <footer class="container fixed-bottom d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
                 <!-- https://laravel.com/docs/9.x/blade#displaying-unescaped-data -->
                 <span class="text-center text-muted">{!! env('COMPANY', 'Company, Inc') !!}</span>

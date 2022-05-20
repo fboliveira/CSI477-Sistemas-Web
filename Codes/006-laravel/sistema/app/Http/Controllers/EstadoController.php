@@ -15,7 +15,7 @@ class EstadoController extends Controller
      */
     public function index()
     {
-        $estados = Estado::orderBy('id')->get();
+        $estados = Estado::orderBy('nome')->paginate(20);
         return view('estados.index', [ 'estados' => $estados ]);
     }
 
@@ -58,7 +58,7 @@ class EstadoController extends Controller
      */
     public function show(Estado $estado)
     {
-        //
+        return view('estados.show', ['estado' => $estado]);
     }
 
     /**
@@ -69,7 +69,7 @@ class EstadoController extends Controller
      */
     public function edit(Estado $estado)
     {
-        //
+        return view('estados.edit', ['estado' => $estado]);
     }
 
     /**
