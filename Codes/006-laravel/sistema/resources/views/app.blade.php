@@ -44,6 +44,14 @@
     </div>
     @endif
 
+    @if(session('mensagem-erro'))
+    <div class="container">
+        <div class="alert alert-danger">
+            {{ session('mensagem') }}
+        </div>
+    </div>
+    @endif    
+
     <!-- Erros -->
     <div class="container">
         @if ($errors->any())
@@ -88,6 +96,7 @@
 
     <!-- JS -->
     <script src=" {{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

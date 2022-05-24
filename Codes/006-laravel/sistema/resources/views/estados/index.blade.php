@@ -25,7 +25,10 @@
                 <td>{{ $e->id }}</td>
                 <td><a href="{{ route('estados.show', $e->id) }}">{{ $e->nome }}</a></td>
                 <td>{{ $e->sigla}}</td>
-                <td><a href="{{ route('estados.show', $e->id) }}"><i class="bi bi-binoculars"> </i>Exibir</a></td>
+                <td>
+                    <a href="{{ route('estados.show', $e->id) }}"><i class="bi bi-binoculars"> </i>Exibir</a>
+                    <a href="{{ route('estados.edit', $e->id) }}"><i class="bi bi-pencil-square"> </i>Editar</a>            
+            </td>
 
             </tr>
 

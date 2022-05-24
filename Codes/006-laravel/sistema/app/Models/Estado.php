@@ -11,4 +11,9 @@ class Estado extends Model
 
     protected $fillable = ['nome', 'sigla'];
     // protected $guarded = ['admin'];
+
+    public function cidades() {
+        return $this->hasMany(Cidade::class);
+    }
+
 }

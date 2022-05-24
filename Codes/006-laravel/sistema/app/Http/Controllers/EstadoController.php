@@ -81,7 +81,14 @@ class EstadoController extends Controller
      */
     public function update(UpdateEstadoRequest $request, Estado $estado)
     {
-        //
+        $estado->fill($request->all());
+        if ($estado->save()) {
+            session()->flash('mensagem', 'Estado atualizado com sucesso!');
+            return redirect()->route('estados.show', $estado->id);
+        } else {
+            session()->flash('mensagem-erro', 'Erro na atualização do Estado!');
+            return back()->withInput();
+        }
     }
 
     /**
@@ -92,6 +99,12 @@ class EstadoController extends Controller
      */
     public function destroy(Estado $estado)
     {
-        //
+        if($estado->delete()) {
+            session()->flash('mensagem', 'Estado excluído com sucesso!');
+            return redirect()->route('estados.index');
+        } else {
+            session()->flash('mensagem-erro', 'Erro na exclusão do Estado!');
+            return back();
+        }
     }
 }
