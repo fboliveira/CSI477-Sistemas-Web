@@ -43,9 +43,9 @@ As áreas específicas do sistema devem ser criadas como segue.
 
 #### Página inicial
 
-Crie na página inicial um **menu de acesso** para cada uma das áreas e para cada uma das opções (***Área geral -- Suporte*** e ***Área administrativa***). Dentro de cada área, crie os *links* para cada uma das opções.
+Crie na página inicial um **menu de acesso** para cada uma das áreas e para cada uma das opções (***Área geral - Suporte*** e ***Área administrativa***). Dentro de cada área, crie os *links* para cada uma das opções.
 
-### Área geral -- Suporte
+### Área geral - Suporte
 
 A equipe de suporte tem acesso a dois relatórios.
 
@@ -72,17 +72,17 @@ As funcionalidades desta área são descritas a seguir. As duas primeiras opçõ
 
 **ATENÇÃO: por questões de simplicidade, o sistema aceitará a inclusão de usuários. Para sistemas em produção, esse processo é realizado somente por pessoas autorizadas.**
 
-1. **Novo usuário** -- realizar cadastro de um novo usuário/administrador. As pessoas podem fazer o registro no sistema.
+1. **Novo usuário** - realizar cadastro de um novo usuário/administrador. As pessoas podem fazer o registro no sistema.
 
-2. **Acesso** à área do administrador -- faça o *login* do administrador (tabela *users*).
+2. **Acesso** à área do administrador - faça o *login* do administrador (tabela *users*).
 
 3. **CRUD dos Equipamentos**: implemente todas as operações para os equipamentos. A exclusão só será permitida caso não existam manutenções cadastradas para o equipamento.
 
 4. **CRUD das Manutenções**: implemente todas as operações para as manutenções. Não existe restrição para a exclusão. Os tipos para as manuteções são: 1 - Preventiva, 2 - Corretiva, 3 - Urgente.
 
-5. Relatório de **usuários** -- apresenta uma lista de usuários cadastrados em ordem alfabética pelo campo **nome** (tabela *users*).
+5. Relatório de **usuários** - apresenta uma lista de usuários cadastrados em ordem alfabética pelo campo **nome** (tabela *users*).
 
-6. Relatório de **manutenções** -- crie um relatório agrupando todas manutenções por equipamento. Você precisar lista o equipamento e todas as manutenções cadastradas para ele, além de indicar a quantidade de registros associados.
+6. Relatório de **manutenções** - crie um relatório agrupando todas manutenções por equipamento. Você precisar lista o equipamento e todas as manutenções cadastradas para ele, além de indicar a quantidade de registros associados.
 
 ---
 
