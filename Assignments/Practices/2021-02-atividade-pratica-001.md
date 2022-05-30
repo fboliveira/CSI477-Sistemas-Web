@@ -1,6 +1,6 @@
 # CSI606 - Sistemas WEB I - SI-06
 
-## Período Letivo Remoto
+## Período Letivo 2021/2
 
 ### Prof. Fernando Bernardes de Oliveira, Ph.D
 
