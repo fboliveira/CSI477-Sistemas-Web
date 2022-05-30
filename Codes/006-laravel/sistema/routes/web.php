@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\CidadeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,4 @@ Route::get('/welcome', function () {
 })->name('welcome');
 
 Route::resource('/estados', EstadoController::class);
+Route::resource('/cidades', CidadeController::class);

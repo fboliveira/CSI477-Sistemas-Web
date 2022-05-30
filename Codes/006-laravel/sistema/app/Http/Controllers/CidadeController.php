@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCidadeRequest;
 use App\Http\Requests\UpdateCidadeRequest;
 use App\Models\Cidade;
+use App\Models\Estado;
 
 class CidadeController extends Controller
 {
@@ -15,7 +16,8 @@ class CidadeController extends Controller
      */
     public function index()
     {
-        //
+        $cidades = Cidade::orderBy('nome')->paginate(20);
+        return view('cidades.index', ['cidades' => $cidades]);
     }
 
     /**
@@ -25,7 +27,8 @@ class CidadeController extends Controller
      */
     public function create()
     {
-        //
+        $estados = Estado::orderBy('nome')->get();
+        return view('cidades.create', [ 'estados' => $estados]);
     }
 
     /**
@@ -36,7 +39,13 @@ class CidadeController extends Controller
      */
     public function store(StoreCidadeRequest $request)
     {
-        //
+        if ( Cidade::create($request->all()) ) {
+            session()->flash('mensagem', 'Cidade inserida com sucesso!');
+            return redirect()->route('cidades.index');
+        } else {
+            session()->flash('mensagem-erro', 'Erro na gravação da cidade');
+            return back()->withInput();
+        }
     }
 
     /**
@@ -58,7 +67,14 @@ class CidadeController extends Controller
      */
     public function edit(Cidade $cidade)
     {
-        //
+        $estados = Estado::orderBy('nome')->get();
+        return view('cidades.edit', 
+            [ 
+                'estados' => $estados, 
+                'cidade' => $cidade
+            ]
+        );
+        
     }
 
     /**
@@ -70,7 +86,14 @@ class CidadeController extends Controller
      */
     public function update(UpdateCidadeRequest $request, Cidade $cidade)
     {
-        //
+        $cidade->fill($request->all());
+        if ( $cidade->save() ) {
+            session()->flash('mensagem', 'Cidade atualizada com sucesso!');
+            return redirect()->route('cidades.index');
+        } else {
+            session()->flash('mensagem-erro', 'Erro na gravação da cidade');
+            return back()->withInput();
+        }        
     }
 
     /**

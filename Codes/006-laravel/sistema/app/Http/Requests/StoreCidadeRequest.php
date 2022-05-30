@@ -13,7 +13,7 @@ class StoreCidadeRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,18 @@ class StoreCidadeRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'nome' => 'required|max:100',
+            'estado_id' => 'required|exists:estados,id'
         ];
+    }
+
+    public function messages()
+    {
+
+        return [
+            'nome.required' => 'Informe o nome da Cidade.',
+            'estado_id.required' => 'Selecione o Estado corretamente.'
+        ];
+
     }
 }
