@@ -56,7 +56,7 @@ class CidadeController extends Controller
      */
     public function show(Cidade $cidade)
     {
-        //
+        return view('cidades.show', [ 'cidade' => $cidade] );
     }
 
     /**
@@ -104,6 +104,12 @@ class CidadeController extends Controller
      */
     public function destroy(Cidade $cidade)
     {
-        //
+        if ($cidade->delete()) {
+            session()->flash('mensagem', 'Cidade excluída com sucesso!');
+            return redirect()->route('cidades.index');
+        } else {
+            session()->flash('mensagem-erro', 'Erro na exclusão da Cidade!');
+            return back()->withInput();
+        }
     }
 }

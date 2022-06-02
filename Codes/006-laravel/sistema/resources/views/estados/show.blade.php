@@ -14,7 +14,7 @@
 
 <a href="{{ route('estados.edit', $estado->id) }}" class="btn btn-primary">Editar</a>
 
-<a href="{{ route('estados.index') }}" class="btn btn-primary">Voltar</a>
+<a href="{{ url()->previous() }}" class="btn btn-primary">Voltar</a>
 
 <form action="{{ route('estados.destroy', $estado->id) }}" method="post" onsubmit="return confirmaExclusao()">
 
