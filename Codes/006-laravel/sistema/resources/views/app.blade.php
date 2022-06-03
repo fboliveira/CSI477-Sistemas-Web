@@ -29,9 +29,23 @@
             </ul>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
+                
+                @if(Auth::check())
+                    <!-- Logged -->
+                    {{ Auth::user()->name }}
+                    <!-- Logout -->
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Logout</button>
+                    </form>
+                @else                                            
+                    <!-- Login -->
+                    <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="{{ route('register') }}" class="btn btn-primary">Sign-up</a>
+                @endif
             </div>
+
+
         </header>
     </div>
 

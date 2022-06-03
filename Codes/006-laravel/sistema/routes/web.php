@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EstadoController;
 use App\Http\Controllers\CidadeController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,13 +18,25 @@ Route::get('/', function() {
     return view('home');
 })->name('home');
 
-Route::get('/lista', function() {
-    return view('lista');
-})->name('lista');
 
-Route::get('/welcome', function () {
-    return view('welcome');
-})->name('welcome');
+Route::middleware('auth')->group(function() {
 
-Route::resource('/estados', EstadoController::class);
+    Route::get('/lista', function() {
+        return view('lista');
+    })->name('lista');
+    
+    Route::get('/welcome', function () {
+        return view('welcome');
+    })->name('welcome');
+
+});
+
+
+Route::get('/dashboard', function () {
+    return view('home');
+})->middleware(['auth'])->name('dashboard');
+
+Route::resource('/estados', EstadoController::class)->middleware('auth');
 Route::resource('/cidades', CidadeController::class);
+
+require __DIR__.'/auth.php';

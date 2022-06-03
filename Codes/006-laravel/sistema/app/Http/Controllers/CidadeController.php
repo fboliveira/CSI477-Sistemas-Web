@@ -7,8 +7,16 @@ use App\Http\Requests\UpdateCidadeRequest;
 use App\Models\Cidade;
 use App\Models\Estado;
 
+use Illuminate\Support\Facades\Auth;
+
 class CidadeController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except('index');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -27,8 +35,15 @@ class CidadeController extends Controller
      */
     public function create()
     {
-        $estados = Estado::orderBy('nome')->get();
-        return view('cidades.create', [ 'estados' => $estados]);
+
+        if (Auth::check()) {
+            $estados = Estado::orderBy('nome')->get();
+            return view('cidades.create', [ 'estados' => $estados]);
+        } else {
+            session()->flash('mensagem-erro', 'Operação não permitida!');
+            return redirect()->route('home');
+        }
+         
     }
 
     /**
