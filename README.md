@@ -2,19 +2,19 @@
 
 ## Lecture Notes and Codes
 
-### Prof. Fernando Bernardes de Oliveira, Ph.D.
+### *Prof. Fernando Bernardes de Oliveira, Ph.D.*
 
 #### [Department of Computer and Systems (DECSI)](https://decsi.ufop.br/)
 
 ---
 
-Here are available lecture notes and codes on CSI606 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2021/02.
+Here are available lecture notes and codes on CSI606 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2022/01.
 
 ---
 
 **Lectures and additional resources:**
 
-1. [Setting up development environment (in portuguese)](./Lectures/setting-environment.md)
+1. [Setting up development environment](./Lectures/setting-environment.md)
 1. [Frontend](./Lectures/frontend.md)
 1. [HTML](./Lectures/html.md)
 1. [XML](./Lectures/xml.md)
@@ -24,12 +24,13 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 1. [Create the GitHub/Classroom repository](./Lectures/create-classroom-repository.md)
 1. [Cascading Style Sheets - CSS](./Lectures/css.md)
 1. [JavaScript](./Lectures/javascript.md)
+1. [Node.js](./Lectures/nodejs.md)
+1. [React](./Lectures/react.md)
+
+Previous technologies:
+
 1. [PHP](./Lectures/php.md)
 1. [Laravel](./Lectures/laravel.md)
-
----
-
-[**Lesson scripts - remote classes**](./LessonScripts/README.md)
 
 ---
 
@@ -41,3 +42,5 @@ Fernando B Oliveira.
 [Contact and info.](mailto:fboliveira@ufop.edu.br)
 
 ---
+
+![May the force be with you!](https://media.giphy.com/media/SW52VX6Xtzk1q/giphy.gif)
