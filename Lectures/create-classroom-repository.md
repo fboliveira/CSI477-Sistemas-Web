@@ -1,15 +1,14 @@
 # Criação do repositório no GitHub / Classroom
 
-## Considerações iniciais 
+## Considerações iniciais
 
-Este documento apresenta o processo de criação do repositório no [GitHub](https://github.com/) por meio do [Classroom](https://classroom.github.com/). 
-
+Este documento apresenta o processo de criação do repositório no [GitHub](https://github.com/) por meio do [Classroom](https://classroom.github.com/).
 
 As ações de *download* do repositório (local) e atualização *online* (remoto) serão apresentados principalmente pelo VSCode. Entretanto, algumas etapas podem ser realizadas por linha de comando ou por outras aplicações, como o [GitHub Desktop](https://desktop.github.com/). Sinta-se livre para utilizar a maneira que for mais prática para você.
 
 ## Criação do repositório no *GitHub Classroom*
 
-No **Tópico 02 - Linguagens de Marcação - Git e GitHub** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2021/01 - Remoto - Atividades - exercícios, práticas e trabalho final**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **2021/01 - Remoto - Atividades**. Além disso, o nome da organização no GitHub segue a nova nomeclatura das disciplinas: **CSI606**.
+No **Linguagens de Marcação** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2022/01 - Atividades - exercícios, práticas e trabalho final**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **2022/01 - Atividades**.
 
 Ao clicar no *link*, se você não tiver feito *login* no GitHub, a seguinte tela será exibida:
 
@@ -27,9 +26,9 @@ Ao final do processo, a seguinte mensagem será apresentada:
 
 ![GitHub Classroom - success](./img/github-classroom-success.png)
 
-O endereço do repositório criado é iniciado por ``2020-03-ple-atividades`` (``2021-01-remoto-atividades``) e tem ao final o seu usuário no GitHub. Para o meu usuário, foi criado o seguinte repositório:
+O endereço do repositório criado é iniciado por ``2020-03-ple-atividades`` (``2021-01-atividades``) e tem ao final o seu usuário no GitHub. Para o meu usuário, foi criado o seguinte repositório:
 
-```
+```html
 https://github.com/UFOP-CSI477/2020-03-ple-atividades-fboliveira
 ```
 
@@ -39,9 +38,9 @@ Ao acessar o endereço do repositório, você verá a seguinte estrutura:
 
 ![GitHub - estrutura inicial do repositório](./img/github-repository-start.png)
 
-Um *template* com uma sugestão de estrutura de pastas foi utilizado para criar o repositório. Você poderá inserir separadamente as ```Atividades``` (práticas 1 e 2 e os exercícios), o ```Projeto``` e a ```Prova```. O arquivo ```README.md``` da pasta ```Projeto``` já apresenta a estrutura da proposta do trabalho com a indicação das seções a serem descritas. 
+Um *template* com uma sugestão de estrutura de pastas foi utilizado para criar o repositório. Você poderá inserir separadamente as ```Atividades``` (práticas 1 e 2 e os exercícios), o ```Projeto``` e a ```Prova```. O arquivo ```README.md``` da pasta ```Projeto``` já apresenta a estrutura da proposta do trabalho com a indicação das seções a serem descritas.
 
-Como o GitHub não insere no repositório pastas vazias, eu tive que utilizar de um artifício técnico emergencial (~~gambiarra~~) para a criação dessa estrutura. Você encontrará nas pastas um arquivo chamado 
+Como o GitHub não insere no repositório pastas vazias, eu tive que utilizar de um artifício técnico emergencial (~~gambiarra~~) para a criação dessa estrutura. Você encontrará nas pastas um arquivo chamado
 ```.gitkeep```. Você poderá exclui-los quando for atualizando as pastas.
 
 ### Markdown
@@ -49,7 +48,7 @@ Como o GitHub não insere no repositório pastas vazias, eu tive que utilizar de
 A extensão ```.md``` representa **Markdown**, a linguagem de marcação utilizada pelo GitHub. Existem referências para Git, GitHub e Markdown nos links disponibilizados [aqui](git-and-github.md).
  Você pode encontrar outros locais em que essa linguagem é utilizada [aqui](https://www.w3.org/community/markdown/wiki/MarkdownImplementations). Arquivos desse tipo são traduzidos para HTML pelo processador Markdown para que eles possam ser exibidos.
 
-Se você inserir em qualquer pasta um  arquivo com o nome ```README.md```, ele será apresentado logo após a lista das pastas e dos arquivos. 
+Se você inserir em qualquer pasta um  arquivo com o nome ```README.md```, ele será apresentado logo após a lista das pastas e dos arquivos.
 
 O Markdown é uma linguagem com sintaxe leve e prática que permite a construção de textos formatados, sem se preocupar como ele será apresentado.
 
@@ -63,9 +62,10 @@ Vamos primeiro identificar o link do seu repositório no GitHub. Você pode enco
 
 Ele é o mesmo endereço do seu repositório, acrescido da extensão ```.git```. No caso do meu repositório, o endereço é:
 
-```
+```html
 https://github.com/UFOP-CSI477/2020-03-ple-atividades-fboliveira.git
 ```
+
 O endereço será utilizado para clonar o repositório localmente, e para indicar em qual repositório no GitHub ele será atualizado. Veja como fazer o clone pelo terminal [aqui](https://www.git-scm.com/docs/git-clone).
 
 Para fazer o clone do repositório pelo  VSCode, acesse o menu ```View``` > ```Command Palette``` (ou ```Ctrl+Shift+P```) e procure por ```Git: Clone```. Veja a seguir:
@@ -79,7 +79,6 @@ Ao acessar a opção, uma janela será aberta para que o endereço do repositór
 Insira o endereço e aperte ```Enter``` (~~cruze os dedos~~). Neste momento será solicitado um local para baixar o repositório. Selecione uma pasta qualquer no seu computador, como foi feito a seguir. Uma pasta com o nome do repositório (```2020-03-ple-atividades-fboliveira```) será criada na pasta que foi selecionada.
 
 ![Computer - selected folder to download repository](./img/computer-folder-to-download-repository.png)
-
 
 Se tudo correr como esperado (~~em condições normais de temperatura e pressão, desprezando atrito~~), quando o processo terminar, o VSCode perguntará se você quer abrir o repositório que foi clonado:
 
@@ -113,7 +112,7 @@ Observe o resultado apresentado na imagem a seguir. As inserções estão aprese
 
 ![VSCode - updated files](./img/vscode-assignments-update.png)
 
-Ao clicar no ícone, você verá uma lista como apresentado adiante. Observe todas as modificações realizadas. 
+Ao clicar no ícone, você verá uma lista como apresentado adiante. Observe todas as modificações realizadas.
 
 ![VSCode - ](./img/vscode-git-updated-list.png)
 
@@ -123,8 +122,7 @@ No nosso exemplo, é possível enviar a atualização do ```README.md``` e a inc
 
 ![vscode-git-add-state-file-readme](./img/vscode-git-add-state-file-readme.png)
 
-Ao clicar no (+), o arquivo ```README.md``` é inserido na seção ```Staged Changes```, como apresentado na imagem a seguir. Você pode adicionar quantos arquivos forem necessários (ou todos de uma vez só). Uma breve mensagem para descrever a atualização também foi inserida. É importante que a mensagem seja objetiva e coerente com o que está sendo realizado. 
-
+Ao clicar no (+), o arquivo ```README.md``` é inserido na seção ```Staged Changes```, como apresentado na imagem a seguir. Você pode adicionar quantos arquivos forem necessários (ou todos de uma vez só). Uma breve mensagem para descrever a atualização também foi inserida. É importante que a mensagem seja objetiva e coerente com o que está sendo realizado.
 
 ![vscode-git-stated-file-readme](./img/vscode-git-stated-file-readme.png)
 
@@ -138,7 +136,7 @@ Se você observar na barra de status no lado inferir esquerdo, você terá uma i
 
 ![vscode-git-status](./img/vscode-git-status.png)
 
-Ao lado do ícone do Git, você verá a palavra ```master```. Esta informação representa o [branch](https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefbranchabranch) corrente, ou seja, a linha histórica de desenvolvimento que será atualizada. Nesse caso, [master](https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefmasteramaster) é a linha principal. Você pode criar diferentes *branchs* (para versões diferentes ou testar mudanças sensíveis em alguma funcionalidade, por exemplo) e depois fazer o [merge](https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefmergeamerge) para o *branch master*. 
+Ao lado do ícone do Git, você verá a palavra ```master```. Esta informação representa o [branch](https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefbranchabranch) corrente, ou seja, a linha histórica de desenvolvimento que será atualizada. Nesse caso, [master](https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefmasteramaster) é a linha principal. Você pode criar diferentes *branchs* (para versões diferentes ou testar mudanças sensíveis em alguma funcionalidade, por exemplo) e depois fazer o [merge](https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefmergeamerge) para o *branch master*.
 
 O círculo com as setas representa o sincronismo dos repositórios, remoto e local. Os números, 0 e 1 nesse caso, representam as atualizações remotas e locais disponíveis. Se você clicar nesse local, o VSCode fará esse sincronismo.
 
@@ -174,6 +172,6 @@ Você consegue realizar todas essas ações por meio de linha de comando no term
 
 Você pode contribuir com esse roteiro, seja com correções no texto, indicação de outros processos e tudo mais, me enviando um e-mail ou a partir de uma *issue* ou *pull request*. Veja sobre isso [aqui](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/creating-an-issue-or-pull-request). Todas as contribuições são muito bem-vindas!
 
-Muito obrigado! 
+Muito obrigado!
 
 **Um ótimo curso! E que a Força esteja com você!**
