@@ -14,7 +14,7 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 
 **Lectures and additional resources:**
 
-1. [Setting up development environment](./Lectures/setting-environment.md)
+1. [Setting up development environment: Node.js](./Lectures/setting-environment-nodejs.md)
 1. [Frontend](./Lectures/frontend.md)
 1. [HTML](./Lectures/html.md)
 1. [XML](./Lectures/xml.md)
