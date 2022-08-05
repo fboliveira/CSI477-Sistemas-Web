@@ -23,3 +23,19 @@ a:hover {
     background-color: blue;
     color: yellow;
 }
+
+.maior {
+    background-color: aqua;
+    font-size: 3rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#links {
+    background-color: #9f4a6b;
+    width: 200px;
+    margin: 20px;
+}
