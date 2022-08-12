@@ -109,7 +109,22 @@
 
 ![DOM](https://www.w3schools.com/js/pic_htmltree.gif)
 
-## Frameworks e tecnologias
+## Visão Geral da linguagem
+
+Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do *roadmap* definido pela [Attekita Dev: JAVASCRIPT do básico ao avançado ( Mapa de estudos / Roadmap )](https://youtu.be/6YwbZbHRQ8w).
+
+- Operadores lógicos e matemáticos
+- Definição de variáveis e constantes
+- Tipos e estruturas de dados
+- Estruturas e condicionais
+- Estruturas de repetição
+- Manipulação de elementos HTML e CSS a partir do DOM.
+- Eventos
+- Funções
+- Manipulação de *arrays*: map, filter, reduce, sort, [dentre outros](https://www.w3schools.com/jsref/jsref_obj_array.asp).
+- Asynchronous JavaScript: [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises), [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function), [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch), [dentre outros](https://www.w3schools.com/js/js_asynchronous.asp).
+
+## Frameworks, bibliotecas e tecnologias
 
 - [JSON (*JavaScript Object Notation*)](http://www.json.org/)
 
@@ -130,6 +145,8 @@
 ## Additional resources
 
 ### Fundamentals
+
+- [Attekita Dev: JAVASCRIPT do básico ao avançado ( Mapa de estudos / Roadmap )](https://youtu.be/6YwbZbHRQ8w)
 
 - [Código Fonte TV: Economize (DE VERDADE) Muitas Linhas de Código! 8 Formas de Usar Destructuring no Javascript](https://youtu.be/_17mgcmmHFU)
 
