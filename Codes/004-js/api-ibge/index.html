@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estados - IBGE</title>
 </head>
-<body>
+<body onload="carregarDadosEstados()">
     
     <form action="#" method="post" name="dados">
 
         <input type="button" value="Carregar estados" onclick="carregarDadosEstados()">
 
-        <select name="estados" id="estados">
-            <option value="" disabled selected>Selecione:</option>
+        <select 
+            name="estados" 
+            id="estados"
+            onchange="carregarDadosCidades()"
+        >
+            <option value="" selected>Selecione:</option>
         </select>
 
+        <input type="button" value="Carregar cidades" onclick="carregarDadosCidades()">
+
         <select name="cidades" id="cidades">
-            <option value="" disabled selected>Selecione:</option>
+            <option value="" selected>Selecione:</option>
         </select>
 
 
