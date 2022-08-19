@@ -16,5 +16,11 @@
 1. [Create the GitHub/Classroom repository](create-classroom-repository.md)
 1. [Cascading Style Sheets - CSS](css.md)
 1. [JavaScript](javascript.md)
+1. [ES6 and beyond](./jses6-and-beyond.md)
+1. [Node.js](./nodejs.md)
+1. [React](./react.md)
+
+Previous technologies:
+
 1. [PHP](php.md)
 1. [Laravel](laravel.md)
