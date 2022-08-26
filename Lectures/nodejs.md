@@ -34,7 +34,7 @@ A lista completa está disponível [aqui](https://nodejs.dev/learn/how-much-java
 
 [Modules in JavaScript – CommonJS and ESmodules Explained](https://www.freecodecamp.org/news/modules-in-javascript/):
 
-1. CommonJS: *require/export*
+1. CommonJS: *require/module.exports*
 1. ESmodules: *import/export*
 
 ### Package manager
