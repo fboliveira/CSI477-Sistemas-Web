@@ -1,23 +1,9 @@
-const express = require('express');
-
-const app = express();
+import app from './routes.js';
+import { connect } from './database.js';
 
 const port = 3000;
 
 // Rotas
-app.get('/', ( request, response ) => {
-    response.send('Página principal');
-});
-
-app.post('/data', ( request, response ) => {
-
-    response.json({
-        id: 1356,
-        firstName: 'Fernando B',
-        lastName: 'Oliveira'
-    });
-
-})
 
 // ...
 
@@ -25,3 +11,5 @@ app.post('/data', ( request, response ) => {
 app.listen(port, () => {
     console.log(`Servidor iniciado - porta ${port}.`);
 });
+
+connect();
