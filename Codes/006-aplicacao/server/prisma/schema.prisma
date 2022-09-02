@@ -6,14 +6,14 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./app-doacao.sqlite"
 }
 
 model Estado {
   id    Int   @id   @default(autoincrement())
   nome  String
-  sigla String @db.VarChar(2)
+  sigla String
   created_at  DateTime  @default(now())
 
   @@map("estados")

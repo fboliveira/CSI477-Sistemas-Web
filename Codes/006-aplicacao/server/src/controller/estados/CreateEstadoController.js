@@ -13,7 +13,7 @@ export class CreateEstadoController {
                 sigla
             }
         });
-
+        console.log(estado);
         return response.json(estado);
 
    } 
