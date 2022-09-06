@@ -1,5 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 
-const prismaClient = new PrismaClient();
+// https://www.prisma.io/docs/concepts/components/prisma-client/working-with-prismaclient/logging
+const prismaClient = new PrismaClient({
+    log: ['query', 'info', 'warn', 'error'],
+  });
 
 export { prismaClient }
