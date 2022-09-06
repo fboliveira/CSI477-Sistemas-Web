@@ -8,3 +8,18 @@ Content-Type: application/json
     "nome": "São Paulo",
     "sigla": "SP"
 }
+
+###
+POST http://localhost:3000/cidades
+Content-Type: application/json
+
+{ 
+    "nome": "São Paulo",
+    "estado_id": 2
+}
+
+###
+GET http://localhost:3000/estados
+
+###
+GET http://localhost:3000/cidades

@@ -11,11 +11,25 @@ datasource db {
 }
 
 model Estado {
-  id    Int   @id   @default(autoincrement())
-  nome  String
-  sigla String
-  created_at  DateTime  @default(now())
+  id         Int      @id @default(autoincrement())
+  nome       String
+  sigla      String
+  created_at DateTime @default(now())
+
+  cidade Cidade[]
 
   @@map("estados")
+}
+
+model Cidade {
+  id        Int    @id @default(autoincrement())
+  nome      String
+  estado_id Int
+
+  estado Estado @relation(fields: [estado_id], references: [id])
+
+  created_at DateTime @default(now())
+
+  @@map("cidades")
 
 }
