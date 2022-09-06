@@ -23,3 +23,9 @@ GET http://localhost:3000/estados
 
 ###
 GET http://localhost:3000/cidades
+
+###
+GET http://localhost:3000/estados/2
+
+###
+GET http://localhost:3000/cidades/1
