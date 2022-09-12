@@ -134,15 +134,17 @@ function Tasks() {
 
 ## Outras Referências
 
+- [Código Fonte TV: React JS // Dicionário do Programador](https://youtu.be/NhUr8cwDiiM)
+
 - [Filipe Deschamps: Se Você Passar Por Esses 5 Desafios, Você Aprendeu React JS](https://youtu.be/aJR7f45dBNs)
 
 - [freeCodeCamp.org: React Course - Beginner's Tutorial for React JavaScript Library [2022]](https://youtu.be/bMknfKXIFA8)
 
-- [Hipsters Ponto Tech: Angular vs React – Hipsters #142](https://www.hipsters.tech/angular-vs-react-hipsters-142/)
+- [Hipsters Ponto Tech #142: Angular vs React](https://www.hipsters.tech/angular-vs-react-hipsters-142/)
 
-- [Hipsters Ponto Tech: Do Front End ao React – Hipsters Ponto Tech #258](https://www.hipsters.tech/do-front-end-ao-react-hipsters-ponto-tech-258/)
+- [Hipsters Ponto Tech #209: Guia do iniciante em React](https://www.hipsters.tech/guia-do-iniciante-em-react-hipsters-209/)
 
-- [Hipsters Ponto Tech: Guia do iniciante em React – Hipsters #209](https://www.hipsters.tech/guia-do-iniciante-em-react-hipsters-209/)
+- [Hipsters Ponto Tech #258: Do Front End ao React](https://www.hipsters.tech/do-front-end-ao-react-hipsters-ponto-tech-258/)
 
 - [Rocketseat: COMEÇANDO NO REACT.JS EM 2022](https://youtu.be/pDbcC-xSat4)
 
