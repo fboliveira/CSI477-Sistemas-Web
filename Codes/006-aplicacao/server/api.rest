@@ -5,8 +5,8 @@ POST http://localhost:3000/estados
 Content-Type: application/json
 
 { 
-    "nome": "São Paulo",
-    "sigla": "SP"
+    "nome": "Rio de Jnaeiro",
+    "sigla": "JR"
 }
 
 ###
@@ -29,3 +29,13 @@ GET http://localhost:3000/estados/2
 
 ###
 GET http://localhost:3000/cidades/1
+
+###
+PUT http://localhost:3000/estados
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome": "Rio de Janeiro",
+    "sigla": "RJ"
+}

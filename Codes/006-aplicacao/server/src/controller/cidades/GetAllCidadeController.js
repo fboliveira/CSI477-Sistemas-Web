@@ -7,6 +7,7 @@ export class GetAllCidadeController {
 
         const cidades = await prismaClient.cidade.findMany({
             select: {
+                id: true,
                 nome: true,
                 estado: true
             }
