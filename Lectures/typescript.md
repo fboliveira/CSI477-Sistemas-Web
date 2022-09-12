@@ -53,4 +53,10 @@ type ConnectionState = "opening" | "closed" | "listening";
 
 ## Outras referências
 
+- [Código Fonte TV: TypeScript // Dicionário do Programador](https://youtu.be/gmupEp468lY)
+
+- [GeeksForGeeks: TypeScript](https://www.geeksforgeeks.org/typescript/)
+
+- [Programming with Mosh: TypeScript Tutorial - TypeScript for React - Learn TypeScript](https://youtu.be/NjN00cM18Z4)
+
 - [W3Schools: TypeScript tutorial](https://www.w3schools.com/typescript/typescript_intro.php)
