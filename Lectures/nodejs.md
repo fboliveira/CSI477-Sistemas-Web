@@ -70,6 +70,7 @@ prisma
 src
   |_ database
         |_ client.js  
+  |_ model/*
   |_ controller/*
         |_[C,R,U,D]_*_Controller.js
   |_ routes/*
