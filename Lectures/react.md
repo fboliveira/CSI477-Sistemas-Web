@@ -6,11 +6,13 @@
 
 - A biblioteca é baseada em **componentes**, os quais armazenam os seus estados e renderizam na tela os dados.
 
-## JSX
+## JSX/TSX
 
 - O JSX é uma extensão do JavaScript e utiliza uma sintaxe parecida com o XML.
 
-- O JSX não é obrigatório. Entretanto, a sintaxe é mais amigável.
+- O JSX não é obrigatório. Entretanto, a sintaxe é mais amigável (opinião particular).
+
+- A versão correspondente em TypeScript é o TSX.
 
 - Expressões JavaScript podem ser inseridas dentro de chaves ```{ }```.
 
@@ -32,7 +34,8 @@ function getMessage(user) {
 - O JSX produz elementos do React.
 
 - O JSX/React DOM utiliza o padrão *camelCase* para propriedades como convenção para evitar conflitos com os atributos HTML.
-= Por exemplo, no lugar de ```class```, utiliza-se ```className```
+
+  - Por exemplo, no lugar de ```class```, utiliza-se ```className```
 
 - Os elementos são renderizados no DOM.
 
@@ -122,6 +125,33 @@ function Tasks() {
     );
 }
 ```
+
+## Criação de uma aplicação
+
+- As aplicações podem ser criadas a partir do utilitário [Create React App](https://create-react-app.dev/)
+
+- As instruções estão definidas [aqui](https://reactjs.org/docs/create-a-new-react-app.html)
+
+- Existem configurações avançadas que podem ser encontradas [aqui](https://create-react-app.dev/docs/advanced-configuration/)
+
+- O comando para criar uma aplicação com o *template* do TypeScript é:
+
+```bash
+npx create-react-app Nome_Da_Aplicacao --template typescript
+```
+
+- Substitua ```Nome_Da_Aplicacao``` para o nome desejado.
+
+- Uma alternativa ao utilitário padrão é o [Vite](https://vitejs.dev/)
+
+- O comando equivalente para criar uma aplicação com o *template* do TypeScript é:
+
+```bash
+# npm 7+, extra double-dash is needed:
+npm create vite@latest Nome_Da_Aplicacao -- --template react-ts
+```
+
+- A documentação do Vite pode ser encontrada [aqui](https://vitejs.dev/guide/)
 
 ## Próximos conceitos e ações
 
