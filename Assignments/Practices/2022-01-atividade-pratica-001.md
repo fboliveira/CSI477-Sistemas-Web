@@ -27,7 +27,12 @@ O objetivo deste sistema é controlar o processo de doação de sangue numa dete
 
 Este modelo será utilizado para as atividades práticas e a prova. O escopo de cada atividade será definido apropriadamente.
 
-No caso da **Atividade 1** é esperado que vocês desenvolvam uma API RESTful para as seguintes entidades: *pessoas*, *tipos_sanguineos*, *locais_coleta* e *doacoes*. Vocês pode utilizar o desenvolvimento de *estados* e *cidades* que foi realizado em sala de aula.
+No caso da **Atividade 1** é esperado que vocês desenvolvam uma API RESTful para as seguintes entidades: *pessoas*, *tipos_sanguineos*, *locais_coleta* e *doacoes*. Vocês pode utilizar o desenvolvimento de *estados* e *cidades* que foi realizado em sala de aula. Considere as seguintes operações:
+
+- Inserir - *create*
+- Atualizar - *update*
+- Excluir - *delete*
+- Recuperar - *read* - todos os itens, por *id* e por *nome* (quando se aplicar).
 
 É sugerido que vocês utilizem **Node.js com TypeScript** para esse desenvolvimento. Contudo, isso não é necessário. Vocês podem, inclusivem, utilizar outas tecnologias às suas preferências. É sugerido também que vocês estudem outras arquiteturas de software, além da estrutura que foi utilizada.
 
