@@ -1,0 +1,4 @@
+Trabalho 1: api rest pessoas, tipos sanguineos, locais de coleta e doações.
+Trabalho 2: front -> tp1
+
+Prova 1: back/front -> utilização, estoque.
