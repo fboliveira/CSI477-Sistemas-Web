@@ -3,6 +3,7 @@ import App from "./App";
 import ListCidades from "./components/cidades/ListCidades";
 import CreateEstado from "./components/estados/CreateEstado";
 import ListEstados from "./components/estados/ListEstados";
+import ShowEstado from "./components/estados/ShowEstado";
 import Header from "./components/header/Header";
 
 const AppRoutes = () => {
@@ -20,6 +21,8 @@ const AppRoutes = () => {
                 <Route path="/estados" element={<ListEstados />} />
 
                 <Route path="/estados/create" element={<CreateEstado />} />
+
+                <Route path="/estados/show/:id" element={<ShowEstado /> } />
 
                 <Route path="/cidades" element={<ListCidades />} />
 
