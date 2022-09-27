@@ -11,6 +11,7 @@ const Menu = () => {
                 <li><Link to="/estados">Listar Estados</Link></li>
                 <li><Link to="/estados/create">Criar estado</Link></li>
                 <li><Link to="/cidades">Listar Cidades</Link></li>
+                <li><Link to="/cidades/create">Criar cidade</Link></li>
             </ul>
         </div>
     );
