@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import api from "../../services/api";
 import { EstadoModel } from "./ListEstados";
 
@@ -24,6 +24,33 @@ const ShowEstado = () => {
 
     },[id]);
 
+    const navigate = useNavigate();
+
+    const handleDeleteEstado = async() => {
+
+        if (!window.confirm("Confirma exclusão do estado?")) {
+            return;
+        }
+
+        const data = {
+            id
+        }
+
+        try {
+            await api.delete('/estados/' , {
+                data: {
+                    data
+                }
+            })
+            navigate('/estados');
+        } catch(error) {
+            alert('Erro ao excluir o Estado!');
+            console.error(error);
+        }
+
+    }
+
+
     return(
         <div>
             <h2>Dados do Estado: {id}-{nome} / {estado?.sigla}</h2>
@@ -31,6 +58,16 @@ const ShowEstado = () => {
             <p>Nome: {nome}</p>
             <p>Sigla: {sigla}</p>
             <p>Data de inserção: {estado?.created_at}</p>
+
+
+            <div>
+                <Link to={`/estados/update/${id}`}>Atualizar</Link>
+            </div>
+            <div>
+                <button onClick={handleDeleteEstado}>Excluir</button>
+            </div>
+
+
 
         </div>
     );
