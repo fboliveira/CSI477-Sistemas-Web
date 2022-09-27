@@ -6,14 +6,16 @@ export class DeleteEstadoController {
 
     async handle(request, response) {
 
-        const { id } = request.body;
-        const estadoModel = new EstadoModel();
-        if (! (await estadoModel.exists(id))) {
-            console.log(`[DeleteEstadoController] Estado id: ${id} does not exist!`);
-            return response.status(403).json({ 
-                message: `[DeleteEstadoController] Estado id: ${id} does not exist! (model check)`
-            });            
-        }
+        let { id } = request.body.data;
+        id = parseInt(id);
+        // console.log(request.body);
+        // const estadoModel = new EstadoModel();
+        // if (! (await estadoModel.exists(id))) {
+        //     console.log(`[DeleteEstadoController] Estado id: ${id} does not exist!`);
+        //     return response.status(403).json({ 
+        //         message: `[DeleteEstadoController] Estado id: ${id} does not exist! (model check)`
+        //     });            
+        // }
 
         try{
             const estado = await prismaClient.estado.delete({
