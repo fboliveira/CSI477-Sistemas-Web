@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import api from '../../services/api'
 
 import { EstadoModel } from '../estados/ListEstados';
 
-interface CidadeModel {
+export interface CidadeModel {
     id: number;
     nome: string;
     created_at: string;
+    estado_id: number;
     estado: EstadoModel;
 }
 
@@ -36,6 +38,7 @@ const ListCidades = () => {
                         <th>Nome</th>
                         <th>Estado</th>
                         <th>Criação</th>
+                        <th>Ação</th>
                     </tr>
                 </thead>
 
@@ -44,9 +47,10 @@ const ListCidades = () => {
                     { cidades.map( item => (
                             <tr>
                                 <td>{item.id}</td>
-                                <td>{item.nome}</td>
+                                <td><Link to={`/cidades/show/${item.id}`}>{item.nome}</Link></td>
                                 <td>{item.estado.nome}-{item.estado.sigla}</td>
                                 <td>{item.created_at}</td>
+                                <td><Link to={`/cidades/show/${item.id}`}>Visualizar</Link> </td>
                             </tr>
                         )  
                       )
