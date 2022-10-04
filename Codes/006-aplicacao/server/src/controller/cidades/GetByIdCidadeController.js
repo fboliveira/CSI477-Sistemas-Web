@@ -15,7 +15,8 @@ export class GetByIdCidadeController {
                 id: true,
                 nome: true,
                 created_at:true,
-                estado: true
+                estado: true,
+                pessoas: true
             }            
         });
 
