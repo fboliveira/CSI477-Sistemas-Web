@@ -36,7 +36,7 @@ Faça o download conforme a sua plataforma e instale o editor. O processo é sim
 
 ### Extensões
 
-Eu vou sugerir alguns complementos para serem instalados no editor. No decorrer da disciplina, outras extensões podem ser adicionados. Além disso, você também pode contribuir indicando outras instalações.
+Eu vou sugerir alguns complementos para serem instalados no editor. No decorrer da disciplina, outras extensões podem ser adicionadas. Além disso, você também pode contribuir indicando outras instalações.
 
 Verifique sobre o processo de instalação das extensões, bem como sobre o *marketplace* em [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
@@ -45,8 +45,6 @@ Verifique sobre o processo de instalação das extensões, bem como sobre o *mar
     = [**Auto Close Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag): insere automaticamente a *tag* de fechamento em HTML/XML. Se você digitar `<div>`, é inserido automaticamente `</div>`.
 
     = [**Auto Rename Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): permite renomear os pares de *tags* HTML ao mesmo tempo. Por exemplo, se você quiser mudar um par `<p></p>` para `<div></div>`, quando você alterar o início de `<p>` para `<div>`, o fechamento também é alterado para `</div>`.
-
-- [**Bracket Pair Colorizer 2** (CoenraadS)](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2): esta extensão ajuda a identificar por meio de cores diferentes os pares de colchetes, parênteses e chaves.  
 
 - [**ESLint** (Microsoft)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): analisa o código JavaScript e ajuda na resolução de problemas.
 
@@ -70,7 +68,7 @@ Existem diversas extensões para HTML, CSS, JavaScript e demais *frameworks*. Du
 
 ## Servidores, linguagens e *frameworks*
 
-As instalações descrita nesta seção se referem ao desenvolvimento *backend*. Nós precisaremos de um servidor HTTP e a linguagem utilizada, um servidor de banco de dados e o *framework* para desenvolvimento.
+As instalações descritas nesta seção se referem ao desenvolvimento *backend*. Nós precisaremos de um servidor HTTP e a linguagem utilizada, um servidor de banco de dados e o *framework* para desenvolvimento.
 
 ### Instalação do Node.js
 
