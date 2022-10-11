@@ -38,6 +38,7 @@ export class LoginUserController {
         const token = jwt.sign(data, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
 
         response.send({
+            nome: user.nome,
             token,
             header: process.env.JWT_HEADER_KEY
         });
