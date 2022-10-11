@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Menu from '../menu/Menu';
 import './header.css';
 
@@ -6,7 +7,7 @@ import './header.css';
 // }
 
 interface HeaderProps {
-    name: string;
+    name?: string;
 }
 
 const Header = (props: HeaderProps) => {
@@ -15,7 +16,12 @@ const Header = (props: HeaderProps) => {
         <header>
             <div className='header'>
                 <h1>Sistema de Doação de Sangue</h1>
-                <h2>Usuário: {props.name}</h2>
+
+                { props.name ?
+                    <h2>Usuário: {props.name}</h2> :
+                    <h2><Link style={{ color: '#ffffff' }} to="/login">Login</Link></h2>
+                }
+
             </div>
 
             <Menu />

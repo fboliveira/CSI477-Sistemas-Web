@@ -9,14 +9,17 @@ import ListEstados from "./components/estados/ListEstados";
 import ShowEstado from "./components/estados/ShowEstado";
 import UpdateEstado from "./components/estados/UpdateEstado";
 import Header from "./components/header/Header";
+import LoginUser from "./components/users/LoginUser";
 
 const AppRoutes = () => {
+
+    const userName = window.localStorage.getItem('nome') || undefined;
 
     return(
 
         <BrowserRouter>
 
-            <Header name="Fernando" />
+            <Header name={userName} />
 
             <Routes>
 
@@ -39,6 +42,9 @@ const AppRoutes = () => {
 
                 <Route path="/cidades/update/:id"
                     element={<UpdateCidade />} />
+
+                <Route path="/login"
+                    element={<LoginUser />} />
 
             </Routes>
 
