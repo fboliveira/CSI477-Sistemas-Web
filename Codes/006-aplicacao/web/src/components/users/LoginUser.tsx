@@ -6,7 +6,7 @@ const LoginUser = () => {
 
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
-    const [ isLogged, setLogged ] = useState(false);
+    // const [ isLogged, setLogged ] = useState(false);
 
     const navigate = useNavigate();
 
@@ -30,7 +30,10 @@ const LoginUser = () => {
                     window.localStorage.setItem('header', header);
                     window.localStorage.setItem('nome', nome);
 
-                    setLogged(true);
+                    // setLogged(true);
+                    navigate('/');
+                    window.location.reload();
+
                     console.log(response.data);
                     
                 })
@@ -39,9 +42,9 @@ const LoginUser = () => {
                 } );
             
 
-            if (isLogged) {
-                navigate('/');
-            }
+            // if (isLogged) {
+            //     navigate('/');
+            // }
 
         } catch (error) {
             console.error(error);

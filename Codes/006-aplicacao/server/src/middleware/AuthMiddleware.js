@@ -10,8 +10,11 @@ export class AuthMiddleware {
         try {
             
             const authorization = request.headers['authorization'].split(' ');
-            const prefix = authorization[0];
-            const token = authorization[1];
+            const bearer = authorization[0];
+            const prefix = authorization[1];
+            const token = authorization[2];
+
+            console.log({ bearer, prefix, token });
 
             if ( prefix !== process.env.JWT_HEADER_KEY) {
                 return response.status(401)
