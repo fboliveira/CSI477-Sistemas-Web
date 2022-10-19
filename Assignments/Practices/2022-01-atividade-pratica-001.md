@@ -40,6 +40,36 @@ Sintam-se livres para as escolhas e documentem, por gentileza, utilizando o **RE
 
 ---
 
+## **Atividade Prática 2 - valor: 18,0 pontos**
+
+A Atividade Prática 2 consiste na implementação da interface Web (em *React* ou algum *framework* de sua preferência)
+
+1. **Entrega:**
+
+    - **GitHub**: código-fonte e afins. Insira os arquivos criados na pasta **Atividades/atividade-pratica-02-web** no seu repositório no GitHub.
+    - Data: **24/10/2022, até 23:59 horas**.
+
+---
+
+## **Prova - valor: 25,0 pontos**
+
+A Prova consiste na implementação tanto do *backend* quanto do *frontend* das ações de recuperar (*read, get*) e inserir (*create*) para as seguintes entidades:
+
+- *produtos*
+- *distribuicoes*
+- *unidades*
+
+Apenas as duas operações devem ser implementadas. As demais não são necessárias.
+
+1. **Entrega:**
+
+    - **GitHub**: código-fonte e afins. Insira os arquivos criados nas pastas no seu repositório no GitHub conforme a funcionalidade:
+        - *Backend*: **Atividades/atividade-pratica-01-server**  
+        - *Frontend*: **Atividades/atividade-pratica-02-web**  
+    - Data: **24/10/2022, até 23:59 horas**.
+
+---
+
 **Uma excelente atividade para vocês!**
 
 ---
