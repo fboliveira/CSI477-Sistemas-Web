@@ -6,7 +6,7 @@
 
 **Lectures and additional resources:**
 
-1. [Setting up development environment (in portuguese)](setting-environment.md)
+1. [Setting up development environment (in portuguese)](./setting-environment-nodejs.md)
 1. [Frontend](frontend.md)
 1. [HTML](html.md)
 1. [XML](xml.md)
