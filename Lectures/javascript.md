@@ -38,8 +38,7 @@
 
 ## Características
 
-- **Comandos e funções JavaScript**: inseridos dentro de
-    um documento da Web, junto com tags HTML e texto;
+- **Comandos e funções JavaScript**: inseridos dentro de um documento da Web, junto com tags HTML e texto;
 
 - Para acessar uma página que possui *scripts*: o navegador deve ser capaz de interpretar a linguagem.
 
