@@ -16,6 +16,31 @@
 
 - *Node.js ECMAScript compatibility tables*: <https://node.green/>
 
+### JavaScript is a single-thread language
+
+```javascript
+ console.log('A');
+ 
+ setTimeout(() => {
+  console.log('B');
+ }, 3000);
+  
+ console.log('C');
+```
+
+#### Output
+
+```javascript
+A 
+C 
+B
+```
+
+
+
+ > ![JavaScript runtime environment](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210122115136/Untitled-Diagram3.jpg)  
+ > From: [Why JavaScript is a single-thread language that can be non-blocking ?] (https://www.geeksforgeeks.org/why-javascript-is-a-single-thread-language-that-can-be-non-blocking/)
+
 ### Event Loop
 
 > The event loop is what allows Node.js to perform non-blocking I/O operations - despite the fact that JavaScript is **single-threaded** - by offloading operations to the system kernel whenever possible.
