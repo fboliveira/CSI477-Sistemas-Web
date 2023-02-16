@@ -1,0 +1,16 @@
+GET http://localhost:4000/
+
+###
+
+GET http://localhost:4000/data/125
+
+###
+
+POST http://localhost:4000/data
+Content-Type: application/json
+
+{
+    "id": 437,
+    "name": "mouse",
+    "barcode": "8229" 
+}
