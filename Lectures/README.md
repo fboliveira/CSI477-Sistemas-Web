@@ -18,6 +18,7 @@
 1. [JavaScript](javascript.md)
 1. [ES6 and beyond](./jses6-and-beyond.md)
 1. [Node.js](./nodejs.md)
+1. [Node.js Project](./nodejs-project.md)
 1. [TypeScript](./typescript.md)
 1. [React](./react.md)
 
