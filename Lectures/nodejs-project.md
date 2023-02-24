@@ -1,4 +1,4 @@
-# Nodejs Project
+# Node.js Project
 
 Como a construção do projeto é não-opinativa, ou seja, é possível definir qualquer arquitetura, uma estrutura será sugerida. Existe diferentes arquiteturas de software que podem ser utilizadas. Uma delas é apresentada [aqui](https://larswaechter.dev/blog/nodejs-rest-api-structure/).
 
@@ -39,7 +39,7 @@ Você pode criar uma pasta qualquer para que os códigos sejam inseridos. Estou 
 - Instalar o *client* do Prisma:  
     ```npm install @prisma/client```
 
-- Isso pode ser feito também da seguinte maneira:
+- Isso pode ser feito também da seguinte maneira:  
     ```npx prisma generate```
 
 - Observe que o **Prisma Client** será gerado e você pode defini-lo, por exemplo, em ```src/database/client.js```:  
