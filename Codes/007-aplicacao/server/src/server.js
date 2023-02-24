@@ -4,7 +4,7 @@ import express from 'express';
 import { mainRouter } from './routes/main.js';
 
 
-const PORT = 5555;
+const PORT = 3333;
 
 const app = express();
 app.use(express.json());
