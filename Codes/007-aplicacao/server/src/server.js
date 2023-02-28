@@ -2,7 +2,7 @@ import express from 'express';
 
 
 import { mainRouter } from './routes/main.js';
-
+import { estadoRouter } from './routes/estado.js';
 
 const PORT = 3333;
 
@@ -11,6 +11,7 @@ app.use(express.json());
 
 // Routes:
 app.use(mainRouter);
+app.use(estadoRouter);
 
 
 // Server - start/listen
