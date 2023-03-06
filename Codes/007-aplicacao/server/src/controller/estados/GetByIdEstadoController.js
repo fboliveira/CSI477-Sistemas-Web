@@ -4,8 +4,8 @@ export class GetByIdEstadoController {
 
     async handle(request, response) {
 
-        // /estados/{id}
-        // /estados/1
+        // /estados/{id} <- params
+        // /estados?id=1 <- query
         const { id } = request.params;
 
         const estado = await prisma.estado.findUnique({

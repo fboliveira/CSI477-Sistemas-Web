@@ -1,0 +1,12 @@
+GET http://localhost:3333/estados
+
+###
+PUT http://localhost:3333/estados
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome": "Acre",
+    "sigla": "AC"
+
+}
