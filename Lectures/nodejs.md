@@ -36,10 +36,8 @@ C
 B
 ```
 
-
-
  > ![JavaScript runtime environment](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210122115136/Untitled-Diagram3.jpg)  
- > From: [Why JavaScript is a single-thread language that can be non-blocking ?] (https://www.geeksforgeeks.org/why-javascript-is-a-single-thread-language-that-can-be-non-blocking/)
+ > From: [Why JavaScript is a single-thread language that can be non-blocking ?](https://www.geeksforgeeks.org/why-javascript-is-a-single-thread-language-that-can-be-non-blocking/)
 
 ### Event Loop
 
@@ -69,39 +67,6 @@ A lista completa está disponível [aqui](https://nodejs.dev/learn/how-much-java
  1. Repositório: [npmjs](https://www.npmjs.com/)
 
 Referência e outras informações [aqui](https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager).
-
-## API RESTful com ExpressJs
-
-- REST: *REpresentational State Transfer.* (Roy Fielding).
-
-- RESTful: web service que obedece a arquitetura e as restrições REST.
-
-- Operações: *POST, GET, PUT* e *DELETE*.
-
-- Etapas:
-
-    1. Estrutura do projeto
-    1. Configuração do [Express](https://expressjs.com/)
-    1. [Modelo proposto do banco de dados](https://dbdiagram.io/d/630d077e0911f91ba5ecf743)
-    1. ORM - [Prisma.io](https://www.prisma.io)
-    1. Construção das tabelas e relacionamentos
-    1. *Migrations*
-    1. Definição do CRUD: *controllers*
-    1. Criação de rotas
-
-### Estrutura do projeto (em construção)
-
-```text
-prisma
-src
-  |_ database
-        |_ client.js  
-  |_ model/*
-  |_ controller/*
-        |_[C,R,U,D]_*_Controller.js
-  |_ routes/*
-  |_ server.js
-```
 
 ## Outras Referências
 
