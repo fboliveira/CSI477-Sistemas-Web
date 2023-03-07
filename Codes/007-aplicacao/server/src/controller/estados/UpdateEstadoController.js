@@ -5,7 +5,7 @@ export class UpdateEstadoController {
     async handle(request, response) {
 
 
-        const { id, nome, sigla} = request.body;
+        const { id, nome, sigla } = request.body;
 
         const estado = await prisma.estado.update({
 
