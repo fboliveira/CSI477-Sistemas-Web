@@ -16,19 +16,19 @@ O objetivo deste documento é indicar um cronograma para a finalização do trab
 
 A apresentação do trabalho será realizada a partir da **gravação de um vídeo** contendo a descrição do projeto e a implementação. Os critérios estabelecidos a seguir serão utilizados para a avaliação do trabalho. As notas também serão compostas pela avaliação da turma (avaliação pelos pares).
 
-1. Avaliação acerca do Tema do trabalho e abrangência - *3,0 pontos*
+1. Avaliação acerca do Tema do trabalho e abrangência - *4,0 pontos*
 
-2. Apresentação: clareza, domínio do conteúdo e didática - *3,0 pontos*
+2. Apresentação: clareza, domínio do conteúdo e didática - *5,0 pontos*
 
-3. Utilização de recursos gráficos adequados, qualidade do vídeo e do áudio - *3,0 pontos*
+3. Utilização de recursos gráficos adequados, qualidade do vídeo e do áudio - *4,0 pontos*
 
-4. Definição apropriada do escopo - *6,0 pontos*
+4. Definição apropriada do escopo - *7,0 pontos*
 
 5. Interfaces apropriadas e funcionais - *7,0 pontos*
 
 6. Funcionalidades implementadas conforme o escopo/requisitos - *7,0 pontos*
 
-7. Utilização apropriada do *framework* MVC - *5,0 pontos*
+7. Utilização apropriada dos *frameworks* e/ou modelo MVC - *5,0 pontos*
 
 8. Avaliação geral do produto final - *6,0 pontos*
 
@@ -55,7 +55,7 @@ A entrega dos códigos deverá ser feito no repositório no GitHub, bem como o d
 O crograma a seguir é uma **recomendação**. É importante que as atividades sejam realizadas no prazo correto porque elas impactam tanto nas notas das outras pessoas, por causa da avaliação pelos pares, quanto na finalização das notas da disciplina.
 
 - **Semana 13**: finalização dos trabalhos e divulgação dos materiais produzidos pela turma.
-- **Semana 14**: avaliações por pares (preferencialmente, até **a data de entrega da prova**).
+- **Semana 14**: avaliações por pares (preferencialmente, até **a data da última aula prevista no plano de ensino**).
 
 ---
 
