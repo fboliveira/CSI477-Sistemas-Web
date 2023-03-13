@@ -17,7 +17,7 @@ POST http://localhost:3333/cidades
 Content-Type: application/json
 
 {
-    "nome" : "São Paulo",
+    "nome" : "Itauans",
     "estado_id": 2
 
 }
@@ -27,3 +27,14 @@ GET http://localhost:3333/cidades
 
 ###
 GET http://localhost:3333/cidades/1
+
+###
+PUT http://localhost:3333/cidades
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome" : "Itaúna",
+    "estado_id": 1
+
+}
