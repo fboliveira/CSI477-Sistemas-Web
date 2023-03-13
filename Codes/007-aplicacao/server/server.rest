@@ -17,7 +17,7 @@ POST http://localhost:3333/cidades
 Content-Type: application/json
 
 {
-    "nome" : "Itauans",
+    "nome" : "Cidade test",
     "estado_id": 2
 
 }
@@ -33,8 +33,16 @@ PUT http://localhost:3333/cidades
 Content-Type: application/json
 
 {
-    "id": 3,
-    "nome" : "Itaúna",
+    "id": 4,
+    "nome" : "Cidade atualizada",
     "estado_id": 1
 
+}
+
+###
+DELETE  http://localhost:3333/cidades
+Content-Type: application/json
+
+{
+    "id": 4
 }
