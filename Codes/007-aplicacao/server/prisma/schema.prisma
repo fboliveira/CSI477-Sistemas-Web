@@ -17,7 +17,7 @@ model Estado {
   created_at DateTime @default(now())
   updated_at DateTime @default(now())
 
-  cidades Cidade[]
+  cidade Cidade[]
 
   @@map("estados")
 }

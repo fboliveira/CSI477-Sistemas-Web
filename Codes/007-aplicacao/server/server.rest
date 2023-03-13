@@ -13,4 +13,14 @@ Content-Type: application/json
 
 ###
 
-DELETE 
+POST http://localhost:3333/cidades
+Content-Type: application/json
+
+{
+    "nome" : "São Paulo",
+    "estado_id": 2
+
+}
+
+###
+GET http://localhost:3333/cidades

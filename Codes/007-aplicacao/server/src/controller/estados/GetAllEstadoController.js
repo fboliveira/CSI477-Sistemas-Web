@@ -1,12 +1,16 @@
-import { prisma } from "../../database/client.js";
+import { prisma } from '../../database/client.js';
 
 export class GetAllEstadoController {
 
     async handle(request, response) {
 
-        const estados = await prisma.estado.findMany();
+        const estados = await prisma.estado.findMany({
+            include: {
+                cidade: true
+            }
+        });
         return response.json(estados);
-    
+
     }
 
 }
