@@ -24,3 +24,6 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3333/cidades
+
+###
+GET http://localhost:3333/cidades/1
