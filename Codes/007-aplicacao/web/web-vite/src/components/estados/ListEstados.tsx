@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 import api from "../../services/api"
 
 interface EstadoInterface {
@@ -28,6 +29,8 @@ const ListEstados = () => {
         <div>
 
             <h2>Lista de Estados</h2>
+
+            <Link to="/">Voltar</Link>
 
             <table>
 
