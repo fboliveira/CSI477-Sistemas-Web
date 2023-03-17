@@ -63,7 +63,7 @@ const CreateEstado = () => {
 
                 <button type="submit">Cadastrar</button>
                 <button type="reset">Limpar</button>
-                <Link to="/">Voltar</Link>
+                <Link to="/estados">Voltar</Link>
             </form>
         </div>
 

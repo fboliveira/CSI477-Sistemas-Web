@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import api from "../../services/api"
 
-interface EstadoInterface {
+export interface EstadoInterface {
     id: number;
     nome: string;
     sigla: string;
@@ -24,13 +24,46 @@ const ListEstados = () => {
 
     }, [])
 
+    const handleDeleteEstado = async (id: number) => {
+
+        // Validações
+        if ( !window.confirm( "Confirma exclusão do Estado?" ) ) {
+            return
+        }
+
+        try {
+            await api.delete('/estados', 
+            {
+                data: {
+                    id
+                }
+            });
+
+            alert("Estado excluído com sucesso!");
+
+            // Atualizar?
+            setEstados( estados.filter(estado => estado.id != id) );
+
+        } catch(error) {
+            alert("Erro na exclusão do Estado!");
+            console.error(error);
+        }
+
+    }
+
+
     return(
 
         <div>
 
             <h2>Lista de Estados</h2>
 
-            <Link to="/">Voltar</Link>
+            <div>
+                <Link to="/">Voltar</Link>
+            </div>
+            <div>
+                <Link to="/estados/create">Inserir Estado</Link>
+            </div>
 
             <table>
 
@@ -41,6 +74,8 @@ const ListEstados = () => {
                         <th>Sigla</th>
                         <th>Criado</th>
                         <th>Alterado</th>
+                        <th>Atualizar</th>
+                        <th>Excluir</th>
                     </tr>
                 </thead>
                 
@@ -52,6 +87,11 @@ const ListEstados = () => {
                             <td>{estado.sigla}</td>
                             <td>{estado.created_at}</td>
                             <td>{estado.updated_at}</td>
+                            <td><Link 
+                                to={`/estados/update/${estado.id}`}>Atualizar</Link></td>
+                            <td><button onClick={()=>{ 
+                                handleDeleteEstado(estado.id)
+                             }}>Excluir</button> </td>
                         </tr>
                     ))
                     }
