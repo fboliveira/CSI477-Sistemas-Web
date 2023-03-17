@@ -4,6 +4,8 @@ import ListEstados from './components/estados/ListEstados';
 import CreateEstado from './components/estados/CreateEstado';
 
 import UpdateEstado from './components/estados/UpdateEstado';
+import ListCidades from './components/cidades/ListCidades';
+import CreateCidade from './components/cidades/CreateCidade';
 
 const AppRoutes = () => {
 
@@ -19,6 +21,11 @@ const AppRoutes = () => {
 
                 <Route path="/estados/update/:id"
                     element={<UpdateEstado />} />
+
+                <Route path="/cidades" 
+                    element={<ListCidades />} />
+
+                <Route path="/cidades/create" element={ <CreateCidade /> } />
 
             </Routes>
         </BrowserRouter>
