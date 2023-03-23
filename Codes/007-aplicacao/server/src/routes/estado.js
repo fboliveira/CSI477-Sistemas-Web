@@ -10,6 +10,8 @@ import { UpdateEstadoController } from "../controller/estados/UpdateEstadoContro
 
 import { DeleteEstadoController } from "../controller/estados/DeleteEstadoController.js";
 
+import { AuthMiddleware } from "../middleware/AuthMiddleware.js";
+
 const estadoRouter = Router();
 
 const getAllEstadoController = new GetAllEstadoController();
@@ -18,8 +20,14 @@ const getByIdEstadoController = new GetByIdEstadoController()
 const updateEstadoController = new UpdateEstadoController();
 const deleteEstadoController = new DeleteEstadoController();
 
+// Middleware
+const authMiddleware = new AuthMiddleware()
+
+
 // Get All 
-estadoRouter.get('/estados', getAllEstadoController.handle);
+estadoRouter.get('/estados', 
+    authMiddleware.handle,
+    getAllEstadoController.handle);
 
 // Create - Post
 estadoRouter.post('/estados', createEstadoController.handle);
