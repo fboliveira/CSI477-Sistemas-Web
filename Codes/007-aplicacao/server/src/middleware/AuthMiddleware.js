@@ -13,6 +13,8 @@ export class AuthMiddleware {
             const prefix = authorization[1];
             const token = authorization[2];
 
+            console.log({prefix, token});
+
             if ( prefix !== process.env.JWT_HEADER_KEY ) {
                 return response.status(401).json({
                     message: "Acesso não autorizado!"
@@ -32,7 +34,7 @@ export class AuthMiddleware {
 
         } catch(error) {
             return response.status(401).json({
-                message: "Acesso não autorizado!",
+                message: "[ERRO] Acesso não autorizado!",
                 error
             });
         }

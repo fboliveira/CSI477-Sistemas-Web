@@ -7,6 +7,7 @@ import UpdateEstado from './components/estados/UpdateEstado';
 import ListCidades from './components/cidades/ListCidades';
 import CreateCidade from './components/cidades/CreateCidade';
 import UpdateCidade from './components/cidades/UpdateCidade';
+import LoginUser from './components/users/LoginUser';
 
 const AppRoutes = () => {
 
@@ -29,6 +30,8 @@ const AppRoutes = () => {
                 <Route path="/cidades/create" element={ <CreateCidade /> } />
 
                 <Route path="/cidades/update/:id" element={ <UpdateCidade /> } />
+
+                <Route path="/login" element={<LoginUser />} />
 
             </Routes>
         </BrowserRouter>

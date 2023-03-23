@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import api from "../../services/api"
+import { Authentication } from "../../services/auth";
 import { EstadoInterface } from "../estados/ListEstados";
 
 interface CidadeInterface {
@@ -16,8 +17,17 @@ const ListCidades = () => {
 
     const [ cidades, setCidades ] = useState<CidadeInterface[]>([]);  
     
+    const navigate = useNavigate();
+        
     useEffect(() =>{
 
+        const auth = Authentication();
+
+        if (!auth) {
+            navigate('/login');
+            return;
+        }
+                
         api.get('/cidades')
             .then(response => {
                 console.log(response.data);
