@@ -69,5 +69,3 @@ O crograma a seguir é uma **recomendação**. É importante que as atividades s
 > *The only person to win the Nobel Prize in two scientific fields.*  
 
 ---
-
-[Índice](./README.md#índice)
