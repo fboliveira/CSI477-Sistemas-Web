@@ -54,8 +54,8 @@ A entrega dos códigos deverá ser feito no repositório no GitHub, bem como o d
 
 O crograma a seguir é uma **recomendação**. É importante que as atividades sejam realizadas no prazo correto porque elas impactam tanto nas notas das outras pessoas, por causa da avaliação pelos pares, quanto na finalização das notas da disciplina.
 
-- **Semana 13**: finalização dos trabalhos e divulgação dos materiais produzidos pela turma.
-- **Semana 14**: avaliações por pares (preferencialmente, até **a data da última aula prevista no plano de ensino**).
+- **Semana 16**: finalização dos trabalhos e divulgação dos materiais produzidos pela turma.
+- **Semana 17**: avaliações por pares (preferencialmente, até **a data da última aula prevista no plano de ensino**).
 
 ---
 
