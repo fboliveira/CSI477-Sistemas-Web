@@ -6,9 +6,9 @@ Este documento apresenta uma sugestão de ambiente de desenvolvimento para utili
 
 Nós precisaremos das seguintes ferramentas para o desenvolvimento das atividades:
 
-- Um editor de código;
+- Uma IDE/editor de código;
 - O *runtime JavaScript* [Node.js](https://nodejs.org/en/);
-- Um servidor de banco de dados.
+- Um sistema de banco de dados.
 
 Você pode utilizar o *runtime* e o servidor de banco de dados via [Docker](https://www.docker.com/) também.
 
@@ -46,8 +46,6 @@ Verifique sobre o processo de instalação das extensões, bem como sobre o *mar
 
     = [**Auto Rename Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): permite renomear os pares de *tags* HTML ao mesmo tempo. Por exemplo, se você quiser mudar um par `<p></p>` para `<div></div>`, quando você alterar o início de `<p>` para `<div>`, o fechamento também é alterado para `</div>`.
 
-- [**Bracket Pair Colorizer 2** (CoenraadS)](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2): esta extensão ajuda a identificar por meio de cores diferentes os pares de colchetes, parênteses e chaves.  
-
 - [**ESLint** (Microsoft)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): analisa o código JavaScript e ajuda na resolução de problemas.
 
 - [**Live Server** (Ritwick Dey)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): um servidor web local é iniciado e permite a visualização de páginas HTML. Isso é útil para desenvolvimento *frontend* em  projetos menores.
@@ -62,9 +60,9 @@ Algumas extensões apresentam funcionalidades adicionais e visuais, como cores, 
 
 - [**Dracula Official** (Dracula Theme)](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula): tema de cores mais agradáveis e menos cansativa para o editor.
 
-- [**GitLens** (Eric Amodio)](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): funcionalidades adicionais para o Git.
+- [**GitLens** (GitKraken)](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): funcionalidades adicionais para o Git.
 
-- [**Material Icon Theme** (Philipp Kief)](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): muda os ícones dos arquivos conforme o seu tipo (css, php, html, dentre outros).
+- [**Material Icon Theme** (Philipp Kief)](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): muda os ícones dos arquivos conforme o seu tipo (css, js, php, html, dentre outros).
 
 Existem diversas extensões para HTML, CSS, JavaScript e demais *frameworks*. Durante o andamento do curso, podemos instalar esses complementos, bem como, vocês podem indicar as suas preferidas.
 
@@ -87,7 +85,7 @@ node --version
 Você terá uma resposta similar a:
 
 ```bash
-v16.16.0
+v18.16.0
 ```
 
 Após isso, verique a versão do NPM digitando seguinte comando no terminal:
@@ -99,14 +97,14 @@ npm --version
 Você terá uma resposta similar a:
 
 ```bash
-8.15.1
+9.5.1
 ```
 
 Se algum comando falhar, certifique-se que não ocorreu nenhum problema durante a instalação. Caso a instalação esteja correta, você precisará inserir o caminho da instalação no `PATH`. Veja sobre isso [aqui](https://www.computerhope.com/issues/ch000549.htm).
 
 ### Servidor de banco de dados
 
-Nós precisaremos de um servidor de banco durante o curso. Você pode utilizar qualquer [SGBD](https://pt.wikipedia.org/wiki/Sistema_de_gerenciamento_de_banco_de_dados) relacional ou não. Seguem algumas sugestões:
+Nós precisaremos de um serviço de banco durante o curso. Você pode utilizar qualquer [SGBD](https://pt.wikipedia.org/wiki/Sistema_de_gerenciamento_de_banco_de_dados) relacional ou não. Seguem algumas sugestões:
 
 - [PostgreSQL](https://www.postgresql.org/download/)
 
@@ -115,6 +113,8 @@ Nós precisaremos de um servidor de banco durante o curso. Você pode utilizar q
 - [SQLite](https://sqlite.org/download.html)
 
 Mesmo que seja utilizado na disciplina uma SGBD relacional, você tem autonomia para escolher outro modelo, como o [MongoDB](https://www.mongodb.com/). Os bancos de dados indicados também são disponibilizados via [Docker](https://www.docker.com/) por meio de [containers](https://www.docker.com/resources/what-container). É uma excelente alternativa à instalação!
+
+Para que vocês possam ter acesso aos dados que eu utilizar nas aulas, optarei pelo **SQLite**. Assim, eu posso incluir o arquivo do bando de dados no GitHub.
 
 ## Plataforma de controle de versão
 
@@ -129,7 +129,7 @@ git --version
 Se você tiver uma resposta como a seguinte, está tudo correto:  
 
 ```bash
-git version 2.34.1
+git version 2.40.1
 ```
 
 Caso contrário, você precisará instalar o aplicativo.
