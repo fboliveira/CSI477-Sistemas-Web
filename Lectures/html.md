@@ -22,7 +22,7 @@ como principal referência textos e exemplos retirados de
 
 - [W3C and WHATWG to work together to advance the open Web platform](https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/)
 
-- <https://html.spec.whatwg.org/>: *Last Updated 5 December 2022*
+- <https://html.spec.whatwg.org/>: *Last Updated 8 May 2023*
 
 ### **Versões anteriores**
 
@@ -70,7 +70,7 @@ como principal referência textos e exemplos retirados de
 
   = <https://www.w3.org/TR/wai-aria/>
 
-  = Versão 1.3 - *W3C Editor's Draft 26 October 2022*
+  = Versão 1.3 - *W3C Editor's Draft 03 May 2023*
 
   = <https://w3c.github.io/aria/>
 
@@ -113,7 +113,6 @@ como principal referência textos e exemplos retirados de
 ### Fundamentals
 
 - [**HTML Living Standard (documentação oficial)**](https://html.spec.whatwg.org/)
-
 
 - [Código Fonte TV - HTML // Dicionário do Programador](https://youtu.be/4dQtz1PpY9A)
 
