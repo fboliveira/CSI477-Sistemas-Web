@@ -24,8 +24,10 @@
 
 - Sites que disponibilizam imagens.  
 
-    = [Pexels](https://www.pexels.com/pt-br/): sugestão de Juliana Mara Lemos (2023/1)
-    = [Pixabay](https://pixabay.com/pt/): sugestão de Juliana Mara Lemos (2023/1)
+    = [Pexels](https://www.pexels.com/pt-br/): sugestão de Juliana Mara Lemos (2023/1)  
+
+    = [Pixabay](https://pixabay.com/pt/): sugestão de Juliana Mara Lemos (2023/1)  
+
     = [Unsplash](https://unsplash.com/)  
 
 - Criação de imagens:  
@@ -35,6 +37,7 @@
 ## Microfrontends
 
 - [Microfrontends - Hipsters #164](https://hipsters.tech/microfrontends-hipsters-164/)  
+
 - [Micro Frontends na Conta Azul - Hipsters On The Road #26](https://hipsters.tech/micro-frontends-no-conta-azul-hipsters-on-the-road-26/)
 
 ## News
