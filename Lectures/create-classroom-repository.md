@@ -8,7 +8,7 @@ As ações de *download* do repositório (local) e atualização *online* (remot
 
 ## Criação do repositório no *GitHub Classroom*
 
-No **Linguagens de Marcação** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2022/01 - Atividades - exercícios, práticas e trabalho final**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **2022/02 - Atividades**.
+No **Linguagens de Marcação** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2022/01 - Atividades - exercícios, práticas e trabalho final**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **CSI606-2023-01 - Atividades**.
 
 Ao clicar no *link*, se você não tiver feito *login* no GitHub, a seguinte tela será exibida:
 
@@ -26,7 +26,7 @@ Ao final do processo, a seguinte mensagem será apresentada:
 
 ![GitHub Classroom - success](./img/github-classroom-success.png)
 
-O endereço do repositório criado é iniciado por ``2020-03-ple-atividades`` (``2021-01-atividades``) e tem ao final o seu usuário no GitHub. Para o meu usuário, foi criado o seguinte repositório:
+O endereço do repositório criado é iniciado por ``2020-03-ple-atividades`` (``csi606-2023-01-atividades``) e tem ao final o seu usuário no GitHub. Para o meu usuário, foi criado o seguinte repositório:
 
 ```html
 https://github.com/UFOP-CSI477/2020-03-ple-atividades-fboliveira
@@ -40,8 +40,7 @@ Ao acessar o endereço do repositório, você verá a seguinte estrutura:
 
 Um *template* com uma sugestão de estrutura de pastas foi utilizado para criar o repositório. Você poderá inserir separadamente as ```Atividades``` (práticas 1 e 2 e os exercícios), o ```Projeto``` e a ```Prova```. O arquivo ```README.md``` da pasta ```Projeto``` já apresenta a estrutura da proposta do trabalho com a indicação das seções a serem descritas.
 
-Como o GitHub não insere no repositório pastas vazias, eu tive que utilizar de um artifício técnico emergencial (~~gambiarra~~) para a criação dessa estrutura. Você encontrará nas pastas um arquivo chamado
-```.gitkeep```. Você poderá exclui-los quando for atualizando as pastas.
+Como o GitHub não insere no repositório pastas vazias, eu tive que utilizar de um artifício técnico emergencial (~~gambiarra~~) para a criação dessa estrutura. Você encontrará nas pastas um arquivo chamado ```.gitkeep```. Você poderá exclui-los quando for atualizando as pastas.
 
 ### Markdown
 
