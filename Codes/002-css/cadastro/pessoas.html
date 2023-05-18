@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas</title>
+</head>
+<body>
+    
+    <h1>Dados da pessoa</h1>
+
+    <form action="/pessoas/cadastrar" method="get">
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nomeDaPessoa"
+            id="nome"
+            placeholder="Informe o nome da pessoa"
+            minlength="3"
+            required>
+        </div>
+
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha">
+        </div>
+
+        <label>Gênero</label>
+
+        <div>
+            <input 
+                type="radio" name="genero" id="feminino"
+                value="FEM">
+            <label for="feminino">Feminino</label>
+        </div>
+
+        <div>
+            <input 
+                type="radio" name="genero" id="masculino"
+                value="MAS">
+            <label for="masculino">Masculino</label>
+        </div>    
+
+        <div>
+            <input 
+                type="radio" name="genero" id="naoBinario"
+                value="NB">
+            <label for="naoBinario">Não binário</label>
+        </div>        
+        
+        <div>
+            <input 
+                type="radio" name="genero" id="semresposta"
+                value="SR">
+            <label for="semresposta">Prefiro não responder</label>
+        </div>
+
+
+        <label>Notificações</label>
+
+        <div>
+            <input 
+                type="checkbox" 
+                id="email"
+                name="notificao[0]">
+            <label for="email">Receber notificações por e-mail</label>
+        </div>
+
+        <div>
+            <input 
+                type="checkbox" id="whatsapp" name="notificao[1]">
+            <label for="whatsapp">Receber notificações pelo WhatsApp</label>
+        </div>
+
+        <div>
+            <label for="uf">Estado</label>
+            <select name="estado" id="uf">
+
+                <option value="0" 
+                    selected disabled>Selecione:</option>
+                <option value="1">Minas Gerais</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Maranhão</option>
+                <option value="4">Bahia</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="perfil">Cor padrão do perfil</label>
+
+            <input type="color" 
+                name="perfil" 
+                id="perfil">
+        </div>
+    
+
+        <div>
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
+
+        <div>
+            <label for="pontuacao">Pontuação</label>
+            <input 
+                type="range" name="pontuacao" id="pontuacao"
+                min="0"
+                max="100"
+                step="10"
+                value="80">
+        </div>
+
+        <div>
+            <label for="email">E-Mail</label>
+
+            <input 
+                type="email" 
+                name="email" 
+                id="email"
+                required>
+
+        </div>
+
+
+        <input type="submit" value="Enviar - input">
+
+        <button type="submit">Enviar - button</button>
+
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    <a href="../">Voltar</a>
+
+</body>
+</html>
