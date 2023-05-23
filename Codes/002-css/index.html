@@ -6,10 +6,53 @@
 
     <style>
 
-        p {
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        * {
+            margin: 0rem;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        /* comentário */
+        /* classe genérica */
+        .borda {
             border: 1px solid #000;
             margin: 0.5rem;
             padding: 1rem;
+        }
+        
+        a:hover {
+            background-color: lightsteelblue;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #c23f4a;
+        }
+
+        p::first-line {
+            color: #0672a2;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        footer > p {
+            background-color: #c6c6c6;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        h2 + p {
+            background-color: #3ce61a;   
+        }
+
+        h1, h2, h3 {
+            
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
 
     </style>
@@ -26,7 +69,11 @@
                 
                 <h3>Início do curso</h3>
 
-                <p>Programa do <strong> curso</strong></p>
+                <p class="borda remover">Programa do <strong> curso</strong></p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempora qui sit delectus minus saepe modi. Voluptas modi odit itaque, officia accusamus animi optio aliquam atque, adipisci, temporibus nisi omnis.
+                    Optio dicta sed veritatis tempora id. Optio cumque, velit obcaecati ad recusandae expedita suscipit molestias omnis. Quibusdam sunt laboriosam dignissimos, praesentium consequuntur, at perferendis odit unde suscipit possimus consectetur nesciunt.
+                </p>
             </section>
 
             <section>
@@ -39,7 +86,7 @@
 
         </article>
 
-        <div id="links">
+        <div id="links" class="borda">
             <a href="#"><span>Sobre</span></a>
             <a href="./cadastro/pessoas.html">Cadastro</a>
             <a href="./relatorio/pessoas.html">Relatório</a>
