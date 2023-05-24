@@ -1,0 +1,67 @@
+// CSI606-sistema-ecommerce
+// https://dbdiagram.io/d/646be158dca9fb07c48ed74c
+
+Table estados as EST {
+  id int [pk, increment] // auto-increment
+  nome varchar
+  sigla varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table cidades as CID {
+  id int [pk, increment] // auto-increment
+  nome varchar
+  estado_id int [ref: > EST.id]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table produtos as PROD {
+  id int [pk, increment] // auto-increment   
+  descricao varchar
+  valor_unitario float
+  created_at timestamp
+  updated_at timestamp  
+}
+
+Table usuarios as USU {
+  id int [pk, increment] // auto-increment   
+  nome varchar
+  email varchar
+  senha varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table enderecos as END {
+  id int [pk, increment] // auto-increment   
+  usuario_id int [ref: > USU.id]
+  rua varchar
+  numero varchar
+  bairro varchar
+  cidade_id int [ref: > CID.id]
+  telefone varchar
+  created_at timestamp
+  updated_at timestamp
+
+}
+
+Table compras as COMP {
+  id int [pk, increment] // auto-increment   
+  usuario_id int [ref: > USU.id]
+  endereco_id int [ref: > END.id]
+  data datetime
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table compras_produtos as COP {
+  id int [pk, increment] // auto-increment   
+  compra_id int [ref: > COMP.id]
+  produto_id int [ref: > PROD.id]
+  quantidade tinyint
+  valor_unitario float
+  created_at timestamp
+  updated_at timestamp
+}
