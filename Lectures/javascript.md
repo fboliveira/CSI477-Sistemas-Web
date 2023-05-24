@@ -129,9 +129,11 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 
 - [jQuery (?)](http://jquery.com/)
 
+- [React](https://reactjs.org/)
+
 - [AngularJS](https://www.angularjs.org/)
 
-- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
 
 - [Vue.js](https://vuejs.org/)
 
@@ -145,7 +147,7 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 
 ### Fundamentals
 
-- [Attekita Dev: JAVASCRIPT do básico ao avançado ( Mapa de estudos / Roadmap )](https://youtu.be/6YwbZbHRQ8w)
+- [Attekita Dev: JAVASCRIPT do básico ao avançado (Mapa de estudos / Roadmap )](https://youtu.be/6YwbZbHRQ8w)
 
 - [Código Fonte TV: Economize (DE VERDADE) Muitas Linhas de Código! 8 Formas de Usar Destructuring no Javascript](https://youtu.be/_17mgcmmHFU)
 
