@@ -149,6 +149,8 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 
 - [Attekita Dev: JAVASCRIPT do básico ao avançado (Mapa de estudos / Roadmap )](https://youtu.be/6YwbZbHRQ8w)
 
+- [Can I use ... ?](https://caniuse.com/)
+
 - [Código Fonte TV: Economize (DE VERDADE) Muitas Linhas de Código! 8 Formas de Usar Destructuring no Javascript](https://youtu.be/_17mgcmmHFU)
 
 - [MSDN web docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)

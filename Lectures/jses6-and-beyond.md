@@ -198,6 +198,8 @@ There are other interesting examples [here](https://www.w3schools.com/js//js_asy
 
 ## Other functionalities
 
+- [Can I use ... ?](https://caniuse.com/)
+
 You might observe other functionalities here:
 
 - [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
