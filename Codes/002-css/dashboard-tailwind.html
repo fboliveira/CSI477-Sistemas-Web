@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de vendas</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body>  
+
+    <header class="container m-2">
+
+        <div class="flex flex-row">
+
+            <div class="basis-1/4">
+                Logo
+            </div>
+            
+            <div class="basis-1/2">
+
+                <div class="flex flex-row">
+
+                    <div class="basis-3/4 mr-2">
+                        <input type="text"  
+                        name="search" 
+                        id="search"
+                        class="text-sm
+                        pl-10
+                        w-full
+                        rounded
+                        shadow-md
+                        text-slate-900
+                        ring-1
+                        ring-slate-400
+                        leading-6
+                        focus:ring-blue-500
+                        focus:outline-none
+                        focus:ring-2"
+                        placeholder="Procurar...">
+                    </div>
+
+                    <div class="basis-1/4">
+                        <button
+                        class="text-base font-medium rounded-lg bg-sky-500 text-white
+                        p-3"
+                        >Procurar</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="basis-1/4">
+                Profile
+            </div>  
+            
+        </div>
+    </header>
+    
+    <div class="main">
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Estados</a></li>
+                <li class="menu-item"><a href="#">Cidades</a></li>
+                <li class="menu-item"><a href="#">Produtos</a></li>
+                <li class="menu-item"><a href="#">Vendas</a></li>
+                <li class="menu-item"><a href="#">Clientes</a></li>
+            </ul>
+        </nav>  
+        
+        <div class="content">
+            Conteúdo
+        </div>
+    </div>
+
+</body>
+</html>
