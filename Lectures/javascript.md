@@ -187,6 +187,8 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 
 - [IBGE: API de serviço de dados](https://servicodados.ibge.gov.br/api/docs)
 
+- [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+
 - [MDN: Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
 - [MDN: Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
@@ -194,6 +196,8 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 - [MDN: XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 
 - [Public APIs](https://github.com/public-apis/public-apis)
+
+- [Random user generator](https://randomuser.me/)
 
 ### TypeScript
 
