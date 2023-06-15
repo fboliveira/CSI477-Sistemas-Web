@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estados e cidades - API IBGE</title>
 </head>
-<body>
+
+<body onload="carregarEstados()">
     
     <h1>Cadastro</h1>
 
@@ -17,7 +18,11 @@
 
         <label for="estados">Estados</label>
 
-        <select name="estados" id="estados">
+        <select 
+            name="estados" 
+            id="estados"
+            onchange="carregarDadosCidades()"
+        >
             <option value="">Selecione:</option>
         </select>
 
