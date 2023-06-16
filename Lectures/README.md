@@ -16,7 +16,7 @@
 1. [Create the GitHub/Classroom repository](create-classroom-repository.md)
 1. [Cascading Style Sheets - CSS](css.md)
 1. [JavaScript](javascript.md)
-1. [ES6 and beyond](./jses6-and-beyond.md)
+1. [JavaScript ES6 and beyond](./jses6-and-beyond.md)
 1. [Node.js](./nodejs.md)
 1. [Node.js Project](./nodejs-project.md)
 1. [TypeScript](./typescript.md)
