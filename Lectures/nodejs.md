@@ -6,7 +6,7 @@
 
 - Com isso, é possível executar códigos JS no *back-end* por meio de diversos módulos desenvolvidos por diferentes comunidades.
 
-- Você verá diversas aplicações e *frameworks* que utilizam Node.js, como o *React*, *ExpressJS*, *AdonisJS*, dentre outros.
+- Você verá diversas aplicações e *frameworks* que utilizam Node.js, como o *React*, *ExpressJS*, *Prisma*, *AdonisJS*, dentre outros.
 
 ## Conceitos e definições
 
@@ -68,9 +68,25 @@ A lista completa está disponível [aqui](https://nodejs.dev/learn/how-much-java
 
 Referência e outras informações [aqui](https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager).
 
+## Node.js Project
+
+Uma sugestão de estrutura de projeto está definida [aqui](./nodejs-project.md).
+
+## Deno
+
+O [Deno](https://deno.land/) é outro ambiente de execução JavaScript, TypeScript e [WebAssembly](https://webassembly.org/) desenvolvido também com a ajuda do *Ryan Dahl*. O motor V8 também foi utilizando, agora com implementações em [Rust](https://www.rust-lang.org/).
+
+Este ambiente foi anunciando em 2018 na JSConf por *Ryan Dhal* a partir da seguinte palestra: [*10 Things I Regret About Node.js - Ryan Dahl - JSConf EU*](https://youtu.be/M3BM9TB-8yA). Além de indicar alguns problemas de *design* do Node, algumas possíveis questões de controle e de segurança acerca do gerenciamento de dependências (*npm*, *node_modules*).  
+
+O Deno suporta apenas *ESModules*, *URLs* para dependências locais e remotas, não necessita de um gerenciador de dependências (mas, as últimas versões suportam o *npm*), possui restrições de acesso ao sistema de arquivo e à rede por padrão, além de outros fatores.
+
 ## Outras Referências
 
 [Código Fonte TV: Node.js // Dicionário do Programador](https://youtu.be/vYekSMBCCiM)
+
+[Código Fonte TV: Deno (A alternativa ao Node.js !?) // Dicionário do Programador](https://youtu.be/fVoH6rFU6zw)
+
+[Deno land - Youtube channel](https://www.youtube.com/@deno_land/)
 
 [Felipe Rocha - dicasparadevs: Curso de Node.js Para Completos Iniciantes](https://youtu.be/IOfDoyP1Aq0)
 

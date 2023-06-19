@@ -1,6 +1,6 @@
 # Node.js Project
 
-Como a construção do projeto é não-opinativa, ou seja, é possível definir qualquer arquitetura, uma estrutura será sugerida. Existe diferentes arquiteturas de software que podem ser utilizadas. Uma delas é apresentada [aqui](https://larswaechter.dev/blog/nodejs-rest-api-structure/).
+Como a construção do projeto é não-opinativa, ou seja, é possível definir qualquer arquitetura, uma estrutura será sugerida. Existe diferentes arquiteturas de software e metodologias que podem ser utilizadas (*Domain-driven design* - DDD, *Test-driven development* - TDD, hexagonal). Uma delas é apresentada [aqui](https://larswaechter.dev/blog/nodejs-rest-api-structure/).
 
 ## Comandos básicos para a criação de um projeto com Express.js e Prisma
 
@@ -87,16 +87,19 @@ src/routes/<model>.js
     1. Definição do CRUD: *controllers*
     1. Criação de rotas
 
-### Estrutura do projeto (em construção)
+### Estrutura principal do projeto *server API*
 
 ```text
+node_modules
 prisma
 src
-  |_ database
-        |_ client.js  
-  |_ model/*
   |_ controller/*
         |_[C,R,U,D]_*_Controller.js
+  |_ database
+        |_ client.js  
+  |_ middleware
+  |_ model/*
   |_ routes/*
   |_ server.js
+package.json
 ```
