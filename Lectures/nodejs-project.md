@@ -1,6 +1,6 @@
 # Node.js Project
 
-Como a construção do projeto é não-opinativa, ou seja, é possível definir qualquer arquitetura, uma estrutura será sugerida. Existe diferentes arquiteturas de software e metodologias que podem ser utilizadas (*Domain-driven design* - DDD, *Test-driven development* - TDD, hexagonal). Uma delas é apresentada [aqui](https://larswaechter.dev/blog/nodejs-rest-api-structure/). Você pode aprofundar os seus conhecimentos sobre Arquitetura de Software [Capítulo 7](https://engsoftmoderna.info/cap7.html) e demais assuntos relacionados no livro [Engenharia de Software Moderna](https://engsoftmoderna.info/).
+Como a construção do projeto é não-opinativa, ou seja, é possível definir qualquer arquitetura, uma estrutura será sugerida. Existe diferentes arquiteturas de software e metodologias que podem ser utilizadas (*Domain-driven design* - DDD, *Test-driven development* - TDD, hexagonal). Uma delas é apresentada [aqui](https://larswaechter.dev/blog/nodejs-rest-api-structure/). Você pode aprofundar os seus conhecimentos sobre Arquitetura de Software [Capítulo 7](https://engsoftmoderna.info/cap7.html) e demais assuntos relacionados no livro [Engenharia de Software Moderna](https://engsoftmoderna.info/) do Prof. Marco Tulio Valente (DCC/UFMG).
 
 ## Comandos básicos para a criação de um projeto com Express.js e Prisma
 
