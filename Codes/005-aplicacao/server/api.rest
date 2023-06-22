@@ -1,0 +1,7 @@
+
+
+
+GET http://localhost:5555
+
+###
+GET http://localhost:5555/admin
