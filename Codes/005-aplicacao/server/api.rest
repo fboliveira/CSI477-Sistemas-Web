@@ -5,3 +5,18 @@ GET http://localhost:5555
 
 ###
 GET http://localhost:5555/admin
+
+###
+GET http://localhost:5555/estados
+
+###
+GET http://localhost:5555/estados/3
+
+###
+POST http://localhost:5555/estados
+Content-Type: application/json
+
+{
+    "nome": "São Paulo",
+    "sigla": "SP"
+}
