@@ -38,3 +38,6 @@ Content-Type: application/json
 {
     "ident": 3
 }
+
+### 
+GET http://localhost:5555/cidades
