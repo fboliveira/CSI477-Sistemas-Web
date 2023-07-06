@@ -21,6 +21,7 @@
 1. [Node.js Project](./nodejs-project.md)
 1. [TypeScript](./typescript.md)
 1. [React](./react.md)
+1. [Next.js](./nextjs.md)
 
 Previous technologies:
 

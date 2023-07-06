@@ -27,7 +27,9 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 1. [JavaScript ES6 and beyond](./Lectures/jses6-and-beyond.md)
 1. [Node.js](./Lectures/nodejs.md)
 1. [Node.js Project](./Lectures/nodejs-project.md)
+1. [TypeScript](./Lectures/typescript.md)
 1. [React](./Lectures/react.md)
+1. [Next.js](./Lectures/nextjs.md)
 1. [Instructions of Final Project](./LessonScripts/project/roteiro-trabalho-final.md)
 
 Previous technologies:
