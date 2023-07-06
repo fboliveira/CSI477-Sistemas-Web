@@ -103,3 +103,12 @@ src
   |_ server.js
 package.json
 ```
+## Outras referências
+
+- [Insomnia](https://insomnia.rest/)
+
+- [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+
+- [Thunder Client - REST API Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+
+
