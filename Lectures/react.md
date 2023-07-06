@@ -2,7 +2,7 @@
 
 - Este documento é uma resumo bem simplificado sobre React. As descrições apresentadas aqui foram retiradas e/ou adaptadas da documentação oficial.
 
-- O [**React**](https://reactjs.org/) é uma **biblioteca** JavaScript para a construção de interfaces.
+- O [**React**](https://react.dev/) é uma **biblioteca** JavaScript para a construção de interfaces.
 
 - A biblioteca é baseada em **componentes**, os quais armazenam os seus estados e renderizam na tela os dados.
 
@@ -53,7 +53,7 @@ function getMessage(user) {
 
 ## Componentes
 
-- Os [componentes](https://reactjs.org/docs/components-and-props.html) são elementos independentes e reutilizáveis.
+- Os [componentes](https://react.dev/reference/react-dom/components) são elementos independentes e reutilizáveis.
 
 - A interface pode ser composta por diferentes componentes.
 
@@ -111,7 +111,7 @@ root.render(element);
 
 - Eles não devem ser mutados diretamente.
 
-- Por meio dos [*Hooks*](https://reactjs.org/docs/hooks-intro.html), pode manipular os estados e outras características sem a necessidade de se escrever uma classe.
+- Por meio dos [*Hooks*](https://react.dev/reference/react) é possível manipular os estados e outras características sem a necessidade de se escrever uma classe.
 
 ```jsx
 function Tasks() {
@@ -128,9 +128,9 @@ function Tasks() {
 
 ## Criação de uma aplicação
 
-- As aplicações podem ser criadas a partir do utilitário [Create React App](https://create-react-app.dev/)
+- Inicialmente, as aplicações eram criadas a partir do utilitário [Create React App (CRA)](https://create-react-app.dev/)
 
-- As instruções estão definidas [aqui](https://reactjs.org/docs/create-a-new-react-app.html)
+- As instruções estão definidas [aqui](https://create-react-app.dev/docs/getting-started)
 
 - Existem configurações avançadas que podem ser encontradas [aqui](https://create-react-app.dev/docs/advanced-configuration/)
 
@@ -141,6 +141,8 @@ npx create-react-app Nome_Da_Aplicacao --template typescript
 ```
 
 - Substitua ```Nome_Da_Aplicacao``` para o nome desejado.
+
+- :warning: Contudo, o CRA está se tornando (se tornou) **obsoleto**.
 
 - Uma alternativa ao utilitário padrão é o [Vite](https://vitejs.dev/)
 
@@ -153,14 +155,17 @@ npm create vite@latest Nome_Da_Aplicacao -- --template react-ts
 
 - A documentação do Vite pode ser encontrada [aqui](https://vitejs.dev/guide/)
 
-## Próximos conceitos e ações
+## Considerações gerais
 
-1. Effect
-1. Router
-1. Hooks
-1. Styles: CSS e styled components
-1. Integração com o backend
-1. Operações CRUD
+- O React é uma biblioteca (e não um *framework*). Isso implica que ele não tem todos os mecanismos necessários para se criar um aplicação, além de ser preciso implementar diferentes funcionalidades comuns, como roteamento, carregamento de dados, dentre outras.
+
+- Em projetos maiores, a gestão e a escalabilidade ficam comprometidas.
+
+- Por isso, o próprio React indica que sejam utilizados *frameworks* para o desenvolvimento. Veja [aqui](https://react.dev/learn/start-a-new-react-project)
+
+- O [Next.js](nextjs.md) é um *framework* completo para desenvolvimento de aplicações utilizando o React.
+
+- Por isso, seguiremos o desenvolvimento com ele.
 
 ## Outras Referências
 
