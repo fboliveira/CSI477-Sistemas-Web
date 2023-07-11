@@ -41,3 +41,12 @@ Content-Type: application/json
 
 ### 
 GET http://localhost:5555/cidades
+
+###
+POST http://localhost:5555/cidades
+Content-Type: application/json
+
+{
+    "nome": "Campinas",
+    "estado_id": 2
+}
