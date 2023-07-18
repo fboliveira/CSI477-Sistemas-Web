@@ -16,7 +16,12 @@ const Menu = () => {
                             Home
                     </Link>
                 </li>
-                <li>Estados</li>
+                <li>
+                    <Link to="/estados">
+                        Estados
+                    </Link>
+
+                </li>
                 <li>Cidades</li>
                 <li><a href="http://www.ufop.br">UFOP</a></li>
             </ul>

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import App from "./App";
+import ListEstados from "./components/estados/ListEstados.jsx";
 
 const AppRoutes = () => {
 
@@ -13,7 +14,7 @@ const AppRoutes = () => {
 
                 <Route
                     path="/estados"
-                    element={() => {}}
+                    element={ <ListEstados /> }
                 />
             </Routes>
         </BrowserRouter>

@@ -4,8 +4,11 @@ import { mainRouter } from './routes/main.js';
 import { estadoRouter } from './routes/estados.js';
 import { cidadeRouter } from './routes/cidades.js';
 
+import cors from 'cors';
+
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const PORT = 5555;
 
