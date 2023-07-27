@@ -1,22 +1,15 @@
-import Link from "next/link"
+import Link from "next/link";
 import EstadoTable from "../components/EstadoTable";
 
 export default function Estado() {
+  return (
+    <main className="container m-auto">
+      <h1>Lista de estados</h1>
 
-    return(
+      <Link href="/">Home</Link>
+      <Link href="/estados/create">Cadastrar</Link>
 
-        <main className="container m-auto">
-
-        <h1>Lista de estados</h1>
-
-        <Link href="/">Home</Link>
-
-        <EstadoTable />
-
-        </main>
-
-    );
-
-
-
+      <EstadoTable />
+    </main>
+  );
 }

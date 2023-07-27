@@ -1,4 +1,4 @@
-
+import EstadoDTO from "../types/EstadoDTO";
 
 
 const getAllEstado = async () => {
@@ -8,14 +8,21 @@ const getAllEstado = async () => {
 
 }
 
+// interface EstadoInterface {
+//     id: number;
+//     nome: string;
+//     sigla: string;
+//     created_at: string;
+//     updated_at: string;
+// }
 
 
 export default async function EstadoTable() {
 
-    const estados = await getAllEstado();
+const estados : EstadoDTO[] = await getAllEstado();
 
     return(
-        <table>
+        <table className="table-auto w-full border border-collapse border-stone-950">
 
             <thead>
                 <tr>
@@ -32,8 +39,12 @@ export default async function EstadoTable() {
                     estados.map( (estado) => {
 
                         return(
-                            <tr key={estado.id}>
+                            <tr key={estado.id} className="border border-stone-400">
                                 <td>{estado.id}</td>
+                                <td>{estado.nome}</td>
+                                <td>{estado.sigla}</td>
+                                <td>{estado.created_at}</td>
+                                <td>{estado.updated_at}</td>
                             </tr>
                         )
 
