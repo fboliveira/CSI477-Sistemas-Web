@@ -3,7 +3,7 @@ import EstadoDTO from "../types/EstadoDTO";
 
 const getAllEstado = async () => {
 
-    const estados = await fetch('http://localhost:5555/estados');
+    const estados = await fetch('http://localhost:5555/estados', { cache: 'no-store' });
     return estados.json();
 
 }
