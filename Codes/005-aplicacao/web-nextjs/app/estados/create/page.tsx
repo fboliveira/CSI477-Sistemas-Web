@@ -1,7 +1,8 @@
 'use client'
 
 import { useRouter } from "next/navigation";
-import { FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
+import Input from "@/app/components/forms/Input";
 
 export default function CreateEstado() {
     
@@ -45,10 +46,13 @@ export default function CreateEstado() {
 
     }
 
+    // const handleChangeNome = (event : ChangeEvent<HTMLInputElement>) => {
+    //     setNome(event.target.value);
+    // }
 
     return(
     
-        <main>
+        <main className="container m-auto">
             <h1>Cadastro de estado: {nome}</h1>
 
             <form onSubmit={handleSubmit} action="/teste">
@@ -56,20 +60,26 @@ export default function CreateEstado() {
                 <div>
                     <label 
                         htmlFor="nome">Nome</label>
-                    <input 
+                    {/* <input 
                         type="text" 
                         name="nome" 
                         id="nome"
-                        onChange={(event) => {setNome(event.target.value)}} />
+                        onChange={(event) => {setNome
+                        (event.target.value)}} /> */}
+                    <Input 
+                        name="nome" 
+                        setValue={(event) => {setNome
+                            (event.target.value)}}
+                    />
+            
                 </div>
                 <div>
                     <label 
                         htmlFor="sigla">Sigla</label>
-                    <input 
-                        type="text" 
+                    <Input 
                         name="sigla" 
-                        id="sigla"
-                        onChange={(event) => {
+                        placeholder="Informe a sigla da Unidade Federativa"
+                        setValue={(event) => {
                             setSigla(event.target.value)
                         }} />
                 </div>
