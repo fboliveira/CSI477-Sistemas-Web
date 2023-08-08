@@ -7,6 +7,8 @@ export default function Home() {
       <h1>Sistema de e-commerce</h1>
 
       <Link href="/estados">Estados</Link>
+      <Link href="/cidades">Cidades</Link>
+
     </main>
   )
 }
