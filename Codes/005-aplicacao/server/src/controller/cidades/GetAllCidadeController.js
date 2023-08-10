@@ -10,6 +10,8 @@ export class GetAllCidadeController {
                 select : {
                     id : true,
                     nome: true,
+                    created_at: true,
+                    updated_at: true,
                     estado: {
                         select : {
                             id: true,

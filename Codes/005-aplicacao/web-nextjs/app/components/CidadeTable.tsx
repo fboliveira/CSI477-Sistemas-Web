@@ -8,6 +8,17 @@ const getAllCidades = async () => {
 
 export default async function CidadeTable() {
 
+    const format = (dateString : string | undefined) => {
+        
+        if (dateString === undefined) {
+            return;
+        }
+
+        const dateObj = new Date(dateString);
+
+        return dateObj.toLocaleString('pt-br');
+
+    }
 
     const cidades : CidadeDTO[] = await getAllCidades();
 
@@ -33,8 +44,8 @@ export default async function CidadeTable() {
                                 <td>{cidade.id}</td>
                                 <td>{cidade.nome}</td>
                                 <td>{cidade.estado?.nome}-{cidade.estado?.sigla}</td>
-                                <td>{cidade.created_at}</td>
-                                <td>{cidade.updated_at}</td>
+                                <td>{format(cidade.created_at)}</td>
+                                <td>{format(cidade.updated_at)}</td>
                             </tr>
                         )
 
