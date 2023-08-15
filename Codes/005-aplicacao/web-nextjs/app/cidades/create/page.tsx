@@ -1,14 +1,28 @@
 "use client";
 
 import Input from "@/app/components/forms/Input";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+
+import getAllEstados from "@/app/repository/estados/GetAllEstados";
+import EstadoDTO from "@/app/types/EstadoDTO";
 
 export default function CidadeCreate() {
   const [nome, setNome] = useState("");
   const [estadoId, setEstadoId] = useState("");
 
+  const [estados, setEstados] = useState<EstadoDTO[]>([]);
+  
   const { push } = useRouter();
+  
+  
+  useEffect(() => {
+    
+    getAllEstados()
+      .then(data => setEstados(data))
+      .catch(error => console.error(error));
+    
+  },[])
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
@@ -61,12 +75,39 @@ export default function CidadeCreate() {
 
         <div>
           <label htmlFor="estado">Estado</label>
-          <Input
-            name="estado"
-            setValue={(event) => {
-              setEstadoId(event.target.value);
+          <select 
+            name="estadoId" 
+            id="estadoId"
+            value={estadoId}
+            onChange={(event) => {
+              setEstadoId(event.target.value)
             }}
-          />
+          >
+            <option 
+              value="" 
+              selected
+              disabled 
+              >
+                Selecione:
+            </option>
+
+            {
+              estados.map((estado) => {
+
+                return(
+                  <option
+                    key={estado.id}
+                    value={estado.id}>
+                      {estado.nome}-{estado.sigla}
+                    </option>
+                )
+
+              })
+            }
+
+
+          </select>
+
         </div>
 
         <div>
