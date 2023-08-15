@@ -5,13 +5,14 @@ export class DeleteCidadeController {
   async handle(request, response) {
     try {
       const { id } = request.body;
-      console.log(id);
 
       const cidade = await prisma.cidade.delete({
         where: {
           id,
         },
       });
+
+      console.log(cidade);
 
       return response.json(cidade);
     } catch (error) {

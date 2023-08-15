@@ -1,12 +1,13 @@
+'use client'
+
+import Link from "next/link";
 import CidadeDTO from "../types/CidadeDTO";
+import getAllCidades from "../repository/cidades/GetAllCidades";
+import { useEffect, useState } from "react";
 
-const getAllCidades = async () => {
-    const cidades = await fetch('http://localhost:5555/cidades', { cache: 'no-store' });
-    return cidades.json();
-}
+export default function CidadeTable() {
 
-
-export default async function CidadeTable() {
+    const [ cidades, setCidades ] = useState<CidadeDTO[]>([])
 
     const format = (dateString : string | undefined) => {
         
@@ -20,7 +21,14 @@ export default async function CidadeTable() {
 
     }
 
-    const cidades : CidadeDTO[] = await getAllCidades();
+    // const cidades : CidadeDTO[] = await getAllCidades();
+
+    useEffect(() => {
+        getAllCidades()
+            .then((data) => {
+                setCidades(data)
+            });
+    }, [])
 
     return(
         <table>
@@ -31,13 +39,15 @@ export default async function CidadeTable() {
                     <th>Estado</th>
                     <th>Criado em</th>
                     <th>Última atualização</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
                 </tr>
             </thead>
 
             <tbody>
 
                 {
-                    cidades.map(( cidade ) => {
+                    cidades.map(( cidade : CidadeDTO ) => {
 
                         return(
                             <tr key={cidade.id}>
@@ -46,6 +56,8 @@ export default async function CidadeTable() {
                                 <td>{cidade.estado?.nome}-{cidade.estado?.sigla}</td>
                                 <td>{format(cidade.created_at)}</td>
                                 <td>{format(cidade.updated_at)}</td>
+                                <td><Link href={`/cidades/update/${cidade.id}`}>Atualizar</Link></td>
+                                <td><Link href={`/cidades/delete/${cidade.id}`}>Excluir</Link></td>
                             </tr>
                         )
 
