@@ -36,7 +36,7 @@ DELETE http://localhost:5555/estados
 Content-Type: application/json
 
 {
-    "ident": 3
+    "id": 3
 }
 
 ### 
@@ -49,4 +49,22 @@ Content-Type: application/json
 {
     "nome": "Campinas",
     "estado_id": 2
+}
+
+###
+PUT http://localhost:5555/cidades
+Content-Type: application/json
+
+{
+    "id": 6,
+    "nome": "Nova Era",
+    "estado_id": 1
+}
+
+###
+DELETE http://localhost:5555/cidades
+Content-Type: application/json
+
+{
+    "id": 2
 }
