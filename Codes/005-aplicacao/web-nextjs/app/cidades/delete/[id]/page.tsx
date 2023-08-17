@@ -9,13 +9,13 @@ import EstadoDTO from "@/app/types/EstadoDTO";
 
 import getByIdCidade from "@/app/repository/cidades/GetByIdCidade";
 
-interface UpdateCidadeParamsInterface {
+interface DeleteCidadeParamsInterface {
     params : {
         id : string
     }
 }
 
-export default function UpdateCidade({ params } : UpdateCidadeParamsInterface) {
+export default function DeleteCidade({ params } : DeleteCidadeParamsInterface) {
 
     const [nome, setNome] = useState("");
     const [estadoId, setEstadoId] = useState("");   
@@ -43,12 +43,10 @@ export default function UpdateCidade({ params } : UpdateCidadeParamsInterface) {
   
       const data = {
         id : parseInt(params.id),
-        nome,
-        estado_id: parseInt(estadoId),
       };
   
       const requestInit: RequestInit = {
-        method: "PUT",
+        method: "DELETE",
         headers: {
           "Content-Type": "application/json",
         },
@@ -64,18 +62,18 @@ export default function UpdateCidade({ params } : UpdateCidadeParamsInterface) {
         if (response.ok) {
           const cidade = await response.json();
           const { id } = cidade;
-          window.alert(`Cidade atulizada com sucesso! Id: ${id}`);
+          window.alert(`Cidade excluída com sucesso! Id: ${id}`);
           push("/cidades");
         }
       } catch (error) {
-        window.alert("Erro na atualização da Cidade!");
+        window.alert("Erro na exclusão da Cidade!");
         console.error(error);
       }
     };
   
     return (
       <main className="container m-auto">
-        <h1>Atualização da cidade</h1>
+        <h1>Exclusão da cidade</h1>
   
         <form onSubmit={handleSubmit}>
           <div>
@@ -95,6 +93,7 @@ export default function UpdateCidade({ params } : UpdateCidadeParamsInterface) {
               name="estadoId" 
               id="estadoId"
               value={estadoId}
+              disabled
               onChange={(event) => {
                 setEstadoId(event.target.value)
               }}
@@ -127,7 +126,7 @@ export default function UpdateCidade({ params } : UpdateCidadeParamsInterface) {
           </div>
   
           <div>
-            <button type="submit">Atualizar</button>
+            <button type="submit">Excluir</button>
             <button type="reset">Limpar</button>
             <button type="button">Voltar</button>
           </div>
