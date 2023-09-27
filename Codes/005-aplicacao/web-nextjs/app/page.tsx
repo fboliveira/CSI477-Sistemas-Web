@@ -8,6 +8,7 @@ export default function Home() {
 
       <Link href="/estados">Estados</Link>
       <Link href="/cidades">Cidades</Link>
+      <Link href="/enderecos">Endereços</Link>
 
     </main>
   )
