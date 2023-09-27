@@ -15,7 +15,10 @@ interface DeleteCidadeParamsInterface {
     }
 }
 
+<<<<<<< HEAD
 // Dev branch
+=======
+>>>>>>> master
 export default function DeleteCidade({ params } : DeleteCidadeParamsInterface) {
 
     const [nome, setNome] = useState("");
@@ -64,10 +67,14 @@ export default function DeleteCidade({ params } : DeleteCidadeParamsInterface) {
           const cidade = await response.json();
           const { id } = cidade;
           window.alert(`Cidade excluída com sucesso! Id: ${id}`);
+<<<<<<< HEAD
 
         //   revalidatePath("/cidades");
           push("/cidades");
 
+=======
+          push("/cidades");
+>>>>>>> master
         }
       } catch (error) {
         window.alert("Erro na exclusão da Cidade!");
@@ -97,12 +104,20 @@ export default function DeleteCidade({ params } : DeleteCidadeParamsInterface) {
               name="estadoId" 
               id="estadoId"
               value={estadoId}
+<<<<<<< HEAD
+=======
+              disabled
+>>>>>>> master
               onChange={(event) => {
                 setEstadoId(event.target.value)
               }}
             >
               <option 
                 value="" 
+<<<<<<< HEAD
+=======
+                selected
+>>>>>>> master
                 disabled 
                 >
                   Selecione:

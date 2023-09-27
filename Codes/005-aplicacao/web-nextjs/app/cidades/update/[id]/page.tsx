@@ -66,11 +66,19 @@ export default function UpdateCidade({ params } : UpdateCidadeParamsInterface) {
         if (response.ok) {
           const cidade = await response.json();
           const { id } = cidade;
+<<<<<<< HEAD
           window.alert(`Cidade atualizada com sucesso! Id: ${id}`);
           push("/cidades");
         }
       } catch (error) {
         window.alert("Erro na atualização  da Cidade!");
+=======
+          window.alert(`Cidade atulizada com sucesso! Id: ${id}`);
+          push("/cidades");
+        }
+      } catch (error) {
+        window.alert("Erro na atualização da Cidade!");
+>>>>>>> master
         console.error(error);
       }
     };
