@@ -68,3 +68,19 @@ Content-Type: application/json
 {
     "id": 2
 }
+
+### 
+GET http://localhost:5555/endereco
+
+### 
+POST http://localhost:5555/endereco
+Content-Type: application/json
+
+{
+    "rua": "Rua A",
+    "numero": "123",
+    "complemento": "Apto 123",
+    "bairro": "Novo",
+    "telefone": "123456789",
+    "cidade_id": 1
+}
