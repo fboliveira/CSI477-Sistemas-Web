@@ -85,7 +85,7 @@ node --version
 Você terá uma resposta similar a:
 
 ```bash
-v18.16.0
+v18.18.0
 ```
 
 Após isso, verique a versão do NPM digitando seguinte comando no terminal:
@@ -97,7 +97,7 @@ npm --version
 Você terá uma resposta similar a:
 
 ```bash
-9.5.1
+9.6.7
 ```
 
 Se algum comando falhar, certifique-se que não ocorreu nenhum problema durante a instalação. Caso a instalação esteja correta, você precisará inserir o caminho da instalação no `PATH`. Veja sobre isso [aqui](https://www.computerhope.com/issues/ch000549.htm).
