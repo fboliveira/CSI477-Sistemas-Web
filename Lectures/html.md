@@ -22,7 +22,7 @@ como principal referência textos e exemplos retirados de
 
 - [W3C and WHATWG to work together to advance the open Web platform](https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/)
 
-- <https://html.spec.whatwg.org/>: *Last Updated 8 May 2023*
+- <https://html.spec.whatwg.org/>: *Last Updated 10 October 2023*
 
 ### **Versões anteriores**
 
