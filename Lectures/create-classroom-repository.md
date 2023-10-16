@@ -8,7 +8,7 @@ As ações de *download* do repositório (local) e atualização *online* (remot
 
 ## Criação do repositório no *GitHub Classroom*
 
-No **Linguagens de Marcação** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: 2022/01 - Atividades - exercícios, práticas e trabalho final**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **CSI606-2023-01 - Atividades**.
+No tópico de **Linguagens de Marcação** do nosso curso no Moodle, você encontrará o seguinte *link* **Criação do repositório no GitHub: CSI606-2023-02 - Atividades**. As imagens apresentadas neste documento se referem à criação do repositório em foi criado durante o *PLE*. Com exceção do nome do repositório, da pasta, *url* e afins, os passos são os mesmo. Onde estiver **2020/03 - PLE - Atividades** ou similar, entenda como **CSI606-2023-02 - Atividades**.
 
 Ao clicar no *link*, se você não tiver feito *login* no GitHub, a seguinte tela será exibida:
 
@@ -173,4 +173,4 @@ Você pode contribuir com esse roteiro, seja com correções no texto, indicaç�
 
 Muito obrigado!
 
-**Um ótimo curso! E que a Força esteja com você!**
+**Eu desejo um ótimo curso! E que a Força esteja com você!**
