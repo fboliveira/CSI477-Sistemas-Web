@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="../">Voltar</a>
+
+    <h1>Cadastro de pessoas</h1>
+
+    <form method="post" action="/pessoas/cadastrar">
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input 
+                type="text" 
+                name="nomeDaPessoa"
+                id="nome"
+                placeholder="Informe o nome completo da pessoa"
+                minlength="3"
+                required>
+        </div>
+
+        <div>
+            <label for="password">Senha</label>
+
+            <input type="password" name="password" id="password">
+        </div>
+
+        <input 
+            type="submit" value="Cadastrar">
+        <button 
+            type="submit">Cadastrar - button</button>
+
+    </form>
+
+
+</body>
+</html>
