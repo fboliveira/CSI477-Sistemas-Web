@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+
+    <script>
+
+        function carregarDados() {
+
+            const nome = document.formDados.nome.value;
+            const user = document.getElementById("user").value;
+
+            const idade = document.formDados.idade.value;
+
+            console.log(nome);
+            console.log(idade);
+
+            window.alert(nome);
+
+            let data = nome;
+            data = 5;
+
+            const dados = {
+                nomeDaPessoa: nome,
+                idade,
+                endereco: {
+                    rua: "Rua 36",
+                    numero: 23,
+                    bairro: "Loanda",
+                    cidade: {
+                        nome: "João Monlevade",
+                        uf: "MG"
+                    }
+                }
+
+            }
+
+            console.log(dados);
+            console.log(dados.endereco.rua);
+            console.log(dados.endereco.cidade.nome);
+
+
+
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+    
+    <h1>Introdução ao JavaScript</h1>
+    
+    <div id="data"></div>
+
+    <script>
+        document.write("Olá, mundo!")
+        console.log("Página carregada com sucesso.")
+
+        document.getElementById("data").innerHTML = new Date();
+    </script>
+
+
+    <form action="#" method="get" name="formDados">
+
+        <input type="text" name="nome" id="user">
+
+        <input type="text" name="idade" id="age">
+
+        <input 
+            type="button" 
+            value="Carregar"
+            onclick="carregarDados()"
+        >
+
+        <button type="button" id="exibirNome">Exibir nome</button>
+
+    </form>
+
+    <script>
+        const button = document.getElementById("exibirNome")
+        button.addEventListener("click", carregarDados);
+    </script>
+
+
+</body>
+</html>
