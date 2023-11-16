@@ -154,6 +154,8 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 
 - [Deno](https://deno.land/)
 
+- [Bun](https://bun.sh/)
+
 ## Additional resources
 
 ### Fundamentals
