@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados e Cidades - API IBGE</title>
+</head>
+<body>
+
+    <h1>Cadastro</h1>
+
+    <form action="#">
+
+        <label for="estados">Estado</label>
+        <select name="estados" id="estados">
+            <option value="">Selecione:</option>
+        </select>        
+        
+        <label for="cidades">Cidade</label>
+        <select name="cidades" id="cidades">
+            <option value="">Selecione:</option>
+        </select>
+
+        <button 
+            type="button"
+            onclick="carregarEstados()">Carregar estados</button>
+
+    </form>
+
+    <script src="api.js"></script>
+    
+</body>
+</html>
