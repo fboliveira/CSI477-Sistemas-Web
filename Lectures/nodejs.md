@@ -80,11 +80,25 @@ Este ambiente foi anunciando em 2018 na JSConf por *Ryan Dhal* a partir da segui
 
 O Deno suporta apenas *ESModules*, *URLs* para dependências locais e remotas, não necessita de um gerenciador de dependências (mas, as últimas versões suportam o *npm*), possui restrições de acesso ao sistema de arquivo e à rede por padrão, além de outros fatores.
 
+## Bun
+
+O [Bun](https://bun.sh/) é o mais recente ambiente de execução JavaScript e TypeScript. Ele é escrito utilizando a linguagem [Zig](https://ziglang.org/) e utiliza o motor [JavaScriptCore/WebKit](https://developer.apple.com/documentation/javascriptcore) da Apple. O Node.js e o Deno utilizam o motor V8.
+
+O Bun possui compatibilidade com módulos ESM e Commonjs, além de suportar diversas APIs nativamente. O ganho de performance pode estar associado ao motor utilizado.
+
+Os [resultados](https://twitter.com/jarredsumner/status/1499225725492076544) sugerem que ele tem uma performance melhor que o Node.js e o Deno. Contudo, o Bun ainda está em versão inicial (1.0.14 enquanto eu escrevo) e eu sugiro não utilizá-lo (ainda) como principal *runtime* em projetos em produção.
+
+Enfim, ele carece de mais testes antes de se tornar uma opção principal. Use, mas com cuidado!
+
 ## Outras Referências
 
 [Código Fonte TV: Node.js // Dicionário do Programador](https://youtu.be/vYekSMBCCiM)
 
 [Código Fonte TV: Deno (A alternativa ao Node.js !?) // Dicionário do Programador](https://youtu.be/fVoH6rFU6zw)
+
+[Código Fonte TV: Bun: O JavaScript Nunca Mais Será o Mesmo!](https://youtu.be/MAWk0C5_3Bc?si=q02nb9FodNqauILo)
+
+[Código Fonte TV: Node, Deno e Bun: A Batalha dos Runtimes JavaScript [AO VIVO]](https://www.youtube.com/live/RQ83zcTACnw?si=M-OufQBDCO5tx1sJ)
 
 [Deno land - Youtube channel](https://www.youtube.com/@deno_land/)
 
