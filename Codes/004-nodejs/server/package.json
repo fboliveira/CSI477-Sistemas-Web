@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server Info API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Fernando B Oliveira <fboliveira@ufop.edu.br",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
