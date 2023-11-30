@@ -1,5 +1,7 @@
 # Git and GitHub
 
+- [ByteByteGo - How Git Actually Works: Explained in 4 Minutes](https://youtu.be/e9lnsKot_SQ?si=U35Z4P8vRT5eEj7r)
+
 - [Como criar um README para o seu perfil do GitHub | Alura Cursos Online](https://www.alura.com.br/artigos/como-criar-um-readme-para-seu-perfil-github)
 
 - [Como escrever um README incrível no seu Github | Alura Cursos Online](https://www.alura.com.br/artigos/escrever-bom-readme)
