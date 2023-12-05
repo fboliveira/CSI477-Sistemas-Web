@@ -80,7 +80,7 @@ src/routes/<model>.js
 
     1. Estrutura do projeto
     1. Configuração do [Express](https://expressjs.com/)
-    1. [Modelo proposto do banco de dados](../Assignments/database-model/)
+    1. [Modelo proposto do banco de dados](../Assignments/Pratices/database-model/)
     1. ORM - [Prisma.io](https://www.prisma.io)
     1. Construção das tabelas e relacionamentos
     1. *Migrations*
