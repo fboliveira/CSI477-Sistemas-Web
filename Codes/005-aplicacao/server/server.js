@@ -1,5 +1,6 @@
 import express, { response } from 'express'
 import { prisma } from "./src/database/client.js"
+import { estadoRouter } from './src/routes/estados.js';
 
 const server = express();
 const PORT = 5000
@@ -11,11 +12,7 @@ server.get('/', (request, response) => {
     })
 })
 
-server.get('/estados', async (request, response) => {
-    const estados = await prisma.estado.findMany();
-    return response.json(estados);
-
-})
+server.use(estadoRouter);
 
 server.listen(PORT, () => {
     console.log(`[SERVER] Server is running on port ${PORT}`)
