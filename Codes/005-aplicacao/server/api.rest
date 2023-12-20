@@ -1,0 +1,31 @@
+GET http://localhost:5000/estados
+
+###
+GET http://localhost:5000/estados/5
+
+###
+POST http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "nome": "Tocantinsssss",
+    "sigla": "TOS"
+}
+
+###
+PUT http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "id": 7,
+    "nome": "Tocatins",
+    "sigla": "TO"
+}
+
+###
+DELETE http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "id": 7
+}

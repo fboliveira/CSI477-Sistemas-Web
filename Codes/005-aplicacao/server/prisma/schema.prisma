@@ -18,5 +18,32 @@ model Estado {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 
+  cidades Cidade[]
+  // Cidade Cidade[]
+
   @@map("estados")
+}
+
+model Cidade {
+  id   Int    @id @default(autoincrement())
+  nome String
+
+  estado_id Int
+  estado    Estado @relation(fields: [estado_id], references: [id])
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  locais_coleta LocalColeta[]
+
+  @@map("cidades")
+}
+
+model LocalColeta {
+
+  id Int @id @default(autoincrement())
+
+  cidade_id Int
+  cidade Cidade @relation(fields: [cidade_id], references: [id])
+
 }

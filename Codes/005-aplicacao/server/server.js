@@ -12,6 +12,7 @@ server.get('/', (request, response) => {
     })
 })
 
+server.use(express.json())
 server.use(estadoRouter);
 
 server.listen(PORT, () => {

@@ -4,6 +4,8 @@ export class CreateEstadoController {
 
     async handle(request, response) {
 
+        console.log(request.body)
+
         // request.body -> JSON
         const { nome, sigla } = request.body;
 
