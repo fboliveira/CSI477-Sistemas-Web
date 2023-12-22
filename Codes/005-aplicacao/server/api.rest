@@ -29,3 +29,58 @@ Content-Type: application/json
 {
     "id": 7
 }
+
+###
+GET http://localhost:5000/cidades
+
+###
+GET http://localhost:5000/cidades/1
+
+###
+POST http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "nome" : "João Monlevade",
+    "estado_id": 1
+
+}
+
+###
+POST http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "nome" : "Belo Horizonte",
+    "estado_id": 1
+
+}
+
+###
+POST http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "nome" : "Teste",
+    "estado_id": 2
+
+}
+
+###
+PUT http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome" : "São Paulo",
+    "estado_id": 2
+
+}
+
+###
+DELETE  http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "id": 3
+}
