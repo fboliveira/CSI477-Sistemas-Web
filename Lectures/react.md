@@ -35,7 +35,7 @@ function getMessage(user) {
 
 - O JSX/React DOM utiliza o padrão *camelCase* para propriedades como convenção para evitar conflitos com os atributos HTML.
 
-  - Por exemplo, no lugar de ```class```, utiliza-se ```className```
+  - Por exemplo, no lugar de ```class``` utiliza-se ```className```
 
 - Os elementos são renderizados no DOM.
 
