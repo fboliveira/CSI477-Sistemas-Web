@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Menu from './components/menu/Menu'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,8 @@ function App() {
       <button
         onClick={incrementar}
       >Incrementar</button>
+
+      <Menu />
 
     </>
   )

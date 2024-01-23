@@ -1,5 +1,5 @@
-import express, { response } from 'express'
-import { prisma } from "./src/database/client.js"
+import express from 'express'
+import cors from 'cors';
 import { estadoRouter } from './src/routes/estados.js';
 import { cidadeRouter } from './src/routes/cidades.js'
 
@@ -14,6 +14,7 @@ server.get('/', (request, response) => {
 })
 
 server.use(express.json())
+server.use(cors());
 server.use(estadoRouter);
 server.use(cidadeRouter);
 
