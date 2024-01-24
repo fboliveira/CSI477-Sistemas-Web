@@ -30,7 +30,7 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 1. [TypeScript](./Lectures/typescript.md)
 1. [React](./Lectures/react.md)
 1. [Next.js](./Lectures/nextjs.md)
-1. [Instructions of Final Project](./LessonScripts/project/roteiro-trabalho-final.md)
+1. [Instructions to the Final Project](./LessonScripts/project/roteiro-trabalho-final.md)
 
 Previous technologies:
 
