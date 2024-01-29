@@ -1,7 +1,9 @@
+import Link from "next/link";
+import Line from "../components/Line";
 
 const getAllEstados = async () => {
 
-    const estados = await fetch('http://localhost:5000/estados')
+    const estados = await fetch('http://localhost:5000/estados', { cache: 'no-store' })
 
     return estados.json();
 
@@ -22,6 +24,7 @@ export default async function Estado() {
     return(
         <main>
             <h1>Lista de estados</h1>
+            <Link href="/estados/create">Cadastrar</Link>
 
             <ul>
                 {
@@ -29,9 +32,9 @@ export default async function Estado() {
                     estados.map( (estado) =>{
 
                         return(
-                            <li key={estado.id}>
-                                {estado.nome}-{estado.sigla}
-                            </li>
+
+                            <Line key={estado.id} id={estado.id}
+                                 description={estado.nome} />
                         )
 
                     })

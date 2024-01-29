@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react"
 import { useRouter } from "next/navigation";
+import Input from "@/app/components/forms/Input";
 
 export default function CreateEstado() {
 
@@ -29,7 +30,7 @@ export default function CreateEstado() {
         try {
             
             const response = await fetch('http://localhost:5000/estados', requestInit)
-
+            
             if (response.ok) {
                 const estado = await response.json();
                 const { id } = estado;
@@ -53,29 +54,15 @@ export default function CreateEstado() {
             <form onSubmit={handleSubmit}>
 
                 <div>
-                    <label 
-                        htmlFor="nome">Nome</label>
-                    <input 
-                        type="text" 
-                        name="nome" 
-                        id="nome" 
-                        onChange={(event) =>{
-                            setNome(event.target.value)
-                        }}
-                        />
+                    <Input name="nome" label="Nome" setValue={(event) =>{
+                        setNome(event.target.value)
+                    }} />
                 </div>
 
-                <div>
-                    <label
-                        htmlFor="sigla">Sigla</label>
-                    <input
-                        type="text"
-                        name="sigla"
-                        id="sigla" 
-                        onChange={(event) => {
-                            setSigla(event.target.value)
-                        }}/>
-                </div>
+                <Input name="sigla" label="Sigla" setValue={(event) => {
+                    setSigla(event.target.value)
+                }} />
+                
                 <div>
                     <button 
                         type="submit">Cadastrar</button>  
