@@ -1,21 +1,8 @@
 import Link from "next/link";
 import Line from "../components/Line";
+import EstadoInterface from "../types/estado";
 
-const getAllEstados = async () => {
-
-    const estados = await fetch('http://localhost:5000/estados', { cache: 'no-store' })
-
-    return estados.json();
-
-}
-
-interface EstadoInterface {
-    id: number;
-    nome: string;
-    sigla: string;
-    created_at: string;
-    updated_at: string;
-}
+import getAllEstados from "../repository/estados/GetAllEstados";
 
 export default async function Estado() {
 
