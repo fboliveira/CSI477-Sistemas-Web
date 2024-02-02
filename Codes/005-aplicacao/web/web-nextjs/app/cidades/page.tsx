@@ -28,8 +28,15 @@ export default async function Cidade() {
 
                         return (
 
-                            <Line key={cidade.id} id={cidade.id}
+                            <div key={cidade.id}>
+                                <Line key={cidade.id} id={cidade.id}
                                 description={nome} />
+                                
+                                <Link href={`/cidades/update/${cidade.id}`} >Atualizar</Link>
+
+                                <Link href={`/cidades/delete/${cidade.id}`} >Excluir</Link>
+                            </div>
+
                         )
 
                     })
