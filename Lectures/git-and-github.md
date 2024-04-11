@@ -1,6 +1,8 @@
 # Git and GitHub
 
-- [ByteByteGo - How Git Actually Works: Explained in 4 Minutes](https://youtu.be/e9lnsKot_SQ?si=U35Z4P8vRT5eEj7r)
+- [ByteByteGo - How Git Actually Works: Explained in 4 Minutes](https://youtu.be/e9lnsKot_SQ)
+
+- [Código Fonte TV - GIT: Mini Curso para Você Sair do Zero! (Aprenda em 45 Minutos)](https://youtu.be/ts-H3W1uLMM)
 
 - [Como criar um README para o seu perfil do GitHub | Alura Cursos Online](https://www.alura.com.br/artigos/como-criar-um-readme-para-seu-perfil-github)
 
