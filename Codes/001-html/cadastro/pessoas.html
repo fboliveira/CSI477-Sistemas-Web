@@ -9,7 +9,7 @@
 
     <h1>Cadastro de pessoas</h1>
 
-    <form method="post" 
+    <form method="get" 
         action="/pessoas/cadastrar">
 
         <div>
@@ -38,6 +38,113 @@
             <input type="text" name="endereco" id="endereco">
         </div>
 
+        <div>
+            <label>Gênero</label>
+
+            <div>
+                <input
+                    type="radio"
+                    name="genero"
+                    id="feminino"
+                    value="FEM">
+                <label for="feminino">Feminino</label>
+            </div>            
+            <div>
+                <input
+                    type="radio"
+                    name="genero"
+                    id="masculino"
+                    value="MAS">
+                <label for="masculino">Masculino</label>
+            </div>            
+            <div>
+                <input
+                    type="radio"
+                    name="genero"
+                    id="naobinario"
+                    value="NBI">
+                <label for="naobinario">Não binário</label>
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    name="genero"
+                    id="semresposta"
+                    value="SRE">
+                <label for="semresposta">Prefiro não responder</label>
+            </div>
+        </div>
+
+        <div>
+
+            <label>Notificações</label>
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[0]"
+                    id="email">
+                <label for="email">E-Mail</label>
+            </div>
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[1]"
+                    id="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[2]"
+                    id="telegram">
+                <label for="telegram">Telegram</label>
+            </div>
+        </div>
+
+        <div>
+
+            <label for="uf">Estado</label>
+
+            <select name="estado" id="uf">
+
+                <option
+                    value="-1"
+                    disabled
+                    selected
+                >Selecione:</option>
+
+
+                <option value="5">Amazonas</option>
+                <option value="3">Bahia</option>
+                <option value="1">Minas Gerais</option>
+                <option value="4">Pará</option>
+                <option value="2">São Paulo</option>
+
+            </select>
+
+
+        </div>
+        
+        <div>   
+
+            <label for="perfil">Cor padrão do perfil</label>
+
+            <input type="color" name="perfile" id="perfil">
+
+        </div>
+
+        <div>
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
+
+        <div>
+            <label for="foto">Foto do perfil</label>
+            <input type="file" name="foto" id="foto">
+        </div>
+
+        <input type="hidden" name="token" value="7240897502348975932475432">
 
         <input type="submit" value="Cadastrar">
 
