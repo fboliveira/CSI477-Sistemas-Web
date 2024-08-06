@@ -9,6 +9,7 @@ async function recuperarListaEstados() {
     const estados = await response.json();
 
     // console.log(estados);
+    limparSelect("estados");
     preencherSelectEstados(estados);
         
 
@@ -25,7 +26,7 @@ function preencherSelectEstados(estados) {
 
     const select = document.getElementById("estados");
 
-    estados.sort()
+    estados.sort((a, b) => a.nome.localeCompare(b.nome));
 
     for(let estado of estados) {
         // const id = estado.id;
@@ -39,14 +40,73 @@ function preencherSelectEstados(estados) {
         const option = document.createElement("option");
 
         option.value = id;
-        option.innerHTML = nome;
+        option.innerHTML = `${nome}-${sigla}`;
 
         select.appendChild(option);
-
 
     }
 
 }
+
+async function recuperarListaCidades() {
+
+    // Qual é o estado que está selecionado
+    const selectEstados = document.getElementById("estados");
+
+    const estado_index = selectEstados.selectedIndex;
+
+    const estado_id = selectEstados.options[estado_index].value;
+
+    limparSelect("cidades");
+
+    if ( estado_index ===  0 || estado_id === "") {
+        return;
+    }
+
+    // /estados/{id}/municipios
+    // string: ' ... '
+    // template literals: ` ... `  
+    const response = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estado_id}/municipios`);
+
+    const cidades = await response.json();
+    preencherSelectCidades(cidades);
+}
+
+function preencherSelectCidades(cidades) {
+
+    // Recuperar o select
+    const selectCidades = document.getElementById("cidades");
+
+    // Iterar sobre o array, incluíndo os options
+    for(const cidade of cidades) {
+
+        const { id, nome } = cidade;
+
+        const option = document.createElement("option");
+
+        option.value = id;
+        option.innerHTML = nome;
+
+        selectCidades.appendChild(option);
+
+    }
+
+}
+
+function limparSelect(idDoCampoSelect) {
+
+    const campoSelect = document.getElementById(idDoCampoSelect);
+
+    while(campoSelect.length > 1) {
+        campoSelect.remove(1);
+    }
+
+}
+
+
+
+
+
 
 // Arrow function =>
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estados e cidades - API/IBGE</title>
 </head>
-<body>
+<body onload="recuperarListaEstados()">
     
     <form action="#">
 
@@ -19,6 +19,7 @@
         <select
             name="estados"
             id="estados"
+            onchange="recuperarListaCidades()"
         >
             <option value="">Selecione:</option>
         </select>
