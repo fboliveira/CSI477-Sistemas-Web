@@ -110,5 +110,3 @@ package.json
 - [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 - [Thunder Client - REST API Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
-
-
