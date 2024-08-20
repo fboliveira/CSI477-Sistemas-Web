@@ -1,5 +1,6 @@
 import express from 'express'
 // Import Routes
+import { estadoRouter } from './routes/estados.js'
 
 const server = express()
 const PORT = 5000
@@ -10,6 +11,8 @@ server.get('/', (request, response) =>{
         message: 'Status: Server is running.'
     })
 })
+
+server.use(estadoRouter)
 
 
 // Start - listen
