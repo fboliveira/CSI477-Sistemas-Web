@@ -11,14 +11,12 @@ datasource db {
 }
 
 model Estado {
-
-  id  Int @id @default(autoincrement())
-  nome String
-  sigla String @unique 
+  id    Int    @id @default(autoincrement())
+  nome  String
+  sigla String @unique
 
   created_at DateTime @default(now())
   updated_at DateTime @default(now())
 
   @@map("estados")
-
 }
