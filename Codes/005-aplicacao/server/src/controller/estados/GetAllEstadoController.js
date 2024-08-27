@@ -1,7 +1,5 @@
 import { prisma } from "../../database/client.js";
 
-
-
 export class GetAllEstadoController {
 
     async handle( request, response ) {

@@ -1,0 +1,31 @@
+GET http://localhost:5000
+
+###
+GET http://localhost:5000/estados
+
+###
+POST http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "nome": "São Paulo",
+    "sigla": "SP"
+}
+
+###
+PATCH http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome": "Espírito Santo",
+    "sigla": "ES"
+}
+
+###
+DELETE http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "id": 3
+}
