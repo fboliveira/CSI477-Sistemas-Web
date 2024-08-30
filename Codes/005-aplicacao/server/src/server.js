@@ -1,6 +1,7 @@
 import express from 'express'
 // Import Routes
 import { estadoRouter } from './routes/estados.js'
+import { cidadeRouter } from './routes/cidades.js'
 
 const server = express()
 const PORT = 5000
@@ -13,7 +14,7 @@ server.get('/', (request, response) =>{
 })
 
 server.use(express.json())
-server.use(estadoRouter)
+server.use([estadoRouter, cidadeRouter])
 
 
 // Start - listen

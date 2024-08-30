@@ -29,3 +29,13 @@ Content-Type: application/json
 {
     "id": 3
 }
+
+###
+
+POST http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "nome": "Vitória",
+    "estado_id": 3
+}
