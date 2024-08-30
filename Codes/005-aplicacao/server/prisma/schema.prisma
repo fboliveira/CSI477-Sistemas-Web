@@ -18,5 +18,21 @@ model Estado {
   created_at DateTime @default(now())
   updated_at DateTime @default(now())
 
+  cidades    Cidade[]
+
   @@map("estados")
+}
+
+model Cidade {
+  id   Int    @id @default(autoincrement())
+  nome String
+
+  // Chave estrangeira: estados->id
+  // -- Atributo correspondente à chave estrangeira
+  estado_id Int
+  // -- Relação entre modelos/entidades
+  estado    Estado @relation(fields: [estado_id], references: [id])
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
 }
