@@ -6,7 +6,7 @@ export class CreateCidadeController {
         
         const { nome, estado_id } = request.body;
 
-        // Validadar se o estado_id existe.
+        // Validar se o estado_id existe.
         try {
             await prisma.estado.findFirstOrThrow({
                 where: {
@@ -27,7 +27,7 @@ export class CreateCidadeController {
                 // estado_id
                 estado: {
                     connect: {
-                        id: estado_id
+                        id: parseInt(estado_id)
                     }
                 }
             }

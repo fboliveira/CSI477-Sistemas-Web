@@ -11,15 +11,20 @@ export class DeleteEstadoController {
         // Verificar se o ID existe.
         
 
-        // UseCase: delete
-        const estado = await prisma.estado.delete({
-            where: {
-                id
-            }
-        })
-
-        // Soft delete: update -> deleted_at
-        return response.json(estado)
+        try {
+            // UseCase: delete
+            const estado = await prisma.estado.delete({
+                where: {
+                    id
+                }
+            })
+    
+            // Soft delete: update -> deleted_at
+            return response.json(estado)
+            
+        } catch (error) {
+            return response.status(400).json(error)
+        }
 
     }
 
