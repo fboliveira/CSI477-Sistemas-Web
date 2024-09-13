@@ -3,6 +3,8 @@ import express from 'express'
 import { estadoRouter } from './routes/estados.js'
 import { cidadeRouter } from './routes/cidades.js'
 
+import cors from 'cors'
+
 const server = express()
 const PORT = 5000
 
@@ -14,6 +16,7 @@ server.get('/', (request, response) =>{
 })
 
 server.use(express.json())
+server.use(cors())
 server.use([estadoRouter, cidadeRouter])
 
 
