@@ -8,8 +8,8 @@ POST http://localhost:5000/estados
 Content-Type: application/json
 
 {
-    "nome": "São Paulo",
-    "sigla": "SP"
+    "nome": "Bahia",
+    "sigla": "BA"
 }
 
 ###
