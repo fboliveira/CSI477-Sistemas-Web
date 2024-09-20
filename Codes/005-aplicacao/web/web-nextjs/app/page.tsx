@@ -6,6 +6,7 @@ export default function Home() {
       <h1>Sistema de Controle de Doação de Sangue</h1>
       <div>
         <Link href="/estados">Estados</Link>
+        <Link href="/cidades">Cidades</Link>
       </div>
     </div>
   );
