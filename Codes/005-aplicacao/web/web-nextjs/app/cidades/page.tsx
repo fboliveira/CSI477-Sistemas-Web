@@ -9,6 +9,7 @@ export default function Cidade() {
         <main className="container m-auto">
 
             <Link href="/">Home</Link>
+            <Link href="/cidades/create">Adicionar</Link>
 
             <h1>Lista de cidades</h1>
 

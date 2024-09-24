@@ -3,6 +3,7 @@
 import Input from "@/app/components/forms/Input";
 import { getAllEstados } from "@/app/repository/estados/EstadoRepository";
 import IEstado from "@/app/types/IEstado";
+import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useState } from "react";
 
 export default function CidadeCreate() {
@@ -11,6 +12,8 @@ export default function CidadeCreate() {
     const [ estadoId, setEstadoId ] = useState('')
 
     const [ estados, setEstados ] = useState<IEstado[]>([])
+
+    const { push } = useRouter()
 
     useEffect(() =>{
 
@@ -21,25 +24,48 @@ export default function CidadeCreate() {
     }, [])
 
     // Invocar a API/backend - cadastrar a cidade
-    const handleSubmit = (event : FormEvent) => {
+    const handleSubmit = async (event : FormEvent) => {
 
         event.preventDefault()
         // Validar
 
         // Definir o objeto
+        const data = {
+            nome,
+            estado_id: estadoId
+        }
 
         // Definir a requisição
+        const requisicao: RequestInit = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        }
 
         // Invocar a requisição
+        try {
+            const response = await fetch('http://localhost:5000/cidades', requisicao)
 
-        // Tratar o resultado
+            if (response.ok) {
+                // Tratar o resultado
+                const cidade = await response.json();
+                const { id } = cidade;
+
+                window.alert(`Cidade inserida com sucesso! Id: ${id}`)
+
+                // Redirecionar para a página com a lista de cidades
+                push('/cidades')
+
+            }
+
+        } catch (error) {
+            window.alert("Erro na inclusão da cidade!")
+            console.error(error)
+        }
 
     }
-
-
-
-
-
 
     return (
         <main>
