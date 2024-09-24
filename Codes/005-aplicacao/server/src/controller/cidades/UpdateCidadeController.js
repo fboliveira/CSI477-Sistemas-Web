@@ -15,7 +15,7 @@ export class UpdateCidadeController {
 
             data: {
                 nome,
-                estado_id
+                estado_id: parseInt(estado_id)
             }
         })
         
