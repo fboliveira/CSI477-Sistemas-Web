@@ -33,6 +33,6 @@ export class CreateCidadeController {
             }
         })
 
-        return response.json(cidade);
+        return response.status(201).json(cidade);
     }
 }
