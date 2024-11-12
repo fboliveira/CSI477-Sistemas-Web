@@ -74,7 +74,7 @@ As instalações descrita nesta seção se referem ao desenvolvimento *backend*.
 
 A instalação do [Node.js](https://nodejs.org/en/) costuma ser realizada sem complicações, ~~quando realizadas em condições normais de temperatura e pressão, desprezando o atrito~~.
 
-Você pode selecionar na página de [Downloads](https://nodejs.org/en/download/) a versão correspondente ao seu sistema operacional. Vamos utilizar a distribuição **LTS**. Siga as instruções de instalação conforme o seu contexto.
+Você pode selecionar na página de [Downloads](https://nodejs.org/en/download/) a versão correspondente ao seu sistema operacional. Vamos utilizar a distribuição **LTS**. Siga as instruções de instalação conforme o seu contexto. É possível fazer a instalação também por meio de uma aplicação que gerencia as versões do Node, o [NVM](https://github.com/nvm-sh/nvm). Com ele, é possível utilizar múltiplas versões do Node e alternar entre elas de maneira prática.
 
 Para verificar a instalação e as versões, digite o seguinte comando no seu terminal:
 
@@ -85,7 +85,7 @@ node --version
 Você terá uma resposta similar a:
 
 ```bash
-v20.12.1
+v22.11.0
 ```
 
 Após isso, verique a versão do NPM digitando seguinte comando no terminal:
@@ -97,7 +97,7 @@ npm --version
 Você terá uma resposta similar a:
 
 ```bash
-10.5.1
+10.9.0
 ```
 
 O npm pode ser atualizado para a última versão com o seguinte comando:
@@ -135,7 +135,7 @@ git --version
 Se você tiver uma resposta como a seguinte, está tudo correto:  
 
 ```bash
-git version 2.40.1
+git version 2.45.2
 ```
 
 Caso contrário, você precisará instalar o aplicativo.
