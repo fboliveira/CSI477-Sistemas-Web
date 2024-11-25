@@ -22,7 +22,7 @@ como principal referência textos e exemplos retirados de
 
 - [W3C and WHATWG to work together to advance the open Web platform](https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/)
 
-- <https://html.spec.whatwg.org/>: *Last Updated 22 November 2024*
+- <https://html.spec.whatwg.org/>
 
 ### **Versões anteriores**
 
@@ -66,12 +66,7 @@ como principal referência textos e exemplos retirados de
 
 - <https://www.w3.org/WAI/standards-guidelines/aria/>
 
-  = Versão 1.1 - *W3C Recommendation 14 December 2017*
-
   = <https://www.w3.org/TR/wai-aria/>
-
-  = Versão 1.3 - *W3C Editor's Draft 03 May 2023*
-
   = <https://w3c.github.io/aria/>
 
 ### *Universal Resource Identifier* - **URI**
