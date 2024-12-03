@@ -71,11 +71,90 @@
 
         </div>
 
-        <input type="submit">
+        <br>
+
+        <div>
+
+            <label>Notificações</label>
+
+            <div>
+                <input type="checkbox" 
+                    name="notificacao[0]" 
+                    id="email">
+                <label for="email">E-mail</label>
+            </div>
+
+            <div>
+                <input type="checkbox" 
+                    name="notificacao[1]" 
+                    id="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+
+            <div>
+                <input type="checkbox" 
+                    name="notificacao[2]" 
+                    id="telegram">
+                <label for="telegram">Telegram</label>
+            </div>
+
+            <div>
+                <input type="checkbox" 
+                    name="notificacao[3]" 
+                    id="sms">
+                <label for="sms">SMS</label>
+            </div>
+            
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="">UF</label>
+            <select name="uf" id="uf" required>
+
+                <option 
+                    value="0"
+                    selected
+                    disabled
+                >Selecione:</option>
+                <option value="1">Minas Gerais</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Pará</option>
+                <option value="4">Bahia</option>
+                <option value="5">Rio de Janeiro</option>
+
+            </select>
+
+        </div>
+
+        <br>
+
+        <div>
+            <label for="cor">Cor padrão do perfil</label>
+            <input type="color" name="cor" id="cor">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="data">Data de nascimento</label>
+            <input type="date" name="data" id="data">
+        </div>
+
+        <br>
+
+        <input type="submit" value="Cadastrar">
+        <button type="submit">Cadastrar</button>
+
+        <input type="reset" value="Limpar">
+        <button type="reset">Limpar o form</button>
 
     </form>
+
+    <a href="/">Voltar para a raiz</a>
+    <a href="../">Voltar um nível</a>
     
 </body>
 </html>
-
-http://127.0.0.1:5501/pessoas/cadastrar?nomeDaPessoa=aaaaaaaaaa&senha=123&genero=FEM
