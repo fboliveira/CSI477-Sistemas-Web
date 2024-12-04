@@ -1,11 +1,4 @@
 //// https://dbdiagram.io/d
-//// -- LEVEL 1
-//// -- Tables and References
-
-//// -- LEVEL 1
-//// -- Tables and References
-
-// https://dbdiagram.io/d/CSI606-sistema-doacao-sangue-630d077e0911f91ba5ecf743
 
 // Creating tables
 Table project as PROJ {
@@ -19,6 +12,7 @@ Table task as TASK {
   id int [pk, increment] // auto-increment
   description varchar
   project_id int [ref: > PROJ.id]
+  done boolean
   created_at timestamp
   updated_at timestamp
 }
