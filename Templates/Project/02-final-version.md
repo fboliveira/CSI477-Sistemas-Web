@@ -1,8 +1,8 @@
-# **CSI606-2021-02 - Remoto - Trabalho Final - Resultados**
+# **CSI606 - Trabalho Final - Resultados**
 
 ## *Aluna(o): Princesa Leia (Luke Skywalker)*
 
---------------
+Semestre: 2024/2
 
 <!-- Este documento tem como objetivo apresentar o projeto desenvolvido, considerando o que foi definido na proposta e o produto final. -->
 
