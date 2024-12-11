@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle de Projetos</title>
+
+    <link rel="stylesheet" href="./css/app.css">
+
+</head>
+<body>
+    
+    <h1>Tarefas</h1>
+
+    <div id="actions">
+        <a href="create.html" class="button button-master">Cadastrar</a>
+    </div>
+
+    <div id="todo">
+
+        <div>
+            <h2>Em aberto</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Descrição</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>Criar modelos</td>
+                        <td><a href="#">Concluir</a> <a href="update.html">Atualizar</a>  <a href="delete.html">Excluir</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Criar protótipos</td>
+                        <td><a href="#">Concluir</a> <a href="update.html">Atualizar</a>  <a href="delete.html">Excluir</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Modelar banco de dados</td>
+                        <td><a href="#">Concluir</a> <a href="update.html">Atualizar</a>  <a href="delete.html">Excluir</a></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Tarefas</td>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </div>
+        
+    </div>
+    
+    <div id="done">        
+        <div>
+            <h2>Concluídas</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Descrição</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Definir Tema</td>
+                        <td><a href="#">Cancelar</a></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Tarefas</td>
+                        <td>1</td>
+                    </tr>
+                </tfoot>
+
+            </table>            
+        </div>
+    </div>
+
+    <footer>
+        <p>Ufop/CSI606 - Desenvolvido com S2</p>
+    </footer>
+
+</body>
+</html>
