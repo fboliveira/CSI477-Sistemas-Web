@@ -263,3 +263,7 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 - [Learning JavaScript Design Patterns](https://www.patterns.dev/posts/classic-design-patterns/)
 
 - [Open Web Application Security Project (OWASP): Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
+
+- [Top 7 Frontend Frameworks to Use](https://roadmap.sh/frontend/frameworks)
+
+- [Top 10 Front-End Frameworks](https://www.geeksforgeeks.org/top-front-end-frameworks/)
