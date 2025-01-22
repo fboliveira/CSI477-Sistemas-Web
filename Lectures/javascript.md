@@ -18,6 +18,10 @@
 
 - A ação foi caracterizada por muitos como uma **estratégia** de marketing da Netscape para aproveitar a **popularidade** do Java;
 
+- A marca JavaScript pertence à [Oracle](https://www.oracle.com/developer/javascript/), após a aquisição da Sun.
+
+- [Deno v. Oracle: Canceling the JavaScript Trademark](https://deno.com/blog/deno-v-oracle)
+
 - **Sugestões de leitura**:
 
   - [*JavaScript: The World's Most Misunderstood Programming Language*](http://crockford.com/javascript/javascript.html)
