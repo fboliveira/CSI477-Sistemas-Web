@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+
+    <script>
+
+        function carregarDadosForm() {
+
+            // let, const, var
+            const nome = document.formDados.nome.value
+            const name = document.getElementById("name").value
+
+            console.log(nome)
+            console.log(name)
+
+            document.formDados.idade.value = 12
+
+            const dados = {
+                nomeDaPessoa: nome,
+                name,
+                endereco : {
+                    rua: "Rua 36",
+                    numero: 23,
+                    bairro: "Loanda",
+                    cidade: "João Monlevade"
+                }
+            }
+
+            console.log(dados)
+            console.log(dados.nomeDaPessoa)
+            console.log(dados.endereco.bairro)
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+    <h1>Introdução ao JavaScript</h1>
+
+    <script>
+        document.write("<h2>Olá, mundo!</h2>");
+        console.log("Página carregada.")
+
+    </script>
+
+    <div id="data"></div>
+
+    <script>
+        document.getElementById("data").innerHTML = new Date()
+    </script>
+
+    <form action="#" method="get" name="formDados">
+
+        <input type="text" name="nome" id="name">
+        <input type="text" name="idade" id="age">
+
+
+        <button 
+            type="button"
+            onclick="carregarDadosForm()"
+            
+        >Carregar</button>
+
+    </form>
+
+</body>
+</html>
