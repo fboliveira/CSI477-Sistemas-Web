@@ -6,7 +6,7 @@
     <title>Estados e cidades - API IBGE</title>
 </head>
 
-<body>
+<body onload="carregarEstados()">
     
     <h1>Cadastro</h1>
 
@@ -21,7 +21,8 @@
 
         <select 
             name="estados" 
-            id="estados"            
+            id="estados"
+            onchange="carregarCidades()"            
         >
             <option value="">Selecione:</option>
         </select>
