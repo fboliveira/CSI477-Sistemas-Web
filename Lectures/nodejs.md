@@ -44,6 +44,8 @@ B
 > The event loop is what allows Node.js to perform non-blocking I/O operations - despite the fact that JavaScript is **single-threaded** - by offloading operations to the system kernel whenever possible.
 >
 > From: [What is the Event Loop?](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
+ > ![Event loop](https://media.geeksforgeeks.org/wp-content/uploads/20221125123722/UntitledProject21.jpg)
+ > From: [Is Node.js entirely based on a single-thread ?](https://www.geeksforgeeks.org/is-node-js-entirely-based-on-a-single-thread/)
 
 ### Quanto de JavaScript é preciso saber para usar o Node.js?
 
