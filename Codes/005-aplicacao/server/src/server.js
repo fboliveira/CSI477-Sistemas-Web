@@ -2,7 +2,7 @@ import express from 'express'
 import { mainRouter } from './routes/main.js'
 
 const server = express()
-const PORT = 5555
+const PORT = 5550
 
 // Routes
 server.use(mainRouter)
