@@ -5,6 +5,8 @@ import { projectsRouter } from './routes/projects.js'
 const server = express()
 const PORT = 5550
 
+server.use(express.json())
+
 // Routes
 server.use(mainRouter)
 server.use(projectsRouter)
