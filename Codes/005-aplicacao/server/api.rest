@@ -1,0 +1,13 @@
+GET http://localhost:5550/projects
+
+###
+GET http://localhost:5550/projects/8
+
+###
+POST http://localhost:5550/projects
+Content-Type: application/json
+
+{
+    "name": "Teste de integração"
+}
+
