@@ -1,13 +1,32 @@
+# Extension: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
 GET http://localhost:5550/projects
 
 ###
-GET http://localhost:5550/projects/8
+GET http://localhost:5550/projects/10
 
 ###
 POST http://localhost:5550/projects
 Content-Type: application/json
 
 {
-    "name": "Teste de integração"
+    "name": "Teste de rede"
+}
+
+###
+PATCH http://localhost:5550/projects
+Content-Type: application/json
+
+{
+    "id": 11,
+    "name": "Testes de performance"
+}
+
+###
+DELETE http://localhost:5550/projects
+Content-Type: application/json
+
+{
+    "id": 11
 }
 
