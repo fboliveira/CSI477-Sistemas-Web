@@ -15,6 +15,21 @@ model Project {
   name       String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
+  tasks      Task[]
 
   @@map("projects")
+}
+
+model Task {
+  id          Int     @id @default(autoincrement())
+  description String
+  done        Boolean
+
+  project_id Int
+  project    Project @relation(fields: [project_id], references: [id])
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("tasks")
 }
