@@ -5,6 +5,10 @@ import { GetByIdProjectController } from "../controller/projects/GetByIdProjectC
 
 import { CreateProjectController } from "../controller/projects/CreateProjectController.js";
 
+import { UpdateProjectController } from "../controller/projects/UpdateProjectController.js";
+
+import { DeleteProjectController } from "../controller/projects/DeleteProjectController.js";
+
 const projectsRouter = Router()
 
 // Get all - R
@@ -20,7 +24,12 @@ const createProjectController = new CreateProjectController()
 projectsRouter.post('/projects', createProjectController.handle)
 
 // Update: PUT/PATCH - U
+const updateProjectController = new UpdateProjectController()
+projectsRouter.patch('/projects', updateProjectController.handle)
+projectsRouter.put('/projects', updateProjectController.handle)
 
 // Delete - D
+const deleteProjectController = new DeleteProjectController()
+projectsRouter.delete('/projects', deleteProjectController.handle)
 
 export { projectsRouter }
