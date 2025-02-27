@@ -15,6 +15,9 @@ export class GetByIdProjectController {
             .findFirstOrThrow({
                 where: {
                     id: parseInt(id)
+                },
+                include: {
+                    tasks: true
                 }
             })
             
