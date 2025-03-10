@@ -134,7 +134,7 @@ function Tasks() {
 
 - Existem configurações avançadas que podem ser encontradas [aqui](https://create-react-app.dev/docs/advanced-configuration/)
 
-- O comando para criar uma aplicação com o *template* do TypeScript é:
+- O comando para criar uma aplicação com o *template* do TypeScript (~~é~~) era:
 
 ```bash
 npx create-react-app Nome_Da_Aplicacao --template typescript
@@ -142,7 +142,7 @@ npx create-react-app Nome_Da_Aplicacao --template typescript
 
 - Substitua ```Nome_Da_Aplicacao``` para o nome desejado.
 
-- :warning: Contudo, o CRA está se tornando (se tornou) **obsoleto**.
+- :warning: Contudo, o CRA está **obsoleto**.
 
 - Uma alternativa ao utilitário padrão é o [Vite](https://vitejs.dev/)
 
