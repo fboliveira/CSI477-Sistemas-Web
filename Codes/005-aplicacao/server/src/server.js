@@ -1,12 +1,14 @@
 import express from 'express'
+import cors from 'cors'
 import { mainRouter } from './routes/main.js'
 import { projectsRouter } from './routes/projects.js'
 import { taskRouter } from './routes/tasks.js'
 
 const server = express()
-const PORT = 5550
+const PORT = 5555
 
 server.use(express.json())
+server.use(cors())
 
 // Routes
 server.use(mainRouter)
