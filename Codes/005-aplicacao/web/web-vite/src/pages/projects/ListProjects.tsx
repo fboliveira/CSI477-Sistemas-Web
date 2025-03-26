@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import api from "../../services/api"
+import Header from "../../components/header/Header"
 
 export default function ListProjects() {
 
@@ -24,6 +25,9 @@ export default function ListProjects() {
     return(
 
         <>
+
+            <Header />
+
             <h2>Lista de projetos</h2>
 
             {/* Percorrer a lista e exibir */}

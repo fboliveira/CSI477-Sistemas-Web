@@ -20,7 +20,7 @@ export class GetByIdProjectController {
                     tasks: true
                 }
             })
-            
+            console.log(project)
             return response.json(project)
         } catch(error) {
             if (error instanceof PrismaClientKnownRequestError) {

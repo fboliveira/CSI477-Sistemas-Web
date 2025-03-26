@@ -1,19 +1,16 @@
+import Header from "./components/header/Header"
 import Menu from "./components/menu/Menu"
-import ListProjects from "./pages/projects/ListProjects"
 
 function App() {
   
   return (
     <>
-    <h1>Sistema de Controle de Projetos</h1>
+    
+      <Header />
 
-    <div id="menu">
-      <Menu />
-    </div>
-
-    <div id="content">
-      <ListProjects />
-    </div>
+      <div id="content">
+        
+      </div>
       
     </>
   )

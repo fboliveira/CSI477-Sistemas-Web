@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router'
 import './menu.css'
 
 const Menu = () => {
@@ -7,8 +8,8 @@ const Menu = () => {
 
     <>
         <ul>
-            <li>Home</li>
-            <li>Projetos</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/projects">Projetos</Link></li>
             <li>Tarefas</li>
         </ul>
 
