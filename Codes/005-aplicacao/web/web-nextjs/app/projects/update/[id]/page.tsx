@@ -1,34 +1,30 @@
 "use client"
 
 import { FormEvent, useEffect, useState } from "react"
-import { useRouter } from "next/navigation"
+import { useParams, useRouter } from "next/navigation"
 
 import getByIdProject from "@/app/repository/projects/GetByIdProject"
 import React from "react"
 import Input from "@/app/components/forms/Input"
 
-interface UpdateProjectParamsInterface {
-    params : Promise<{
-        id : string
-    }>
-}
-
-export default function UpdateProject( { params } : UpdateProjectParamsInterface) {
+export default function UpdateProject() {
 
     const [id, setId] = useState('')
     const [nome, setNome] = useState('')
+    // url: /[id]
+    const params = useParams<{id: string}>()
 
     const { push } = useRouter()
     
     useEffect(() => {
 
-        params.then(param => setId(param.id))
+        setId(params.id)
 
-        getByIdProject(id)
+        getByIdProject(params.id)
             .then(data => setNome(data.name))
             .catch(error => console.error(error))
 
-    }, [params, id])
+    }, [params])
 
     async function handleSubmit(event : FormEvent) {
         event.preventDefault()
