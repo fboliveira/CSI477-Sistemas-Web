@@ -17,7 +17,15 @@ export default async function Projects() {
                 {
                     projects.map((project) =>{
                         return (
-                            <li key={project.id}>{project.id} - {project.name}</li>
+
+                            <li key={project.id}>
+                                <Link href={`/projects/update/${project.id}`}>
+                                    {project.id} - {project.name}
+                                </Link><span> </span> 
+                                <Link href={`/projects/delete/${project.id}`}>
+                                    Excluir
+                                </Link> 
+                            </li>
                         )
                     })
                     
