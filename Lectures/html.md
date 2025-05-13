@@ -139,3 +139,16 @@ como principal referência textos e exemplos retirados de
 - [MDN - table: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
 
 - [W3Schools - HTML Tables](https://www.w3schools.com/html/html_tables.asp)
+
+### Web Accessibility and UX
+
+- [Acessibilidade na web – Hipsters Ponto Tech #463](https://www.hipsters.tech/acessibilidade-na-web-hipsters-ponto-tech-463/)
+- [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Web Content Accessibility Guidelines (WCAG)](https://www.wcag.com/)
+- [Regulamentação de artigos da Lei Brasileira de Inclusão da Pessoa com Deficiência](https://www.gov.br/mdh/pt-br/navegue-por-temas/pessoa-com-deficiencia/acoes-e-programas/regulamentacao-de-artigos-da-lei-brasileira-de-inclusao-da-pessoa-com-deficiencia)
+
+#### Tools and extensions
+
+- [HTML_CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/)
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
+- [axe DevTools - Web Accessibility Testing](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)
