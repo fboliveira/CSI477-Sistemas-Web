@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas</title>
+</head>
+<body>
+    <nav>
+        <a href="../">Voltar</a>
+    </nav>
+
+    <h1>Formulário de cadastro de pessoas</h1>
+
+    <form 
+        action="/pessoas/cadastrar"
+        method="post"
+    >
+
+        <div>
+            <label for="nome">Nome</label>
+            <input 
+                type="text"
+                id="nome"
+                name="nomeDaPessoa"
+                placeholder="Informe o nome completo da pessoa"
+            >
+        </div>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input 
+                type="email" 
+                name="email" 
+                id="email">
+        </div>
+
+        <div>
+
+            <label for="senha">Senha</label>
+            <input 
+                type="password"
+                id="senha"
+                name="senhaPrincipal"
+            >
+
+        </div>
+
+        <div>
+            <input 
+                type="submit" 
+                value="Cadastrar 1">
+            <button type="submit">Cadastrar 2</button>
+        </div>
+
+    </form>
+
+
+</body>
+</html>
