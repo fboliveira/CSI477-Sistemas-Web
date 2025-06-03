@@ -1,4 +1,4 @@
-# **CSI606-2024-02 - Remoto - Proposta de Trabalho Final**
+# **CSI606-2025-01 - Remoto - Proposta de Trabalho Final**
 
 ## *Discente: Princesa Leia (Luke Skywalker)*
 
