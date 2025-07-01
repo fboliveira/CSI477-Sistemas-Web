@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estados e cidades - API/IBGE</title>
-
-    
 </head>
-<body>
+
+<body onload="carregarEstados()">
     
     <h1>Cadastro de pessoas</h1>
     
@@ -24,15 +23,29 @@
         <div>
             <label for="estados">Estado:</label>
             <select 
-            name="estados" 
-            id="estados">
+                name="estados" 
+                id="estados"
+                onchange="carregarCidades()"
+            >
             
                 <option value="">Selecione:</option>
                 
                 <!-- Recuperar os estados a partir da API de localidades do IBGE -->
                 
             </select>
+        </div>
+
+        <div>
+            <label for="cidades">Cidade:</label>
+            <select 
+                name="cidades" 
+                id="cidades">
             
+                <option value="">Selecione:</option>
+                
+                <!-- Recuperar as cidades a partir da API de localidades do IBGE -->
+                
+            </select>
         </div>
         
         
