@@ -1,3 +1,4 @@
+const URL_LOCALIDADES = 'https://servicodados.ibge.gov.br/api/v1/localidades'
 
 // Recuperar os estados a partir da API
 // https://servicodados.ibge.gov.br/api/v1/localidades/estados
@@ -7,7 +8,7 @@ async function recuperarListaDeEstados() {
     
     // Requisição -> API (json)
 
-    const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados')
+    const response = await fetch(`${URL_LOCALIDADES}/estados`)
     const estados = await response.json()
 
     //console.log(estados)
@@ -100,8 +101,85 @@ async function carregarCidades() {
     // -- id (value) do estado selecionado
     const estadoId = selectEstados.options[estado_index].value;
 
-    window.alert(estadoId)
+    if ( estado_index === 0 || estadoId === "" ) {
+        return;
+    }
 
+    const cidades = await recuperarListaDeCidades(estadoId);
+
+    const selectCidades = document.getElementById("cidades");
+
+    for(const cidade of cidades) {
+
+        const { id, nome } = cidade
+
+        const option = document.createElement("option");
+
+        option.value = id
+        option.innerHTML = nome
+
+        selectCidades.appendChild(option)
+
+    }
+
+}
+
+async function recuperarListaDeCidades(estadoId) {
+
+    // URL: .../estados/{id}/municipios
+    // Template literals -> ${}
+    const response = await fetch(`${URL_LOCALIDADES}/estados/${estadoId}/municipios`)
+
+    const cidades = await response.json()
+
+    console.log(cidades)
+
+    return cidades;
+
+}
+
+async function carregarPaises() {
+
+    limparSelect("paises")
+
+    const paises = await recuperarListaDePaises()
+
+    paises.sort((a, b) => a.nome.localeCompare(b.nome))
+
+    const selectPaises = document.getElementById("paises");
+
+    for(const pais of paises) {
+
+        const { id, nome } = pais
+
+        const option = document.createElement("option");
+
+        option.value = id.M49
+        option.innerHTML = `${nome} (${id["ISO-ALPHA-2"]})`
+
+        selectPaises.appendChild(option)
+
+    }
+
+}
+
+async function recuperarListaDePaises() {
+
+    // URL: .../paises
+    // Template literals -> ${}
+    const response = await fetch(`${URL_LOCALIDADES}/paises`)
+
+    const paises = await response.json()
+
+    console.log(paises)
+
+    return paises;
+
+}
+
+function carregarDados() {
+    carregarEstados()
+    carregarPaises()
 }
 
 

@@ -6,7 +6,8 @@
     <title>Estados e cidades - API/IBGE</title>
 </head>
 
-<body onload="carregarEstados()">
+<body onload="carregarDados()">
+
     
     <h1>Cadastro de pessoas</h1>
     
@@ -47,6 +48,19 @@
                 
             </select>
         </div>
+
+        <div>
+            <label for="paises">País de origem:</label>
+            <select 
+                name="paises" 
+                id="paises">
+            
+                <option value="">Selecione:</option>
+                
+                <!-- Recuperar os países a partir da API de localidades do IBGE -->
+                
+            </select>
+        </div>        
         
         
     </form>
