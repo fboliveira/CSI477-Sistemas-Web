@@ -1,8 +1,8 @@
 # **CSI606 - Proposta de Trabalho Final**
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Discente: Princesa Leia (Luke Skywalker)*
 
-Semestre: 2024/2
+Semestre: 2025/1
 
 <!-- Descrever um resumo sobre o trabalho. -->
 
