@@ -1,5 +1,6 @@
 import express from "express";
 import { mainRouter } from "./routes/main.js";
+import { projectRouter } from "./routes/project.js";
 
 // Routes - import
 
@@ -9,6 +10,7 @@ const PORT = 5000; // .env, enviroment variables, ...
 
 // Routes
 server.use(mainRouter);
+server.use(projectRouter);
 
 // Start - listen
 server.listen(PORT, () => {
