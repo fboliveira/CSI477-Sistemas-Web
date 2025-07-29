@@ -7,8 +7,72 @@
 import { prisma } from "../database/client.js";
 
 export default class ProjectController {
+  // GET
   async getAll(request, response) {
     const projects = await prisma.project.findMany();
     return response.json(projects);
   }
+
+  // CREATE
+  async create(request, response) {
+    // request.body -> JSON: POST
+
+    // /api/projects/2 -> GET: params
+    // /api/projects?id=2 -> GET: query
+
+    // Habilitar middleware express.json() no server
+    // para tratar todas as requisições como json.
+    // server.use(express.json())
+    //
+    console.log(request.body)
+    const { name } = request.body;
+
+    // Model/DTO (domain)/Parser -> validações
+    if (name === "") {
+      return response.status(400).json({
+        message: "Invalid data.",
+      });
+    }
+
+    // Sanitização
+    // ...
+
+    // Persistência
+    // Service -> repository -> save();
+    const project = await prisma.project.create({
+      data: {
+        name,
+      },
+    });
+
+    console.log(project);
+
+    return response.status(201).json(project);
+  }
+
+  async getById(request, response) {
+
+      // params: /api/projects/2 -> /api/projects/{id}
+
+      try{
+        const { id } = request.params
+        const project = await prisma.project
+          .findFirstOrThrow({
+            where: {
+              id: parseInt(id)
+            }
+          })
+
+          return response.json(project)
+      } catch(error) {
+        return response.status(400).json({
+          message: "Invalid ID.",
+          error
+        })
+      }
+
+
+  }
+
+
 }

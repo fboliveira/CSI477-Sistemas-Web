@@ -1,0 +1,12 @@
+GET http://localhost:5000/api/projects
+
+###
+POST http://localhost:5000/api/projects
+Content-Type: application/json
+
+{
+    "name": "Frontend"
+}
+
+###
+GET http://localhost:5000/api/projects/1

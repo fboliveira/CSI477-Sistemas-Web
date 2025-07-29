@@ -7,5 +7,7 @@ const projectController = new ProjectController();
 
 // Endpoints - CRUD
 projectRouter.get("/api/projects", projectController.getAll);
+projectRouter.post("/api/projects", projectController.create)
+projectRouter.get("/api/projects/:id", projectController.getById)
 
 export { projectRouter };

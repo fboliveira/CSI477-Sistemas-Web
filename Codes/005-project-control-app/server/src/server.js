@@ -8,6 +8,9 @@ import { projectRouter } from "./routes/project.js";
 const server = express();
 const PORT = 5000; // .env, enviroment variables, ...
 
+// setup
+server.use(express.json())
+
 // Routes
 server.use(mainRouter);
 server.use(projectRouter);
