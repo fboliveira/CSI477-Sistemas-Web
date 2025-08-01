@@ -9,5 +9,6 @@ const projectController = new ProjectController();
 projectRouter.get("/api/projects", projectController.getAll);
 projectRouter.post("/api/projects", projectController.create)
 projectRouter.get("/api/projects/:id", projectController.getById)
+projectRouter.get("/api/projects/:name/name", projectController.getByName)
 
 export { projectRouter };

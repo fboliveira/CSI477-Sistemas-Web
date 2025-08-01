@@ -70,7 +70,27 @@ export default class ProjectController {
           error
         })
       }
+  }
 
+  async getByName(request, response) {
+
+    const { name } = request.params
+
+    const projects = await prisma.project.findMany({
+      where: {
+        name: {
+          contains: name
+        }
+      }
+    })
+
+    if (projects.length === 0) {
+      return response.status(404).json({
+        message: `There is no project with name like '${name}'`
+      })
+    }
+
+    return response.json(projects)
 
   }
 
