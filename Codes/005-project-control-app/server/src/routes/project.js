@@ -11,4 +11,9 @@ projectRouter.post("/api/projects", projectController.create)
 projectRouter.get("/api/projects/:id", projectController.getById)
 projectRouter.get("/api/projects/:name/name", projectController.getByName)
 
+projectRouter.patch("/api/projects", projectController.update)
+projectRouter.put("/api/projects", projectController.update)
+
+projectRouter.delete("/api/projects", projectController.delete)
+
 export { projectRouter };

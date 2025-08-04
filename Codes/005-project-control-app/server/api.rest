@@ -5,7 +5,7 @@ POST http://localhost:5000/api/projects
 Content-Type: application/json
 
 {
-    "name": "Frontend"
+    "name": "Backup"
 }
 
 ###
@@ -13,3 +13,20 @@ GET http://localhost:5000/api/projects/end
 
 ###
 GET http://localhost:5000/api/projects/net/name
+
+###
+PATCH  http://localhost:5000/api/projects
+Content-Type: application/json
+
+{
+    "id": 5,
+    "name": "Net"
+}
+
+###
+DELETE http://localhost:5000/api/projects
+Content-Type: application/json
+
+{
+    "id": 5
+}

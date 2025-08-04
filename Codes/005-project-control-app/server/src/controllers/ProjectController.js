@@ -94,5 +94,63 @@ export default class ProjectController {
 
   }
 
+  async update(request, response) {
+
+    const { id, name } = request.body
+
+    try {
+
+      const project = await prisma.project.update({
+
+        where: {
+          id
+        },
+
+        data: {
+          name
+        }
+
+      })
+
+      response.status(201).json(project)
+      
+    } catch (error) {
+
+      response.status(400).json({
+        message: "Invalid request.",
+        error
+      })
+      
+    }
+
+  }
+
+  async delete(request, response) {
+
+    const { id } = request.body
+
+    try {
+      
+      const project = await prisma.project.delete({
+        where: {
+          id
+        }
+      })
+
+      return response.json({
+        message: "Project has been deleted.",
+        project
+      })
+
+    } catch (error) {
+        return response.status(400).json({
+          message: "Invalid request.",
+          id,
+          error
+        })
+    }
+
+  }
+
 
 }

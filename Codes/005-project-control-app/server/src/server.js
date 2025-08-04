@@ -2,6 +2,9 @@ import express from "express";
 import { mainRouter } from "./routes/main.js";
 import { projectRouter } from "./routes/project.js";
 
+// Config timezone
+process.env.TZ='America/Sao_Paulo'
+
 // Routes - import
 
 // Server
