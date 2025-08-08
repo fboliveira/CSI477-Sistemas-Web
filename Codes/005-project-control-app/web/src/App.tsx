@@ -1,6 +1,5 @@
 import './App.css'
-
-import ListProjects from './pages/projects/ListProjects'
+import Menu from './components/menu/Menu'
 
 function App() {
   
@@ -8,7 +7,7 @@ function App() {
     <>
       <h1>Sistema de Gerenciamento de Projetos</h1>
 
-      <ListProjects />
+      <Menu />
 
     </>
   )
