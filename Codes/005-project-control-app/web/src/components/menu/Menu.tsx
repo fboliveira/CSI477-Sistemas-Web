@@ -9,8 +9,8 @@ const Menu = () => {
             <h2>Menu</h2>
 
             <ul>
-                <li> <Link to="/">Home</Link> </li>
-                <li> <Link to="/projects">Projetos</Link> </li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/projects">Projetos</Link></li>
             </ul>
 
         </div>
