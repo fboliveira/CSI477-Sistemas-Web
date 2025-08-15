@@ -1,6 +1,7 @@
 import express from "express";
 import { mainRouter } from "./routes/main.js";
 import { projectRouter } from "./routes/project.js";
+import { taskRouter } from "./routes/task.js";
 import cors from "cors"
 
 // Config timezone
@@ -19,6 +20,7 @@ server.use(cors())
 // Routes
 server.use(mainRouter);
 server.use(projectRouter);
+server.use(taskRouter)
 
 // Start - listen
 server.listen(PORT, () => {
