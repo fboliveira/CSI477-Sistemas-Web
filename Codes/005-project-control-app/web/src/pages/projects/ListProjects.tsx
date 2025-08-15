@@ -18,6 +18,35 @@ const ListProjects = () => {
 
     },[])
 
+    const handleDeleteProject = async (id: number) => {
+
+        // Validações ...
+        if ( !confirm("Confirma exclusão do Projeto?") ) {
+            return
+        }
+
+        try {
+            
+            const project = await api.delete('/api/projects', {
+                data: {
+                    id
+                }
+            })
+            
+            console.log(project)
+            alert("Projeto excluído com sucesso!")
+
+            // Atualizar?
+            setProjects( projects.filter( p => p.id != id ) )
+
+        } catch (error) {
+            alert("Erro na exclusão do Projeto!");
+            console.error(error)
+
+        }
+
+    }
+
 
     return(
         <>
@@ -45,7 +74,17 @@ const ListProjects = () => {
                                 <td>{p.name}</td>
                                 <td>{p.created_at}</td>
                                 <td>{p.updated_at}</td>
-                                <td><Link to={`/projects/${p.id}`}>Atualizar</Link></td>
+                                <td>
+                                    <Link to={`/projects/${p.id}`}>Atualizar</Link>
+                                    <button
+                                    
+                                        onClick={ () => {
+                                            handleDeleteProject(p.id)
+                                        }}  
+                                    
+                                    >Excluir</button>
+
+                                </td>
                             </tr>
                             )
 
