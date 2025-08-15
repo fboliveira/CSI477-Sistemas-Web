@@ -22,5 +22,23 @@ model Project {
   updated_at DateTime @updatedAt
   // deleted_at  DateTime?
 
+  tasks Task[]
+
   @@map("tb_projects")
+}
+
+model Task {
+  id          Int    @id @default(autoincrement())
+  description String
+
+  project_id Int
+
+  project Project @relation(fields: [project_id], references: [id])
+
+  done Boolean @default(false)
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("tb_tasks")
 }
