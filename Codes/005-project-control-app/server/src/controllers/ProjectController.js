@@ -9,7 +9,11 @@ import { prisma } from "../database/client.js";
 export default class ProjectController {
   // GET
   async getAll(request, response) {
-    const projects = await prisma.project.findMany();
+    const projects = await prisma.project.findMany({
+      include: {
+        tasks: true
+      }
+    });
     return response.json(projects);
   }
 
