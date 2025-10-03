@@ -2,7 +2,7 @@
 
 ## *Discente: Princesa Leia (Luke Skywalker)*
 
-Semestre: 2025/1
+Semestre: 2025/2
 
 <!-- Este documento tem como objetivo apresentar o projeto desenvolvido, considerando o que foi definido na proposta e o produto final. -->
 

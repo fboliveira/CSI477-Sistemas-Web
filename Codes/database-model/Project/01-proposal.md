@@ -2,7 +2,7 @@
 
 ## *Discente: Princesa Leia (Luke Skywalker)*
 
-Semestre: 2025/1
+Semestre: 2025/2
 
 <!-- Descrever um resumo sobre o trabalho. -->
 
