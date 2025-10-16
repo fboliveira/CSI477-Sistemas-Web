@@ -17,7 +17,149 @@
                 type="text"
                 name="nomeDaPessoa"
                 id="nome"
+                placeholder="Informe o nome da pessoa"
+                required
+                minlength="3"
             >
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <input 
+                type="password"
+                name="senha"
+                id="senha"
+                maxlength="25"
+            >
+        </div>
+
+        <div>
+
+            <label for="">Gênero</label>
+            
+            <div>
+                <input
+                type="radio"
+                name="genero"
+                value="FEM"
+                id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            
+            <div>
+                <input
+                type="radio"
+                name="genero"
+                value="MAS"
+                id="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            
+            <div>
+                <input
+                type="radio"
+                name="genero"
+                value="NBI"
+                id="naobinario">
+                <label for="naobinario">Não binário</label>
+            </div>
+
+            
+            <div>
+                <input
+                type="radio"
+                name="genero"
+                value="SRE"
+                id="semresposta">
+                <label for="semresposta">Prefiro não responder</label>
+            </div>
+        </div>
+
+        <div>
+
+            <label for="">Notificações</label>
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[0]"
+                    id="email">
+                <label for="email">E-mail</label>
+            </div>
+
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[1]"
+                    id="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[2]"
+                    id="Telegram">
+                <label for="Telegram">Telegram</label>
+            </div>
+
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[3]"
+                    id="signal">
+                <label for="signal">Signal</label>
+            </div>
+
+        </div>
+
+        <div>
+            <label for="uf">Estado/UF</label>
+
+            <select name="uf" id="uf">
+
+                <option
+                    value="0"
+                    selected
+                    disabled
+                >Selecione:</option>
+
+
+                <option value="1">Minas Gerais</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Pará</option>
+                <option value="4">Bahia</option>
+                <option value="5">Rio de Janeiro</option>
+                <option value="6">Espírito Santo</option>
+
+            </select>
+
+
+        </div>
+
+
+        <div>
+            <label for="cor">Cor padrão do perfil</label>    
+            <input type="color" name="cor" id="cor">
+        </div>
+
+        <div>
+            <label for="data">Data de nascimento</label>
+            <input type="date" name="data" id="data">
+        </div>
+
+
+        <div>
+
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+
+            <button type="submit">Cadastrar - tag button</button>
+            <button type="reset">Limpar - tag button</button>
+
         </div>
 
     </form>
