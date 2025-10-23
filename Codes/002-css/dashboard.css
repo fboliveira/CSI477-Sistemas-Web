@@ -1,0 +1,39 @@
+/* Estilos para o dashboard */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #3C467B;
+}
+
+.borda {
+    border-radius: 10px;
+    border: 1px solid #6E8CFB;
+}
+
+input {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    border: 0px;background-color: #cfcfcf;
+    outline: 2px solid #5D866C;
+
+}
+
+header + div {
+    background-color: blue;
+}
+
+header > div {
+    background-color: yellow;
+}
+
+header > h1 {
+    font-size: 3rem;
+}
