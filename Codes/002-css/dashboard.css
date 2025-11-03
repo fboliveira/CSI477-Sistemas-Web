@@ -37,3 +37,13 @@ header > div {
 header > h1 {
     font-size: 3rem;
 }
+
+.flex-center {
+
+    display: flex;
+    align-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+
+}
