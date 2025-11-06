@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+
+    <script>
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Introdução ao JS</h1>
+
+    <script>
+        document.write("<h2>Olá, mundo!</h2>")
+    </script>
+
+    <div id="data"></div>
+
+    <script>
+        document
+            .getElementById("data")
+            .innerHTML = new Date()
+    </script>
+
+    <script>
+        console.log("Página carregada.")
+        console.error("Erro ao carregar.")
+    </script>
+    
+    <form action="#" name="formDados">
+
+        <input 
+            type="text" 
+            name="nome" 
+            id="nomeDaPessoa"
+        >
+
+        <input 
+            type="text" 
+            name="idade" 
+            id="idadeDaPessoa"
+        >
+
+        <button 
+            type="button"
+            onclick="carregarDados()"
+            >Carregar</button>
+
+
+    </form>
+
+    <script>
+
+        // x = 5
+        // var x
+
+        function carregarDados() {
+            // const
+            // let
+            // var
+
+            const nomeDaPessoa = 
+                document
+                    .getElementById("nomeDaPessoa")
+                    .value
+            const nome = document
+                .formDados
+                .nome
+                .value
+
+            console.log(nomeDaPessoa)
+            console.log(nome)
+
+        }
+
+    </script>
+
+
+
+</body>
+</html>
