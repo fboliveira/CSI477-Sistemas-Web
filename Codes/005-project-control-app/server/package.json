@@ -8,6 +8,7 @@
   },
   "author": "Fernando B Oliveira <fboliveira@ufop.edu.br>",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "express": "^5.1.0"
   },
