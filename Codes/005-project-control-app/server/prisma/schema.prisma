@@ -10,3 +10,16 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+model Project {
+  id   Int    @id @default(autoincrement())
+  name String
+
+  // done Bolean @default(false)
+  // done_date DateTime?
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("tb_projects")
+}
