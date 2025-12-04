@@ -4,14 +4,15 @@
 // U: update
 // D: delete
 
+import { prisma } from "../repository/client.js";
+
 export default class ProjectController {
 
-    getAll(request, response) {
+    async getAll(request, response) {
 
-        response.json({
-            id: 1,
-            name: "Server"
-        })
+        const projects = await prisma.project.findMany()
+
+        return response.json(projects)
 
     }
 
