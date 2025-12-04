@@ -1,0 +1,8 @@
+GET http://localhost:5000/status
+
+###
+
+GET http://localhost:5000/admin
+
+###
+GET http://localhost:5000/api/projects
