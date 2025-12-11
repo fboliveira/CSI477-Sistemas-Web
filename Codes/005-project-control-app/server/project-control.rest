@@ -6,3 +6,14 @@ GET http://localhost:5000/admin
 
 ###
 GET http://localhost:5000/api/projects
+
+###
+POST http://localhost:5000/api/projects
+Content-Type: application/json
+
+{
+    "name": "CI/CD"
+}
+
+###
+GET http://localhost:5000/api/projects/1
