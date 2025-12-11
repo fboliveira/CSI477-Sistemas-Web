@@ -10,6 +10,9 @@ const PORT = 5000
 // Server
 const server = express();
 
+// Configuration
+server.use(express.json())
+
 // Add Routes to server
 server.use(mainRouter)
 server.use(projectRouter)
