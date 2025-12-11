@@ -12,8 +12,13 @@ const projectController = new ProjectController()
 projectRouter.get('/api/projects', projectController.getAll)
 
 // Get By Id
+projectRouter.get('/api/projects/:id', projectController.getById)
+
+// Get By Name
+projectRouter.get('/api/projects/:name', projectController.getByName)
 
 // Create
+projectRouter.post('/api/projects', projectController.create)
 
 // Update
 
