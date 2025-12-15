@@ -10,7 +10,16 @@ export default class ProjectController {
 
     async getAll(request, response) {
 
-        const projects = await prisma.project.findMany()
+        const projects = await prisma.project.findMany({
+            include: {
+                tasks: {
+                    select: {
+                        id: true,
+                        description: true
+                    }
+                }
+            }
+        })
 
         return response.json(projects)
 
