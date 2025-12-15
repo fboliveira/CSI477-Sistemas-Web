@@ -85,6 +85,89 @@ export default class ProjectController {
 
     async getByName(request, response) {
         // Busca por partes do nome
+
+        // /api/projects/name/{name}
+
+        const { name } = request.params
+
+        const projects = await prisma.project.findMany({
+            where: {
+             name : {
+                contains: name
+             }
+            }
+        })
+
+        if (projects.length === 0) {
+            return response.status(404).json({
+                code: 404,
+                message: `There is no project with name like ${name}.`
+            })
+        }
+
+        return response.json(projects)
+
+    }
+
+    // UPDATE
+    // PUT or PATCH
+    async update(request, response) {
+
+        const { id, name } = request.body
+
+        try {
+            
+            const project = await prisma.project.update({
+                where: {
+                    id
+                },
+
+                data: {
+                    name
+                }
+
+            })
+
+            return response.json(project)
+
+        } catch (error) {
+            response.status(400).json({
+                code: 400,
+                message: "Invalid request.",
+                error
+            })
+        }
+
+    }
+
+    // DELETE
+    async delete(request, response) {
+
+        const { id } = request.body
+
+        try{
+
+            const project = await prisma.project.delete({
+                where: {
+                    id
+                }
+            })
+
+            return response.json({
+                code: 200,
+                message: "Project deleted.",
+                project
+            })
+
+        } catch(error) {
+             response.status(400).json({
+                code: 400,
+                message: "Invalid request.",
+                id,
+                error
+            })           
+        }
+
     }
 
 
