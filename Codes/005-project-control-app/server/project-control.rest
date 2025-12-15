@@ -37,3 +37,15 @@ Content-Type: application/json
 {
     "id": 5
 }
+
+###
+GET http://localhost:5000/api/tasks
+
+###
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+    "description": "Create React/Vite project",
+    "project_id": 2
+}
