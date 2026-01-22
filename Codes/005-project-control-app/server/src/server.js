@@ -1,4 +1,5 @@
 import express from "express"
+import cors from "cors"
 
 // Routes - import
 import { mainRouter } from "./routes/main.js";
@@ -13,6 +14,7 @@ const server = express();
 
 // Configuration
 server.use(express.json())
+server.use(cors())
 
 // Add Routes to server
 server.use(mainRouter)
