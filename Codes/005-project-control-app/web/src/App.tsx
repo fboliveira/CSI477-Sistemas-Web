@@ -1,15 +1,11 @@
-import Menu from "./components/Menu"
-import ListProjects from "./pages/projects/ListProjects"
+import AppHeader from "./components/AppHeader"
 
 function App() {
 
   return (
      <>
-      <h1>Controle de Projetos</h1>
-
-      <Menu />
-      <ListProjects />
-
+        <AppHeader />
+        <h2>Página principal da aplicação</h2>
     </>
   )
 }
