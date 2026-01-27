@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import api from "../../services/api"
 import {  type ProjectInterface } from "../../types/projects"
-
+import AppHeader from "../../components/AppHeader"
+import Card from "../../components/Card/Card"
 
 const ListProjects = () => {
 
@@ -20,17 +21,17 @@ const ListProjects = () => {
     return (
 
         <>
-            <h2>Lista de projetos</h2>
+            <AppHeader />
 
-            <ul>
+            <h2 className="text-2xl">Lista de projetos</h2>
 
+            <div>
                 {
                     projects.map( p => (
-                        <li key={p.id}>{p.name}</li>
+                        <Card id={p.id} name={p.name} />
                     ) )
                 }
-        
-            </ul>
+            </div>
         </>
 
     )
