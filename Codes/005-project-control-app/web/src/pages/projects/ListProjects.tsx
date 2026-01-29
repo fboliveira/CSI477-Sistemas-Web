@@ -3,6 +3,7 @@ import api from "../../services/api"
 import {  type ProjectInterface } from "../../types/projects"
 import AppHeader from "../../components/AppHeader"
 import Card from "../../components/Card/Card"
+import { Link } from "react-router-dom"
 
 const ListProjects = () => {
 
@@ -24,8 +25,8 @@ const ListProjects = () => {
             <AppHeader />
 
             <h2 className="text-2xl">Lista de projetos</h2>
-
-            <div>
+            <Link to="/projects/create" >Cadastrar</Link>
+            <div className="flex flex-wrap">
                 {
                     projects.map( p => (
                         <Card id={p.id} name={p.name} />
