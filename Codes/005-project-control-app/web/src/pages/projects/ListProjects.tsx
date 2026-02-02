@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-import { useEffect, useState } from "react"
-import api from "../../services/api"
-import {  type ProjectInterface } from "../../types/projects"
-import AppHeader from "../../components/AppHeader"
-import Card from "../../components/Card/Card"
-import { Link } from "react-router-dom"
-=======
 import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { type ProjectInterface } from "../../types/projects";
 import AppHeader from "../../components/AppHeader";
 import Card from "../../components/Card/Card";
 import { Link } from "react-router-dom";
->>>>>>> bbdd1233501bca27a006f26cbe38d7c380e40b15
 
 const ListProjects = () => {
   const [projects, setProjects] = useState<ProjectInterface[]>([]);
@@ -46,28 +37,4 @@ const ListProjects = () => {
   );
 };
 
-<<<<<<< HEAD
-    return (
-
-        <>
-            <AppHeader />
-
-            <h2 className="text-2xl">Lista de projetos</h2>
-            <Link to="/projects/create" >Cadastrar</Link>
-            <div className="flex flex-wrap">
-                {
-                    projects.map( p => (
-                        <Card id={p.id} name={p.name} />
-                    ) )
-                }
-            </div>
-        </>
-
-    )
-
-}
-
-export default ListProjects
-=======
 export default ListProjects;
->>>>>>> bbdd1233501bca27a006f26cbe38d7c380e40b15
