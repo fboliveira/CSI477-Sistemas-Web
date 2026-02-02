@@ -26,10 +26,6 @@ export default function AppRoutes() {
                     element={<CreateProject />}
                 />
                 
-                <Route
-                    path="/projects/create"
-                    element={<CreateProject />}
-                />
             </Routes>
         
         </BrowserRouter>
