@@ -20,6 +20,11 @@ export default function AppRoutes() {
                     path="/projects"
                     element={<ListProjects />}
                 />
+
+                <Route
+                    path="/projects/create"
+                    element={<CreateProject />}
+                />
                 
                 <Route
                     path="/projects/create"

@@ -4,8 +4,7 @@ function App() {
 
   return (
      <>
-        <AppHeader />
-        <h2>Página principal da aplicação</h2>
+        <AppHeader title="Página principal da aplicação" />
     </>
   )
 }
