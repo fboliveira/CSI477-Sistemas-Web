@@ -4,6 +4,7 @@ import { type ProjectInterface } from "../../types/projects";
 import AppHeader from "../../components/AppHeader";
 import Card from "../../components/Card/Card";
 import { Link } from "react-router-dom";
+import { CirclePlus } from "lucide-react";
 
 const ListProjects = () => {
   const [projects, setProjects] = useState<ProjectInterface[]>([]);
@@ -22,15 +23,20 @@ const ListProjects = () => {
         <div className="flex justify-center">
             <Link
             to="/projects/create"
-            className="rounded-md bg-lime-900 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-blue-800"
+            className="rounded-md bg-lime-900 px-8 py-2 text-sm font-medium text-white transition-all hover:bg-blue-800"
             >
-            Cadastrar
+            <CirclePlus/>Cadastrar
             </Link>
         </div>
 
       <div className="flex flex-wrap justify-center">
         {projects.map((p) => (
-          <Card id={p.id} name={p.name} />
+          <Card 
+          id={p.id} 
+          name={p.name} 
+          updateUrl={`/projects/${p.id}`}
+          deleteUrl={`/projects/${p.id}`}
+          />
         ))}
       </div>
     </>

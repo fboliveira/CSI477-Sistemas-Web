@@ -128,7 +128,7 @@ export default class ProjectController {
             
             const project = await prisma.project.update({
                 where: {
-                    id
+                    id: parseInt(id)
                 },
 
                 data: {

@@ -1,41 +1,60 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AppHeader from "../../components/AppHeader";
 import api from "../../services/api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
-const CreateProject = () => {
+const UpdateProject = () => {
   // Hook: useState
   const [name, setName] = useState("");
 
   // Hook: react-router-dom
   const navigate = useNavigate();
 
-  const handleCreateProject = async (
+  // Recuperar as informações do projeto:
+  // 
+  const { id } = useParams()
+
+  useEffect(()=> {
+
+    api.get(`/api/projects/${id}`)
+      .then(response => {
+        setName(response.data.name)
+      })
+      .catch(error => {
+        console.log(error)
+        alert('Projeto Inválido!')
+        navigate('/proejcts')
+      })
+
+  }, [id, navigate])
+
+  const handleUpdateProject = async (
     event: React.FormEvent<HTMLFormElement>,
   ) => {
     event.preventDefault();
 
     const data = {
+      id : parseInt(String(id)), 
       name,
     };
 
     try {
-      const response = await api.post("/api/projects", data);
+      const response = await api.patch("/api/projects", data);
       console.log(response);
       const { id } = response.data;
-      alert(`Projeto inserido com sucesso! Id: ${id}`);
+      alert(`Projeto atualizado com sucesso! Id: ${id}`);
       navigate("/projects");
     } catch (error) {
-      alert("Erro ao cadastrar o Projeto!");
+      alert("Erro ao atualizar o Projeto!");
       console.error(error);
     }
   };
 
   return (
     <>
-      <AppHeader title="Cadastro de projeto" />
+      <AppHeader title="Atualização de projeto" />
 
-      <form onSubmit={handleCreateProject} className="container">
+      <form onSubmit={handleUpdateProject} className="container">
         <div className="w-full p-4">
           <label
             htmlFor="name"
@@ -58,18 +77,18 @@ const CreateProject = () => {
             type="submit"
             className="rounded-md bg-lime-900 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-blue-800"
           >
-            Cadastrar
+            Atualizar
           </button>
-          <button
-            type="reset"
+          <Link
+            to="/projects"
             className="rounded-md bg-slate-900 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-red-800"
           >
-            Limpar
-          </button>
+            Voltar
+          </Link>
         </div>
       </form>
     </>
   );
 };
 
-export default CreateProject;
+export default UpdateProject;
