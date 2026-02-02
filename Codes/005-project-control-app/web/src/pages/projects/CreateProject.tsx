@@ -39,7 +39,7 @@ const CreateProject = () => {
         <div className="w-full p-4">
           <label
             htmlFor="name"
-            className="text-sm font-medium leading-none text-slate-700"
+            className="text-xl font-medium leading-none text-slate-700"
           >
             Nome
           </label>
