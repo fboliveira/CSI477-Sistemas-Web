@@ -4,19 +4,19 @@ import "./menu.css"
 
 const Menu = () => {
 
+    const cssMenu = "text-sm font-medium text-slate-600 transition-colors hover:text-indigo-600"
+
     return(
 
         <div>
 
-            <h2 className="text-2xl font-semibold">Opções</h2>
-
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/projects">Projetos</Link></li>
-                <li>Tarefas</li>
-                <li>Relatórios</li>
-                <li>Perfil</li>
-            </ul>
+            <nav className="md:flex items-center gap-8">
+                <Link to="/" className={cssMenu}>Home</Link>
+                <Link to="/projects" className={cssMenu}>Projetos</Link>
+                <Link to="#" className={cssMenu}>Tarefas</Link>
+                <Link to="#" className={cssMenu}>Relatórios</Link>
+                <Link to="#" className={cssMenu}>Perfil</Link>
+            </nav>
 
         </div>
 
