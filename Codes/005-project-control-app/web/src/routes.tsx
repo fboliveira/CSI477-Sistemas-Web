@@ -3,6 +3,7 @@ import App from "./App";
 import ListProjects from "./pages/projects/ListProjects";
 import CreateProject from "./pages/projects/CreateProject";
 import UpdateProject from "./pages/projects/UpdateProject";
+import DeleteProject from "./pages/projects/DeleteProject";
 
 export default function AppRoutes() {
 
@@ -32,6 +33,11 @@ export default function AppRoutes() {
                     element={<UpdateProject />}
                 />
                 
+                <Route
+                    path="/projects/:id/delete"
+                    element={<DeleteProject />}
+                />
+
             </Routes>
         
         </BrowserRouter>
