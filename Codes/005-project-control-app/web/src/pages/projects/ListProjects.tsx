@@ -25,7 +25,9 @@ const ListProjects = () => {
             to="/projects/create"
             className="rounded-md bg-lime-900 px-8 py-2 text-sm font-medium text-white transition-all hover:bg-blue-800"
             >
-            <CirclePlusIcon />Cadastrar
+            <div className="flex justify-center gap-2">
+             <CirclePlusIcon /><span>Cadastrar</span>
+            </div>
             </Link>
         </div>
 
@@ -35,7 +37,7 @@ const ListProjects = () => {
             id={p.id} 
             name={p.name}
             updateUrl={`/projects/${p.id}`}            
-            deleteUrl={`/projects/${p.id}`}            
+            deleteUrl={`/projects/${p.id}/delete`}            
             />
         ))}
       </div>
