@@ -18,4 +18,8 @@ mainRouter.get('/status', (request, response) => {
     })
 })
 
+mainRouter.get('/admin', (request, response) => {
+    response.status(401).send("<h1>Unauthorized.</h1>")
+})
+
 export { mainRouter }

@@ -2,11 +2,41 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client"
+  provider = "prisma-client-js"
   output   = "../generated/prisma"
 }
 
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+model Project {
+  id   Int    @id @default(autoincrement())
+  name String
+
+  // done Bolean @default(false)
+  // done_date DateTime?
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  tasks      Task[]
+
+  @@map("tb_projects")
+}
+
+model Task {
+  id          Int    @id @default(autoincrement())
+  description String
+
+  // Projects
+  project_id Int
+  project    Project @relation(fields: [project_id], references: [id])
+
+  done Boolean @default(false)
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("tb_tasks")
 }
