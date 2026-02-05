@@ -3,6 +3,8 @@ import App from "./App";
 import ListProjects from "./pages/projects/ListProjects";
 import CreateProject from "./pages/projects/CreateProject";
 import UpdateProject from "./pages/projects/UpdateProject";
+import DeleteProject from "./pages/projects/DeleteProject";
+import CreateTask from "./pages/tasks/CreateTask";
 
 export default function AppRoutes() {
 
@@ -30,6 +32,16 @@ export default function AppRoutes() {
                 <Route
                     path="/projects/:id"
                     element={<UpdateProject />}
+                />
+
+                <Route
+                    path="/projects/:id/delete"
+                    element={<DeleteProject />}
+                />
+
+                <Route
+                    path="/tasks/create"
+                    element={<CreateTask />}
                 />
                 
             </Routes>
