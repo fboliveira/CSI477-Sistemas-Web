@@ -18,7 +18,7 @@ const AppHeader = ({title} : AppHeaderInterface) => {
           <Menu />
         </div>
       </header>
-      <div>
+      <div className="flex justify-center">
         <h2 className="text-xl font-bold">{title}</h2>
       </div>
     </>

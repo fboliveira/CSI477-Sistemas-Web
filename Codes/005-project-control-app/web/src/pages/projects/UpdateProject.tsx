@@ -6,24 +6,41 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 const UpdateProject = () => {
   // Hook: useState
   const [name, setName] = useState("");
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
   // Hook: react-router-dom
   const navigate = useNavigate();
 
   // Recuperar as informações do projeto:
+<<<<<<< HEAD
   // 
   const { id } = useParams()
 
   useEffect(()=> {
+=======
+  // ID do projeto -> recuperar as informações
+  const { id } = useParams()
+
+  useEffect(() => {
+>>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
 
     api.get(`/api/projects/${id}`)
       .then(response => {
         setName(response.data.name)
       })
       .catch(error => {
+<<<<<<< HEAD
         console.log(error)
         alert('Projeto Inválido!')
         navigate('/proejcts')
+=======
+        console.error(error)
+        alert('Projeto inválido!')
+        navigate('/projects')
+>>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
       })
 
   }, [id, navigate])
@@ -34,7 +51,11 @@ const UpdateProject = () => {
     event.preventDefault();
 
     const data = {
+<<<<<<< HEAD
       id : parseInt(String(id)), 
+=======
+      id : parseInt(String(id)),
+>>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
       name,
     };
 
@@ -58,7 +79,11 @@ const UpdateProject = () => {
         <div className="w-full p-4">
           <label
             htmlFor="name"
+<<<<<<< HEAD
             className="text-sm font-medium leading-none text-slate-700"
+=======
+            className="text-xl font-medium leading-none text-slate-700"
+>>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
           >
             Nome
           </label>
