@@ -4,7 +4,7 @@ import "./menu.css"
 
 const Menu = () => {
 
-    const cssMenu = "text-sm font-medium text-slate-600 transition-colors hover:text-indigo-600"
+    const cssMenu = "text-sm font-medium text-slate-600 transition-colors hover:text-indigo-600 mr-2"
 
     return(
 
