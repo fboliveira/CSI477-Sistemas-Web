@@ -4,11 +4,7 @@ import { type ProjectInterface } from "../../types/projects";
 import AppHeader from "../../components/AppHeader";
 import Card from "../../components/Card/Card";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-import { CirclePlus } from "lucide-react";
-=======
 import { CirclePlusIcon } from "lucide-react";
->>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
 
 const ListProjects = () => {
   const [projects, setProjects] = useState<ProjectInterface[]>([]);
@@ -29,11 +25,7 @@ const ListProjects = () => {
             to="/projects/create"
             className="rounded-md bg-lime-900 px-8 py-2 text-sm font-medium text-white transition-all hover:bg-blue-800"
             >
-<<<<<<< HEAD
-            <CirclePlus/>Cadastrar
-=======
             <CirclePlusIcon />Cadastrar
->>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
             </Link>
         </div>
 
@@ -44,19 +36,11 @@ const ListProjects = () => {
           id={p.id} 
           name={p.name} 
           updateUrl={`/projects/${p.id}`}
-          deleteUrl={`/projects/${p.id}`}
-          />
-=======
-            id={p.id} 
-            name={p.name}
-            updateUrl={`/projects/${p.id}`}            
-            deleteUrl={`/projects/${p.id}`}            
             />
 >>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
         ))}
       </div>
     </>
-  );
 };
 
 export default ListProjects;

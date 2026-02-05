@@ -32,15 +32,9 @@ const UpdateProject = () => {
         setName(response.data.name)
       })
       .catch(error => {
-<<<<<<< HEAD
-        console.log(error)
-        alert('Projeto Inválido!')
-        navigate('/proejcts')
-=======
         console.error(error)
         alert('Projeto inválido!')
         navigate('/projects')
->>>>>>> 07ba762f7d25b37cc1223f05cef522a3df535d04
       })
 
   }, [id, navigate])
