@@ -92,12 +92,12 @@ export default class TaskController {
             
             const task = await prisma.task.update({
                 where: {
-                    id
+                    id: parseInt(id)
                 },
 
                 data: {
                     description, 
-                    project_id
+                    project_id: parseInt(project_id)
                 }
 
             })
@@ -105,6 +105,7 @@ export default class TaskController {
             return response.json(task)
 
         } catch (error) {
+            console.error(error)
             response.status(400).json({
                 code: 400,
                 message: "Invalid request.",
