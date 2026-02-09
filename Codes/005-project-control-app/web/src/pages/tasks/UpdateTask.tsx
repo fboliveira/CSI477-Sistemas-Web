@@ -83,17 +83,6 @@ const UpdateTask = () => {
         </div>
 
         <div className="w-full p-4">
-          <Label id="project_id_input" description="Projeto" />
-          <input
-            type="text"
-            name="project_id_input"
-            value={project_id}
-            onChange={(e) => setProjectId(e.target.value)}
-            className="flex h-10 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2 transition-all shadow-sm"
-          />
-        </div>
-
-        <div className="w-full p-4">
           <Label id="project_id_select" description="Projeto" />
 
           <select 
