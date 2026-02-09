@@ -11,15 +11,8 @@ export default class TaskController {
     async getAll(request, response) {
 
         const tasks = await prisma.task.findMany({
-            select: {
-                id: true,
-                description: true,
-                project: {
-                    select: {
-                        id: true,
-                        name: true
-                    }
-                }
+            include: {
+                project: true
             }
         })
         return response.json(tasks)
@@ -27,7 +20,26 @@ export default class TaskController {
     }
 
     async getById(request, response) {
-        
+        try {
+            const { id } = request.params
+            const task = await prisma.task.findFirstOrThrow({
+                where: {
+                    id: parseInt(id)
+                },
+                include: {
+                    project: true
+                }    
+            })
+
+            return response.json(task)
+        } catch(error) {
+            return response
+                .status(400)
+                .json({
+                    message: "Invalid Id.",
+                    error
+                })
+        }        
     }
 
     async getByName(request, response) {
@@ -74,10 +86,60 @@ export default class TaskController {
 
     async update(request, response) {
         
+        const { id, description, project_id } = request.body
+
+        try {
+            
+            const task = await prisma.task.update({
+                where: {
+                    id
+                },
+
+                data: {
+                    description, 
+                    project_id
+                }
+
+            })
+
+            return response.json(task)
+
+        } catch (error) {
+            response.status(400).json({
+                code: 400,
+                message: "Invalid request.",
+                error
+            })
+        }        
+
     }
 
     async delete(request, response) {
-        
+
+        const { id } = request.body
+
+        try{
+
+            const task = await prisma.task.delete({
+                where: {
+                    id
+                }
+            })
+
+            return response.json({
+                code: 200,
+                message: "Task deleted.",
+                task
+            })
+
+        } catch(error) {
+             response.status(400).json({
+                code: 400,
+                message: "Invalid request.",
+                id,
+                error
+            })           
+        }        
     }
 
 }
