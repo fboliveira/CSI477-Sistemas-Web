@@ -24,4 +24,7 @@ taskRouter.put(url, taskController.update)
 // Delete
 taskRouter.delete(url, taskController.delete)
 
+// Update status
+taskRouter.patch(`${url}/status`, taskController.updateStatus)
+
 export { taskRouter }
