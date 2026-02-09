@@ -7,140 +7,150 @@
 import { prisma } from "../repository/client.js";
 
 export default class TaskController {
+  async getAll(request, response) {
+    const tasks = await prisma.task.findMany({
+      include: {
+        project: true,
+      },
+    });
+    return response.json(tasks);
+  }
 
-    async getAll(request, response) {
+  async getById(request, response) {
+    try {
+      const { id } = request.params;
+      const task = await prisma.task.findFirstOrThrow({
+        where: {
+          id: parseInt(id),
+        },
+        include: {
+          project: true,
+        },
+      });
 
-        const tasks = await prisma.task.findMany({
-            include: {
-                project: true
-            }
-        })
-        return response.json(tasks)
-
+      return response.json(task);
+    } catch (error) {
+      return response.status(400).json({
+        message: "Invalid Id.",
+        error,
+      });
     }
+  }
 
-    async getById(request, response) {
-        try {
-            const { id } = request.params
-            const task = await prisma.task.findFirstOrThrow({
-                where: {
-                    id: parseInt(id)
-                },
-                include: {
-                    project: true
-                }    
-            })
+  async getByName(request, response) {}
 
-            return response.json(task)
-        } catch(error) {
-            return response
-                .status(400)
-                .json({
-                    message: "Invalid Id.",
-                    error
-                })
-        }        
+  async getByProject(request, response) {}
+
+  async create(request, response) {
+    const { description, project_id } = request.body;
+
+    // Is project_id valid?
+    // Model -> validate()
+
+    try {
+      const task = await prisma.task.create({
+        data: {
+          description,
+          project: {
+            connect: {
+              id: project_id,
+            },
+          },
+        },
+      });
+
+      return response.json(task);
+    } catch (error) {
+      return response.status(400).json({
+        code: 400,
+        message: "Invalid request.",
+        error,
+      });
     }
+  }
 
-    async getByName(request, response) {
-        
+  async update(request, response) {
+    const { id, description, project_id } = request.body;
+
+    try {
+      const task = await prisma.task.update({
+        where: {
+          id: parseInt(id),
+        },
+
+        data: {
+          description,
+          project_id: parseInt(project_id),
+        },
+      });
+
+      return response.json(task);
+    } catch (error) {
+      console.error(error);
+      response.status(400).json({
+        code: 400,
+        message: "Invalid request.",
+        error,
+      });
     }
+  }
 
-    async getByProject(request, response) {
-        
+  async delete(request, response) {
+    const { id } = request.body;
+
+    try {
+      const task = await prisma.task.delete({
+        where: {
+          id,
+        },
+      });
+
+      return response.json({
+        code: 200,
+        message: "Task deleted.",
+        task,
+      });
+    } catch (error) {
+      response.status(400).json({
+        code: 400,
+        message: "Invalid request.",
+        id,
+        error,
+      });
     }
+  }
 
-    async create(request, response) {
+  async updateStatus(request, response) {
+    try {
+      const { id } = request.body;
+      console.log(id);
+      const task = await prisma.task.findFirstOrThrow({
+        where: {
+          id: parseInt(id),
+        },
+        include: {
+          project: true,
+        },
+      });
 
-        const { description, project_id } = request.body
+      task.done = !task.done;
 
-        // Is project_id valid?
-        // Model -> validate()
+      const updatedTask = await prisma.task.update({
+        where: {
+          id: parseInt(id),
+        },
+        data: {
+          done: task.done,
+        },
+      });
 
-        try {
-            
-            const task = await prisma.task.create({
-                data: {
-                    description,
-                    project: {
-                        connect: {
-                            id: project_id
-                        }
-                    }
-                }
-            })
-
-            return response.json(task)
-
-        } catch (error) {
-
-            return response.status(400).json({
-                code: 400,
-                message: "Invalid request.",
-                error
-            })
-            
-        }
-        
+      return response.json(updatedTask);
+    } catch (error) {
+      console.error(error);
+      return response.status(400).json({
+        message: "Invalid Id.",
+        error,
+      });
     }
-
-    async update(request, response) {
-        
-        const { id, description, project_id } = request.body
-
-        try {
-            
-            const task = await prisma.task.update({
-                where: {
-                    id: parseInt(id)
-                },
-
-                data: {
-                    description, 
-                    project_id: parseInt(project_id)
-                }
-
-            })
-
-            return response.json(task)
-
-        } catch (error) {
-            console.error(error)
-            response.status(400).json({
-                code: 400,
-                message: "Invalid request.",
-                error
-            })
-        }        
-
-    }
-
-    async delete(request, response) {
-
-        const { id } = request.body
-
-        try{
-
-            const task = await prisma.task.delete({
-                where: {
-                    id
-                }
-            })
-
-            return response.json({
-                code: 200,
-                message: "Task deleted.",
-                task
-            })
-
-        } catch(error) {
-             response.status(400).json({
-                code: 400,
-                message: "Invalid request.",
-                id,
-                error
-            })           
-        }        
-    }
-
+  }
 }
