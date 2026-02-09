@@ -46,6 +46,16 @@ POST http://localhost:5000/api/tasks
 Content-Type: application/json
 
 {
-    "description": "Create React/Vite project",
-    "project_id": 2
+    "description": "Teste",
+    "project_id": 3
+}
+
+###
+PATCH  http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+    "id": 6,
+    "description": "Testes unitários",
+    "project_id": 1
 }
