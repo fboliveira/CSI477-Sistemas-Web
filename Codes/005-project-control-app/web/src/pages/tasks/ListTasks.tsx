@@ -2,17 +2,21 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link } from "react-router-dom";
 import AppHeader from "../../components/AppHeader";
-import { CirclePlusIcon, Edit, TrashIcon } from "lucide-react";
+import { BanIcon, CheckIcon, CirclePlusIcon, Edit, TrashIcon } from "lucide-react";
 import { type TaskInterface } from "../../types/tasks";
 
 const ListTasks = () => {
   const [tasks, setTasks] = useState<TaskInterface[]>([]);
 
-  useEffect(() => {
+  const getTasks = () => {
     api.get("/api/tasks").then((response) => {
       console.log(response);
       setTasks(response.data);
-    });
+    })
+  }
+
+  useEffect(() => {
+    getTasks()
   }, []);
 
   const handleDeleteTask = async (id: number) => {
@@ -56,6 +60,24 @@ const ListTasks = () => {
     }
 
     return "Concluído"
+
+  }
+
+  const handleUpdateStatus = async(id : number) => {
+
+    const data = {
+      id
+    }
+
+    try {
+      const response = await api.patch('/api/tasks/status', data)
+      console.log(response.data)
+      alert('O status da tarefa foi atualizado com sucesso!')
+      getTasks()
+    } catch (error) {
+      console.error(error)
+      alert("Erro na atualização do status da tarefa!")
+    }
 
   }
 
@@ -109,7 +131,7 @@ const ListTasks = () => {
                 className="even:bg-gray-50 hover:bg-blue-50 transition-colors"
               >
                 <td className="px-6 py-4">{task.id}</td>
-                <td className="px-6 py-4">{task.description}</td>
+                <td className="px-6 py-4 font-bold">{task.description}</td>
                 <td className="px-6 py-4">{task.project.name}</td>
                 <td className="px-6 py-4">{formatStatus(task.done)}</td>
                 <td className="px-6 py-4">{formatDate(task.created_at)}</td>
@@ -123,6 +145,13 @@ const ListTasks = () => {
                   >
                     <TrashIcon />
                   </button>
+                  <button className="text-green-800 hover:underline cursor-pointer ml-4"
+                    onClick={() => {
+                      handleUpdateStatus(task.id)
+                    }}
+                  >
+                    { task.done ? <BanIcon className="text-red-500" /> : <CheckIcon /> } 
+                  </button>                  
                 </td>
               </tr>
             ))}
