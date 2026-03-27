@@ -1,4 +1,4 @@
-# **CSI606-2021-02 - Remoto - Trabalho Final**
+# **CSI606-2026-01 - Trabalho Final**
 
 Este documento deverá ser substituído pela estrutura definida pelos modelos a seguir, conforme o andamento do trabalho:
 

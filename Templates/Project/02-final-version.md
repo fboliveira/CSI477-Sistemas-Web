@@ -1,4 +1,4 @@
-# **CSI606-2024-02 - Remoto - Trabalho Final - Resultados**
+# **CSI606-2026-01 - Remoto - Trabalho Final - Resultados**
 
 ## *Discente: Princesa Leia (Luke Skywalker)*
 
@@ -8,20 +8,23 @@
 
   (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
 
-### 1. Funcionalidades implementadas
+### 1. Tecnologias utilizadas - Backend e Frontend
+<!-- Descrever as tecnologias utilizadas tanto no backend quanto no frontend, acerca de linguagens, frameworks, bibliotecas e demais recursos -->
+
+### 2. Funcionalidades implementadas
 <!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
   
-### 2. Funcionalidades previstas e não implementadas
+### 3. Funcionalidades previstas e não implementadas
 <!-- Descrever as funcionalidades que eram previstas e não foram implementas, apresentando uma breve justificativa do porquê elas não foram incluídas -->
 
-### 3. Outras funcionalidades implementadas
+### 4. Outras funcionalidades implementadas
 <!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
 
-### 4. Principais desafios e dificuldades
+### 5. Principais desafios e dificuldades
 <!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
 
-### 5. Instruções para instalação e execução
+### 6. Instruções para instalação e execução
 <!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
 
-### 6. Referências
+### 7. Referências
 <!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
