@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas</title>
+</head>
+<body>
+
+    <h1>Cadastro de pessoas</h1>
+
+    <form method="get" action="/acao/cadastrar">
+
+        <div>
+            <label for="nomeDaPessoa">Nome</label>
+            <input 
+                type="text" 
+                name="nome" 
+                id="nomeDaPessoa"
+                placeholder="Informe o nome da pessoa"
+                minlength="3"
+                maxlength="100"
+                required
+            >
+        </div>
+
+        <div>
+            <label for="pass">Senha</label>
+            <input type="password" name="senha" id="pass">
+        </div>
+
+        <div>
+
+            <label for="">Gênero</label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="fem">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="masculino" value="mas">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="nbi">
+                <label for="naobinario">Não binário</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="semrespostas" value="sre">
+                <label for="semrespostas">Prefiro não responder</label>
+            </div>
+
+        </div>
+
+
+        <div>
+            <label for="perfil">Cor do perfil</label>
+            <input type="color" name="cor" id="perfil">
+        </div>
+
+        <div>
+            <label for="data">Data de nascimento</label>
+            <input type="date" name="data" id="data">
+        </div>
+
+
+        <div>
+            <input type="submit" value="Cadastrar">
+            <button type="submit">Cadastrar - button</button>
+            <button type="reset">Limpar</button>
+        </div>
+
+    </form>
+    
+</body>
+</html>
