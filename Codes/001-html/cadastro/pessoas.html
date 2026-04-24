@@ -9,6 +9,8 @@
 
     <h1>Cadastro de pessoas</h1>
 
+    <a href="/">Voltar</a>
+
     <form method="get" action="/acao/cadastrar">
 
         <div>
@@ -65,6 +67,75 @@
             <label for="data">Data de nascimento</label>
             <input type="date" name="data" id="data">
         </div>
+
+        <div>
+            <label for="">Notificações</label>
+
+            <div>
+                <input 
+                    type="checkbox" 
+                    name="notificacao[0]" 
+                    id="email">
+                <label for="email">E-mail</label>
+            </div>
+
+            <div>
+                <input 
+                    type="checkbox" 
+                    name="notificacao[1]" 
+                    id="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+
+            <div>
+                <input 
+                    type="checkbox" 
+                    name="notificacao[2]" 
+                    id="telegram">
+                <label for="telegram">Telegram</label>
+            </div>
+
+            <div>
+                <input 
+                    type="checkbox" 
+                    name="notificacao[3]" 
+                    id="signal">
+                <label for="signal">Signal</label>
+            </div>
+
+            <div>
+                <input 
+                    type="checkbox" 
+                    name="notificacao[4]" 
+                    id="slack">
+                <label for="slack">Slack</label>
+            </div>
+
+        </div>
+
+        <div>
+            <label for="uf">Estado/UF</label>
+
+            <select name="uf" id="uf" >
+
+                <option 
+                    value="0"
+                    selected
+                    disabled
+                >Selecione:</option>
+
+                <option value="1">Minas Gerais</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Pará</option>
+                <option value="4">Bahia</option>
+                <option value="5">Rio de Janeiro</option>
+                <option value="6">Espírito Santo</option>
+
+            </select>
+
+        </div>
+
+
 
 
         <div>
