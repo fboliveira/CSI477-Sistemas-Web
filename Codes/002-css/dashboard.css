@@ -1,5 +1,11 @@
 /* Estilos para o dashboard */
 
+:root {
+    --primary: #3F72AF;
+    --secondary: #DBE2EF;
+    --background: #F9F7F7;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,4 +14,69 @@
 
 h1, h2 {
     text-align: center;
+    color: var(--primary);
+}
+
+input {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    border: 0px;
+    outline: 2px solid var(--primary);
+    background-color: var(--secondary);
+}
+
+.borda {
+    border: 1px solid var(--secondary); 
+}
+
+header {
+    width: 100%;
+    background-color: var(--background);
+    border-bottom: 2px solid #000;
+    margin-bottom: 5vh;
+}
+
+.btn:hover{
+    font-weight: bold;
+}
+
+.btn-base {
+    border: 0px;
+    color: #000;
+}
+
+.btn {
+    border: 1px solid var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.btn-special {
+    border: 1px solid #ff0000;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li > a {
+    color: #ff0000;
+    font-size: 1.2rem;
+}   
+
+nav + div {
+    background-color: var(--background);
 }
