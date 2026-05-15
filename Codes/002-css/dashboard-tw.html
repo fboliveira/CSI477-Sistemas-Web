@@ -6,36 +6,58 @@
     <title>Sistema de Controle de Tarefas</title>
 
     <!-- CSS external link -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 <body>
     
-    <header>
+    <header class="container m-4 bg-slate-100 dark:bg-gray-800">
 
-        <div>
+        <div class="flex flex-row">
 
-            <div>
+            <div class="basis-1/4">
                 Logo
             </div>
 
-            <div>
+            <div class="basis-1/2">
                 <input 
                     type="text" 
                     name="pesquisar"
-                    class="borda" 
-                >
-                <button>Pesquisar</button>
+                    class="
+                    text-xl
+                    text-blue-400
+                    w-full
+                    rounded
+                    ring-1
+                    ring-slate-400
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-blue-700
+                    focus:shadow-lg
+                    focus:shadow-blue-500/50
+                    "
+                    >
+                    <button class="
+                    ring-1
+                    rounded
+                    p-1 
+                    bg-sky-800
+                    text-white
+                    mt-2
+                    hover:font-bold
+                "
+                >Pesquisar</button>
             </div>
 
-            <div>
+            <div class="basis-1/4">
                 Profile
             </div>
 
         </div>
 
         <div>
-            <h1>Sistema de Controle de Tarefas</h1>
-            <h2>Página principal</h2>
+            <h1 class="text-3xl text-red-950 dark:text-white">Sistema de Controle de Tarefas</h1>
+            <h2 class="text-2xl text-red-500">Página principal</h2>
         </div>
 
     </header>
@@ -44,13 +66,13 @@
      <div>
 
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Tarefas</a></li>
-                <li><a href="#">Equipes</a></li>
-                <li><a href="#">Sair</a></li>
-                <li><a href="#">Configurações</a></li>
+            <ul class="flex flex-row ring-1 rounded ring-blue-700 m-2 justify-around p-4 text-base text-blue-400">
+                <li><a class="hover:font-bold hover:bg-blue-400 hover:rounded hover:ring-1 hover:text-white hover:p-2" href="#">Home</a></li>
+                <li><a class="hover:font-bold hover:bg-blue-400 hover:rounded hover:ring-1 hover:text-white hover:p-2" href="#">Projetos</a></li>
+                <li><a class="hover:font-bold hover:bg-blue-400 hover:rounded hover:ring-1 hover:text-white hover:p-2" href="#">Tarefas</a></li>
+                <li><a class="hover:font-bold hover:bg-blue-400 hover:rounded hover:ring-1 hover:text-white hover:p-2" href="#">Equipes</a></li>
+                <li><a class="hover:font-bold hover:bg-blue-400 hover:rounded hover:ring-1 hover:text-white hover:p-2" href="#">Sair</a></li>
+                <li><a class="hover:font-bold hover:bg-blue-400 hover:rounded hover:ring-1 hover:text-white hover:p-2" href="#">Configurações</a></li>
             </ul>
 
 
@@ -62,7 +84,7 @@
 
      </div>
 
-     <footer>
+     <footer class="flex flex-row justify-around">
         <p>Sistemas Web I</p>
         <p>Desenvolvido com S2</p>
      </footer>
