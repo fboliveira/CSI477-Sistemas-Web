@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JS</title>
+
+    <script>
+
+        // let, var
+        // const
+        function cadastrarPessoa() {
+
+            // 1 - ID: 
+            const nomeDaPessoa = document.getElementById("nomeDaPessoa").value 
+            // 2 - Form -> hierarquia
+            const nome = document.formCadastro.nome.value
+
+            const idade = document.getElementById("idadeDaPessoa").value
+
+            console.log(nomeDaPessoa)
+            console.log(nome)
+
+            window.alert(nome)
+
+            const dados = {
+                nome,
+                name: nome,
+                date: idade
+            }
+
+            console.log(dados)
+
+        
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Introdução ao JavaScript</h1>
+    <script>
+        // Comentário
+        document.write("<h2>Olá, mundo!</h2>")
+    </script>
+
+    <div id="data"></div>
+
+    <script>
+        document.getElementById("data")
+            .innerText = Date()
+    </script>
+
+    <form action="#" name="formCadastro">
+
+        <input 
+            type="text" 
+            name="nome" 
+            id="nomeDaPessoa"
+        >
+
+        <input 
+            type="number" 
+            name="idade" 
+            id="idadeDaPessoa"
+        >
+
+        <button 
+            type="button"
+            onclick="cadastrarPessoa()"
+
+        >Cadastrar</button>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        console.log("Página carregada.")
+        console.error("Erro ao carregar a página.")
+        console.warn("Página não atualizada.")
+    </script>    
+</body>
+</html>
