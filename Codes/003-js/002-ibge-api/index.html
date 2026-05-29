@@ -7,7 +7,7 @@
 
     <script src="api-ibge.js"></script>
 </head>
-<body>
+<body onload="carregarEstados()">
 
     <h1>Cadastro de Pessoas</h1>
 
@@ -24,7 +24,17 @@
         <div>
             <label for="estados">Estado:</label>
             
-            <select name="estados" id="estados">
+            <select 
+                name="estados" 
+                id="estados"
+                onchange="carregarCidades()"
+                >
+
+                <option 
+                    value="" 
+                    disabled 
+                    selected
+                >Selecione:</option>
 
                 <!-- Recuperar os estados a partir da API de localidades do IBGE -->
                 
@@ -38,6 +48,11 @@
             
             <select name="cidades" id="cidades">
 
+                <option 
+                    value="" 
+                    disabled 
+                    selected
+                >Selecione:</option>
                 <!-- Recuperar as cidades a partir da API de localidades do IBGE conforme o estado selecionado -->
 
             </select>
