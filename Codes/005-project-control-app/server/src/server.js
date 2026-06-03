@@ -18,4 +18,6 @@ server.use(mainRouter)
 
 
 // Start - listen
-server.listen(PORT)
+server.listen(PORT, () => {
+    console.log(`[SERVER] Server is running on port ${PORT}...`)
+})
