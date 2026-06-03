@@ -1,0 +1,13 @@
+@server = http://localhost:5000
+
+###
+GET {{server}}
+
+###
+GET {{server}}/info
+
+###
+GET {{server}}/status
+
+###
+GET {{server}}/admin
