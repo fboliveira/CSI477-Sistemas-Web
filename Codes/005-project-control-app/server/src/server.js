@@ -2,6 +2,7 @@ import express from 'express'
 // Demais imports
 // Imports - rotas
 import { mainRouter } from './routes/main.js'
+import { projectRouter } from './routes/projects.js'
 
 // Demais pacotes
 
@@ -15,6 +16,7 @@ const server = express()
 
 // Atribuição/utilização das rotas importadas
 server.use(mainRouter)
+server.use(projectRouter)
 
 
 // Start - listen
