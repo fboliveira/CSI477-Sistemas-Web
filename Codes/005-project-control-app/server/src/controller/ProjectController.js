@@ -6,14 +6,15 @@
 // D: delete
 //
 
+import { prisma } from "../repository/client.js"
 export default class ProjectController {
 
     // R: read
-    getAll (request, response) {
-        return response.json([{
-            id: 1,
-            name: "Data mock"
-        }])
+    async getAll (request, response) {
+
+        const projects = await prisma.project.findMany()
+        return response.json(projects)
+
     }
 
     getById(request, response) {
