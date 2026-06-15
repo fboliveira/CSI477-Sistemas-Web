@@ -10,6 +10,8 @@ const projectController = new ProjectController()
 // Endpoints -> CRUD: api
 // Get All -> método http: get / rota:
 projectRouter.get('/api/projects', projectController.getAll)
+// Get By ID -> método GET
+projectRouter.get('/api/projects/:id', projectController.getById)
 
 // ...
 
