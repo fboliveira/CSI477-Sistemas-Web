@@ -16,21 +16,16 @@ O objetivo deste documento é indicar um cronograma para a finalização do trab
 
 A apresentação do trabalho será realizada a partir da **gravação de um vídeo** contendo a descrição do projeto e a implementação. Os critérios estabelecidos a seguir serão utilizados para a avaliação do trabalho. As notas também serão compostas pela avaliação da turma (avaliação pelos pares).
 
-1. Avaliação acerca do Tema do trabalho e abrangência - *4,0 pontos*
+- **Avaliação acerca do *backend* (40,0 pontos)**
 
-2. Apresentação: clareza, domínio do conteúdo e didática - *5,0 pontos*
+1. Definição apropriada do escopo/domínio - *10,0 pontos*
+1. Funcionalidades implementadas conforme o escopo/requisitos - *15,0 pontos*
+1. Utilização apropriada dos frameworks e/ou modelo MVC  - *15,0 pontos*
 
-3. Utilização de recursos gráficos adequados, qualidade do vídeo e do áudio - *4,0 pontos*
+- **Avaliação acerca do *frontend* (40,0 pontos)**
 
-4. Definição apropriada do escopo - *7,0 pontos*
-
-5. Interfaces apropriadas e funcionais - *7,0 pontos*
-
-6. Funcionalidades implementadas conforme o escopo/requisitos - *7,0 pontos*
-
-7. Utilização apropriada dos *frameworks* e/ou modelo MVC - *5,0 pontos*
-
-8. Avaliação geral do produto final - *6,0 pontos*
+1. Interfaces apropriadas e funcionais - *15,0 pontos*
+1. Utilização correta das tecnologias - *25,0 pontos*
 
 O **limite de tempo para o vídeo é entre 10 a 15 minutos**. A **nota final** é composta pela avaliações pelos pares e pela minha avaliação.
 
@@ -40,7 +35,7 @@ Como o Moodle tem restrição do tamanho de arquivos, eu sugiro que vocês poste
 
 Na avaliação pelos pares, você fará a pontuação dos itens em formulário disponibilizado no *Google Forms* conforme os critérios indicados (os *links* estarão no Moodle). A coleta de e-mails será realizada apenas para fins de controle da pontuação individual.
 
-É importante que você avalie todos os outros trabalhos. A participação na avaliação pelos pares das apresentações valem **5,0 pontos** (individual e atribuídos à pessoa que avaliou).
+É importante que você avalie todos os outros trabalhos. A participação na avaliação pelos pares das apresentações valem **10,0 pontos** (individual e atribuídos à pessoa que avaliou).
 
 ### Entregas
 

@@ -1,137 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de pessoas</title>
 </head>
 <body>
-    
-    <h1>Dados da pessoa</h1>
 
-    <form action="/pessoas/cadastrar" method="get">
+    <h1>Cadastro de pessoas</h1>
+
+    <form method="get" action="/pessoas/cadastrar">
 
         <div>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nomeDaPessoa"
-            id="nome"
-            placeholder="Informe o nome da pessoa"
-            minlength="3"
-            required>
+            <label for="nome">Nome</label>
+            <input 
+                type="text"
+                name="nomeDaPessoa"
+                id="nome"
+                placeholder="Informe o nome da pessoa"
+                required
+                minlength="3"
+            >
         </div>
 
         <div>
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha">
-        </div>
-
-        <label>Gênero</label>
-
-        <div>
+            <label for="senha">Senha</label>
             <input 
-                type="radio" name="genero" id="feminino"
-                value="FEM">
-            <label for="feminino">Feminino</label>
+                type="password"
+                name="senha"
+                id="senha"
+                maxlength="25"
+            >
         </div>
 
         <div>
-            <input 
-                type="radio" name="genero" id="masculino"
-                value="MAS">
-            <label for="masculino">Masculino</label>
-        </div>    
 
-        <div>
-            <input 
-                type="radio" name="genero" id="naoBinario"
-                value="NB">
-            <label for="naoBinario">Não binário</label>
-        </div>        
-        
-        <div>
-            <input 
-                type="radio" name="genero" id="semresposta"
-                value="SR">
-            <label for="semresposta">Prefiro não responder</label>
+            <label for="">Gênero</label>
+            
+            <div>
+                <input
+                type="radio"
+                name="genero"
+                value="FEM"
+                id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            
+            <div>
+                <input
+                type="radio"
+                name="genero"
+                value="MAS"
+                id="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            
+            <div>
+                <input
+                type="radio"
+                name="genero"
+                value="NBI"
+                id="naobinario">
+                <label for="naobinario">Não binário</label>
+            </div>
+
+            
+            <div>
+                <input
+                type="radio"
+                name="genero"
+                value="SRE"
+                id="semresposta">
+                <label for="semresposta">Prefiro não responder</label>
+            </div>
         </div>
 
-
-        <label>Notificações</label>
-
         <div>
-            <input 
-                type="checkbox" 
-                id="email"
-                name="notificao[0]">
-            <label for="email">Receber notificações por e-mail</label>
+
+            <label for="">Notificações</label>
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[0]"
+                    id="email">
+                <label for="email">E-mail</label>
+            </div>
+
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[1]"
+                    id="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[2]"
+                    id="Telegram">
+                <label for="Telegram">Telegram</label>
+            </div>
+
+
+            <div>
+                <input 
+                    type="checkbox"
+                    name="notificacao[3]"
+                    id="signal">
+                <label for="signal">Signal</label>
+            </div>
+
         </div>
 
         <div>
-            <input 
-                type="checkbox" id="whatsapp" name="notificao[1]">
-            <label for="whatsapp">Receber notificações pelo WhatsApp</label>
-        </div>
+            <label for="uf">Estado/UF</label>
 
-        <div>
-            <label for="uf">Estado</label>
-            <select name="estado" id="uf">
+            <select name="uf" id="uf">
 
-                <option value="0" 
-                    selected disabled>Selecione:</option>
+                <option
+                    value="0"
+                    selected
+                    disabled
+                >Selecione:</option>
+
+
                 <option value="1">Minas Gerais</option>
                 <option value="2">São Paulo</option>
-                <option value="3">Maranhão</option>
+                <option value="3">Pará</option>
                 <option value="4">Bahia</option>
+                <option value="5">Rio de Janeiro</option>
+                <option value="6">Espírito Santo</option>
 
             </select>
+
+
+        </div>
+
+
+        <div>
+            <label for="cor">Cor padrão do perfil</label>    
+            <input type="color" name="cor" id="cor">
         </div>
 
         <div>
-            <label for="perfil">Cor padrão do perfil</label>
-
-            <input type="color" 
-                name="perfil" 
-                id="perfil">
+            <label for="data">Data de nascimento</label>
+            <input type="date" name="data" id="data">
         </div>
-    
+
 
         <div>
-            <label for="nascimento">Data de nascimento</label>
-            <input type="date" name="nascimento" id="nascimento">
-        </div>
 
-        <div>
-            <label for="pontuacao">Pontuação</label>
-            <input 
-                type="range" name="pontuacao" id="pontuacao"
-                min="0"
-                max="100"
-                step="10"
-                value="80">
-        </div>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
 
-        <div>
-            <label for="email">E-Mail</label>
-
-            <input 
-                type="email" 
-                name="email" 
-                id="email"
-                required>
+            <button type="submit">Cadastrar - tag button</button>
+            <button type="reset">Limpar - tag button</button>
 
         </div>
-
-
-        <input type="submit" value="Enviar - input">
-
-        <button type="submit">Enviar - button</button>
-
-        <input type="reset" value="Limpar">
 
     </form>
-
-    <a href="../">Voltar</a>
-
+    
 </body>
 </html>

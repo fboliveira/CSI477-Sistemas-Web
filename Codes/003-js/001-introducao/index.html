@@ -2,76 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao JavaScript</title>
 
     <script>
 
-        // var
-        // let
-        // const
-
-        function carregarDadosForm() {
-           
-            const nome = document.formDados.nome.value;
-            const name = document.getElementById("name").value;
-            
-            const idade = document.formDados.idade.value;
-
-            console.log(nome);
-            console.log(idade);
-
-            const dados = {
-                nomeDaPessoa: nome,
-                idade,
-                endereco: {
-                    rua: "Armando Fajardo",
-                    numero: 23,
-                    bairro: "Loanda",
-                    cidade: "João Monlevade"
-                }
-            }
-
-            console.log(dados);
-            console.log(dados.nomeDaPessoa);
-
-        }
-
-
     </script>
+
 </head>
 <body>
 
     <h1>Introdução ao JS</h1>
 
     <script>
-        document.write("<h2>Olá, mundo!</h2>");
-        console.log("Página carregada.");
-
-        
-        </script>
+        document.write("<h2>Olá, mundo!</h2>")
+    </script>
 
     <div id="data"></div>
 
     <script>
-        document.getElementById("data").innerHTML = new Date();
+        document
+            .getElementById("data")
+            .innerHTML = new Date()
     </script>
 
-    <form action="#" method="get" name="formDados">
-
-        <input type="text" name="nome" id="name">
-
-        <input type="text" name="idade" id="age">
+    <script>
+        console.log("Página carregada.")
+        console.error("Erro ao carregar.")
+    </script>
+    
+    <form action="#" name="formDados">
 
         <input 
-            type="button" 
-            value="Carregar"
-            onclick="carregarDadosForm()"
+            type="text" 
+            name="nome" 
+            id="nomeDaPessoa"
         >
+
+        <input 
+            type="text" 
+            name="idade" 
+            id="idadeDaPessoa"
+        >
+
+        <button 
+            type="button"
+            onclick="carregarDados()"
+            >Carregar</button>
+
 
     </form>
 
-    
+    <script>
+
+        // x = 5
+        // var x
+
+        function carregarDados() {
+            // const
+            // let
+            // var
+
+            const nomeDaPessoa = 
+                document
+                    .getElementById("nomeDaPessoa")
+                    .value
+            const nome = document
+                .formDados
+                .nome
+                .value
+
+            console.log(nomeDaPessoa)
+            console.log(nome)
+
+        }
+
+    </script>
+
+
+
 </body>
 </html>

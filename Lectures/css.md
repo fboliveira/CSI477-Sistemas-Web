@@ -185,7 +185,7 @@ h3 { color: black;
 
 - [Tailwind CSS](https://tailwindcss.com/)
 
-- [W3Schools: Bootstrap 4 Tutorial (indicação de Rafaela Silva)](https://www.w3schools.com/bootstrap4/default.asp)
+- [W3Schools: Bootstrap 5 Tutorial (indicação de Rafaela Silva) #VersionUpdated](https://www.w3schools.com/bootstrap5/)
 
 ### Templates and themes
 

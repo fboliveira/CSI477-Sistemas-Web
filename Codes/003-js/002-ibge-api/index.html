@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFs e Estados - API/IBGE</title>
+</head>
+<body onload="carregarEstados()">
+
+    <h1>Cadastro de pessoas</h1>
+
+    <form action="#">
+        <!-- Dados da pessoa -->
+
+        <!-- Endereço no Brasil -->
+        <!-- UF -->
+        <button
+            type="button"
+            onclick="carregarEstados()">
+            Carregar estados
+        </button>
+
+
+
+        <label for="estado">Estado:</label>
+        <select 
+            name="estado" 
+            id="estado"
+            onchange="carregarCidades()"
+        >
+
+            <!-- Option para garantir que o usuário faça a seleção do estado -->
+            <option 
+                value=""
+                selected
+                disabled
+            >Selecione:</option>
+
+            <!-- Recuperar a lista das UFs a partir da API do IBGE -->
+        
+        </select>
+
+        <!-- Cidade -->
+        <label for="cidade">Cidades:</label>
+        <select name="cidade" id="cidade">
+
+            <!-- Option vazio - selecione: -->
+            <option 
+                value=""
+                selected
+                disabled
+            >Selecione:</option>
+
+        </select>
+
+        <!-- País de origem da pessoa -->
+
+    </form>
+
+    <script src="api-ibge.js"></script>
+    <!-- <script>carregarEstados()</script> -->
+    
+</body>Version Manager 
+</html>

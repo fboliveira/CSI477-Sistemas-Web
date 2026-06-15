@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de vendas</title>
+    <title>Sistema de Controle de Tarefas</title>
 
-    <link rel="stylesheet" href="dashboard.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS external link -->
+     
+    <link rel="stylesheet" href="./dashboard.css">
 
 </head>
-<body>  
+<body>
 
     <header>
+        <div class="flex-center">
 
-        <div class="logo">
-            <span class="material-symbols-outlined">
-                shopping_cart_checkout
-            </span>
+            <div>
+                Logo
+            </div>
+
+            <div>
+                <div>
+                    <input class="borda" type="text">
+                </div>
+                <div>
+                    <button>Pesquisar</button>
+                </div>
+            </div>
+
+            <div>
+                Profile
+            </div>
+
+
         </div>
 
-        <div class="search">
-            <input type="text"  
-                name="search" 
-                id="search" 
-                placeholder="Procurar...">
-            <button>Procurar</button>
-        </div>
-
-        <div class="profile">
-            Profile
-        </div>
+        <h1>Sistema de Controle de Tarefas</h1>
+        <h2>Página principal da aplicação</h2>
 
     </header>
-    
-    <div class="main">
-        <nav>
-            <ul class="menu">
-                <li class="menu-item"><a href="#">Estados</a></li>
-                <li class="menu-item"><a href="#">Cidades</a></li>
-                <li class="menu-item"><a href="#">Produtos</a></li>
-                <li class="menu-item"><a href="#">Vendas</a></li>
-                <li class="menu-item"><a href="#">Clientes</a></li>
-            </ul>
-        </nav>  
-        
-        <div class="content">
+
+    <!-- Principal -->
+    <div id="main">
+        <!-- Navegação -->
+        <nav id="menu">
+            Menu
+        </nav>
+
+        <div id="content">
             Conteúdo
         </div>
     </div>
-
+    
 </body>
 </html>

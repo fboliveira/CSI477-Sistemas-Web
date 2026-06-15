@@ -1,0 +1,18 @@
+//// https://dbdiagram.io/d
+
+// Creating tables
+Table project as PROJ {
+  id int [pk, increment] // auto-increment
+  name varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table task as TASK {
+  id int [pk, increment] // auto-increment
+  description varchar
+  project_id int [ref: > PROJ.id]
+  done boolean
+  created_at timestamp
+  updated_at timestamp
+}

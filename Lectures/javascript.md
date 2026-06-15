@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript - JS
 
 ## Introdução
 
@@ -17,6 +17,10 @@
 - A escolha final do nome causou **confusão** dando a impressão de que a linguagem foi baseada em **Java**.
 
 - A ação foi caracterizada por muitos como uma **estratégia** de marketing da Netscape para aproveitar a **popularidade** do Java;
+
+- A marca JavaScript pertence à [Oracle](https://www.oracle.com/developer/javascript/), após a aquisição da Sun.
+
+- [Deno v. Oracle: Canceling the JavaScript Trademark](https://deno.com/blog/deno-v-oracle)
 
 - **Sugestões de leitura**:
 
@@ -52,17 +56,17 @@
 
 - **JavaScript**: dirigida por eventos - projetada para reagir quando um evento ocorre.
 
-- Ela não é capaz de recuperar informações de outro arquivo ou salvar dados em um servidor da Web, ou no computador do usuário.
+- Ela **não é capaz** de recuperar informações de outro arquivo ou salvar dados em um servidor da Web, ou no computador do usuário.
 
-- Não é possível escrever um script JavaScript que, por exemplo, varra os diretórios de um computador, lendo ou apagando arquivos do usuário.
+- **Não é possível** escrever um script JavaScript que, por exemplo, varra os diretórios de um computador, lendo ou apagando arquivos do usuário.
 
 - É uma linguagem **independente de plataforma**: **depende apenas do navegador** que a interpreta.
 
-- JavaScript é *case sensitive*;
+- JavaScript é ***case sensitive***;
 
 - Sintaxe bastante similar a C, C++, dentre outras;
 
-- [Automatic Semicolon Insertion](https://tc39.es/ecma262/#sec-automatic-semicolon-insertion)
+- Utilizar **ponto e vírgula** nas expressões e declarações? [Automatic Semicolon Insertion](https://tc39.es/ecma262/#sec-automatic-semicolon-insertion)
 
 ### JavaScript não é Java
 
@@ -84,7 +88,7 @@
 
 - Atributo `type="text/javascript"`: não requerido.
 
-- JS é a linguagem de *script* padrão em HTML.
+- JavaScript é a **linguagem de *script* padrão em HTML**.
 
 - Pode-se inserir a *tag* dentro dos elementos `<head>`, `<body>` ou ambos;
 
@@ -101,6 +105,15 @@
 
 <script src="funcoes.js"></script>
 ```
+
+- [*Blocking script: How do you add JavaScript to your page?*](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#how_do_you_add_javascript_to_your_page)
+
+>*async and defer*
+>
+>*There are actually two modern features we can use to bypass the problem of the blocking script — async and defer.*
+>
+
+- [*addEventListener()*](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#using_addeventlistener_instead)
 
 ## Hierarquia dos Objetos: DOM - *Document Object Model*
 
@@ -123,7 +136,7 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 - Eventos
 - Funções
 - Manipulação de *arrays*: map, filter, reduce, sort, [dentre outros](https://www.w3schools.com/jsref/jsref_obj_array.asp).
-- Asynchronous JavaScript: [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises), [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function), [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch), [dentre outros](https://www.w3schools.com/js/js_asynchronous.asp).
+- *Asynchronous* JavaScript: [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises), [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function), [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch), [dentre outros](https://www.w3schools.com/js/js_asynchronous.asp).
 
 ## Frameworks, bibliotecas e tecnologias
 
@@ -144,6 +157,8 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 - [Node.js](https://nodejs.org)
 
 - [Deno](https://deno.land/)
+
+- [Bun](https://bun.sh/)
 
 ## Additional resources
 
@@ -176,6 +191,8 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 - [Rocketseat](https://www.rocketseat.com.br/) (indicação de [Lorena Lopes](https://github.com/alorenalopes))
 
 - [W3Schools: Window setInterval() Method](https://www.w3schools.com/jsref/met_win_setinterval.asp)
+
+- [9 tricks to eliminate render blocking resources](https://blog.logrocket.com/9-tricks-eliminate-render-blocking-resources/)
 
 ### APIs
 
@@ -233,12 +250,24 @@ Esta é uma definição geral sobre a estrutura da linguagem, sendo adaptado do 
 
 - [#236 - Evolução do JavaScript](https://hipsters.tech/evolucao-do-javascript-hipsters-ponto-tech-236/)
 
+- [#383 - Evoluções no Angular e Outros Frameworks Front-End](https://www.hipsters.tech/evolucoes-no-angular-e-outros-frameworks-front-end-hipsters-ponto-tech-383/)
+
 - [React e prevenção de fraudes na Escale - Hipsters On The Road #50](https://hipsters.tech/react-e-prevencao-de-fraudes-na-escale-hipsters-on-the-road-50/)
 
 ### Other resources
 
+- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2017](https://www.freecodecamp.org/news/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c/)
+
+- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2018](https://www.freecodecamp.org/news/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-2018-update-e5760fb4a962)
+
 - [A RealWorld Comparison of Front-End Frameworks 2020](https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)
+
+- [10 Best Front-end Frameworks for Web Development in 2023](https://medium.com/@lunawolfe01/10-best-front-end-frameworks-for-web-development-in-2023-7a2bd3d82475)
 
 - [Learning JavaScript Design Patterns](https://www.patterns.dev/posts/classic-design-patterns/)
 
-- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+- [Open Web Application Security Project (OWASP): Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
+
+- [Top 7 Frontend Frameworks to Use](https://roadmap.sh/frontend/frameworks)
+
+- [Top 10 Front-End Frameworks](https://www.geeksforgeeks.org/top-front-end-frameworks/)

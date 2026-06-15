@@ -22,7 +22,7 @@ como principal referência textos e exemplos retirados de
 
 - [W3C and WHATWG to work together to advance the open Web platform](https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/)
 
-- <https://html.spec.whatwg.org/>: *Last Updated 8 May 2023*
+- <https://html.spec.whatwg.org/>
 
 ### **Versões anteriores**
 
@@ -66,17 +66,15 @@ como principal referência textos e exemplos retirados de
 
 - <https://www.w3.org/WAI/standards-guidelines/aria/>
 
-  = Versão 1.1 - *W3C Recommendation 14 December 2017*
-
   = <https://www.w3.org/TR/wai-aria/>
-
-  = Versão 1.3 - *W3C Editor's Draft 03 May 2023*
 
   = <https://w3c.github.io/aria/>
 
-### *Universal Resource Identifier* - **URI**
+### *Uniform (~~Universal~~) Resource Identifier* - **URI**
 
-- URIs typically consist of three pieces:
+- *Uniform Resource Locator (URL)*: a URL is a specific type of URI that indicates the location of a resource on the web and describes how to access it.
+
+- URLs typically consist of three pieces:
 
   1. The naming **scheme** of the mechanism used to access the resource.
   1. The name of the **machine hosting** the resource.
@@ -84,7 +82,7 @@ como principal referência textos e exemplos retirados de
 
 - Example: <http://www.w3.org/TR>
 
-- This URI may be read as follows:
+- This URL may be read as follows:
 
     1. There is a document **available** via the **HTTP protocol**;
     1. This is residing on the **machine** [www.w3.org](www.w3.org), accessible via the **path** "/TR".
@@ -93,13 +91,13 @@ como principal referência textos e exemplos retirados de
 
 - **Fragment identifiers**:
 
-  - This kind of URI ends with "\#" followed by an anchor identifier (called the fragment identifier).
+  - This kind of URL ends with "\#" followed by an anchor identifier (called the fragment identifier).
 
   - <http://somesite.com/html/top.html#sectionb>
 
-- **Relative URIs**:
+- **Relative URLs**:
 
-  - A relative URI doesn't contain any naming scheme information.
+  - A relative URL doesn't contain any naming scheme information.
 
   - Its path generally refers to a resource on the same machine as
         the current document.
@@ -141,3 +139,16 @@ como principal referência textos e exemplos retirados de
 - [MDN - table: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
 
 - [W3Schools - HTML Tables](https://www.w3schools.com/html/html_tables.asp)
+
+### Web Accessibility and UX
+
+- [Acessibilidade na web – Hipsters Ponto Tech #463](https://www.hipsters.tech/acessibilidade-na-web-hipsters-ponto-tech-463/)
+- [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Web Content Accessibility Guidelines (WCAG)](https://www.wcag.com/)
+- [Regulamentação de artigos da Lei Brasileira de Inclusão da Pessoa com Deficiência](https://www.gov.br/mdh/pt-br/navegue-por-temas/pessoa-com-deficiencia/acoes-e-programas/regulamentacao-de-artigos-da-lei-brasileira-de-inclusao-da-pessoa-com-deficiencia)
+
+#### Tools and extensions
+
+- [HTML_CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/)
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
+- [axe DevTools - Web Accessibility Testing](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)

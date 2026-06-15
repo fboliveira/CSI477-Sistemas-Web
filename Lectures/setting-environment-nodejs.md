@@ -22,7 +22,7 @@ Para o **trabalho final**, outras linguagens e outros *frameworks* podem ser uti
 
 Se você observar alguma pesquisa de [*market share* dos servidores web](https://news.netcraft.com/archives/category/web-server-survey/), identificará que a maioria é baseada em software livre. Isso pode ser justificado pelo tipo de licença (custo) das aplicações tanto para quem precisa hospedar alguma aplicação quanto para quem provê o serviço.
 
-Como o sistema baseado em UNIX **difere entre maiúsculas e minúsculas** para o nome de arquivos, o que não acontece no Windows, ao implantar a aplicação nesses servidores, diversos problemas podem ocorrer. Além disso, ambientes Linux possuem gerenciadores de pacotes nativos, o que facilita a instalação e a configuração. Eu descobri recentemente que existe uma aplicação externa para o ambiente Windows, o [Chocolatey](https://chocolatey.org/). Entretanto, eu nunca utilizei esse gerenciador e também não sei se ele consegue resolver conflitos e a falta de dependências nas instalações. Quem já utilizou esse gerenciador, por favor, compartilhe a experiência.
+Como o sistema baseado em UNIX **difere entre maiúsculas e minúsculas** para o nome de arquivos, o que não acontece no Windows, ao implantar a aplicação nesses servidores, diversos problemas podem ocorrer. Além disso, ambientes Linux possuem gerenciadores de pacotes nativos, o que facilita a instalação e a configuração. Eu descobri ~~recentemente~~ que existe uma aplicação externa para o ambiente Windows, o [Chocolatey](https://chocolatey.org/). Entretanto, eu nunca utilizei esse gerenciador e também não sei se ele consegue resolver conflitos e a falta de dependências nas instalações. Quem já utilizou esse gerenciador, por favor, compartilhe a experiência.
 
 Essas considerações não são tentativas de doutrinação Linux (por mais que possa parecer :smile:). Sinta-se livre para utilizar o sistema operacional que for mais conveniente. De todo modo, eu sugiro que você também avalie a possibilidade de utilizar alguma distribuição Linux para desenvolvimento, principalmente Web. [Escolha uma distribuição qualquer](https://distrowatch.com/) e prepare o seu ambiente.  
 
@@ -74,7 +74,7 @@ As instalações descrita nesta seção se referem ao desenvolvimento *backend*.
 
 A instalação do [Node.js](https://nodejs.org/en/) costuma ser realizada sem complicações, ~~quando realizadas em condições normais de temperatura e pressão, desprezando o atrito~~.
 
-Você pode selecionar na página de [Downloads](https://nodejs.org/en/download/) a versão correspondente ao seu sistema operacional. Vamos utilizar a distribuição **LTS**. Siga as instruções de instalação conforme o seu contexto.
+Você pode selecionar na página de [Downloads](https://nodejs.org/en/download/) a versão correspondente ao seu sistema operacional. Vamos utilizar a distribuição **LTS**. Siga as instruções de instalação conforme o seu contexto. É possível fazer a instalação também por meio de uma aplicação que gerencia as versões do Node, o [NVM](https://github.com/nvm-sh/nvm). Com ele, é possível utilizar múltiplas versões do Node e alternar entre elas de maneira prática.
 
 Para verificar a instalação e as versões, digite o seguinte comando no seu terminal:
 
@@ -85,7 +85,7 @@ node --version
 Você terá uma resposta similar a:
 
 ```bash
-v18.16.0
+v22.11.0
 ```
 
 Após isso, verique a versão do NPM digitando seguinte comando no terminal:
@@ -97,7 +97,13 @@ npm --version
 Você terá uma resposta similar a:
 
 ```bash
-9.5.1
+10.9.0
+```
+
+O npm pode ser atualizado para a última versão com o seguinte comando:
+
+```bash
+npm install -g npm@latest 
 ```
 
 Se algum comando falhar, certifique-se que não ocorreu nenhum problema durante a instalação. Caso a instalação esteja correta, você precisará inserir o caminho da instalação no `PATH`. Veja sobre isso [aqui](https://www.computerhope.com/issues/ch000549.htm).
@@ -129,7 +135,7 @@ git --version
 Se você tiver uma resposta como a seguinte, está tudo correto:  
 
 ```bash
-git version 2.40.1
+git version 2.45.2
 ```
 
 Caso contrário, você precisará instalar o aplicativo.

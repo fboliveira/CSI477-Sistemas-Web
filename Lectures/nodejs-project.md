@@ -80,7 +80,7 @@ src/routes/<model>.js
 
     1. Estrutura do projeto
     1. Configuração do [Express](https://expressjs.com/)
-    1. [Modelo proposto do banco de dados](../Assignments/database-model/)
+    1. [Modelo proposto do banco de dados](../Codes/database-model/project-control.png)
     1. ORM - [Prisma.io](https://www.prisma.io)
     1. Construção das tabelas e relacionamentos
     1. *Migrations*
@@ -103,12 +103,13 @@ src
   |_ server.js
 package.json
 ```
+
 ## Outras referências
+
+- [Bruno](https://marketplace.visualstudio.com/items?itemName=bruno-api-client.bruno)
 
 - [Insomnia](https://insomnia.rest/)
 
 - [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 - [Thunder Client - REST API Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
-
-

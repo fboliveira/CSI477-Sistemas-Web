@@ -1,18 +1,17 @@
 {
-  "name": "api_server",
+  "name": "004-nodejs",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "sever.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js"
+    "dev": "node sever.js"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
+  "type": "module",
   "dependencies": {
-    "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "express": "^5.1.0"
   }
 }
