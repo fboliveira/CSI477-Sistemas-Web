@@ -12,10 +12,15 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "@prisma/client": "^7.8.0",
     "express": "^5.2.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
     "prisma": "^7.8.0"
+  },
+  "allowScripts": {
+    "@prisma/engines@7.8.0": true,
+    "prisma@7.8.0": true
   }
 }
