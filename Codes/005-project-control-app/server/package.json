@@ -15,7 +15,9 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
+    "@types/node": "^25.9.3",
     "nodemon": "^3.1.14",
-    "prisma": "^7.8.0"
+    "prisma": "^7.8.0",
+    "typescript": "^6.0.3"
   }
 }
