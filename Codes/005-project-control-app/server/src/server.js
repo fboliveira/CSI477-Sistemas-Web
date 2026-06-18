@@ -13,6 +13,8 @@ const PORT = 5000 // .env, environment variables, ...
 
 // Server setup
 const server = express()
+// Request -> json
+server.use(express.json())
 
 // Atribuição/utilização das rotas importadas
 server.use(mainRouter)
