@@ -55,9 +55,56 @@ export default class ProjectController {
     // -- 
 
     // C: create
+    async create(request, response) {
+
+        // POST: body -> request.body
+        console.log(request.body)
+
+        // Recuperar os dados do request
+        const { name } = request.body
+
+        // Architecture ->
+        // DTO: in
+        // Domain -> use cases (create)
+        // -- Parse: validações
+
+        // Verificar se o parâmetro name foi atribuído/definido
+        if (!name || name === "") {
+            response.status(400).json({
+                code: 400,
+                message: 'Invalid data request.'
+            })
+        }
+
+        // -- Sanitização
+        // ...
+
+        // Domain -> Infrastructure (entity) / port
+        // Service -> repository: save()
+
+        const data = {
+            name // object literals
+        }
+        const project = await prisma.project.create({
+           data
+        })
+
+        console.log(project)
+
+        return response
+            .status(201) // Created
+            .json(project)
+
+    }
 
     // U: update
+    async update(request, response) {
+
+    }
 
     // D: delete
+    async delete(request, response) {
+        
+    }
 
 }
