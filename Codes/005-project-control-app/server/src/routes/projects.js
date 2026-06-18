@@ -13,7 +13,8 @@ projectRouter.get('/api/projects', projectController.getAll)
 // Get By ID -> método GET
 projectRouter.get('/api/projects/:id', projectController.getById)
 
-// ...
+// Create -> método POST
+projectRouter.post('/api/projects', projectController.create)
 
 
 // Export router
