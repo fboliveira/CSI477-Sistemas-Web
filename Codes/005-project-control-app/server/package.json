@@ -12,6 +12,8 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.8.0",
+    "@prisma/client": "^7.8.0",
     "express": "^5.2.1"
   },
   "devDependencies": {
