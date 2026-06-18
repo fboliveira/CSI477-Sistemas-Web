@@ -11,3 +11,14 @@ GET {{server}}/status
 
 ###
 GET {{server}}/admin
+
+###
+GET {{server}}/api/projects/100
+
+###
+POST {{server}}/api/projects
+Content-Type: application/json
+
+{
+    "name": "Network"
+}
