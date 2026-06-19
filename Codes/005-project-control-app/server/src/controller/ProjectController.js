@@ -47,9 +47,24 @@ export default class ProjectController {
 
     }
 
-    getByName(request, response) {
+    async getByName(request, response) {
 
-        // GET: /api/projects/net
+        // GET: /api/projects/name/{:}
+        // Buscar por partes do nome
+
+        const { name } = request.params
+
+        const projects = await prisma.project.findMany({
+            where: {
+                name : {
+                    contains: name, // like %name%
+                    // mode: 'insensitive'
+                }
+            }
+        })
+
+        return response.json(projects)
+
 
     }
     // -- 
@@ -98,12 +113,78 @@ export default class ProjectController {
     }
 
     // U: update
+    // HTTP: PUT or PATCH
     async update(request, response) {
+
+        // Recuperar os dados do request
+        const { id, name } = request.body
+
+        // Tratamentos e validações conforme as regras de negócio
+        // ...
+
+        // Invocar o repositório para atualização
+        try {
+            
+            const project = await prisma.project.update({
+                data: {
+                    name // object literals
+                },
+                where: {
+                    id
+                }
+            })
+
+            return response.json(project) // 200 OK
+
+        } catch (error) {
+            return response
+                .status(400) // Bad request
+                .json({
+                    code: 400,
+                    message: 'Invalid request.',
+                    error
+                })
+        }
 
     }
 
     // D: delete
     async delete(request, response) {
+
+        // Soft delete?
+        // Permissões para exclusão?
+        // Validações para exclusão -> tarefas: exclusão em cascata?
+        // Demais regras de negócio
+        // use case
+
+        // Recuperar os dados do request
+        const { id } = request.body
+
+        try {
+            
+            // Invocar o repositório para a exclusão
+            const project = await prisma.project.delete({
+                where: {
+                    id
+                }
+            })
+
+            return response.json({
+                code: 200,
+                message: 'Project deleted.',
+                project
+            })
+
+        } catch (error) {
+            return response
+                .status(400)
+                .json({
+                    code: 400,
+                    message: 'Invalid request.',
+                    error
+                })
+        }
+
         
     }
 
