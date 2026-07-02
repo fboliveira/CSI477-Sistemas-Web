@@ -5,6 +5,7 @@ import { mainRouter } from './routes/main.js'
 import { projectRouter } from './routes/projects.js'
 
 // Demais pacotes
+import cors from 'cors'
 
 // Config
 
@@ -15,6 +16,8 @@ const PORT = 5000 // .env, environment variables, ...
 const server = express()
 // Request -> json
 server.use(express.json())
+// Enable CORS requests
+server.use(cors())
 
 // Atribuição/utilização das rotas importadas
 server.use(mainRouter)
