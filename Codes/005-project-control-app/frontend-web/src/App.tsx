@@ -1,16 +1,11 @@
-import './App.css'
-import Menu from './components/Menu/Menu.tsx'
-import ListProjects from './pages/projects/ListProjects.tsx'
+import AppHeader from "./components/AppHeader/AppHeader"
 
 function App() {
 
   return( 
     <>
-      <h1>Sistema de Controle de Projetos</h1>
-      <h2>Menu principal</h2>
-      <Menu />
-      <ListProjects />
-    </>
+        <AppHeader title="Página principal da aplicação" />
+    </>  
   )
 }
 
