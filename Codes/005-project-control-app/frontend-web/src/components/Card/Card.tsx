@@ -4,10 +4,10 @@ const Card = ({id, name} : CardInterface) => {
 
     return(
 
-        <div>
+        <div className="w-full md:basis-1/3 border rounded-2xl border-slate-300 m-2 p-2 max-w-sm bg-white shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
 
             <div>Código: {id}</div>
-            <div>Nome: {name} </div>
+            <div>Nome: <span className="text-xl font-bold">{name}</span> </div>
             <div>Ações:</div>
 
         </div>
