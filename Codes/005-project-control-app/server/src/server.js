@@ -8,6 +8,8 @@ import { projectRouter } from './routes/projects.js'
 import cors from 'cors'
 
 // Config
+// Config timezone
+process.env.TZ='America/Sao_Paulo'
 
 // Parâmetros
 const PORT = 5000 // .env, environment variables, ...
