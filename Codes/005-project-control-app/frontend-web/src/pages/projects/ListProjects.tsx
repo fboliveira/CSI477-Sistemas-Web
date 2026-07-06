@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import api from "../../service/api"
 import { type ProjectInterface } from "../../types/projects"
 import Card from "../../components/Card/Card"
+import AppHeader from "../../components/AppHeader/AppHeader"
+import { Link } from "react-router-dom"
 
 const ListProjects = () => {
 
@@ -22,13 +24,16 @@ const ListProjects = () => {
 
     return(
         <>
-            <h3 className="text-3xl font-bold">Lista de projetos</h3>
+            <AppHeader title="Lista de projetos" />
             <div>
                 { projects.map((p) => (
-                    <Card 
+                    <>
+                      <Card 
                         id={p.id}
                         name={p.name}
-                    /> 
+                      />
+                      <Link to={`/projects/${p.id}`}>Atualizar</Link>
+                    </>
                 ))}
 
             </div>
