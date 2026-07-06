@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 // React component - arrow function
 const Menu = () => {
@@ -7,13 +8,13 @@ const Menu = () => {
     return (
         <div>
 
-            <ul className="md:flex items-center gap-8">
-                <li>Home</li>
-                <li>Projetos</li>
-                <li>Tarefas</li>
-                <li>Relatórios</li>
-                <li>Perfil</li>
-            </ul>
+            <nav className="md:flex items-center gap-8">
+                <Link to="/">Home</Link>
+                <Link to="/projects">Projetos</Link>
+                <Link to="#">Tarefas</Link>
+                <Link to="#">Relatórios</Link>
+                <Link to="#">Perfil</Link>
+            </nav>
         
         </div>
     )
