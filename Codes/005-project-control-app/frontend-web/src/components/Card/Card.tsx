@@ -1,3 +1,4 @@
+import { Pencil, Trash2 } from "lucide-react"
 import type { CardInterface } from "../../types/card"
 
 const Card = ({id, name} : CardInterface) => {
@@ -8,7 +9,12 @@ const Card = ({id, name} : CardInterface) => {
 
             <div>Código: {id}</div>
             <div>Nome: <span className="text-xl font-bold">{name}</span> </div>
-            <div>Ações:</div>
+            <div>
+                <div>Ações:</div>
+                <Pencil color="#0c4bdf" />
+                <Trash2 color="#df0c56" />
+
+            </div>
 
         </div>
 
