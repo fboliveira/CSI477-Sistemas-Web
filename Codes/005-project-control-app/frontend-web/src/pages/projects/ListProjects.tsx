@@ -22,6 +22,35 @@ const ListProjects = () => {
 
     }, [])
 
+    const handleDeleteProject = async (id: number) => {
+
+        // Validações ---
+        if ( !confirm('Confirma exclusão do projeto?') ) {
+            return
+        }
+
+        // Server -> delete()
+        try {
+            
+            // Atualizar?
+            setProjects( projects.filter( p => p.id != id ) )
+
+            const response = await api.delete('/api/projects', 
+                { data: {
+                    id
+                } }
+            )
+
+            alert('Projeto excluído!')
+            console.log(response)
+
+        } catch (error) {
+            alert('Erro na exclusão do projeto!')
+            console.error(error)
+        }
+
+    }
+
     return(
         <>
             <AppHeader title="Lista de projetos" />
@@ -31,8 +60,16 @@ const ListProjects = () => {
                       <Card 
                         id={p.id}
                         name={p.name}
+                        updateUrl={`/projects/${p.id}`}
                       />
-                      <Link to={`/projects/${p.id}`}>Atualizar</Link>
+
+                      <button
+                        onClick={
+                            () => {
+                                handleDeleteProject(p.id)
+                            }
+                        }>Excluir</button>
+
                     </>
                 ))}
 
