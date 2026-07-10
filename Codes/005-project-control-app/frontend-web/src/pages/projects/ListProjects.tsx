@@ -4,6 +4,7 @@ import { type ProjectInterface } from "../../types/projects"
 import Card from "../../components/Card/Card"
 import AppHeader from "../../components/AppHeader/AppHeader"
 import { Link } from "react-router-dom"
+import { CirclePlus } from "lucide-react"
 
 const ListProjects = () => {
 
@@ -54,6 +55,15 @@ const ListProjects = () => {
     return(
         <>
             <AppHeader title="Lista de projetos" />
+            
+            <div className="flex align-middle items-center">
+                <Link to="/projects/create">
+                <span className="flex">
+                    <CirclePlus /> Adicionar
+                </span>
+            </Link>
+            </div>
+            
             <div>
                 { projects.map((p) => (
                     <>

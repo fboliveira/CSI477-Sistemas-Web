@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import App from "./App"
 import ListProjects from "./pages/projects/ListProjects"
 import UpdateProject from "./pages/projects/UpdateProject"
+import CreateProject from "./pages/projects/CreateProject"
 
 const AppRoutes = () => {
 
@@ -18,6 +19,11 @@ const AppRoutes = () => {
                 <Route 
                     path="/projects"
                     element={ <ListProjects /> }
+                />
+
+                <Route
+                    path="/projects/create"
+                    element={ <CreateProject /> }
                 />
 
                 <Route 
