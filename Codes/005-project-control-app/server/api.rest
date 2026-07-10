@@ -42,3 +42,15 @@ Content-Type: application/json
 
 ###
 GET {{server}}/api/projects/name/b
+
+###
+GET {{server}}/api/tasks
+
+###
+POST {{server}}/api/tasks
+Content-Type: application/json
+
+{
+    "description": "Add disks",
+    "project_id": 2
+}
