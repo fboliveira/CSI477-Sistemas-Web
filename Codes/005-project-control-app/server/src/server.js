@@ -3,6 +3,7 @@ import express from 'express'
 // Imports - rotas
 import { mainRouter } from './routes/main.js'
 import { projectRouter } from './routes/projects.js'
+import { taskRouter } from './routes/tasks.js'
 
 // Demais pacotes
 import cors from 'cors'
@@ -24,7 +25,7 @@ server.use(cors())
 // Atribuição/utilização das rotas importadas
 server.use(mainRouter)
 server.use(projectRouter)
-
+server.use(taskRouter)
 
 // Start - listen
 server.listen(PORT, () => {
