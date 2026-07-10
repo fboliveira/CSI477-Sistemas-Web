@@ -23,5 +23,26 @@ model Project {
   updated_at DateTime @updatedAt
   // deleted_at  DateTime? -> gerenciamento manual
 
+  // 1 - project : N - tasks
+  // 1:N
+  tasks Task[]
+
   @@map("tb_projects")
+}
+
+model Task {
+  id Int @id @default(autoincrement())
+
+  description String
+
+  // Relação entre tasks e projects
+  // -- atributo da relação (chave estrangeira)
+  project_id Int
+  // -- relação entre os modelos: 
+  project    Project @relation(fields: [project_id], references: [id])
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("tb_tasks")
 }
