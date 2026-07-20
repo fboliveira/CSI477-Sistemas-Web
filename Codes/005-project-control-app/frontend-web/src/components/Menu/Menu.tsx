@@ -11,7 +11,7 @@ const Menu = () => {
             <nav className="md:flex items-center gap-8">
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projetos</Link>
-                <Link to="#">Tarefas</Link>
+                <Link to="/tasks">Tarefas</Link>
                 <Link to="#">Relatórios</Link>
                 <Link to="#">Perfil</Link>
             </nav>

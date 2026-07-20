@@ -3,6 +3,8 @@ import App from "./App"
 import ListProjects from "./pages/projects/ListProjects"
 import UpdateProject from "./pages/projects/UpdateProject"
 import CreateProject from "./pages/projects/CreateProject"
+import ListTasks from "./pages/tasks/ListTasks"
+import CreateTask from "./pages/tasks/CreateTask"
 
 const AppRoutes = () => {
 
@@ -29,6 +31,16 @@ const AppRoutes = () => {
                 <Route 
                     path="/projects/:id"
                     element={ <UpdateProject /> }                
+                />
+
+                <Route 
+                    path="/tasks"
+                    element={ <ListTasks /> }
+                />
+
+                <Route
+                    path="/tasks/create"
+                    element={ <CreateTask /> }
                 />
 
             </Routes>        
