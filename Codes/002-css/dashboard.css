@@ -44,3 +44,30 @@ header > div {
 div > h1 {
     font-size: 3rem;
 }
+
+.flex-center {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    /* flex-direction: row-reverse; */
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    border: 1px solid #0000ff;
+    border-radius: 10px;
+    background-color: #0000ff;
+    color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    font-weight: bold;
+}
+
