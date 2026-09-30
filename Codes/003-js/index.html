@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFs e Cidades - IBGE/API Localidades</title>
+
+    
+
+</head>
+<body>
+    
+    <h1>Cadastro de pessoas</h1>
+
+    <form action="#">
+
+        <!-- Dados da pessoa -->
+
+        <!-- Endereço no Brasil -->
+
+        <!-- UFs -->
+         <button
+         type="button"
+            onclick="carregarEstados()"
+         >Carregar estados</button>
+
+        <div>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+
+                <!-- Recuperar a lista de estados a partir da API de Localização do IBGE -->
+
+            </select>
+        </div>
+
+        <!-- Cidades -->
+        <div>
+            <label for="cidade">Cidade:</label>
+            <select name="cidade" id="cidade">
+
+                <!-- Recuperar a lista de cidades a partir da API de Localização do IBGE conforme o estado selecionado -->
+            </select>
+        </div>
+    
+    </form>
+
+    <script src="ibge-api.js"></script>
+
+</body>
+</html>
