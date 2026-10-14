@@ -20,6 +20,12 @@ async function carregarEstados() {
     console.log('Iniciando carregamento dos estados...')
     const estados = await recuperarListaDeEstados()
 
+    // Considerando que os dados não estão ordenados e que a API não tem opção de ordenação
+    estados.sort(
+        (a, b) => a.nome.localeCompare(b.nome)
+    )
+
+
     // Percorrer o array
     // for-in (C: for(int i = 0; i < n; i++))
     // Recupera o index (i) dos elementos do array
@@ -113,3 +119,27 @@ async function carregarCidades() {
 
 }
 
+// == FUNÇÕES EM JS
+
+// Clássica/canônica
+function soma(a, b) {
+    return a + b
+}
+
+const valor_soma = soma(5, 8)
+
+// Arrow function
+// ( lista de parâmetros ) => {
+// corpo    
+//      }
+
+const soma_arrow_function = ( a, b ) => {
+    return a + b
+}
+
+const valor_soma_arrow_function = soma_arrow_function(6, 9)
+
+// Arrow function in line
+const soma_arrow_function_in_line = (a, b) => a + b
+
+const valor_soma_arrow_function_in_line = soma_arrow_function_in_line(4, 8)
