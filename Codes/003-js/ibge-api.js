@@ -27,14 +27,36 @@ async function carregarEstados() {
         console.log(estados[i].nome)
     }
 
+    // DOM: hydration
+    // DOM: recuperar o select de estados para adicionar os itens que foram retornados pela API
+    const select_estados = document.getElementById("estado")
+
     // For: recuperar o elemento do array
     // for-of (Java: for-each -> for(Object item : lista))
     for(const estado of estados) {
         // console.log(estado.sigla)
     
-        const id = estado.id
-        const nome = estado.nome
-        const sigla = estado.sigla
+        // const id = estado.id
+        // const nome = estado.nome
+        // const sigla = estado.sigla
+
+        // Destructing
+        // Objeto java script
+        const { id, nome, sigla } = estado // <- a ordem dos campos não importa
+        // Array -> posição
+        // pessoa = [1, 'Fernando']
+        // const [ idDaPessoa, nome ] = pessoa <- a ordem dos campos importa  
+
+        // -- Criar um elemento HTML -> option
+        const opt = document.createElement("option")
+
+        opt.value = id
+        // opt.innerHTML = nome + ' - ' + sigla
+        // Template literals
+        opt.innerHTML = `${nome} - ${sigla} (${id})`
+        
+        // Inserir o option criado no select
+        select_estados.appendChild(opt)
 
         console.log({
             id, nome, sigla
@@ -43,3 +65,51 @@ async function carregarEstados() {
     }  
 
 }
+
+// CIDADES:
+async function recuperarListaDeCidades(id) {
+    // URL: {base}/{id}/municipios
+    const url_cidades = `${URL_LOCALIDADES}/${id}/municipios`
+
+    const response = await fetch(url_cidades)
+    const cidades = await response.json()
+
+    console.log(cidades)
+
+    return cidades
+}
+
+async function carregarCidades() {
+    
+    // Recuperar o select de cidades
+    const select_cidades = document.getElementById('cidade')
+    
+    // Remover todos, menos o "Selecione: (index 0)"
+    while(select_cidades.length > 1) {
+        select_cidades.remove(1)
+    }
+
+
+    // Qual é o ID do estado selecionado?
+    const select_estados = document.getElementById("estado")
+    // Índice do estado selecionado
+    const index_estado = select_estados.selectedIndex
+    // ID (value) do estado selecionado
+    const id_estado = select_estados.options[index_estado].value
+
+    // Garantir que o estado selecionado é valido -> 
+    if ( index_estado === 0 || id_estado === "" ) {
+        // Abandonar
+        return
+    }
+
+    // Recuperar a lista de cidades a partir do ID do estado
+    const cidades = await recuperarListaDeCidades(id_estado)
+
+    // Percorrer a lista de cidades e inserir um option para cada item
+
+    // TODO: próxima aula
+
+
+}
+

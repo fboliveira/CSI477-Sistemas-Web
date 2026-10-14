@@ -8,7 +8,7 @@
     
 
 </head>
-<body>
+<body onload="carregarEstados()">
     
     <h1>Cadastro de pessoas</h1>
 
@@ -26,8 +26,18 @@
 
         <div>
             <label for="estado">Estado:</label>
-            <select name="estado" id="estado">
+            <select 
+                name="estado" 
+                id="estado"
+                onchange="carregarCidades()"
+            >
 
+                <!-- Option vazio para identificar a seleção -->
+                 <option 
+                    value=""
+                    selected
+                    disabled
+                    >Selecione:</option>
                 <!-- Recuperar a lista de estados a partir da API de Localização do IBGE -->
 
             </select>
@@ -38,7 +48,14 @@
             <label for="cidade">Cidade:</label>
             <select name="cidade" id="cidade">
 
+                <!-- Option vazio para identificar a seleção -->
+                 <option 
+                    value=""
+                    selected
+                    disabled
+                    >Selecione:</option>
                 <!-- Recuperar a lista de cidades a partir da API de Localização do IBGE conforme o estado selecionado -->
+                 <option value="">Cidade de teste</option>
             </select>
         </div>
     
