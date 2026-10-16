@@ -8,60 +8,75 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     
 </head>
 <body onload="carregarEstados()">
     
-    <h1>Cadastro de pessoas</h1>
+    <div class="container m-4">
+        <h1 class="fw-bold pb-2 my-4 text-primary-emphasis border-bottom border-primary-emphasis"><span class="bi bi-people mr-4"></span>Cadastro de pessoas</h1>
 
-    <form action="#">
+        <form action="#" class="border rounded p-2">
 
-        <!-- Dados da pessoa -->
+            <!-- Dados da pessoa -->
 
-        <!-- Endereço no Brasil -->
+            <!-- Endereço no Brasil -->
 
-        <!-- UFs -->
-         <button
-         type="button"
-            onclick="carregarEstados()"
-         >Carregar estados</button>
+            <!-- UFs -->
+            <div class="mb-3">                
+                <button
+                type="button"
+                    onclick="carregarEstados()"
+                    class="btn btn-primary"
+                >Carregar estados</button>
+            </div>
 
-        <div>
-            <label for="estado">Estado:</label>
-            <select 
-                name="estado" 
-                id="estado"
-                onchange="carregarCidades()"
-            >
+            <div class="mb-3 border rounded p-2">                
+                <label for="estado" class="form-label fw-bold">Estado: <span class="text-danger">*</span></label>
+                <select 
+                    name="estado" 
+                    id="estado"
+                    onchange="carregarCidades()"
+                    class="form-select"
+                >
 
-                <!-- Option vazio para identificar a seleção -->
-                 <option 
-                    value=""
-                    selected
-                    disabled
-                    >Selecione:</option>
-                <!-- Recuperar a lista de estados a partir da API de Localização do IBGE -->
+                    <!-- Option vazio para identificar a seleção -->
+                    <option 
+                        value=""
+                        selected
+                        disabled
+                        >Selecione:</option>
+                    <!-- Recuperar a lista de estados a partir da API de Localização do IBGE -->
 
-            </select>
-        </div>
+                </select>
+            </div>
 
-        <!-- Cidades -->
-        <div>
-            <label for="cidade">Cidade:</label>
-            <select name="cidade" id="cidade">
+            <!-- Cidades -->
+            <div class="mb-3 border rounded p-2">
+                <label for="cidade" class="form-label fw-bold">Cidade: <span class="text-danger">*</span></label>
+                <select name="cidade" id="cidade" class="form-select">
 
-                <!-- Option vazio para identificar a seleção -->
-                 <option 
-                    value=""
-                    selected
-                    disabled
-                    >Selecione:</option>
-                <!-- Recuperar a lista de cidades a partir da API de Localização do IBGE conforme o estado selecionado -->
-                 <option value="">Cidade de teste</option>
-            </select>
-        </div>
-    
-    </form>
+                    <!-- Option vazio para identificar a seleção -->
+                    <option 
+                        value=""
+                        selected
+                        disabled
+                        >Selecione:</option>
+                    <!-- Recuperar a lista de cidades a partir da API de Localização do IBGE conforme o estado selecionado -->
+                    <option value="">Cidade de teste</option>
+                </select>
+            </div>
+
+            <div class="mb-0 border rounded p-2 text-center">
+                <button type="submit" class="btn btn-success">Cadastrar</button>
+                <button type="reset" class="btn btn-danger">Limpar</button>
+                <button type="button" class="btn btn-warning">Voltar</button>
+            </div>            
+            
+        </form>
+    </div>
 
     <script src="ibge-api.js"></script>
 
