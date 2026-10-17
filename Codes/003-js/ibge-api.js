@@ -95,7 +95,6 @@ async function carregarCidades() {
         select_cidades.remove(1)
     }
 
-
     // Qual é o ID do estado selecionado?
     const select_estados = document.getElementById("estado")
     // Índice do estado selecionado
@@ -114,8 +113,24 @@ async function carregarCidades() {
 
     // Percorrer a lista de cidades e inserir um option para cada item
 
-    // TODO: próxima aula
+    // For: recuperar o elemento do array
+    // for-of (Java: for-each -> for(Object item : lista))
+    for(const cidade of cidades) {
 
+        // Destructing
+        // Objeto java script
+        const { id, nome } = cidade // <- a ordem dos campos não importa
+
+        // -- Criar um elemento HTML -> option
+        const opt = document.createElement("option")
+
+        opt.value = id
+        opt.innerHTML = `${nome} (${id})`
+        
+        // Inserir o option criado no select
+        select_cidades.appendChild(opt)
+        
+    } 
 
 }
 
