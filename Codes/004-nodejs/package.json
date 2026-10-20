@@ -1,16 +1,20 @@
 {
-  "name": "server",
+  "name": "first-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "First NodeJS Server",
+  "keywords": [
+    "server",
+    "web"
+  ],
   "license": "MIT",
   "author": "Fernando B Oliveira <fboliveira@ufop.edu.br>",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "type": "module",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.3.0"
   }
 }

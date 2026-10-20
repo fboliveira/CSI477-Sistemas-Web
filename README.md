@@ -8,7 +8,7 @@
 
 ---
 
-Here are available lecture notes and codes on CSI606 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2026/1.
+Here are available lecture notes and codes on CSI606 - Sistemas Web I course at [Universidade Federal de Ouro Preto (UFOP)](http://www.ufop.br). Semester 2026/2.
 
 ---
 
@@ -29,13 +29,13 @@ Here are available lecture notes and codes on CSI606 - Sistemas Web I course at 
 1. [Node.js Project](./Lectures/nodejs-project.md)
 1. [TypeScript](./Lectures/typescript.md)
 1. [React](./Lectures/react.md)
-1. [Next.js](./Lectures/nextjs.md)
 1. [Instructions to the Final Project](./LessonScripts/project/roteiro-trabalho-final.md)
 
 Previous technologies:
 
 1. [PHP](./Lectures/php.md)
 1. [Laravel](./Lectures/laravel.md)
+1. [Next.js](./Lectures/nextjs.md)
 
 ---
 

@@ -5,70 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Controle de Tarefas</title>
 
-    <!-- CSS external link -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
     
-    <header class="container-fluid border-bottom border-primary">
+    <!-- Header da página -->
+     <header>
 
         <div class="row">
-
-            <div class="col-1">
+            <div class="col">
                 Logo
             </div>
 
-            <div class="col">
-                <input 
-                    type="text" 
-                    name="pesquisar"
-                    class="form-control" 
-                >
-                <button class="btn btn-info">Pesquisar</button>
+            <div class="col-8">
+                <!-- Pesquisar -->
+                <div>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary mt-2">Pesquisar</button>
+                </div>
             </div>
 
-            <div class="col-1">
+            <div class="col">
                 Profile
             </div>
-
         </div>
 
+        
         <div>
             <h1>Sistema de Controle de Tarefas</h1>
-            <h2>Página principal</h2>
+            <h2>Página principal da aplicação</h2>
         </div>
 
-    </header>
+     </header>
 
-    <!-- Principal -->
-     <div>
+     <!-- Principal -->
+     <div id="main">
 
-        <nav>
-            <ul class="nav nav-tabs">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#">Projetos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Tarefas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Equipes</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
-                <li class="nav-item"><a class="nav-link disabled" href="#">Configurações</a></li>
+        <!-- Menu principal - navegação página -->
+        <nav id="menu">
+            <ul>
+                <li>Home</li>
+                <li>Cadastro</li>
+                <li>Relatórios</li>
+                <li>Perfil</li>
+                <li>Sair</li>
             </ul>
-
-
         </nav>
 
-        <div>
-            Conteúdo
+        <!-- Conteúdo da página -->
+        <div id="content">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet illum optio, modi nulla iste non consequuntur, rem necessitatibus corporis enim, hic sequi earum temporibus commodi quas fugit similique facilis distinctio.</p>
         </div>
 
      </div>
-
-     <footer>
-        <p>Sistemas Web I</p>
-        <p>Desenvolvido com S2</p>
-     </footer>
-
 
 </body>
 </html>
