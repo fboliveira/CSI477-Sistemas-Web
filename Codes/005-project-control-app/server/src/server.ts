@@ -1,22 +1,34 @@
-import express from "express"
+// Imports
+import express from "express";
 
-import { mainRouter } from "./routes/main.ts";
+// Routes - import
 
 // Configurações (.env)
-const PORT = 5000
+const PORT = 5000;
 
-// Server
-const server = express();
+// Definição do app/server
+const app = express();
 
-// Configuration
-server.use(express.json())
+// Configurações do server
+// - Padrão de comunicação: requisição e resposta -> JSON
+app.use(express.json())
 
-// Add Routes to server
-server.use(mainRouter)
-
-// Start - listen
-server.listen(PORT, () => {
-    console.log(`[SERVER] Server is running on port ${PORT}.`)
+// Routes - criadas e/ou importados
+// -- Endpoints: GET, POST, PUT/PATCH, DELETE
+app.get('/', (request, response) => {
+    response.json({
+        id: 1,
+        message: `[OK] Server is alive! Port: ${PORT}`
+    })
 })
 
+app.get('/admin', (request, response) => {
+    response
+        .status(401)
+        .send("<h1>Unauthorized.</h1>");
+})
 
+// Start - listen
+app.listen(PORT, () => {
+    console.log(`[SERVER] Server is running on port ${PORT}.`)
+})
