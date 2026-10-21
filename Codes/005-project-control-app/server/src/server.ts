@@ -1,11 +1,12 @@
 // Imports
 import express from "express";
+
 import { mainRouter } from "./routes/main.js";
+import { env } from "./config/env.js";
 
 // Routes - import
 
 // Configurações (.env)
-const PORT = 5000;
 
 // Definição do app/server
 const app = express();
@@ -19,6 +20,6 @@ app.use(express.json())
 app.use(mainRouter);
 
 // Start - listen
-app.listen(PORT, () => {
-    console.log(`[SERVER] Server is running on port ${PORT}.`)
+app.listen(env.PORT, () => {
+    console.log(`[SERVER] Server is running on port ${env.PORT}.`)
 })
