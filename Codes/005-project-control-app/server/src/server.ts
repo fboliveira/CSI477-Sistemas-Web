@@ -2,6 +2,7 @@
 import express from "express";
 import { env } from "./config/env.js";
 import { mainRouter } from "./routes/main.js";
+import { projectRouter } from "./routes/projects.js";
 
 // Routes - import
 
@@ -18,6 +19,7 @@ app.use(express.json())
 // Routes - criadas e/ou importados
 // -- Endpoints: GET, POST, PUT/PATCH, DELETE
 app.use(mainRouter)
+app.use(projectRouter)
 
 // Start - listen
 app.listen(env.PORT, () => {
