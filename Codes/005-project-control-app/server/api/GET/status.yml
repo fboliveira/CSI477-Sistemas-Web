@@ -1,0 +1,11 @@
+meta {
+  name: status
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3434
+  body: none
+  auth: none
+}
