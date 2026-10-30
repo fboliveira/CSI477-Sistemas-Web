@@ -1,0 +1,4 @@
+GET http://localhost:3434
+
+###
+GET http://localhost:3434/admin
