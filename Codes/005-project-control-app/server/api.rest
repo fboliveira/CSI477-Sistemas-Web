@@ -2,3 +2,17 @@ GET http://localhost:3434
 
 ###
 GET http://localhost:3434/admin
+
+### all
+GET http://localhost:3434/api/projects
+
+### get by id
+GET http://localhost:3434/api/projects/3
+
+###
+POST http://localhost:3434/api/projects
+Content-Type: application/json
+
+{
+    "name": "Backend"
+}

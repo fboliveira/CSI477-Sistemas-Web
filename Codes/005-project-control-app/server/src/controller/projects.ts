@@ -54,11 +54,30 @@ export default class ProjectController {
 
     }
 
-    getById(request : Request, response : Response) {
+    async getById(request : Request, response : Response) {
 
         // GET:
         // /api/projects?id=1 -> query: request.query
         // /api/projects/1 -> params: request.params
+
+        try {
+
+            const { id } = request.params
+            const project = await prisma.project.findFirstOrThrow({
+                where: {
+                    id: parseInt(id as string)
+                }
+            })
+
+            return response.json(project)
+            
+        } catch (error) {
+            return response
+                .status(400)
+                .json({
+                    message: "Invalid id.",
+                })
+        }
 
     }
 

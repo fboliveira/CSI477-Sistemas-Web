@@ -14,6 +14,9 @@ projectRouter.post('/api/projects', projectController.create);
 // READ: GET 
 // -- Get all
 projectRouter.get('/api/projects', projectController.getAll)
+// -- Get by id
+projectRouter.get('/api/projects/:id', projectController.getById)
+
 
 // UPDATE
 
