@@ -81,10 +81,75 @@ export default class ProjectController {
 
     }
 
-    getByName(request : Request, response : Response) {
+    // TODO: get by name - part of name
+    async getByName(request : Request, response : Response) {
 
     }
 
     //... 
+
+    // UPDATE
+    // PUT or PATCH
+    async update(request : Request, response : Response) {
+
+        const { id, name } = request.body
+        
+        // ...
+        
+        try {
+
+            const project = await prisma.project.update({
+                where: {
+                    id
+                },
+                data: {
+                    name
+                }
+            })
+
+            return response.json(project)
+            
+        } catch (error) {
+            return response.status(400).json({
+                code: 400,
+                message: 'Invalid request',
+                id,
+                error
+            })
+        }
+
+    }
+
+    // DELETE
+    // Hard delete or Soft delete (flag)
+    async delete(request : Request, response : Response) {
+
+        // Body or Params ?
+        const { id } = request.body
+
+        try {
+
+            const project = await prisma.project.delete({
+                where: {
+                    id
+                }
+            })
+
+            return response.json({
+                code: 200,
+                message: 'Project deleted.',
+                project
+            })
+            
+        } catch (error) {
+            return response.status(400).json({
+                code: 400,
+                message: 'Invalid request',
+                id,
+                error
+            })
+        }
+
+    }
 
 }

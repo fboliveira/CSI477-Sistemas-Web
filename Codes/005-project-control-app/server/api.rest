@@ -14,5 +14,22 @@ POST http://localhost:3434/api/projects
 Content-Type: application/json
 
 {
-    "name": "Backend"
+    "name": "DevOps"
+}
+
+###
+PUT http://localhost:3434/api/projects
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Net infra"
+}
+
+###
+DELETE http://localhost:3434/api/projects
+Content-Type: application/json
+
+{
+    "id": 3
 }
