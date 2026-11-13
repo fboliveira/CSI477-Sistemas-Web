@@ -1,4 +1,5 @@
 import './App.css'
+import ListProjects from './pages/ListProjects'
 
 function App() {
   
@@ -6,6 +7,9 @@ function App() {
     <>
       <section id="center">
         <h1>Sistema de Controle de Projetos</h1>
+
+        <ListProjects />
+
       </section>
         
     </>
