@@ -1,5 +1,6 @@
 // Imports
 import express from "express";
+import cors from "cors";
 import { env } from "./config/env.js";
 import { mainRouter } from "./routes/main.js";
 import { projectRouter } from "./routes/projects.js";
@@ -15,6 +16,9 @@ const app = express();
 // Configurações do server
 // - Padrão de comunicação: requisição e resposta -> JSON
 app.use(express.json())
+
+// Enable CORS
+app.use(cors())
 
 // Routes - criadas e/ou importados
 // -- Endpoints: GET, POST, PUT/PATCH, DELETE
