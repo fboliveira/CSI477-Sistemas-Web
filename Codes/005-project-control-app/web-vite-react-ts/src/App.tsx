@@ -5,7 +5,7 @@ function App() {
   
   return (
     <>
-        <ListProjects />  
+        <Header title="Home" />  
     </>
   )
 }
