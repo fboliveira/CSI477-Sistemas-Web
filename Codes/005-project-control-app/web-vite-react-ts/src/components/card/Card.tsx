@@ -3,9 +3,9 @@ import type { CardInterface } from "../../types/card"
 const Card = ( {id, name} : CardInterface ) => {
 
     return(
-        <div>
+        <div className="w-full border border-slate-300">
             <div>Código: {id} </div>
-            <div>Descrição: {name} </div>
+            <div>Descrição: <span className="text-xl font-bold">{name}</span> </div>
 
             <div>Ações</div>
             <div>
