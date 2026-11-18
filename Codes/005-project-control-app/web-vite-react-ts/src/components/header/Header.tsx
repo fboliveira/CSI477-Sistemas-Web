@@ -1,3 +1,5 @@
+import Menu from "../menu/Menu";
+
 interface HeaderInterface {
     title?: string;
 }
@@ -12,7 +14,7 @@ const Header = ({ title } : HeaderInterface) => {
                     <h1 className="text-3xl font-extrabold">Controle de Projetos</h1>
                 </div>
                 <div>
-                    Menu
+                    <Menu />
                 </div>
             </header>
             <div>
