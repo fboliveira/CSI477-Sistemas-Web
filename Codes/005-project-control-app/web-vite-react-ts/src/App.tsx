@@ -1,4 +1,3 @@
-import './App.css'
 import ListProjects from './pages/ListProjects'
 
 function App() {
