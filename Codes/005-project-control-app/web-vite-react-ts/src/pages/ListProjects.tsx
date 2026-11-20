@@ -36,6 +36,7 @@ const ListProjects = () => {
                     <Card
                         id={project.id}
                         name={project.name}
+                        updateLink={`/projects/${project.id}`}
                     />
                 ))
             }
