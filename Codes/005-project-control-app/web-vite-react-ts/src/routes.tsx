@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import App from "./App"
 import ListProjects from "./pages/ListProjects"
+import CreateProject from "./pages/CreateProject"
 
 const AppRoutes = () => {
 
@@ -16,6 +17,11 @@ const AppRoutes = () => {
                 <Route
                     path="/projects"
                     element={ <ListProjects /> }
+                />
+
+                <Route
+                    path="/projects/create"
+                    element={<CreateProject />}
                 />
 
             </Routes>

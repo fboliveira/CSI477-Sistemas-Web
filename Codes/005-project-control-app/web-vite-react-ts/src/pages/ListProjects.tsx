@@ -3,6 +3,7 @@ import api from "../services/api"
 import type { ProjectInterface } from "../types/projects"
 import Card from "../components/card/Card"
 import Header from "../components/header/Header"
+import { Link } from "react-router-dom"
 
 const ListProjects = () => {
 
@@ -24,6 +25,10 @@ const ListProjects = () => {
         <>
         
             <Header title="Lista de Projetos" />
+
+            <div>
+                <Link to="/projects/create">Cadastrar</Link>
+            </div>
 
             <div className="flex items-center justify-center">
             {
