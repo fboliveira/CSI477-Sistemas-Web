@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom"
 import type { CardInterface } from "../../types/card"
 
-const Card = ( {id, name, updateLink} : CardInterface ) => {
+const Card = ( {id, 
+    name, 
+    updateLink,
+    deleteLink} : CardInterface ) => {
 
     return(
         <div className="w-full border border-slate-300">
@@ -16,7 +19,13 @@ const Card = ( {id, name, updateLink} : CardInterface ) => {
                     : (<></>)
                  }
                  
-                <div>Excluir</div>
+                <div>
+                {
+                    deleteLink ? (<Link to={deleteLink}>Excluir</Link>)
+                    : (<></>)
+                }      
+                    
+               </div>
             </div>
         </div>
     )
