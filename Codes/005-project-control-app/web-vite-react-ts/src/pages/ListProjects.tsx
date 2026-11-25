@@ -37,6 +37,7 @@ const ListProjects = () => {
                         id={project.id}
                         name={project.name}
                         updateLink={`/projects/${project.id}`}
+                        deleteLink={`/projects/${project.id}/delete`}
                     />
                 ))
             }

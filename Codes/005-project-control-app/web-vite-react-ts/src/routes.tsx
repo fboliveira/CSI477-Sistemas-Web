@@ -3,6 +3,7 @@ import App from "./App"
 import ListProjects from "./pages/ListProjects"
 import CreateProject from "./pages/CreateProject"
 import UpdateProject from "./pages/UpdateProject"
+import DeleteProject from "./pages/DeleteProject"
 
 const AppRoutes = () => {
 
@@ -28,6 +29,11 @@ const AppRoutes = () => {
                 <Route 
                     path="/projects/:id"
                     element={<UpdateProject />}
+                />
+
+                <Route 
+                    path="/projects/:id/delete"
+                    element={<DeleteProject />}
                 />
 
             </Routes>

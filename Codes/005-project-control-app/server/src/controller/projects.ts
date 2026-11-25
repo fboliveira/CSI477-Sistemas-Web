@@ -135,7 +135,7 @@ export default class ProjectController {
                 }
             })
 
-            return response.json({
+            return response.json({ 
                 code: 200,
                 message: 'Project deleted.',
                 project
