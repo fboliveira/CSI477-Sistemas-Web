@@ -13,8 +13,7 @@ datasource db {
 }
 
 model Project {
-
-  id Int @id @default(autoincrement())
+  id   Int    @id @default(autoincrement())
   name String
 
   // done Boolean @default(false)
@@ -23,6 +22,24 @@ model Project {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 
-  @@map("tb_projects")
+  // 1-Project / *-Tasks
+  tasks Task[]
 
+  @@map("tb_projects")
+}
+
+model Task {
+  id          Int    @id @default(autoincrement())
+  description String
+
+  done Boolean @default(false)
+
+  // Project: 1-Project (/ *-Tasks)
+  project_id Int
+  project    Project @relation(fields: [project_id], references: [id])
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("tb_tasks")
 }
