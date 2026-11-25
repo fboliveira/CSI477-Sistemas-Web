@@ -21,6 +21,44 @@ const ListProjects = () => {
 
     },[])
 
+    const handleDeleteProject = async (
+       id: number 
+    ) => {
+
+        // Validações...
+        // ...
+
+        if (!window.confirm("Confirma a exclusão do projeto?")) {
+            return
+        }
+
+        const data = {
+            id
+        }
+
+        try {
+            
+            const response = await api.delete("/projects",  
+                { 
+                    data 
+                })
+            console.log(response)
+            const { id } = response.data.project
+            alert(`Projeto exclusão com sucesso! Id: ${id}`)
+            alert(response.data.message)
+            // Redirecionar para a página de projetos?
+            
+            // Atualizar
+            setProjects( projects.filter( project => project.id != id )  )
+            
+
+        } catch (error) {
+            alert("Erro ao excluir o projeto!")
+            console.error(error)
+        }
+
+    }
+
     return(
         <>
         
@@ -33,12 +71,20 @@ const ListProjects = () => {
             <div className="flex items-center justify-center">
             {
                 projects.map((project) =>(
-                    <Card
-                        id={project.id}
-                        name={project.name}
-                        updateLink={`/projects/${project.id}`}
-                        deleteLink={`/projects/${project.id}/delete`}
-                    />
+                    <div>
+                        <Card
+                            id={project.id}
+                            name={project.name}
+                            updateLink={`/projects/${project.id}`}
+                            deleteLink={`/projects/${project.id}/delete`}
+                        />
+                        <button
+                            onClick={() =>{
+                               handleDeleteProject(project.id) 
+                            }}
+                        
+                        >Excluir (direto)</button>
+                    </div>
                 ))
             }
             </div>
