@@ -49,7 +49,17 @@ export default class ProjectController {
     // READ - get all -> GET
     async getAll(request : Request, response : Response) {
 
-        const projects = await prisma.project.findMany();
+        const projects = await prisma.project.findMany({
+            include: {
+                tasks: {
+                    select : {
+                        id: true,
+                        description: true,
+                        done: true
+                    }
+                }
+            }
+        });
         return response.json(projects);
 
     }
