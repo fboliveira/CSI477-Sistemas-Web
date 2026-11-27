@@ -34,7 +34,7 @@ Content-Type: application/json
     "id": 3
 }
 
-###
+### Tasks - get all
 GET http://localhost:3434/api/tasks
 
 ### Create
@@ -42,6 +42,16 @@ POST http://localhost:3434/api/tasks
 Content-Type: application/json
 
 {
-    "description": "Infra",
+    "description": "Server",
     "project_id": 1
+}
+
+### Update
+PATCH http://localhost:3434/api/tasks
+Content-Type: application/json
+
+{
+    "id": 4,
+    "description": "Server",
+    "project_id": 27
 }

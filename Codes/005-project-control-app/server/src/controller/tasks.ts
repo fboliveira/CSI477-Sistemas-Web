@@ -28,14 +28,17 @@ export default class TaskController {
 
     }
 
+    // TODO
     async getById(request : Request, response : Response) {
         
     }    
 
+    // TODO
     async getByDescription(request : Request, response : Response) {
         
     }
 
+    // TODO
     async getByProject(request : Request, response : Response) {
         
     }
@@ -80,6 +83,37 @@ export default class TaskController {
 
     async update(request : Request, response : Response) {
         
+        const { id, description, project_id } = request.body
+
+        try {
+
+            const task = await prisma.task.update({
+
+                where: {
+                    id: parseInt(id as string)
+                },
+
+                data: {
+                    description,
+                    project_id: parseInt(project_id as string)
+                }
+
+            })
+
+            return response.json(task)
+            
+        } catch (error) {
+            console.error(error)
+            return response
+                .status(400)
+                .json({
+                    code: 400,
+                    message: 'Invalid request.',
+                    error
+                })
+        }
+
+
     }
 
     async delete(request : Request, response : Response) {
