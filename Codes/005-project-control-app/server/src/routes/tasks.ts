@@ -18,4 +18,7 @@ taskRouter.get(endpoint, taskController.getAll)
 taskRouter.put(endpoint, taskController.update)
 taskRouter.patch(endpoint, taskController.update)
 
+// Delete: DELETE
+taskRouter.delete(endpoint, taskController.delete)
+
 export { taskRouter }

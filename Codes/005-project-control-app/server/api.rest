@@ -42,7 +42,7 @@ POST http://localhost:3434/api/tasks
 Content-Type: application/json
 
 {
-    "description": "Server",
+    "description": "Database models",
     "project_id": 1
 }
 
@@ -54,4 +54,12 @@ Content-Type: application/json
     "id": 4,
     "description": "Server",
     "project_id": 27
+}
+
+### Delete
+DELETE http://localhost:3434/api/tasks
+Content-Type: application/json
+
+{
+    "id": 4
 }

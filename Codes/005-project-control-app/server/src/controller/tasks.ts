@@ -118,5 +118,36 @@ export default class TaskController {
 
     async delete(request : Request, response : Response) {
         
+        const { id } = request.body;
+
+        try {
+
+            const task = await prisma.task.delete({
+                where: {
+                    id
+                }
+            })
+
+            return response.json({
+                code: 200,
+                message: "Task deleted.",
+                task
+            })
+            
+        } catch (error) {
+            return response
+                .status(400)
+                .json({
+                    code: 400,
+                    message: 'Invalid request.',
+                    error
+                })
+        }
+
+    }
+
+    // TODO
+    async updateStatus(request : Request, response : Response) {
+        // Undone -> done -> undone
     }
 }
