@@ -1,6 +1,7 @@
 // Controller:
 
 import type { Request, Response } from "express";
+import { prisma } from "../repository/client.js";
 
 // Resource: CRUD
 // C: create
@@ -11,6 +12,19 @@ import type { Request, Response } from "express";
 export default class TaskController {
 
     async getAll(request : Request, response : Response) {
+
+        const tasks = await prisma.task.findMany({
+          include: {
+            project: {
+                select: {
+                    id: true,
+                    name: true
+                }
+            }
+          }
+        });
+        return response.json(tasks);
+
 
     }
 
@@ -27,6 +41,40 @@ export default class TaskController {
     }
 
     async create(request : Request, response : Response) {
+
+        // Body
+        const { description, project_id } = request.body;
+        
+        // Validação -> se o project_id é valido?
+        // Model -> validate()
+        try {
+            const project = await prisma.project.findFirstOrThrow({
+                where: {
+                    id: parseInt(project_id as string)
+                }
+            })
+
+        } catch(error) {
+            return response
+                .status(400)
+                .json({
+                    code: 400,
+                    message: 'Invalid project id.'
+                })
+        }
+
+        const task = await prisma.task.create({
+            data: {
+                description,
+                project: {
+                    connect: {
+                        id : project_id
+                    }
+                }
+            }
+        })
+
+        return response.status(201).json(task)
         
     }
 
