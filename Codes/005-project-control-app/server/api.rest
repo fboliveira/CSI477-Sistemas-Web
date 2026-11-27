@@ -33,3 +33,15 @@ Content-Type: application/json
 {
     "id": 3
 }
+
+###
+GET http://localhost:3434/api/tasks
+
+### Create
+POST http://localhost:3434/api/tasks
+Content-Type: application/json
+
+{
+    "description": "Infra",
+    "project_id": 1
+}
